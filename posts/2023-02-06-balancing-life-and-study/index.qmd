@@ -9,7 +9,6 @@ author:
 date: 2022-02-06
 categories: [Health Data Science, work-life balance] # self-defined categories
 image: "Sidney-122.jpg"
-cap-location: margin
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
@@ -24,11 +23,11 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 ::: {.aside}
 
-::: {.profilepic}
+::: {.round-border}
 ![](jason-meyer.jpeg)
 :::
 
-Jason is a HDS Masters graduate from 2022. He has spent the last 10+ working in ICU as a registered nurse in both clinical and research roles. Most recently he has starting working for DonateLife Queensland as the Data and Audit Clinical Nurse Consultant. Jason is passionate about using data to represent the truth and inform clinical decision making.]
+Jason is a HDS Masters graduate from 2022. He has spent the last 10+ working in ICU as a registered nurse in both clinical and research roles. Most recently he has starting working for [DonateLife Queensland](https://www.donatelife.gov.au/find-your-local-donatelife-agency/donatelife-queensland) as the Data and Audit Clinical Nurse Consultant. Jason is passionate about using data to represent the truth and inform clinical decision making.]
 
 :::
 
@@ -50,7 +49,7 @@ At the start of each term I would map out the course deadlines on my calendar. I
 
 I will say that my wife was amazing through the whole degree even though she definitely got frustrated at times. It can be difficult to balance the time commitments of study, work and family life. I would not recommend undertaking them without the full support of your significant other (if that is your situation).
 
-![](Sidney-122.jpg)
+![Jason pictured with his family (author supplied)](Sidney-122.jpg)
 
 ### Family
 
