@@ -1,0 +1,501 @@
+---
+title: "Courses"
+---
+
+## HDAT9100 Context for Health Data Science
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+None
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Undergraduate: Enrolment in 3831 Science (Medicine) Honours<br>Postgraduate: None
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9100](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9100)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9100.html](https://timetable.unsw.edu.au/2023/HDAT9100.html)
+</div>
+
+The Context of Health Data Science provides an introduction to how data are generated and used in a contemporary health system. We look at how health outcomes can be measured and reported in various forms of health data, and how these health data can reveal inequalities in health. The course describes the major sources of health data, including those relating to primary care, hospital stays and prescription medicines, and how this (and other) information can be used by the health data scientist to create evidence for policy and research.
+
+
+Activities are structured to foster a scientific, questioning attitude in the student. Students are encouraged to think critically about how health data are recorded, what this reveals about the underlying health delivery systems, and be creative in their use of health data sources to create or critically appraise evidence.
+
+
+
+## HDAT9200 Statistical Foundations for Health Data Science
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+R/RStudio
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Undergraduate: Enrolment in 3831 Science (Medicine) Honours<br>Postgraduate: None
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9200](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9200)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9200.html](https://timetable.unsw.edu.au/2023/HDAT9200.html)
+</div>
+
+Health data is often complex and noisy. Obtaining actionable insights (or revealing the hidden signals) from such data requires the utilisation of probabilistic concepts. Thus a solid understanding of the principles of statistics is intrinsic to Health Data Science. The aim of this first course in probability theory is to introduce the foundations required to understand such phenomena.
+
+The course design is highly innovative and novel. Statistical computing is used to gain a sound understanding of statistical theories and concepts. Specifically, this course draws on the practical application of Monte Carlo algorithms, which are a very effective method of statistical computing. Once this illustrative approach has (a posteriori) demonstrated a theory, it will then be stated formally.
+
+The core content will be delivered through a flipped approach utilising audio-visual excerpts on the Moodle TELT platform, supported by presentations from Centre for Big Data Research in Health (CBDRH) experts. Statistical computing will be used as the process that drives the content. Peer instruction via discussion during face-to-face sessions will offer support in the form of collaborative learning. Active participation will be encouraged throughout, along with a reflective outlook.
+
+
+## HDAT9300 Computing for Health Data Science
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+Python
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Undergraduate: Enrolment in 3831 Science (Medicine) Honours<br>Postgraduate: None
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9300](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9300)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9300.html](https://timetable.unsw.edu.au/2023/HDAT9300.html)
+</div>
+
+Computing now pervades nearly every aspect of modern life, including health care delivery and health services management. The objective of this course is to develop 'computational thinking' in health data science students, by providing you with a thorough and principled introduction to computer programming, algorithms, data structures and software engineering best practices. The ability to write clear, efficient and correct computer code is at the core of most data science practice and is a foundation skill set.
+
+In this course, you will learn to program in the Python language through tackling health-related problems. Topics include data types, functions, data processing, simulation, software development and program testing and debugging. Theoretical principles are reinforced with extensive ‘hands-on’ coding in Python, including the NumPy and Pandas packages.
+
+The course is accessed via www.openlearning.com. Core material will be delivered as short lectures and readings supported by interactive coding activities. Practical exercises will utilise Spyder/Jupyter Notebook documents.
+
+
+## HDAT9400 Data Management & Curation
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+SAS
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Undergraduate: Enrolment in 3831 Science (Medicine) Honours<br>Postgraduate: None
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9400](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9400)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9400.html](https://timetable.unsw.edu.au/2023/HDAT9400.html)
+</div>
+
+This course is designed to equip students with the skills required to collect or obtain data, design data management strategies aligned with best practice, and appreciate the day to day practicalities of data curation for sound data management. Students will develop data wrangling skills required to assemble data suitable for analysis and research purposes, including data from linkage projects. Data wrangling skills will focus on the key areas of data security, data exploration, documentation of data (for example data dictionaries) and data management, with the ultimate aim of creating analysis-ready datasets and ensuring reproducible results.
+
+
+
+## HDAT9500 Machine Learning I
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+Python
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Undergraduate: Enrolment in 3831 Science (Medicine) Honours<br>Postgraduate: HDAT9200 and HDAT9300 (or COMP9021)
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9500](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9500)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9500.html](https://timetable.unsw.edu.au/2023/HDAT9500.html)
+</div>
+
+Healthcare organisations have a vast amount of data: electronic medical records, claims, registries, medical images, and other types of digital health data. Machine learning techniques learn from previous experience in order to discover patterns and relationships in data, and have been found to perform extremely well in large datasets.
+
+This course provides an introduction to machine learning techniques through a series of health applications.
+
+Algorithms for supervised and unsupervised learning are covered, including linear regression and classification, tree-based methods, clustering, dimensionality reduction and neural networks.
+
+Students will learn about the underlying supporting theory of these techniques, as well as gain the applied practical skills required to effectively apply these techniques to new health data problems.
+
+
+
+
+## HDAT9510 Machine Learning II 
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+Python
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Postgraduate: HDAT9500
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9510](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9510)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9510.html](https://timetable.unsw.edu.au/2023/HDAT9510.html)
+</div>
+
+
+
+This will be an advanced course on machine learning for health data scientists. 
+
+This course will cover advanced contemporary machine learning algorithms and methods.
+
+Along with the theory, this course will cover a range of health applications for real-world translation and deployment.
+
+This course is designed to build upon the content of HDAT9500 by further progressing the knowledge in the theory, technologies and solutions currently needed by Health Data Scientists working in the area of applied machine learning.
+
+
+## HDAT9600 Statistical Modelling I 
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+R/RStudio
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Postgraduate: HDAT9200
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9600](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9600)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9600.html](https://timetable.unsw.edu.au/2023/HDAT9600.html)
+</div>
+
+
+This course provides a sound grounding in the theory and practice of fitting statistical regression models, with particular focus on the flexibility of generalised linear models (GLMs). Starting with linear regression, a major theme of the course is best practice in model fitting, including thorough exploratory data analysis, model assumption checking, data preparation and transformation, including the use of imputation, and careful attention to model adequacy and diagnostics. Emphasis is given to content-aware, purposive model building and the use of Directed Acyclic Graphs (DAGs) of causal relations to inform model parameter selection. Non-linear, logistic, binomial and Poisson models for count data are also covered. Effect modifications (interactions) and their meaning in a health context are explored. The presentation and visualisation of statistical models is considered, with emphasis on the explanatory insights that can be gained from well-constructed models. The final part of the course covers basic time-series models, survival analysis and other time-to-event models.
+
+
+## HDAT9700 Statistical Modelling II
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+R/RStudio
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Postgraduate: HDAT9200 and HDAT9600
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9700](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9700)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9700.html](https://timetable.unsw.edu.au/2023/HDAT9700.html)
+</div>
+
+
+Sophisticated modelling techniques are essential for the analysis of real-world health data. Building on Health Data Analytics: Statistical Modelling I (HDAT9600), this course expands the statistical toolkit and broadens students' understanding of relevant statistical approaches for the analysis of realistically complex data structures and research questions. The course is aimed at those currently working or planning on working in health or a health-related field, and who are interested in applying advanced statistical methods to analyse complex data.
+
+Topics covered in this course include multilevel models for hierarchical data; analysis of time series and longitudinal data; quasi-experimental approaches for drawing causal inferences from observational data; multiple imputation for missing values; and simulation approaches for study planning and model evaluation.
+
+Content is delivered through a combination of online readings, expert guest lectures and practical hands-on tutorials. Statistical concepts are illustrated with a variety of health examples, and students will learn how to implement methods using leading statistical software. Lectures are followed by weekly exercises, which reinforce the learning and programming skills covered in the face-to-face tutorials.
+
+
+
+## HDAT9800 Visualisation & Communication
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+R/RStudio
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Postgraduate: None
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9800](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9800)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9800.html](https://timetable.unsw.edu.au/2023/HDAT9800.html)
+</div>
+
+
+Health Data Scientists need to present information to audiences across a range of backgrounds and spanning a spectrum from naïve or non-practitioners of a discipline to highly informed and expert audiences. Effective communication across different media types is essential. Appropriate data visualisation techniques can greatly enhance communication and increase the effectiveness of communication. Increasingly the scientific community has become aware of problems regarding lack of transparency and reproducibility.
+
+This course takes a toolbox approach to creating appropriate, reproducible and transparent analyses and visualisations. In the context of R, it presents useful best-practice data science analysis and visualisation techniques with a focus on different types of data visualisations.
+
+A basic understanding of how people process information can ensure communication remains effective to an audience with a disability. 
+
+## HDAT9900/9901/9902 Dissertation
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+Project dependent
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Postgraduate: HDAT9100, HDAT9400, HDAT9500, HDAT9700 and HDAT9800
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9900](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9900)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9900.html](https://timetable.unsw.edu.au/2023/HDAT9900.html)
+</div>
+
+
+The Dissertation is a total of 24 UoC.  A combination of HDAT9900, HDAT9901, and HDAT9902 totalling 24 UoC must be completed over two, three or four terms.
+
+The course consists of independent research with an academic supervisor.  The learning from the Graduate Diploma scaffolds to this 'real-world' project.  In addition to developing sound project management skills, this course facilitates the bigger picture - the Health Data Science pipeline is experienced from start to finish.
+
+Support is given via weekly supervisory meetings, supplemented with additional workshops dependent on specific project requirements.  An additional early checkpoint involves the development and submission of study protocol and literature review.  The final outputs will mirror those of a real world academic setting.  Specifically the production of a manuscript to the specifications of a peer reviewed journal relevant to the project and of publishable standard.  The project is also to be disseminated orally via a 15 minute presentation (including 5 minutes of questions and answers).
+
+Students are required to complete Graduate Diploma to a satisfactory standing to be admitted onto this course.  The choice of project could either be selected from an offered list of projects or developed from students proposals, dependent on the availability of a suitable supervisor and agreement on project topic.
+
+Students are required to complete 24uoc in Dissertation courses over a number of terms. This can be completed on a full-time or part-time basis.
+
+
+## HDAT9910 Capstone
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+R/Rstudio and/or Python
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Postgraduate: HDAT9100, HDAT9400, HDAT9500, HDAT9700 and HDAT9800
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9910.html](https://timetable.unsw.edu.au/2023/HDAT9910.html)
+</div>
+
+
+The learning from the Graduate Diploma (5372) scaffolds to this six unit of credit ‘desk-based’ research, capstone project.  The overarching aim is to facilitate the bigger picture of Health Data Science (HDS); the student experiences the HDS pipeline from start-to-end.  Thus, the student is presented with the opportunity to bring all the content of the Graduate Diploma together, realising the relative ordering and merits of each stage.  This capstone has the advantage of allowing a further 18 units of credit of broadening electives to be undertaken.
+
+The capstone project involves completing extensive, desk-based, independent research tasks, requiring the use of the R and/or Python programming languages.  An entire HDS project has been constructed and sliced into the respective stages of the HDS pipeline.  At each stage, the student has the option of completing minor or major tasks to progress to the next stage.  For example, at the ‘Curation’ stage, a minor task might be a short-written report (circa 1,000 words) identifying the issues to be addressed.  A major task would involve preparation of a data management plan (DMP; circa 3,000 words).  Each task will be assigned a point score based on its complexity, proportional to the expected (notional) time required to complete the task.  To complete the course, will require successful completion of three minor and two major tasks.
+
+Students are required to complete Graduate Diploma in Health Data Science (5372) to a satisfactory standing to be admitted onto this course.
+
+
+## HDAT9000 Clinical Artificial Intelligence
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+Postgraduate: HDAT9100, HDAT9400, HDAT9500, HDAT9700 and HDAT9800
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2023/HDAT9900.html](https://timetable.unsw.edu.au/2023/HDAT9900.html)
+</div>
+
+
+The course will start by explaining the fundamental concepts of AI systems and what they can and cannot do. This will be followed by an examination of the idiosyncrasies of AI for healthcare practice covering electronic medical records data (including images, clinical notes, pathology and patient reported outcomes), clinical settings and workflows, as well as the ethical, social, and legal issues posed by the use of AI technologies in clinical practice. Students will generate and discuss a survey of major AI solutions in healthcare practice. The course will then provide students with best-practice guidance, methods and tools on when to use AI to improve patient care, how to deploy an AI project pipeline, how to critically assess the performance and impact of the proposed AI solution and what pitfalls to avoid.

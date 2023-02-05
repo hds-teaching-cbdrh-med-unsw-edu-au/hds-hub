@@ -1,0 +1,22 @@
+[
+  {
+    "listing": "/people.html",
+    "items": [
+      "/people/and.html",
+      "/people/blanca.html",
+      "/people/bronwyn.html",
+      "/people/heidi.html",
+      "/people/mark.html",
+      "/people/oscar.html",
+      "/people/sanja.html",
+      "/people/tim.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2023-02-06-balancing-life-and-study/index.html",
+      "/posts/2023-01-13-sas-cortex/index.html"
+    ]
+  }
+]

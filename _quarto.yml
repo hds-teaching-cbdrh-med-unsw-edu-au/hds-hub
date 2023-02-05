@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+
+website:
+  favicon: images/favicon.ico
+  twitter-card: true
+  page-footer:
+    right: "This page is built with ☘️ and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2023, UNSW"
+  navbar:
+    logo: images/Landscape__3.Mono_Pos_CBDRH.png
+    search: true
+    title: false
+    left:
+      - href: index.qmd
+        text: "Home"
+      - text: "Information"
+        menu:
+          - text: Your teaching team
+            href: people.qmd
+            icon: people-fill
+          - text: Courses
+            href: courses.qmd
+            icon: code
+          - text: Schedule
+            href: schedule.qmd
+            icon: calendar3
+          - text: Software and platforms
+            href: software.qmd
+            icon: laptop
+          - text: FAQ
+            href: faq.qmd
+            icon: question-circle
+      - text: "HDS Student Blog"
+        href: posts.qmd
+        icon: chat-right-heart-fill
+
+    right:
+      - icon: twitter
+        href: https://twitter.com/cbdrh1
+      - icon: github
+        href: https://github.com/CBDRH
+      - icon: microsoft-teams
+        href: https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3
+
+format:
+  html:
+    theme:
+    - cosmo
+    - custom.scss
+    css: styles.css
+    toc: true
+    link-external-icon: true
+
+margin-header: |
+  ![](/images/Landscape__1.Col_Pos_CBDRH.jpg)

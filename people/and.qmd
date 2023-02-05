@@ -1,0 +1,11 @@
+---
+title: "Andrew Blance"
+description: "Senior Lecturer"
+image: ../images/andy.jpeg
+---
+
+[![](../images/andy.jpeg) <a href="mailto:a.blance@unsw.edu.au">a.blance@unsw.edu.au</a>]{.aside}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis enim lobortis. Libero enim sed faucibus turpis in eu mi bibendum. Odio ut enim blandit volutpat. Posuere ac ut consequat semper viverra nam libero justo laoreet. Scelerisque in dictum non consectetur. Dolor sit amet consectetur adipiscing elit ut. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Odio aenean sed adipiscing diam donec adipiscing. Eu lobortis elementum nibh tellus molestie nunc non blandit.
+
+Velit egestas dui id ornare. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Mauris pharetra et ultrices neque. Mus mauris vitae ultricies leo integer malesuada nunc. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Donec pretium vulputate sapien nec. At varius vel pharetra vel turpis nunc eget lorem. Pretium quam vulputate dignissim suspendisse. Lacinia at quis risus sed vulputate odio. Fusce id velit ut tortor pretium viverra. Diam ut venenatis tellus in metus vulputate eu. Ultricies mi eget mauris pharetra. Interdum consectetur libero id faucibus nisl tincidunt. Mollis nunc sed id semper risus in hendrerit gravida rutrum.

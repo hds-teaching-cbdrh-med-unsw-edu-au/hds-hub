@@ -1,0 +1,44 @@
+---
+title: "Oscar Perez Concha"
+description: "Senior Lecturer"
+image: ../images/oscar.jpeg
+---
+
+[![](../images/oscar.jpeg) Oscar convenes the dissertation course [HDAT9500](../courses.html#HDAT9500-Machine-Learning-I).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:o.perezconcha@unsw.edu.au">o.perezconcha@unsw.edu.au</a>]{.aside}
+
+ 
+## What publication are you most proud of?
+
+[Incorporating real-world evidence into the development of patient blood glucose prediction algorithms for the ICU](https://doi.org/10.1093/jamia/ocab060)[^1]. 
+
+Glycemic control is an important component of critical care. In this paper, we presented a data-driven method for predicting intensive care unit (ICU) patient response to glycemic control protocols while accounting for patient heterogeneity and variations in care. In particular, we trained and validated a gradient-boosted tree machine learning (ML) algorithm to forecast patient blood glucose and a 95% prediction interval at 2-hour intervals. Our forecasting model using routinely collected EMRs achieved performance comparable to previous models developed in planned research studies using continuous blood glucose monitoring. This paper demonstrates that EMRs can be used to train ML algorithms that may be suitable for incorporation into ICU decision support systems.
+
+[^1]: Fitzgerald O, Perez-Concha O, Gallego B, Saxena MK, Rudd L, Metke-Jimenez A, Jorm L. Incorporating real-world evidence into the development of patient blood glucose prediction algorithms for the ICU. Journal of the American Medical Informatics Association. 2021 Aug;28(8):1642-50. [https://doi.org/10.1093/jamia/ocab060](https://doi.org/10.1093/jamia/ocab060)
+
+
+## What’s the most important take home message from your course?
+
+Take home message: Learn “how to learn”. That is, rather than just learning a set of machine learning techniques, or how to program in Python, we need to know how to learn what we do not know. For example, it is important to learn how to use the application programming interface (API) documentation and specifications. Or how to interpret what we read from a tutorial or an AI book. This way, the world is our oyster and we are ready to learn new concepts, techniques or programming languages.
+
+ 
+## If you could go back in time, what bit of advice would you give to yourself as a student?
+
+
+a) Read the material before class every week.
+b) Make the most of the lectures and tutorials.
+c) Try to understand the concepts/algorithms rather than memorizing without understanding.
+
+
+## Who would play you in the biopic of your life?
+
+<div class="grid-container-200">
+
+  <div class="item1-200">
+  <img src="https://m.media-amazon.com/images/M/MV5BMTQ2ODE2NDQ5OF5BMl5BanBnXkFtZTcwOTU3OTM1OQ@@._V1_FMjpg_UX1000_.jpgg" width="100">
+  </div>
+  
+  <div class="item2-200">
+  [Óscar Isaac Hernández Estrada](https://www.imdb.com/name/nm1209966/). 
+  </div>
+  
+</div>

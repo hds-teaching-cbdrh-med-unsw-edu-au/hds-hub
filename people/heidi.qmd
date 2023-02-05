@@ -1,0 +1,47 @@
+---
+title: "Heidi Welberry"
+description: "Research Fellow"
+image: ../images/heidi.jpeg
+---
+
+[![](../images/heidi.jpeg) Heidi convenes the course [HDAT9600](../courses.html#HDAT9600-Statistical-Modelling-I) Statistical modelling I.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:h.welberry@unsw.edu.au">h.welberry@unsw.edu.au</a>]{.aside}
+
+ 
+## What publication are you most proud of?
+
+I am really proud of my paper on [psychotropic prescribing among patients with dementia entering residential care](https://doi.org/10.5694/mja2.51153)[^1].   
+
+This paper was the final paper I completed for my PhD and combined several areas of interest including dementia, aged care and primary care. It also addressed a really important topical issue that emerged from the Royal Commission into Aged Care Quality and Safety, namely the overuse of chemical restraints in aged care. 
+
+It was selected as a highlighted paper in the Medical Journal of Australia with an accompanying [invited podcast](https://www.mja.com.au/podcast/215/2/mja-podcasts-2021-episode-28-pyschotropics-and-dementia-effect-changing-gp-heidi) which was something I had never done before: 
+
+[^1]: Welberry HJ, Jorm LR, Schaffer AL, Barbieri S, Hsu B, Harris MF, Hall J, Brodaty H. Psychotropic medicine prescribing and polypharmacy for people with dementia entering residential aged care: the influence of changing general practitioners. Medical Journal of Australia. 2021 Aug 2;215(3):130-6. [https://doi.org/10.5694/mja2.51153](https://doi.org/10.5694/mja2.51153)
+
+## What’s the most important take home message from your course?
+
+There is not always a clear right or wrong with model building, but I think it is always important to make sure you understand very clearly what question it is you are trying to answer and then think hard about if the model you are building is going to answer the question well enough and equally enough for all groups of interest.  
+
+These are not my words but come from a statistician George Box[^2]: 
+
+>All models are approximations. Assumptions, whether implied or clearly stated, are never exactly true. All models are wrong, but some models are useful. So the question you need to ask is not "Is the model true?" (it never is) but "Is the model good enough for this particular application?" 
+
+[^2]: p61, Box, Luceño, Paniagua-Quinones (2009) Statistical Control by Monitoring and Adjustment, 2nd Edition, Wiley
+ 
+## If you could go back in time, what bit of advice would you give to yourself as a student?
+
+I think this depends on which “student me” I am talking to as I have completed three degrees at three completely separate life stages. To the undergraduate me in my early twenties I would definitely say “Be more confident to ask lots of questions and admit when you don’t understand” and “Be more organised and don’t leave everything to the last minute”.  To the older me completing postgraduate studies whilst also juggling full-time work or small children I would say “Don’t be too hard on yourself, you are doing the best you can” and the mantra I have had to come to live by: “Don’t let the perfect be the enemy of the good”. 
+
+
+## Who would play you in the biopic of your life?
+
+<div class="grid-container-200">
+
+  <div class="item1-200">
+  <img src="https://m.media-amazon.com/images/M/MV5BMTg3OTM4NTc0Ml5BMl5BanBnXkFtZTcwODgzNzQwOA@@._V1_FMjpg_UX1000_.jpg" width="100">
+  </div>
+  
+  <div class="item2-200">
+  I have always liked [Claudia Karvan](https://www.imdb.com/name/nm0440286/). I don’t think she looks especially like me but she is a brown-haired Aussie and comes across as down to earth. She has been in some classic Australian TV shows that I grew up with. 
+  </div>
+  
+</div>

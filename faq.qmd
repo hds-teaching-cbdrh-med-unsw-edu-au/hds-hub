@@ -1,0 +1,203 @@
+---
+title: Frequently Asked Questions
+---
+
+## Program Level
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## How do I enrol into courses?
+
+If you are enroling for the first time please visit [How to Enrol as a New Student at UNSW](https://www.student.unsw.edu.au/welcome/enrol).
+
+For annual enrolment and class registration please visit [Annual Enrolment](https://www.student.unsw.edu.au/enrol/annual) page
+
+If you are enrolling in elective courses for MScHDS degree and are getting a message about not meeting enrolment requirements, please email <a href="mailto:MScHDS@unsw.edu.au">MScHDS@unsw.edu.au</a>  and the Program Director will provide you with supporting information. 
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## Who do I contact if I need help?
+
+[Nucleus](https://portal.insight.unsw.edu.au/web-forms/) – Studnt Hub – provides centralised systems to help with enrolment, internal program transfer (IPT), program progression check, recognition of prior learning (RPL), Early Exit/Graduation request, late enrolment, overload studies, requisite waiver, review of results, fee remission, program leave, deferral, discontinuation, confirmation of enrolment, reduce study load.
+Other questions about the program, choice of electives and other queries or concerns can be emailed to the Program Director at <a href="mailto:MScHDS@unsw.edu.au">MScHDS@unsw.edu.au</a> or their email address.
+
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## What does articulation mean?
+
+Health Data science programs of Graduate Certificate Graduate Diploma Masters Masters with Extension can articulate with each other. This means students in the Graduate Certificate can transfer to the Graduate Diploma or the Masters degree, or vice versa (exit with a lower award).
+
+Articulation pathway towards a higher degree: GCer (7372) > GDip (5372) > MSc (9372) > MSc
+(Ext) (9373)
+
+Exit points: MSc (Ext) (9373) > MSc (9372) > GDip (5372) > GCer (7372)
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## What is the difference between dissertation and capstone/elective pathway?
+
+The MSc Health Data Science offers a choice between a 24 UoC workplace/internship research
+dissertation (full-time or part-time options) or a 6 UoC capstone project plus 18 UoC electives (from a selection of over 20 courses – see Handbook). The choice of a pathway depends on your desire to work independently on a larger project (dissertation) or a more pre-defined research project (capstone). Students wishing to progress towards a PhD are encouraged to enrol in a dissertation pathway.
+
+Gaining a place in a dissertation is competitive and at the discretion of both the course convenor/s and the supervisor offering a particular dissertation project.
+
+In order to enrol into dissertation subjects (HDAT9900/9901/9902) you will need to complete the core courses of the Grad Certificate and Grad Diploma of Health Data Science or have been granted an exemption for courses by the MSc program authority. For more information see Team HDS space and select [3. For students considering a dissertation](https://teams.microsoft.com/l/channel/19%3a96703eb743344d4899650816d402a4f5%40thread.tacv2/3.%2520For%2520students%2520considering%2520a%2520Dissertation?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3).
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## Whats the difference between full-time vs part time study load?
+
+All courses are measured in whole Units Of Credit (UOC). Full-time enrolment for one year is defined as 48 UOC with at least one enrolment in each term. Domestic students wishing to be considered full-time need to enrol in a minimum of 12 UOC each term (i.e., 2 subjects), or 36 UOC across three standard terms with at least one course enrolment in each term.
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## Which courses are offered when?
+
+The majority of HDAT core courses run twice per year, except for HDAT9500 and HDAT9800. Check out the [calendar](calendar.html) page to see the course running order for upcoming terms
+
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## How do I apply for program leave?
+
+You can apply for program leave if you want to take a leave of absence from your program of up to 1 year and come back to your studies after taking leave. undergraduate or postgraduate students. It is available to international students with certain Program leave is for enrolled domestic conditions. For more information visit the [Program Leave](https://www.student.unsw.edu.au/program-leave) page.
+
+:::
+
+## Course Level
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## When can I access course materials?
+
+Course materials are hosted on Open Learning, class Teams spaces or class websites, depending on the course. See the [software and platforms](software.html) page for more detail. Access to Open Learning will be either via Moodle or Teams. Yours course convenors will provide you with more information. All HDAT courses go ‘live’ by Friday 5pm of O-week (Friday prior to the semester start date). Materials are released on a weekly basis thereafter.
+
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## How can I access course materials?
+
+This will depend on the course so please follow the instructions from your convenors. They will make an announcement via Teams and/or Moodle about the release of weekly materials. Check out the [software and platforms](software.html) page to see the platforms used for each course.
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## How many hours per week should I dedicate to my studies?
+
+The normal workload expectations of a student are approximately 25 hours per term for each UOC
+(150 hours total for 6 UOC course), including class contact hours, other learning activities,
+preparation and time spent on all assessable work.
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## Whe can I drop a course without financial penalty?
+
+Census date is Sunday of Week 4 each term, and you can drop courses without financial or academic penalty before then. Key dates can be found at [UNSW Key Dates for Students | UNSW Current Students](https://www.student.unsw.edu.au/dates).
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## When can I expect feedback on my assessment?
+
+Assessment tasks completed within the teaching period of a course, other than a final assessment, will be assessed and students provided with feedback, within 10 working days of submission, under normal circumstances.
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## How do I apply for special consideration (SC)?
+
+You are encouraged to apply for SC when their circumstances are short-term, serious, and unavoidable.  They must be circumstances that: 
+* Were unexpected and beyond your control **and**;
+* Caused disturbance to academic work by a substantial degree **and**; 
+* Could not have reasonably been anticipated, avoided or guarded against by you **and either**; 
+    * Occurred during a critical study or assessment period and lasted at least 3 consecutive days or a total of 5 days within the critical study period or; 
+    * Prevented the ability to complete, attend or submit an assessment task for a specific date (e.g., final exam, in class test/quiz, in class presentation) 
+
+You can read more about the special consideration process and how to apply on the [UNSW Special Consideration](https://www.student.unsw.edu.au/special-consideration) page. 
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## Who do I contact if I need help?
+
+For course related questions please contact your course convenor in the first instance. You can also email the Program Director using their email (<a href="mailto:s.lujic@unsw.edu.au">s.lujic@unsw.edu.au</a>), or email our shared health data science email <a href="mailto:MScHDS@unsw.edu.au">MScHDS@unsw.edu.au</a>.
+
+:::
+
+
+## General
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## Where to find us
+
+All our teaching staff are located at the Centre for Big Data Research in Health, Faculty of Medicine. Physical location is: AGSM Building (G27), Gate 11, Botany St, UNSW Sydney Campus, Kensington NSW 2052
+
+<div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=agsm&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google map codes for website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:500px;}</style></div></div>
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## How large is the HDS cohort?
+
+We currently have around 150 students across various stage of their health data science degree.
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## Where is good to eat and drink on campus?
+
+### For coffee
+
+* On upper campus: The Little Marionette, XS Espresso, The Courtyard Café, Caffe Brioso
+* On middle campus: Penny Lane, Plume Café
+
+### For food
+
+* On upper campus: Mathews food court (including Stockmarket for salads, Sushi Roll, Laksa Delight, Classic Kebab, Gradueat), Pho House, Courtyard Café at AGSM
+
+* On lower campus: University Terrace (Mamak Village, Stellini Pasta Bar, Guzman Y Gomez, Yallah), Roundhouse, Thoughtful foods
+
+[View on map](https://www.google.com/maps/d/u/0/edit?mid=1LyKM5B9TzUM876K6zp0SoxTzqQbqcaU&usp=sharing)
+
+:::
+
+
+::: {.callout-note collapse="true" appearance="minimal"}
+
+## Who do I contact if I need help?
+
+UNSW has a rage of support services available for students. Visit the [Student Support](https://www.student.unsw.edu.au/advisors) website to find a list of key services and links on how to access them.
+
+:::

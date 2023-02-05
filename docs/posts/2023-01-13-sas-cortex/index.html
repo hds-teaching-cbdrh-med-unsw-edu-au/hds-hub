@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Manny Adachi">
+<meta name="dcterms.date" content="2022-01-13">
+<meta name="description" content="This is a short post about my participation in the SAS Cortex Analytics Simulation 5 Day Challenge (hereafter, Cortex) in April 2022. Luckily, I became the 1st place winner in the competition. It is not a direct application of what we have learned in the HDS program to the formal job scene. However, I think it can still provide you some idea of how much knowledge we can use outside the classes. Please also see the post by Lucia Biasi from SAS Australia for some details of the interview on me about my experience.">
+
+<title>Winning the SAS Cortex Analytics Simulation Challenge</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta name="twitter:title" content="Winning the SAS Cortex Analytics Simulation Challenge">
+<meta name="twitter:description" content="_This is a short post about my participation in the SAS Cortex Analytics Simulation 5 Day Challenge (hereafter, Cortex) in April 2022. Luckily, I became the 1st place winner in the competition.">
+<meta name="twitter:image" content="manny-adachi.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Information</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-information">    
+        <li>
+    <a class="dropdown-item" href="../../people.html"><i class="bi bi-people-fill" role="img">
+</i> 
+ <span class="dropdown-text">Your teaching team</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses.html"><i class="bi bi-code" role="img">
+</i> 
+ <span class="dropdown-text">Courses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../schedule.html"><i class="bi bi-calendar3" role="img">
+</i> 
+ <span class="dropdown-text">Schedule</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../software.html"><i class="bi bi-laptop" role="img">
+</i> 
+ <span class="dropdown-text">Software and platforms</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../faq.html"><i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"><i class="bi bi-chat-right-heart-fill" role="img">
+</i> 
+ <span class="menu-text">HDS Student Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/cbdrh1"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/CBDRH"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&amp;tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3"><i class="bi bi-microsoft-teams" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<p><img src="../../images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-cortex" id="toc-what-is-cortex" class="nav-link active" data-scroll-target="#what-is-cortex">What is Cortex?</a></li>
+  <li><a href="#what-did-i-learn-through-cortex" id="toc-what-did-i-learn-through-cortex" class="nav-link" data-scroll-target="#what-did-i-learn-through-cortex">What did I learn through Cortex?</a></li>
+  <li><a href="#winning-the-game-then-what" id="toc-winning-the-game-then-what" class="nav-link" data-scroll-target="#winning-the-game-then-what">Winning the game, then what?</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Winning the SAS Cortex Analytics Simulation Challenge</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Health Data Science</div>
+    <div class="quarto-category">SAS</div>
+    <div class="quarto-category">Cortex</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <em>This is a short post about my participation in the SAS Cortex Analytics Simulation 5 Day Challenge (hereafter, Cortex) in April 2022. Luckily, I became the 1st place winner in the competition. It is not a direct application of what we have learned in the HDS program to the formal job scene. However, I think it can still provide you some idea of how much knowledge we can use outside the classes. Please also see the <a href="https://www.linkedin.com/pulse/thinking-outside-box-how-traditional-approaches-sometimes-lucia-biasi/">post</a> by Lucia Biasi from SAS Australia for some details of the interview on me about my experience.</em>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Manny Adachi </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 13, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="author-meta-content">
+<p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i> <a href="mailto:mamiya_adachi@yahoo.co.jp">mamiya_adachi@yahoo.co.jp</a></p>
+</div>
+<div class="author-meta-content">
+<p><i class="fa-solid fa-user" title="A person" aria-label="user"></i> <a href="https://www.linkedin.com/in/mamiyaad/">https://www.linkedin.com/in/mamiyaad/</a></p>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="profilepic300">
+<p><img src="manny-adachi.jpg" class="img-fluid"></p>
+</div>
+<p>Manny Adachi is an aspiring data scientist from Japan in the Master’s program in Health Data Science. His interests are in motorcycle touring, traveling, and of course data science!!]</p>
+</div></div><section id="what-is-cortex" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-cortex">What is Cortex?</h3>
+<p><a href="https://www.sas.com/en_au/learn/academic-programs/resources/cortex-analytics-simulation-game.html">Cortex</a> is an analytics simulation game developed by SAS and HEC Montreal. It tests participants’ predictive modeling skills using a real-life problem as they compete against peers. The game scenario was to help a fictitious non-profit organization which needed to figure out who to contact from a list of potential donors. Using SAS Enterprise Miner, participants built a predictive model and generated a contact list to maximise the surplus amount (i.e.&nbsp;donation amount – cost of contacting). For the duration of Cortex, participants were allowed to revise the contact list up to around 30 times. The prior versions were also maintained in the system so participants are able to select their best contact list later on.</p>
+</section>
+<section id="what-did-i-learn-through-cortex" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="what-did-i-learn-through-cortex">What did I learn through Cortex?</h3>
+<p>It was my first and fun experience using a GUI (Graphic User Interface)-based tool to construct a pipeline of data cleaning, exploratory data analysis, modeling, and testing. The Cortex GUI allows users to interact with tools through icons, menus, and mouse. Therefore, it is more intuitive for the uses to have a control of the tool than entirely coding the required tasks. Although the tools we used in the school assignments such as Jupyter Notebook, R Studio, and SAS Studio have GUI components, with Cortex we could complete the tasks mostly without coding. It was, of course, way more convenient than mostly coding like we did for the school assignments. I could spend more time on thinking how to optimize the surplus amount (e.g., comparing the result using different base models and (hyper)parameters, how to minimize overfitting, deciding where to cut the list from the model (*cutting was done manually and still acceptable)).</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="pipeline.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption margin-caption">A pipeline diagram constructed on Cortex by <a href="https://towardsdatascience.com/review-sas-cortex-analytics-simulation-competition-ff9f120b8361">Harry Ngo</a>, a participant back in 2020. My final pipeline and final model were different from the above, but it should provide you a sufficient visualization of how things went</figcaption><p></p>
+</figure>
+</div>
+<p>So, am I here just as a shill and say how brilliant the SAS platform was? No (although I know that I am already helping them…). Instead, I really want to emphasize that what ends up making the difference sometimes are something beyond knowing how to code a fancy and complex statistical or machine learning model. In my case during Cortex, what helped me were (1) the base knowledge from HDS about the characteristics of each machine learning model, (2) how to read the training / validation score graphs, (3) the strategy of submission time to minimize the other competitors’ time to revise their lists (i.e., submitting the best list when the game was approaching to the end and other competitors appeared satisfied with the moderate but not the best list), and (4) the persistency until the very last minute of the game.</p>
+<p>Here is a little more comment about (1). Although I cannot mention which model I used for my final contact list, I can say it helped me avoid overfitting my model and possibly bluff the other competitors with the list from the overfit model. It was one example of how we can apply our knowledge from HDS program to strategize our action.</p>
+<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class=""><img src="cortex-winner-badge.png" class="img-fluid"> Learn more about the Cortex analytics simulation game at <a href="http://www.sas.com/cortex">www.sas.com/cortex</a></span></div></div>
+</section>
+<section id="winning-the-game-then-what" class="level3">
+<h3 class="anchored" data-anchor-id="winning-the-game-then-what">Winning the game, then what?</h3>
+<p>As the winner, I was offered the badge and 4-week internship at SAS Australia. During the internship I was able to (1) connect with SAS members in various teams such as technical support, pre / post-sales, delivery consulting, and customer success and learn about their roles and offerings, (2) access the study materials for SAS Viya programming associate exam for free, and (3) earn the certificate after passing the exam. Beside the time to connect with SAS members, I spent the majority of time studying for the exam, so it is indeed a large part of what I have learned through the internship. One thing I hoped to do was to practice how to integrate the models that we build with external sources such as Python or R. The integration is one of the key highlights on SAS Viya’s capability.</p>
+<p>I have to confess that I did not know much about the company and what they offer until several days after my internship started. (Please don’t blame me on this since obviously I got this internship opportunity without any interviews). In short, they offer the solutions which support the operations in the whole analytics life cycle, and they have been the long-established and leading vendor of the statistical data analysis software for various sectors such as government / public service, healthcare, banking / finance, and academia. You can also learn more about SAS from a post by Emmett Boudreau.</p>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>I definitely recommend other students to participate in the Cortex competition hosted by SAS (or any hackathon events). It gives us not only the data science experience outside of class, but also the chance to have our hands on the analytics platforms used in the industry and connect with other participants and sometimes people from industry.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© Copyright 2023, UNSW</div>   
+    <div class="nav-footer-right">This page is built with ☘️ and <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

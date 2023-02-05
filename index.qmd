@@ -1,0 +1,55 @@
+---
+title: ""
+---
+
+
+
+
+![](images/Landscape__1.Col_Pos_CBDRH.jpg)
+
+
+:::{.column-screen .bg-shape}
+
+:::{.column-body}
+
+::: {.a}
+
+::: {.b}
+
+::: {.b1}
+Health Data Science Student Hub
+:::
+
+::: {.b2}
+\| Master of Science in Health data Science
+
+\| Clinical Artificial Intelligence
+
+\| Continuous Professional development
+:::
+
+:::
+
+
+::: {.c}
+<!-- This is the background image -->
+:::
+
+:::
+
+:::
+
+:::
+
+<hr>
+The Master of Science in Health Data Science will prepare you to find the right data, unlock hidden insights and use this information to better support clinical care, inform health policy and improve population health. This degree covers the entire pipeline from comprehension of complex health issues through to data wrangling and management, machine learning, data analytics, data modelling and data communication.  
+
+::::: {.column-screen-inset .flash}
+
+::: {.column-body .flash-content}
+At the Centre for Big Data Research in Health (CBDRH) we aim to enhance the health and wellbeing of all, by maximising the productive use of all possible sources of health big data in medical research.
+:::
+
+:::::
+
+Our master’s degree, graduate diploma and graduate certificate in health data science are pioneering programs that examine data-driven solutions to complex health problems. At UNSW, we’re leading this new approach to healthcare.

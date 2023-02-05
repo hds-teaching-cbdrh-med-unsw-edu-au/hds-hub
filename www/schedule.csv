@@ -1,0 +1,13 @@
+﻿code,name,year,t1,t2,t3
+HDAT9100,Context for Health Data Science,2023,1,1,0
+HDAT9200,Statistical Foundations for Health Data Science,2023,1,0,1
+HDAT9300,Computing for Health Data Science,2023,1,0,1
+HDAT9400,Data Management & Curation,2023,0,1,1
+HDAT9500,Machine Learning I,2023,0,1,0
+HDAT9510,Machine Learning II ,2023,0,0,1
+HDAT9600,Statistical Modelling I ,2023,1,1,0
+HDAT9700,Statistical Modelling II,2023,0,1,1
+HDAT9800,Visualisation & Communication,2023,0,1,0
+HDAT9900,Dissertation,2023,1,1,1
+HDAT9910,Capstone,2023,1,0,0
+HDAT9000,Clinical Artificial Intelligence,2023,0,1,0

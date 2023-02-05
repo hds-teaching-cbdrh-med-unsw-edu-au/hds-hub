@@ -1,0 +1,14 @@
+"","calendarId","title","body","recurrenceRule","start","end","category","location","bgColor","color","borderColor"
+"1",1,"Sport","Go to sport every week","Every week","2023-02-05 20:00:00","2023-02-05 22:00:00","time",NA,NA,NA,NA
+"2",1,"Sport","Go to sport every week","Every week","2023-02-12 20:00:00","2023-02-12 22:00:00","time",NA,NA,NA,NA
+"3",1,"Sport","Go to sport every week","Every week","2023-02-19 20:00:00","2023-02-19 22:00:00","time",NA,NA,NA,NA
+"4",1,"Week-end","Week-end with friends",NA,"2023-02-11","2023-02-12","allday",NA,NA,NA,NA
+"5",2,"Project 1","Coding cool stuff",NA,"2023-02-06","2023-02-07","allday",NA,"#5E81AC","white","#5E81AC"
+"6",2,"Project 2","Coding cool stuff",NA,"2023-02-07","2023-02-10","allday",NA,"#5E81AC","white","#5E81AC"
+"7",2,"Project 3","Coding cool stuff",NA,"2023-02-29","2023-02-29","allday",NA,"#5E81AC","white","#5E81AC"
+"8",3,"Training 1","Learn programming",NA,"2023-02-14","2023-02-17","allday",NA,NA,NA,NA
+"9",3,"Training 2","Learn programming",NA,"2023-02-21","2023-02-23","allday",NA,NA,NA,NA
+"10",2,"Meeting","Meeting with John Smith",NA,"2023-02-20 14:00:00","2023-02-20 17:00:00","time",NA,NA,NA,NA
+"11",2,"Lunch","Lunch with Jane Doe",NA,"2023-02-24 12:00:00","2023-02-24 14:00:00","time","Some restaurant",NA,NA,NA
+"12",3,"Conference","Cool R conference",NA,"2023-02-27","2023-02-28","allday","Conference center",NA,NA,NA
+"13",4,"Mum birthday","Dont forget!!!",NA,"2023-02-03","2023-02-03","allday",NA,"#FAFAFA","#FF0000","#FF0000"

@@ -1,0 +1,13 @@
+---
+title: Meet the teaching team
+listing:
+  type: grid
+  grid-columns: 4
+  categories: false
+  contents:
+    - "people/*.qmd"
+---
+
+::: {.aside}
+![](images/Landscape__1.Col_Pos_CBDRH.jpg)
+:::

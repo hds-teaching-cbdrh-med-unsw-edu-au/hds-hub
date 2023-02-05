@@ -1,0 +1,54 @@
+---
+title: "Software and platforms"
+tbl-colwidths: [5,1,1,1]
+---
+
+## Overview of software and platforms 
+
+::: {.aside}
+![](images/Landscape__1.Col_Pos_CBDRH.jpg)
+:::
+
+::: column-body
+| Course | Content | Discussion | Programming | 
+|------|------|------|------|------|
+| [HDAT9100](courses.html#hdat9100) Context for Health Data Science                   | ![](images/ol.jpeg)     | ![](images/ol.jpeg)           |                            |
+| [HDAT9200](courses.html#hdat9200) Statistical Foundations for Health Data Science   | ![](images/ol.jpeg)     | ![](images/teams.png)         | ![](images/rstudio.png)    |
+| [HDAT9300](courses.html#hdat9300) Computing for Health Data Science                 | ![](images/teams.png)   | ![](images/teams.png)         | ![](images/python.png)     |
+| [HDAT9400](courses.html#hdat9400) Data Management & Curation                        | ![](images/ol.jpeg)     | ![](images/ol.jpeg)           | ![](images/sas.png)        |
+| [HDAT9500](courses.html#hdat9500) HDAT9500 Machine Learning I                       | ![](images/ol.jpeg)     | ![](images/ol.jpeg)           | ![](images/python.png)     |
+| [HDAT9510](courses.html#hdat9510) HDAT9510 Machine Learning II                      | ![](images/ol.jpeg)     | ![](images/ol.jpeg)           | ![](images/python.png)     |
+| [HDAT9600](courses.html#hdat9600) HDAT9600 Statistical Modelling I                  | ![](images/ol.jpeg)     |                               | ![](images/rstudio.png)    |
+| [HDAT9700](courses.html#hdat9700) HDAT9700 Statistical Modelling II                 | ![](images/gh-pages.png)| ![](images/teams.png)         | ![](images/rstudio.png)    |
+| [HDAT9800](courses.html#hdat9800) Visualisation & Communication                     | ![](images/gh-pages.png)| ![](images/teams.png)         | ![](images/rstudio.png)    |
+| [HDAT9901](courses.html#hdat9901) Dissertation                                      |                         | ![](images/teams.png)         |                            |
+| [HDAT9910](courses.html#hdat9910) Capstone                                          | ![](images/ol.jpeg)     | ![](images/teams.png)         |                            |
+| [HDAT9000](courses.html#hdat9000) Clinical AI                                       | ![](images/ol.jpeg)     | ![](images/teams.png)         |                            |
+
+:::
+
+## Detailed summary of software and platforms used in each course
+
+::: panel-tabset
+## HDAT9100{#hdat9100}
+
+### HDAT9100 Context for Health Data Science
+
+[![](images/sanja.jpeg) HDAT9100 is convened by [Sanja Lujic](people/sanja.html)]{.aside}
+
+## HDAT9200
+
+## HDAT9300
+
+## HDAT9400
+
+## HDAT9500
+
+## HDAT9600
+
+## HDAT9700
+
+## HDAT9800
+
+## HDAT9900
+:::

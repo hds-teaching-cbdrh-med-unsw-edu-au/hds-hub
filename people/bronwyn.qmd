@@ -1,0 +1,39 @@
+---
+title: "Bronwyn Brew Haasdyk"
+description: "Senior Research Fellow"
+image: ../images/bronwyn.jpeg
+---
+
+[![](../images/bronwyn.jpeg) Bronwyn convenes the dissertation course [HDAT9900/9901/9902](../courses.html#HDAT9901/9902/9903-Dissertation).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.haasdyk@unsw.edu.au">b.haasdyk@unsw.edu.au</a>]{.aside}
+
+ 
+## What publication are you most proud of?
+
+[Identifying preventable risk factors for hospitalised asthma in young Aboriginal children: a whole-population cohort study](http://dx.doi.org/10.1136/thoraxjnl-2020-216189)[^1]. 
+This was an analysis of a Western Australian linked dataset of Aboriginal kids and mums including hospital, emergency, mental health and sociodemographic data. It was a great opportunity to shine a light on pediatric asthma in a First Nations population and highlight the importance of reducing early respiratory infections and disadvantage.
+
+[^1]: Brew B, Gibberd A, Marks GB, Strobel N, Allen CW, Jorm L, Chambers G, Eades S, McNamara B. Identifying preventable risk factors for hospitalised asthma in young Aboriginal children: a whole-population cohort study. Thorax. 2021;76(6):539-46. [http://dx.doi.org/10.1136/thoraxjnl-2020-216189](http://dx.doi.org/10.1136/thoraxjnl-2020-216189)
+
+
+## What’s the most important take home message from your course?
+
+Take home message from Dissertations: have an attitude of learning as much as you can from your supervisors and any other researchers you come into contact with. Dissertations is a great opportunity for discovering if research is for you.
+
+
+## If you could go back in time, what bit of advice would you give to yourself as a student?
+Go out more!
+
+
+## Who would play you in the biopic of your life?
+
+<div class="grid-container-200">
+
+  <div class="item1-200">
+  <img src="https://m.media-amazon.com/images/M/MV5BMTg2NTk2MTgxMV5BMl5BanBnXkFtZTgwNjcxMjAzMTI@._V1_FMjpg_UX1000_.jpg" width="100">
+  </div>
+  
+  <div class="item2-200">
+  [Amy Adams](https://www.imdb.com/name/nm0010736/). Same age, same height, all round nice gal and she’s funny! 
+  </div>
+  
+</div>

@@ -1,0 +1,172 @@
+---
+title: "Course schedule"
+---
+
+## 2023 course schedule
+
+```{r .column-screen}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(kableExtra)
+library(utils)
+library(dplyr)
+library(gt)
+library(purrr)
+
+df <- utils::read.csv("www/schedule.csv") %>% 
+  mutate(
+    Course = paste(code, name),
+    link = paste0('https://timetable.unsw.edu.au/2023/', code, '.html'),
+    link = map(link, ~ htmltools::a(href = .x, "")),
+    link = map(link, ~ gt::html(as.character(.x))),
+    ilink = paste0("../courses.html#", gsub(" ", "-", tolower(Course))),
+    ilink = glue::glue("[{code}]({ilink})"),
+    ilink = map(ilink, ~ gt::md(.x)),
+    ) %>% 
+  select(ilink, name, t1, t2, t3, link)
+
+
+icon_fun <- function(icon, fill){
+  fontawesome::fa(icon, fill=fill) %>% 
+    gt::html()
+}
+
+gt(df) %>% 
+  text_transform(
+    locations = cells_body(columns = c(t1, t2, t3)),
+    fn = function(x){
+      ifelse(x==1,
+             icon_fun(icon = "check", fill='green'),
+             icon_fun(icon = "minus", fill='lightgrey')
+             )
+      }
+      ) %>% 
+  cols_label(
+    ilink = "Course",
+    name = "",
+    t1 = "Term 1",
+    t2 = "Term 2",
+    t3 = "Term 3",
+    link = ""
+  ) %>% 
+  tab_spanner(
+    label = "2023",
+    columns = 3:5
+  ) %>%
+  cols_align(
+    align = "right",
+    columns = link
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = c(t1, t2, t3)
+  ) %>% 
+  cols_width(
+    link ~ "50px"
+  )
+
+```
+
+::: {.aside}
+
+More information can be found by searching for the relevant course online at [timetable.unsw.edu.au](https://timetable.unsw.edu.au/2023/subjectSearch.html)    
+
+:::
+
+
+## Key dates
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-height: 8
+
+library(calendR)
+library(lubridate)
+
+# Current year
+year <- 2023
+
+# Number of days in current year
+ndays <- ifelse(lubridate::leap_year(year), 366, 365)
+
+# Store term start and end dates
+t1_start <- yday(dmy(paste0("13-02-", year))) # Term 1
+t1_end <- yday(dmy(paste0("11-05-", year)))
+
+t2_start <- yday(dmy(paste0("29-05-", year))) # Term 2
+t2_end <- yday(dmy(paste0("24-08-", year)))
+
+t3_start <- yday(dmy(paste0("11-09-", year))) # Term 3
+t3_end <- yday(dmy(paste0("07-12-", year)))
+
+# Census dates
+t1_cen <- yday(dmy(paste0("12-03-", year))) # Term 1
+t2_cen <- yday(dmy(paste0("25-06-", year))) # Term 2
+t3_cen <- yday(dmy(paste0("08-10-", year))) # Term 3
+
+# Results dates
+t1_res <- yday(dmy(paste0("18-05-", year))) # Term 1
+t2_res <- yday(dmy(paste0("31-08-", year))) # Term 2
+t3_res <- yday(dmy(paste0("14-12-", year))) # Term 3
+
+# Public holidays
+pub1 <- yday(dmy(paste0("01-01-", year)))
+pub2 <- yday(dmy(paste0("01-01-", year)))
+pub3 <- yday(dmy(paste0("26-01-", year)))
+pub4 <- yday(dmy(paste0("7-04-", year)))
+pub5 <- yday(dmy(paste0("8-04-", year)))
+pub6 <- yday(dmy(paste0("9-04-", year)))
+pub7 <- yday(dmy(paste0("10-04-", year)))
+pub8 <- yday(dmy(paste0("25-04-", year)))
+pub9 <- yday(dmy(paste0("11-06-", year)))
+pub10 <- yday(dmy(paste0("02-10-", year)))
+pub11 <- yday(dmy(paste0("25-12-", year)))
+pub12 <- yday(dmy(paste0("26-12-", year)))
+
+# Vector of length `ndays`
+events <- rep(NA, ndays)
+
+# Set the corresponding events
+events[t1_start:t1_end] <- "Term 1: 14 Feb - 12 May"
+events[t2_start:t2_end] <- "Term 2: 30 May - 25 Aug"
+events[t3_start:t3_end] <- "Term 3: 12 Sep - 8 Dec"
+events[c(t1_cen, t2_cen, t3_cen)] <- "Census dates"
+events[c(t1_res, t2_res, t3_res)] <- "Results released"
+events[c(pub1, pub2, pub3, pub4, pub5, pub6, pub7, pub8, pub9, pub10, pub11, pub12)] <- "Public holidays"
+
+
+# Desired order and colors
+desired_order <- factor(c("Term 1: 13 Feb - 11 May",
+                   "Term 2: 29 May - 24 Aug",
+                   "Term 3: 11 Sep - 7 Dec",
+                   "Census dates",
+                   "Results released",
+                   "Public holidays"))
+
+# Order the colors based on the desired order
+ordered_colors <- c("#82BB65", "#9AD27E", "#BDF6A3",
+                              "#4d9de0", "#ffc857",
+                              "#f283b6")[order(desired_order)]
+
+# Creating the calendar with a legend
+calendR(year = 2023,
+        start = "M",
+        weeknames = c('M', 'T', 'W', 'T', 'F', 'S', 'S'),
+        orientation = "landscape",
+        special.days = events,
+        special.col = ordered_colors,
+        legend.pos = "bottom",
+        title = "Academic calendar 2023")
+
+```
+
+::: {.aside}
+
+More information on the academic calendar can be found online at [student.unsw.edu.au/calendar](https://www.student.unsw.edu.au/calendar)    
+
+:::

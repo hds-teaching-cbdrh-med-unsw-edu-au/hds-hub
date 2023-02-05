@@ -1,0 +1,387 @@
+[
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Courses",
+    "section": "",
+    "text": "Analysis Software\n\n\nNone\n\n\nPrerequisites\n\n\nUndergraduate: Enrolment in 3831 Science (Medicine) HonoursPostgraduate: None\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9100\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9100.html\n\nThe Context of Health Data Science provides an introduction to how data are generated and used in a contemporary health system. We look at how health outcomes can be measured and reported in various forms of health data, and how these health data can reveal inequalities in health. The course describes the major sources of health data, including those relating to primary care, hospital stays and prescription medicines, and how this (and other) information can be used by the health data scientist to create evidence for policy and research.\nActivities are structured to foster a scientific, questioning attitude in the student. Students are encouraged to think critically about how health data are recorded, what this reveals about the underlying health delivery systems, and be creative in their use of health data sources to create or critically appraise evidence."
+  },
+  {
+    "objectID": "courses.html#hdat9200-statistical-foundations-for-health-data-science",
+    "href": "courses.html#hdat9200-statistical-foundations-for-health-data-science",
+    "title": "Courses",
+    "section": "HDAT9200 Statistical Foundations for Health Data Science",
+    "text": "HDAT9200 Statistical Foundations for Health Data Science\n\nAnalysis Software\n\n\nR/RStudio\n\n\nPrerequisites\n\n\nUndergraduate: Enrolment in 3831 Science (Medicine) HonoursPostgraduate: None\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9200\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9200.html\n\nHealth data is often complex and noisy. Obtaining actionable insights (or revealing the hidden signals) from such data requires the utilisation of probabilistic concepts. Thus a solid understanding of the principles of statistics is intrinsic to Health Data Science. The aim of this first course in probability theory is to introduce the foundations required to understand such phenomena.\nThe course design is highly innovative and novel. Statistical computing is used to gain a sound understanding of statistical theories and concepts. Specifically, this course draws on the practical application of Monte Carlo algorithms, which are a very effective method of statistical computing. Once this illustrative approach has (a posteriori) demonstrated a theory, it will then be stated formally.\nThe core content will be delivered through a flipped approach utilising audio-visual excerpts on the Moodle TELT platform, supported by presentations from Centre for Big Data Research in Health (CBDRH) experts. Statistical computing will be used as the process that drives the content. Peer instruction via discussion during face-to-face sessions will offer support in the form of collaborative learning. Active participation will be encouraged throughout, along with a reflective outlook."
+  },
+  {
+    "objectID": "courses.html#hdat9300-computing-for-health-data-science",
+    "href": "courses.html#hdat9300-computing-for-health-data-science",
+    "title": "Courses",
+    "section": "HDAT9300 Computing for Health Data Science",
+    "text": "HDAT9300 Computing for Health Data Science\n\nAnalysis Software\n\n\nPython\n\n\nPrerequisites\n\n\nUndergraduate: Enrolment in 3831 Science (Medicine) HonoursPostgraduate: None\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9300\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9300.html\n\nComputing now pervades nearly every aspect of modern life, including health care delivery and health services management. The objective of this course is to develop ‘computational thinking’ in health data science students, by providing you with a thorough and principled introduction to computer programming, algorithms, data structures and software engineering best practices. The ability to write clear, efficient and correct computer code is at the core of most data science practice and is a foundation skill set.\nIn this course, you will learn to program in the Python language through tackling health-related problems. Topics include data types, functions, data processing, simulation, software development and program testing and debugging. Theoretical principles are reinforced with extensive ‘hands-on’ coding in Python, including the NumPy and Pandas packages.\nThe course is accessed via www.openlearning.com. Core material will be delivered as short lectures and readings supported by interactive coding activities. Practical exercises will utilise Spyder/Jupyter Notebook documents."
+  },
+  {
+    "objectID": "courses.html#hdat9400-data-management-curation",
+    "href": "courses.html#hdat9400-data-management-curation",
+    "title": "Courses",
+    "section": "HDAT9400 Data Management & Curation",
+    "text": "HDAT9400 Data Management & Curation\n\nAnalysis Software\n\n\nSAS\n\n\nPrerequisites\n\n\nUndergraduate: Enrolment in 3831 Science (Medicine) HonoursPostgraduate: None\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9400\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9400.html\n\nThis course is designed to equip students with the skills required to collect or obtain data, design data management strategies aligned with best practice, and appreciate the day to day practicalities of data curation for sound data management. Students will develop data wrangling skills required to assemble data suitable for analysis and research purposes, including data from linkage projects. Data wrangling skills will focus on the key areas of data security, data exploration, documentation of data (for example data dictionaries) and data management, with the ultimate aim of creating analysis-ready datasets and ensuring reproducible results."
+  },
+  {
+    "objectID": "courses.html#hdat9500-machine-learning-i",
+    "href": "courses.html#hdat9500-machine-learning-i",
+    "title": "Courses",
+    "section": "HDAT9500 Machine Learning I",
+    "text": "HDAT9500 Machine Learning I\n\nAnalysis Software\n\n\nPython\n\n\nPrerequisites\n\n\nUndergraduate: Enrolment in 3831 Science (Medicine) HonoursPostgraduate: HDAT9200 and HDAT9300 (or COMP9021)\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9500\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9500.html\n\nHealthcare organisations have a vast amount of data: electronic medical records, claims, registries, medical images, and other types of digital health data. Machine learning techniques learn from previous experience in order to discover patterns and relationships in data, and have been found to perform extremely well in large datasets.\nThis course provides an introduction to machine learning techniques through a series of health applications.\nAlgorithms for supervised and unsupervised learning are covered, including linear regression and classification, tree-based methods, clustering, dimensionality reduction and neural networks.\nStudents will learn about the underlying supporting theory of these techniques, as well as gain the applied practical skills required to effectively apply these techniques to new health data problems."
+  },
+  {
+    "objectID": "courses.html#hdat9510-machine-learning-ii",
+    "href": "courses.html#hdat9510-machine-learning-ii",
+    "title": "Courses",
+    "section": "HDAT9510 Machine Learning II",
+    "text": "HDAT9510 Machine Learning II\n\nAnalysis Software\n\n\nPython\n\n\nPrerequisites\n\n\nPostgraduate: HDAT9500\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9510\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9510.html\n\nThis will be an advanced course on machine learning for health data scientists.\nThis course will cover advanced contemporary machine learning algorithms and methods.\nAlong with the theory, this course will cover a range of health applications for real-world translation and deployment.\nThis course is designed to build upon the content of HDAT9500 by further progressing the knowledge in the theory, technologies and solutions currently needed by Health Data Scientists working in the area of applied machine learning."
+  },
+  {
+    "objectID": "courses.html#hdat9600-statistical-modelling-i",
+    "href": "courses.html#hdat9600-statistical-modelling-i",
+    "title": "Courses",
+    "section": "HDAT9600 Statistical Modelling I",
+    "text": "HDAT9600 Statistical Modelling I\n\nAnalysis Software\n\n\nR/RStudio\n\n\nPrerequisites\n\n\nPostgraduate: HDAT9200\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9600\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9600.html\n\nThis course provides a sound grounding in the theory and practice of fitting statistical regression models, with particular focus on the flexibility of generalised linear models (GLMs). Starting with linear regression, a major theme of the course is best practice in model fitting, including thorough exploratory data analysis, model assumption checking, data preparation and transformation, including the use of imputation, and careful attention to model adequacy and diagnostics. Emphasis is given to content-aware, purposive model building and the use of Directed Acyclic Graphs (DAGs) of causal relations to inform model parameter selection. Non-linear, logistic, binomial and Poisson models for count data are also covered. Effect modifications (interactions) and their meaning in a health context are explored. The presentation and visualisation of statistical models is considered, with emphasis on the explanatory insights that can be gained from well-constructed models. The final part of the course covers basic time-series models, survival analysis and other time-to-event models."
+  },
+  {
+    "objectID": "courses.html#hdat9700-statistical-modelling-ii",
+    "href": "courses.html#hdat9700-statistical-modelling-ii",
+    "title": "Courses",
+    "section": "HDAT9700 Statistical Modelling II",
+    "text": "HDAT9700 Statistical Modelling II\n\nAnalysis Software\n\n\nR/RStudio\n\n\nPrerequisites\n\n\nPostgraduate: HDAT9200 and HDAT9600\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9700\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9700.html\n\nSophisticated modelling techniques are essential for the analysis of real-world health data. Building on Health Data Analytics: Statistical Modelling I (HDAT9600), this course expands the statistical toolkit and broadens students’ understanding of relevant statistical approaches for the analysis of realistically complex data structures and research questions. The course is aimed at those currently working or planning on working in health or a health-related field, and who are interested in applying advanced statistical methods to analyse complex data.\nTopics covered in this course include multilevel models for hierarchical data; analysis of time series and longitudinal data; quasi-experimental approaches for drawing causal inferences from observational data; multiple imputation for missing values; and simulation approaches for study planning and model evaluation.\nContent is delivered through a combination of online readings, expert guest lectures and practical hands-on tutorials. Statistical concepts are illustrated with a variety of health examples, and students will learn how to implement methods using leading statistical software. Lectures are followed by weekly exercises, which reinforce the learning and programming skills covered in the face-to-face tutorials."
+  },
+  {
+    "objectID": "courses.html#hdat9800-visualisation-communication",
+    "href": "courses.html#hdat9800-visualisation-communication",
+    "title": "Courses",
+    "section": "HDAT9800 Visualisation & Communication",
+    "text": "HDAT9800 Visualisation & Communication\n\nAnalysis Software\n\n\nR/RStudio\n\n\nPrerequisites\n\n\nPostgraduate: None\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9800\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9800.html\n\nHealth Data Scientists need to present information to audiences across a range of backgrounds and spanning a spectrum from naïve or non-practitioners of a discipline to highly informed and expert audiences. Effective communication across different media types is essential. Appropriate data visualisation techniques can greatly enhance communication and increase the effectiveness of communication. Increasingly the scientific community has become aware of problems regarding lack of transparency and reproducibility.\nThis course takes a toolbox approach to creating appropriate, reproducible and transparent analyses and visualisations. In the context of R, it presents useful best-practice data science analysis and visualisation techniques with a focus on different types of data visualisations.\nA basic understanding of how people process information can ensure communication remains effective to an audience with a disability."
+  },
+  {
+    "objectID": "courses.html#hdat990099019902-dissertation",
+    "href": "courses.html#hdat990099019902-dissertation",
+    "title": "Courses",
+    "section": "HDAT9900/9901/9902 Dissertation",
+    "text": "HDAT9900/9901/9902 Dissertation\n\nAnalysis Software\n\n\nProject dependent\n\n\nPrerequisites\n\n\nPostgraduate: HDAT9100, HDAT9400, HDAT9500, HDAT9700 and HDAT9800\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9900\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9900.html\n\nThe Dissertation is a total of 24 UoC. A combination of HDAT9900, HDAT9901, and HDAT9902 totalling 24 UoC must be completed over two, three or four terms.\nThe course consists of independent research with an academic supervisor. The learning from the Graduate Diploma scaffolds to this ‘real-world’ project. In addition to developing sound project management skills, this course facilitates the bigger picture - the Health Data Science pipeline is experienced from start to finish.\nSupport is given via weekly supervisory meetings, supplemented with additional workshops dependent on specific project requirements. An additional early checkpoint involves the development and submission of study protocol and literature review. The final outputs will mirror those of a real world academic setting. Specifically the production of a manuscript to the specifications of a peer reviewed journal relevant to the project and of publishable standard. The project is also to be disseminated orally via a 15 minute presentation (including 5 minutes of questions and answers).\nStudents are required to complete Graduate Diploma to a satisfactory standing to be admitted onto this course. The choice of project could either be selected from an offered list of projects or developed from students proposals, dependent on the availability of a suitable supervisor and agreement on project topic.\nStudents are required to complete 24uoc in Dissertation courses over a number of terms. This can be completed on a full-time or part-time basis."
+  },
+  {
+    "objectID": "courses.html#hdat9910-capstone",
+    "href": "courses.html#hdat9910-capstone",
+    "title": "Courses",
+    "section": "HDAT9910 Capstone",
+    "text": "HDAT9910 Capstone\n\nAnalysis Software\n\n\nR/Rstudio and/or Python\n\n\nPrerequisites\n\n\nPostgraduate: HDAT9100, HDAT9400, HDAT9500, HDAT9700 and HDAT9800\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9910.html\n\nThe learning from the Graduate Diploma (5372) scaffolds to this six unit of credit ‘desk-based’ research, capstone project. The overarching aim is to facilitate the bigger picture of Health Data Science (HDS); the student experiences the HDS pipeline from start-to-end. Thus, the student is presented with the opportunity to bring all the content of the Graduate Diploma together, realising the relative ordering and merits of each stage. This capstone has the advantage of allowing a further 18 units of credit of broadening electives to be undertaken.\nThe capstone project involves completing extensive, desk-based, independent research tasks, requiring the use of the R and/or Python programming languages. An entire HDS project has been constructed and sliced into the respective stages of the HDS pipeline. At each stage, the student has the option of completing minor or major tasks to progress to the next stage. For example, at the ‘Curation’ stage, a minor task might be a short-written report (circa 1,000 words) identifying the issues to be addressed. A major task would involve preparation of a data management plan (DMP; circa 3,000 words). Each task will be assigned a point score based on its complexity, proportional to the expected (notional) time required to complete the task. To complete the course, will require successful completion of three minor and two major tasks.\nStudents are required to complete Graduate Diploma in Health Data Science (5372) to a satisfactory standing to be admitted onto this course."
+  },
+  {
+    "objectID": "courses.html#hdat9000-clinical-artificial-intelligence",
+    "href": "courses.html#hdat9000-clinical-artificial-intelligence",
+    "title": "Courses",
+    "section": "HDAT9000 Clinical Artificial Intelligence",
+    "text": "HDAT9000 Clinical Artificial Intelligence\n\nAnalysis Software\n\n\n\n\n\nPrerequisites\n\n\nPostgraduate: HDAT9100, HDAT9400, HDAT9500, HDAT9700 and HDAT9800\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9900.html\n\nThe course will start by explaining the fundamental concepts of AI systems and what they can and cannot do. This will be followed by an examination of the idiosyncrasies of AI for healthcare practice covering electronic medical records data (including images, clinical notes, pathology and patient reported outcomes), clinical settings and workflows, as well as the ethical, social, and legal issues posed by the use of AI technologies in clinical practice. Students will generate and discuss a survey of major AI solutions in healthcare practice. The course will then provide students with best-practice guidance, methods and tools on when to use AI to improve patient care, how to deploy an AI project pipeline, how to critically assess the performance and impact of the proposed AI solution and what pitfalls to avoid."
+  },
+  {
+    "objectID": "deleteme.html",
+    "href": "deleteme.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "Bronwyn convenes the dissertation course HDAT9900/9901/9902.  b.haasdyk@unsw.edu.au]"
+  },
+  {
+    "objectID": "deleteme.html#what-publication-are-you-most-proud-of",
+    "href": "deleteme.html#what-publication-are-you-most-proud-of",
+    "title": "Untitled",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\n1."
+  },
+  {
+    "objectID": "deleteme.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "deleteme.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Untitled",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?"
+  },
+  {
+    "objectID": "deleteme.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "deleteme.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Untitled",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\n\n\n\n\n\nname."
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "Frequently Asked Questions",
+    "section": "",
+    "text": "How do I enrol into courses?\n\n\n\n\n\nIf you are enroling for the first time please visit How to Enrol as a New Student at UNSW.\nFor annual enrolment and class registration please visit Annual Enrolment page\nIf you are enrolling in elective courses for MScHDS degree and are getting a message about not meeting enrolment requirements, please email MScHDS@unsw.edu.au and the Program Director will provide you with supporting information.\n\n\n\n\n\n\n\n\n\nWho do I contact if I need help?\n\n\n\n\n\nNucleus – Studnt Hub – provides centralised systems to help with enrolment, internal program transfer (IPT), program progression check, recognition of prior learning (RPL), Early Exit/Graduation request, late enrolment, overload studies, requisite waiver, review of results, fee remission, program leave, deferral, discontinuation, confirmation of enrolment, reduce study load. Other questions about the program, choice of electives and other queries or concerns can be emailed to the Program Director at MScHDS@unsw.edu.au or their email address.\n\n\n\n\n\n\n\n\n\nWhat does articulation mean?\n\n\n\n\n\nHealth Data science programs of Graduate Certificate Graduate Diploma Masters Masters with Extension can articulate with each other. This means students in the Graduate Certificate can transfer to the Graduate Diploma or the Masters degree, or vice versa (exit with a lower award).\nArticulation pathway towards a higher degree: GCer (7372) > GDip (5372) > MSc (9372) > MSc (Ext) (9373)\nExit points: MSc (Ext) (9373) > MSc (9372) > GDip (5372) > GCer (7372)\n\n\n\n\n\n\n\n\n\nWhat is the difference between dissertation and capstone/elective pathway?\n\n\n\n\n\nThe MSc Health Data Science offers a choice between a 24 UoC workplace/internship research dissertation (full-time or part-time options) or a 6 UoC capstone project plus 18 UoC electives (from a selection of over 20 courses – see Handbook). The choice of a pathway depends on your desire to work independently on a larger project (dissertation) or a more pre-defined research project (capstone). Students wishing to progress towards a PhD are encouraged to enrol in a dissertation pathway.\nGaining a place in a dissertation is competitive and at the discretion of both the course convenor/s and the supervisor offering a particular dissertation project.\nIn order to enrol into dissertation subjects (HDAT9900/9901/9902) you will need to complete the core courses of the Grad Certificate and Grad Diploma of Health Data Science or have been granted an exemption for courses by the MSc program authority. For more information see Team HDS space and select 3. For students considering a dissertation.\n\n\n\n\n\n\n\n\n\nWhats the difference between full-time vs part time study load?\n\n\n\n\n\nAll courses are measured in whole Units Of Credit (UOC). Full-time enrolment for one year is defined as 48 UOC with at least one enrolment in each term. Domestic students wishing to be considered full-time need to enrol in a minimum of 12 UOC each term (i.e., 2 subjects), or 36 UOC across three standard terms with at least one course enrolment in each term.\n\n\n\n\n\n\n\n\n\nWhich courses are offered when?\n\n\n\n\n\nThe majority of HDAT core courses run twice per year, except for HDAT9500 and HDAT9800. Check out the calendar page to see the course running order for upcoming terms\n\n\n\n\n\n\n\n\n\nHow do I apply for program leave?\n\n\n\n\n\nYou can apply for program leave if you want to take a leave of absence from your program of up to 1 year and come back to your studies after taking leave. undergraduate or postgraduate students. It is available to international students with certain Program leave is for enrolled domestic conditions. For more information visit the Program Leave page."
+  },
+  {
+    "objectID": "faq.html#course-level",
+    "href": "faq.html#course-level",
+    "title": "Frequently Asked Questions",
+    "section": "Course Level",
+    "text": "Course Level\n\n\n\n\n\n\nWhen can I access course materials?\n\n\n\n\n\nCourse materials are hosted on Open Learning, class Teams spaces or class websites, depending on the course. See the software and platforms page for more detail. Access to Open Learning will be either via Moodle or Teams. Yours course convenors will provide you with more information. All HDAT courses go ‘live’ by Friday 5pm of O-week (Friday prior to the semester start date). Materials are released on a weekly basis thereafter.\n\n\n\n\n\n\n\n\n\nHow can I access course materials?\n\n\n\n\n\nThis will depend on the course so please follow the instructions from your convenors. They will make an announcement via Teams and/or Moodle about the release of weekly materials. Check out the software and platforms page to see the platforms used for each course.\n\n\n\n\n\n\n\n\n\nHow many hours per week should I dedicate to my studies?\n\n\n\n\n\nThe normal workload expectations of a student are approximately 25 hours per term for each UOC (150 hours total for 6 UOC course), including class contact hours, other learning activities, preparation and time spent on all assessable work.\n\n\n\n\n\n\n\n\n\nWhe can I drop a course without financial penalty?\n\n\n\n\n\nCensus date is Sunday of Week 4 each term, and you can drop courses without financial or academic penalty before then. Key dates can be found at UNSW Key Dates for Students | UNSW Current Students.\n\n\n\n\n\n\n\n\n\nWhen can I expect feedback on my assessment?\n\n\n\n\n\nAssessment tasks completed within the teaching period of a course, other than a final assessment, will be assessed and students provided with feedback, within 10 working days of submission, under normal circumstances.\n\n\n\n\n\n\n\n\n\nHow do I apply for special consideration (SC)?\n\n\n\n\n\nYou are encouraged to apply for SC when their circumstances are short-term, serious, and unavoidable. They must be circumstances that: * Were unexpected and beyond your control and; * Caused disturbance to academic work by a substantial degree and; * Could not have reasonably been anticipated, avoided or guarded against by you and either; * Occurred during a critical study or assessment period and lasted at least 3 consecutive days or a total of 5 days within the critical study period or; * Prevented the ability to complete, attend or submit an assessment task for a specific date (e.g., final exam, in class test/quiz, in class presentation)\nYou can read more about the special consideration process and how to apply on the UNSW Special Consideration page.\n\n\n\n\n\n\n\n\n\nWho do I contact if I need help?\n\n\n\n\n\nFor course related questions please contact your course convenor in the first instance. You can also email the Program Director using their email (s.lujic@unsw.edu.au), or email our shared health data science email MScHDS@unsw.edu.au."
+  },
+  {
+    "objectID": "faq.html#general",
+    "href": "faq.html#general",
+    "title": "Frequently Asked Questions",
+    "section": "General",
+    "text": "General\n\n\n\n\n\n\nWhere to find us\n\n\n\n\n\nAll our teaching staff are located at the Centre for Big Data Research in Health, Faculty of Medicine. Physical location is: AGSM Building (G27), Gate 11, Botany St, UNSW Sydney Campus, Kensington NSW 2052\n\n\n\n\n\n\ngoogle map codes for website\n\n\n\n\n\n\n\n\n\n\n\n\nHow large is the HDS cohort?\n\n\n\n\n\nWe currently have around 150 students across various stage of their health data science degree.\n\n\n\n\n\n\n\n\n\nWhere is good to eat and drink on campus?\n\n\n\n\n\n\nFor coffee\n\nOn upper campus: The Little Marionette, XS Espresso, The Courtyard Café, Caffe Brioso\nOn middle campus: Penny Lane, Plume Café\n\n\n\nFor food\n\nOn upper campus: Mathews food court (including Stockmarket for salads, Sushi Roll, Laksa Delight, Classic Kebab, Gradueat), Pho House, Courtyard Café at AGSM\nOn lower campus: University Terrace (Mamak Village, Stellini Pasta Bar, Guzman Y Gomez, Yallah), Roundhouse, Thoughtful foods\n\nView on map\n\n\n\n\n\n\n\n\n\n\nWho do I contact if I need help?\n\n\n\n\n\nUNSW has a rage of support services available for students. Visit the Student Support website to find a list of key services and links on how to access them."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Health Data Science Student Hub\n\n\n| Master of Science in Health data Science\n| Clinical Artificial Intelligence\n| Continuous Professional development\n\n\n\n\n\n\n\n\n\nThe Master of Science in Health Data Science will prepare you to find the right data, unlock hidden insights and use this information to better support clinical care, inform health policy and improve population health. This degree covers the entire pipeline from comprehension of complex health issues through to data wrangling and management, machine learning, data analytics, data modelling and data communication.\n\n\nAt the Centre for Big Data Research in Health (CBDRH) we aim to enhance the health and wellbeing of all, by maximising the productive use of all possible sources of health big data in medical research.\n\n\nOur master’s degree, graduate diploma and graduate certificate in health data science are pioneering programs that examine data-driven solutions to complex health problems. At UNSW, we’re leading this new approach to healthcare."
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "Meet the teaching team",
+    "section": "",
+    "text": "Andrew Blance\n\n\nSenior Lecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlanca Gallego Luxan\n\n\nAssociate Professor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBronwyn Brew Haasdyk\n\n\nSenior Research Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeidi Welberry\n\n\nResearch Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMark Hanly\n\n\nLecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOscar Perez Concha\n\n\nSenior Lecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSanja Lujic\n\n\nLecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTim Churches\n\n\nHealth Data Scientist\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people/and.html",
+    "href": "people/and.html",
+    "title": "Andrew Blance",
+    "section": "",
+    "text": "a.blance@unsw.edu.au\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis enim lobortis. Libero enim sed faucibus turpis in eu mi bibendum. Odio ut enim blandit volutpat. Posuere ac ut consequat semper viverra nam libero justo laoreet. Scelerisque in dictum non consectetur. Dolor sit amet consectetur adipiscing elit ut. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Odio aenean sed adipiscing diam donec adipiscing. Eu lobortis elementum nibh tellus molestie nunc non blandit.\nVelit egestas dui id ornare. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Mauris pharetra et ultrices neque. Mus mauris vitae ultricies leo integer malesuada nunc. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Donec pretium vulputate sapien nec. At varius vel pharetra vel turpis nunc eget lorem. Pretium quam vulputate dignissim suspendisse. Lacinia at quis risus sed vulputate odio. Fusce id velit ut tortor pretium viverra. Diam ut venenatis tellus in metus vulputate eu. Ultricies mi eget mauris pharetra. Interdum consectetur libero id faucibus nisl tincidunt. Mollis nunc sed id semper risus in hendrerit gravida rutrum."
+  },
+  {
+    "objectID": "people/blanca.html",
+    "href": "people/blanca.html",
+    "title": "Blanca Gallego Luxan",
+    "section": "",
+    "text": "b.gallego@unsw.edu.au\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis enim lobortis. Libero enim sed faucibus turpis in eu mi bibendum. Odio ut enim blandit volutpat. Posuere ac ut consequat semper viverra nam libero justo laoreet. Scelerisque in dictum non consectetur. Dolor sit amet consectetur adipiscing elit ut. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Odio aenean sed adipiscing diam donec adipiscing. Eu lobortis elementum nibh tellus molestie nunc non blandit.\nVelit egestas dui id ornare. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Mauris pharetra et ultrices neque. Mus mauris vitae ultricies leo integer malesuada nunc. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Donec pretium vulputate sapien nec. At varius vel pharetra vel turpis nunc eget lorem. Pretium quam vulputate dignissim suspendisse. Lacinia at quis risus sed vulputate odio. Fusce id velit ut tortor pretium viverra. Diam ut venenatis tellus in metus vulputate eu. Ultricies mi eget mauris pharetra. Interdum consectetur libero id faucibus nisl tincidunt. Mollis nunc sed id semper risus in hendrerit gravida rutrum."
+  },
+  {
+    "objectID": "people/bronwyn.html",
+    "href": "people/bronwyn.html",
+    "title": "Bronwyn Brew Haasdyk",
+    "section": "",
+    "text": "Bronwyn convenes the dissertation course HDAT9900/9901/9902.  b.haasdyk@unsw.edu.au"
+  },
+  {
+    "objectID": "people/bronwyn.html#what-publication-are-you-most-proud-of",
+    "href": "people/bronwyn.html#what-publication-are-you-most-proud-of",
+    "title": "Bronwyn Brew Haasdyk",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\nIdentifying preventable risk factors for hospitalised asthma in young Aboriginal children: a whole-population cohort study1. This was an analysis of a Western Australian linked dataset of Aboriginal kids and mums including hospital, emergency, mental health and sociodemographic data. It was a great opportunity to shine a light on pediatric asthma in a First Nations population and highlight the importance of reducing early respiratory infections and disadvantage."
+  },
+  {
+    "objectID": "people/bronwyn.html#whats-the-most-important-take-home-message-from-your-course",
+    "href": "people/bronwyn.html#whats-the-most-important-take-home-message-from-your-course",
+    "title": "Bronwyn Brew Haasdyk",
+    "section": "What’s the most important take home message from your course?",
+    "text": "What’s the most important take home message from your course?\nTake home message from Dissertations: have an attitude of learning as much as you can from your supervisors and any other researchers you come into contact with. Dissertations is a great opportunity for discovering if research is for you."
+  },
+  {
+    "objectID": "people/bronwyn.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "people/bronwyn.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Bronwyn Brew Haasdyk",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?\nGo out more!"
+  },
+  {
+    "objectID": "people/bronwyn.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "people/bronwyn.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Bronwyn Brew Haasdyk",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\n\n\n\n\n\nAmy Adams. Same age, same height, all round nice gal and she’s funny!"
+  },
+  {
+    "objectID": "people/heidi.html",
+    "href": "people/heidi.html",
+    "title": "Heidi Welberry",
+    "section": "",
+    "text": "Heidi convenes the course HDAT9600 Statistical modelling I.  h.welberry@unsw.edu.au"
+  },
+  {
+    "objectID": "people/heidi.html#what-publication-are-you-most-proud-of",
+    "href": "people/heidi.html#what-publication-are-you-most-proud-of",
+    "title": "Heidi Welberry",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\nI am really proud of my paper on psychotropic prescribing among patients with dementia entering residential care1.\nThis paper was the final paper I completed for my PhD and combined several areas of interest including dementia, aged care and primary care. It also addressed a really important topical issue that emerged from the Royal Commission into Aged Care Quality and Safety, namely the overuse of chemical restraints in aged care.\nIt was selected as a highlighted paper in the Medical Journal of Australia with an accompanying invited podcast which was something I had never done before:"
+  },
+  {
+    "objectID": "people/heidi.html#whats-the-most-important-take-home-message-from-your-course",
+    "href": "people/heidi.html#whats-the-most-important-take-home-message-from-your-course",
+    "title": "Heidi Welberry",
+    "section": "What’s the most important take home message from your course?",
+    "text": "What’s the most important take home message from your course?\nThere is not always a clear right or wrong with model building, but I think it is always important to make sure you understand very clearly what question it is you are trying to answer and then think hard about if the model you are building is going to answer the question well enough and equally enough for all groups of interest.\nThese are not my words but come from a statistician George Box2:\n\nAll models are approximations. Assumptions, whether implied or clearly stated, are never exactly true. All models are wrong, but some models are useful. So the question you need to ask is not “Is the model true?” (it never is) but “Is the model good enough for this particular application?”"
+  },
+  {
+    "objectID": "people/heidi.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "people/heidi.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Heidi Welberry",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?\nI think this depends on which “student me” I am talking to as I have completed three degrees at three completely separate life stages. To the undergraduate me in my early twenties I would definitely say “Be more confident to ask lots of questions and admit when you don’t understand” and “Be more organised and don’t leave everything to the last minute”. To the older me completing postgraduate studies whilst also juggling full-time work or small children I would say “Don’t be too hard on yourself, you are doing the best you can” and the mantra I have had to come to live by: “Don’t let the perfect be the enemy of the good”."
+  },
+  {
+    "objectID": "people/heidi.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "people/heidi.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Heidi Welberry",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\n\n\n\n\n\nI have always liked Claudia Karvan. I don’t think she looks especially like me but she is a brown-haired Aussie and comes across as down to earth. She has been in some classic Australian TV shows that I grew up with."
+  },
+  {
+    "objectID": "people/mark.html",
+    "href": "people/mark.html",
+    "title": "Mark Hanly",
+    "section": "",
+    "text": "Mark is a lecturer and convenor on the course HDAT9700 statistical modelling II.  m.hanly@unsw.edu.au"
+  },
+  {
+    "objectID": "people/mark.html#what-publication-are-you-most-proud-of",
+    "href": "people/mark.html#what-publication-are-you-most-proud-of",
+    "title": "Mark Hanly",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\nThe paper that comes to mind is Modelling vaccination capacity at mass vaccination hubs and general practice clinics: a simulation study1 We started this paper in early 2021, when it became clear that vaccination hubs were going to be an important part of the COVID-19 mass vaccination program. At the time, there was limited information available on the logistics of delivering vaccinations at scale so in this study we used a special class of model—queue network models—to try to figure out the sweet spot between number of vaccinations per day, staffing levels and target processing times.\nI love this paper because it was addressing a very real and practical question. Before starting the I spent time at the Royal Prince Alfred Hospital COVID Vaccination Clinic speaking to the health staff preparing and delivering vaccinations to better understand the process we were modelling. I also presented the completed work to the NSW Health Sydney Local Health District, as they prepared to set up their mass vaccination hub at Olympic Park.\nThe other thing I thought went well with this paper is the many ways we made the work accessible. To accompany the analysis we developed a shiny app that allows users to rerun our models, or to run alternative queuing models based on their own circumstances (number of staff, target daily vaccinations etc). As a companion to the academic paper, we also published an article in The Conversation to help share the lessons from our work as broadly as possible. Finally, all of the code from the analysis was made available on GitHub, following best practice for open science and reproducibility."
+  },
+  {
+    "objectID": "people/mark.html#whats-the-most-important-take-home-message-from-your-course",
+    "href": "people/mark.html#whats-the-most-important-take-home-message-from-your-course",
+    "title": "Mark Hanly",
+    "section": "What’s the most important take home message from your course?",
+    "text": "What’s the most important take home message from your course?\nIn Stats Modelling II we cover a range of modelling techniques but the modelling approach always depends on the question and the data. So I’d say the most important lesson is that before doing any analysis you need to be able to fully articulate your research question and understand the available data source."
+  },
+  {
+    "objectID": "people/mark.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "people/mark.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Mark Hanly",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?\nHmm. I studied maths and statistics in a way that was almost entirely chalk-and-talk. I would say, learn the stats software at the same time—that’ll make the theory easier!"
+  },
+  {
+    "objectID": "people/mark.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "people/mark.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Mark Hanly",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\n\n\n\n\n\nI reckon Simon Pegg could pull off both the look and the sense of affable confusion."
+  },
+  {
+    "objectID": "people/oscar.html",
+    "href": "people/oscar.html",
+    "title": "Oscar Perez Concha",
+    "section": "",
+    "text": "Oscar convenes the dissertation course HDAT9500.  o.perezconcha@unsw.edu.au"
+  },
+  {
+    "objectID": "people/oscar.html#what-publication-are-you-most-proud-of",
+    "href": "people/oscar.html#what-publication-are-you-most-proud-of",
+    "title": "Oscar Perez Concha",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\nIncorporating real-world evidence into the development of patient blood glucose prediction algorithms for the ICU1.\nGlycemic control is an important component of critical care. In this paper, we presented a data-driven method for predicting intensive care unit (ICU) patient response to glycemic control protocols while accounting for patient heterogeneity and variations in care. In particular, we trained and validated a gradient-boosted tree machine learning (ML) algorithm to forecast patient blood glucose and a 95% prediction interval at 2-hour intervals. Our forecasting model using routinely collected EMRs achieved performance comparable to previous models developed in planned research studies using continuous blood glucose monitoring. This paper demonstrates that EMRs can be used to train ML algorithms that may be suitable for incorporation into ICU decision support systems."
+  },
+  {
+    "objectID": "people/oscar.html#whats-the-most-important-take-home-message-from-your-course",
+    "href": "people/oscar.html#whats-the-most-important-take-home-message-from-your-course",
+    "title": "Oscar Perez Concha",
+    "section": "What’s the most important take home message from your course?",
+    "text": "What’s the most important take home message from your course?\nTake home message: Learn “how to learn”. That is, rather than just learning a set of machine learning techniques, or how to program in Python, we need to know how to learn what we do not know. For example, it is important to learn how to use the application programming interface (API) documentation and specifications. Or how to interpret what we read from a tutorial or an AI book. This way, the world is our oyster and we are ready to learn new concepts, techniques or programming languages."
+  },
+  {
+    "objectID": "people/oscar.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "people/oscar.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Oscar Perez Concha",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?\n\nRead the material before class every week.\nMake the most of the lectures and tutorials.\nTry to understand the concepts/algorithms rather than memorizing without understanding."
+  },
+  {
+    "objectID": "people/oscar.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "people/oscar.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Oscar Perez Concha",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\n\n\n\n\n\nÓscar Isaac Hernández Estrada."
+  },
+  {
+    "objectID": "people/sanja.html",
+    "href": "people/sanja.html",
+    "title": "Sanja Lujic",
+    "section": "",
+    "text": "s.lujic@unsw.edu.au\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis enim lobortis. Libero enim sed faucibus turpis in eu mi bibendum. Odio ut enim blandit volutpat. Posuere ac ut consequat semper viverra nam libero justo laoreet. Scelerisque in dictum non consectetur. Dolor sit amet consectetur adipiscing elit ut. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Odio aenean sed adipiscing diam donec adipiscing. Eu lobortis elementum nibh tellus molestie nunc non blandit.\nVelit egestas dui id ornare. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Mauris pharetra et ultrices neque. Mus mauris vitae ultricies leo integer malesuada nunc. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Donec pretium vulputate sapien nec. At varius vel pharetra vel turpis nunc eget lorem. Pretium quam vulputate dignissim suspendisse. Lacinia at quis risus sed vulputate odio. Fusce id velit ut tortor pretium viverra. Diam ut venenatis tellus in metus vulputate eu. Ultricies mi eget mauris pharetra. Interdum consectetur libero id faucibus nisl tincidunt. Mollis nunc sed id semper risus in hendrerit gravida rutrum."
+  },
+  {
+    "objectID": "people/tim.html",
+    "href": "people/tim.html",
+    "title": "Tim Churches",
+    "section": "",
+    "text": "Tim.Churches@inghaminstitute.org.au\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis enim lobortis. Libero enim sed faucibus turpis in eu mi bibendum. Odio ut enim blandit volutpat. Posuere ac ut consequat semper viverra nam libero justo laoreet. Scelerisque in dictum non consectetur. Dolor sit amet consectetur adipiscing elit ut. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Odio aenean sed adipiscing diam donec adipiscing. Eu lobortis elementum nibh tellus molestie nunc non blandit.\nVelit egestas dui id ornare. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Mauris pharetra et ultrices neque. Mus mauris vitae ultricies leo integer malesuada nunc. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Donec pretium vulputate sapien nec. At varius vel pharetra vel turpis nunc eget lorem. Pretium quam vulputate dignissim suspendisse. Lacinia at quis risus sed vulputate odio. Fusce id velit ut tortor pretium viverra. Diam ut venenatis tellus in metus vulputate eu. Ultricies mi eget mauris pharetra. Interdum consectetur libero id faucibus nisl tincidunt. Mollis nunc sed id semper risus in hendrerit gravida rutrum."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Health Data Science Student Blog",
+    "section": "",
+    "text": "Balancing life and study\n\n\n\n\n\n\n\nHealth Data Science\n\n\nwork-life balance\n\n\n\n\nBalancing work life balance\n\n\n\n\n\n\nFeb 6, 2022\n\n\nJason Meyer\n\n\n\n\n\n\n  \n\n\n\n\nWinning the SAS Cortex Analytics Simulation Challenge\n\n\n\n\n\n\n\nHealth Data Science\n\n\nSAS\n\n\nCortex\n\n\n\n\nThis is a short post about my participation in the SAS Cortex Analytics Simulation 5 Day Challenge (hereafter, Cortex) in April 2022. Luckily, I became the 1st place winner in the competition. It is not a direct application of what we have learned in the HDS program to the formal job scene. However, I think it can still provide you some idea of how much knowledge we can use outside the classes. Please also see the post by Lucia Biasi from SAS Australia for some details of the interview on me about my experience.\n\n\n\n\n\n\nJan 13, 2022\n\n\nManny Adachi\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023-01-13-sas-cortex/index.html",
+    "href": "posts/2023-01-13-sas-cortex/index.html",
+    "title": "Winning the SAS Cortex Analytics Simulation Challenge",
+    "section": "",
+    "text": "mamiya_adachi@yahoo.co.jp\n\n\n https://www.linkedin.com/in/mamiyaad/\n\n\n\n\n\n\nManny Adachi is an aspiring data scientist from Japan in the Master’s program in Health Data Science. His interests are in motorcycle touring, traveling, and of course data science!!]\n\nWhat is Cortex?\nCortex is an analytics simulation game developed by SAS and HEC Montreal. It tests participants’ predictive modeling skills using a real-life problem as they compete against peers. The game scenario was to help a fictitious non-profit organization which needed to figure out who to contact from a list of potential donors. Using SAS Enterprise Miner, participants built a predictive model and generated a contact list to maximise the surplus amount (i.e. donation amount – cost of contacting). For the duration of Cortex, participants were allowed to revise the contact list up to around 30 times. The prior versions were also maintained in the system so participants are able to select their best contact list later on.\n\n\nWhat did I learn through Cortex?\nIt was my first and fun experience using a GUI (Graphic User Interface)-based tool to construct a pipeline of data cleaning, exploratory data analysis, modeling, and testing. The Cortex GUI allows users to interact with tools through icons, menus, and mouse. Therefore, it is more intuitive for the uses to have a control of the tool than entirely coding the required tasks. Although the tools we used in the school assignments such as Jupyter Notebook, R Studio, and SAS Studio have GUI components, with Cortex we could complete the tasks mostly without coding. It was, of course, way more convenient than mostly coding like we did for the school assignments. I could spend more time on thinking how to optimize the surplus amount (e.g., comparing the result using different base models and (hyper)parameters, how to minimize overfitting, deciding where to cut the list from the model (*cutting was done manually and still acceptable)).\n\n\n\nA pipeline diagram constructed on Cortex by Harry Ngo, a participant back in 2020. My final pipeline and final model were different from the above, but it should provide you a sufficient visualization of how things went\n\n\nSo, am I here just as a shill and say how brilliant the SAS platform was? No (although I know that I am already helping them…). Instead, I really want to emphasize that what ends up making the difference sometimes are something beyond knowing how to code a fancy and complex statistical or machine learning model. In my case during Cortex, what helped me were (1) the base knowledge from HDS about the characteristics of each machine learning model, (2) how to read the training / validation score graphs, (3) the strategy of submission time to minimize the other competitors’ time to revise their lists (i.e., submitting the best list when the game was approaching to the end and other competitors appeared satisfied with the moderate but not the best list), and (4) the persistency until the very last minute of the game.\nHere is a little more comment about (1). Although I cannot mention which model I used for my final contact list, I can say it helped me avoid overfitting my model and possibly bluff the other competitors with the list from the overfit model. It was one example of how we can apply our knowledge from HDS program to strategize our action.\n Learn more about the Cortex analytics simulation game at www.sas.com/cortex\n\n\nWinning the game, then what?\nAs the winner, I was offered the badge and 4-week internship at SAS Australia. During the internship I was able to (1) connect with SAS members in various teams such as technical support, pre / post-sales, delivery consulting, and customer success and learn about their roles and offerings, (2) access the study materials for SAS Viya programming associate exam for free, and (3) earn the certificate after passing the exam. Beside the time to connect with SAS members, I spent the majority of time studying for the exam, so it is indeed a large part of what I have learned through the internship. One thing I hoped to do was to practice how to integrate the models that we build with external sources such as Python or R. The integration is one of the key highlights on SAS Viya’s capability.\nI have to confess that I did not know much about the company and what they offer until several days after my internship started. (Please don’t blame me on this since obviously I got this internship opportunity without any interviews). In short, they offer the solutions which support the operations in the whole analytics life cycle, and they have been the long-established and leading vendor of the statistical data analysis software for various sectors such as government / public service, healthcare, banking / finance, and academia. You can also learn more about SAS from a post by Emmett Boudreau.\n\n\nConclusion\nI definitely recommend other students to participate in the Cortex competition hosted by SAS (or any hackathon events). It gives us not only the data science experience outside of class, but also the chance to have our hands on the analytics platforms used in the industry and connect with other participants and sometimes people from industry."
+  },
+  {
+    "objectID": "posts/2023-02-06-balancing-life-and-study/index.html",
+    "href": "posts/2023-02-06-balancing-life-and-study/index.html",
+    "title": "Balancing life and study",
+    "section": "",
+    "text": "jmeyer2482@gmail.com"
+  },
+  {
+    "objectID": "posts/2023-02-06-balancing-life-and-study/index.html#how-it-started",
+    "href": "posts/2023-02-06-balancing-life-and-study/index.html#how-it-started",
+    "title": "Balancing life and study",
+    "section": "How it started",
+    "text": "How it started\nI embarked on the journey of completing my Masters in Health Data Science in late 2018. I had been mulling over the idea of post grad study for a while at that point but had not seen anything that really took my interest. I think I might have actually seen an add for this degree on Facebook and decided to take closer look. The appeal for me was the mix of data science with a clinical skew that would have application in my current work.\nI put in an application and was successful to start in the first term of 2019. At the time I was a full fee paying student (via HECS). I decided I would just do one subject per term to make sure I could manage the workload without impacting the rest of family too much."
+  },
+  {
+    "objectID": "posts/2023-02-06-balancing-life-and-study/index.html#managing-obstacles",
+    "href": "posts/2023-02-06-balancing-life-and-study/index.html#managing-obstacles",
+    "title": "Balancing life and study",
+    "section": "Managing Obstacles",
+    "text": "Managing Obstacles\n\nTime\nI was fortunate enough that I was able to negotiate flexible working hours which allowed me to work a full-time load over 4 days which left me the Friday every week to study. Thanks to the technological aspirations of the course, pretty much all the content was available online and there was only a few subject I missed the tutes for which I made up for by engaging online.\nWeek to week I would work through what I could during the evenings when I had free time and then finish things off on the Friday. Some weeks I would have the Friday free to attend to other duties because I already had experience in the course content for that week. Then I would generally spend extra time on the weekends to get on top of assignment deadlines.\nAt the start of each term I would map out the course deadlines on my calendar. I would make a plan for spending extra time on the assignments (I always used it). The week to week work was generally okay but if it was heavy and you got an assignment on top, it made it more difficult to keep on top. I always prioritised work that would give marks.\nI will say that my wife was amazing through the whole degree even though she definitely got frustrated at times. It can be difficult to balance the time commitments of study, work and family life. I would not recommend undertaking them without the full support of your significant other (if that is your situation).\n\n\n\nFamily\nIn 2020, we had a second child join us. We called him our COVID baby. This period was initially very agreeable to studying as pretty well everyone had to stay at home. I was considered frontline staff so still had to go to work but my wife was on maternity leave. All the course content was already online. It was just a case of continuing the practices I had started in 2019.\nIn 2021, restrictions were lifted and things started to open up more. My wife went back to work three days a week. Both kids were in day care four days a week. We still managed to work things so that both my wife and I had a day at home each without the kids. For me it was largely to study, for my wife it was to get a break and catch up on things.\n\n\nExpenses\nThe cost of a Masters can be prohibitive. I had a requirement through my employer to be working towards a higher degree so there was incentive to maintain studies based on that. However, after paying $3,500+ per subject we were beginning to feel the pinch. There were no Commonwealth Supported Places (CSP) when I had originally applied however, I had been keeping in touch with the Program Director (Sabita then Andrew) to see if there were any opportunities. Towards the end of 2020 the federal government had announced additional funding for STEM placements but I found out that they were only going to apply to new applicants. So at the end of 2020 I withdrew from my Masters and reapplied to commence in Term 1 2021. My gamble for securing a CSP paid off. My course fees went from around $4,000 to around $900!"
+  },
+  {
+    "objectID": "posts/2023-02-06-balancing-life-and-study/index.html#lessons",
+    "href": "posts/2023-02-06-balancing-life-and-study/index.html#lessons",
+    "title": "Balancing life and study",
+    "section": "Lessons",
+    "text": "Lessons\nAt the end of 2022, I completed my dissertation with a high distinction and had a weighted average mark of 90% for my entire Masters degree. To say I was chuffed would be an understatement.\nWriting out what I’ve been through for this blog makes it sound like it was actually a pretty straightforward thing to do. I haven’t gone into the depths of how we also moved house twice, sold a house, bought a house, changed the kids to different day care centres, plus managing all the routine day-to-day life things that get thrown at you. Not to mention work deadlines that come up as well! These are all the small things that suck up your time, often at critical moments because they are largely unplanned.\nWhat did I do to ensure that I was successful?\n\nMade sure my wife was on board\nGave myself a solid chunk of flexible time\nAttempted to use up other spare time before I got to my allocated time (if things were under control when I got to my allocated time then it could be used as free time or time for doing other things)\nNegotiated additional time requirements with my wife when needed (usually for assignments)\nPrioritised work that gave marks\n\nOne other thing that I think is important in a situation like this. If you aren’t in a position where you are relying on others to accomplish things then it doesn’t matter as much but I very much was. It was important to me that the time I was spending on study was not wasted. I felt a strong obligation to succeed in all the courses because I did not want the time I was taking away to be wasted."
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Course schedule",
+    "section": "",
+    "text": "Course\n      \n      \n        2023\n      \n      \n    \n    \n      Term 1\n      Term 2\n      Term 3\n    \n  \n  \n    HDAT9100\nContext for Health Data Science\n\n\n\n\n    HDAT9200\nStatistical Foundations for Health Data Science\n\n\n\n\n    HDAT9300\nComputing for Health Data Science\n\n\n\n\n    HDAT9400\nData Management & Curation\n\n\n\n\n    HDAT9500\nMachine Learning I\n\n\n\n\n    HDAT9510\nMachine Learning II \n\n\n\n\n    HDAT9600\nStatistical Modelling I \n\n\n\n\n    HDAT9700\nStatistical Modelling II\n\n\n\n\n    HDAT9800\nVisualisation & Communication\n\n\n\n\n    HDAT9900\nDissertation\n\n\n\n\n    HDAT9910\nCapstone\n\n\n\n\n    HDAT9000\nClinical Artificial Intelligence\n\n\n\n\n  \n  \n  \n\n\n\n\n\n\nMore information can be found by searching for the relevant course online at timetable.unsw.edu.au"
+  },
+  {
+    "objectID": "schedule.html#key-dates",
+    "href": "schedule.html#key-dates",
+    "title": "Course schedule",
+    "section": "Key dates",
+    "text": "Key dates\n\n\n\n\n\n\n\n\n\nMore information on the academic calendar can be found online at student.unsw.edu.au/calendar"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software and platforms",
+    "section": "",
+    "text": "Course\nContent\nDiscussion\nProgramming\n\n\n\n\n\nHDAT9100 Context for Health Data Science\n\n\n\n\n\n\nHDAT9200 Statistical Foundations for Health Data Science\n\n\n\n\n\n\nHDAT9300 Computing for Health Data Science\n\n\n\n\n\n\nHDAT9400 Data Management & Curation\n\n\n\n\n\n\nHDAT9500 HDAT9500 Machine Learning I\n\n\n\n\n\n\nHDAT9510 HDAT9510 Machine Learning II\n\n\n\n\n\n\nHDAT9600 HDAT9600 Statistical Modelling I\n\n\n\n\n\n\nHDAT9700 HDAT9700 Statistical Modelling II\n\n\n\n\n\n\nHDAT9800 Visualisation & Communication\n\n\n\n\n\n\nHDAT9901 Dissertation\n\n\n\n\n\n\nHDAT9910 Capstone\n\n\n\n\n\n\nHDAT9000 Clinical AI"
+  },
+  {
+    "objectID": "software.html#detailed-summary-of-software-and-platforms-used-in-each-course",
+    "href": "software.html#detailed-summary-of-software-and-platforms-used-in-each-course",
+    "title": "Software and platforms",
+    "section": "Detailed summary of software and platforms used in each course",
+    "text": "Detailed summary of software and platforms used in each course\n\nHDAT9100HDAT9200HDAT9300HDAT9400HDAT9500HDAT9600HDAT9700HDAT9800HDAT9900\n\n\n\nHDAT9100 Context for Health Data Science\n HDAT9100 is convened by Sanja Lujic"
+  }
+]
