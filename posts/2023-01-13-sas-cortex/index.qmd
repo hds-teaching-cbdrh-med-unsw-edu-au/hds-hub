@@ -1,6 +1,6 @@
 ---
 title: "Winning the SAS Cortex Analytics Simulation Challenge"
-description: "_This is a short post about my participation in the SAS Cortex Analytics Simulation 5 Day Challenge (hereafter, Cortex) in April 2022. Luckily, I became the 1st place winner in the competition. It is not a direct application of what we have learned in the HDS program to the formal job scene. However, I think it can still provide you some idea of how much knowledge we can use outside the classes. Please also see the [post](https://www.linkedin.com/pulse/thinking-outside-box-how-traditional-approaches-sometimes-lucia-biasi/) by Lucia Biasi from SAS Australia for some details of the interview on me about my experience._"
+description: "_Manny discusses winning the SAS Cortex Analytics Simulation 5 Day Challenge_"
 author:
   - name: Manny Adachi
     email: mamiya_adachi@yahoo.co.jp
@@ -32,6 +32,8 @@ Manny Adachi is an aspiring data scientist from Japan in the Master's program in
 
 :::
 
+
+This is a short post about my participation in the SAS Cortex Analytics Simulation 5 Day Challenge (hereafter, Cortex) in April 2022. Luckily, I became the 1st place winner in the competition. It is not a direct application of what we have learned in the HDS program to the formal job scene. However, I think it can still provide you some idea of how much knowledge we can use outside the classes. Please also see the [post](https://www.linkedin.com/pulse/thinking-outside-box-how-traditional-approaches-sometimes-lucia-biasi/) by Lucia Biasi from SAS Australia for some details of the interview on me about my experience.
 
 
 ### What is Cortex?

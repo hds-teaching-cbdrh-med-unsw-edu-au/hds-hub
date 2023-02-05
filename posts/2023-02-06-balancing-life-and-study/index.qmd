@@ -1,6 +1,6 @@
 ---
 title: "Balancing life and study"
-description: "_Balancing work life balance_"
+description: "_Jason discusses successfully navigating the Health Data Science Masters while balancing work, family and other life committments_"
 author:
   - name: Jason Meyer
     email: jmeyer2482@gmail.com
