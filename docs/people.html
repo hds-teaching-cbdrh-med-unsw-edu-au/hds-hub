@@ -530,7 +530,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/hdat9700\.cbdrh\.med\.unsw\.edu\.au/);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/hdat9700\.cbdrh\.med\.unsw\.edu\.au\/custom/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
@@ -539,6 +539,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
           // default icon
           link.classList.add("external");
       }

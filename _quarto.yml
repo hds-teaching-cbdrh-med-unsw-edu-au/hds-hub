@@ -57,6 +57,8 @@ format:
     css: styles.css
     toc: true
     link-external-icon: true
+    link-external-newwindow: true
+    link-external-filter: ^(?:http:|https:)\/\/hdat9700\.cbdrh\.med\.unsw\.edu\.au\/custom
 
 margin-header: |
   ![](/images/Landscape__1.Col_Pos_CBDRH.jpg)
