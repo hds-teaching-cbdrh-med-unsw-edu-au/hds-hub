@@ -350,7 +350,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/^(?:http:|https:)\/\/hds\-hub\.cbdrh\.med\.unsw\.edu\.au\/custom/);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/hds\-hub\.cbdrh\.med\.unsw\.edu\.au\/**/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
@@ -366,6 +366,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
 });
+</script>
+<script src="https://giscus.app/client.js" data-repo="hds-teaching-cbdrh-med-unsw-edu-au/hds-blog-discussion" data-repo-id="R_kgDOI6SXjA" data-category="General" data-category-id="DIC_kwDOI6SXjM4CUBiC" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 <footer class="footer">
