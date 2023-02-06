@@ -8,10 +8,8 @@ website:
   site-url: "https://hdat9700.cbdrh.med.unsw.edu.au"
   favicon: images/favicon.ico
   twitter-card: true
-  open-graph:
-    site-name: hds-bub
-    description: UNSW Health Data Science Student Hub
-    image: "/docs/images/223_UNSW_CBDRH_credit_AnnaKucera.jpg"
+  open-graph: true
+  image: "/docs/images/223_UNSW_CBDRH_credit_AnnaKucera.jpg"
   page-footer:
     right: "This page is built with ☘️ and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2023, UNSW"
