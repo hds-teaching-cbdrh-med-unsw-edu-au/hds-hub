@@ -63,9 +63,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Blanca Gallego Luxan">
+<meta property="og:description" content="UNSW Health Data Science Student Hub">
+<meta property="og:image" content="https://hdat9700.cbdrh.med.unsw.edu.au/docs/images/223_UNSW_CBDRH_credit_AnnaKucera.jpg">
+<meta property="og:site-name" content="hds-bub">
 <meta name="twitter:title" content="Blanca Gallego Luxan">
 <meta name="twitter:description" content="Associate Professor">
-<meta name="twitter:image" content="../images/blanca.jpeg">
+<meta name="twitter:image" content="https://hdat9700.cbdrh.med.unsw.edu.au/images/blanca.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -322,7 +326,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp(/https:\/\/hdat9700\.cbdrh\.med\.unsw\.edu\.au/);
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
