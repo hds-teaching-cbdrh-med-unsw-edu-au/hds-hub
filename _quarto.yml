@@ -57,3 +57,6 @@ format:
 
 margin-header: |
   ![](/images/Landscape__1.Col_Pos_CBDRH.jpg)
+
+resources:
+  - CNAME
