@@ -1,5 +1,6 @@
 ---
 title: "Courses"
+comments: false
 ---
 
 ## HDAT9100 Context for Health Data Science

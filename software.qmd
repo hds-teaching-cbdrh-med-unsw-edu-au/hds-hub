@@ -1,6 +1,7 @@
 ---
 title: "Software and platforms"
 tbl-colwidths: [5,1,1,1]
+comments: false
 ---
 
 ## Overview of software and platforms 
@@ -33,8 +34,6 @@ tbl-colwidths: [5,1,1,1]
 ## HDAT9100{#hdat9100}
 
 ### HDAT9100 Context for Health Data Science
-
-[![](images/sanja.jpeg) HDAT9100 is convened by [Sanja Lujic](people/sanja.html)]{.aside}
 
 ## HDAT9200
 

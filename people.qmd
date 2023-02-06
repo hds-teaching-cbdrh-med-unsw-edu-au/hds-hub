@@ -1,5 +1,6 @@
 ---
 title: Meet the teaching team
+comments: false
 listing:
   type: grid
   grid-columns: 3
