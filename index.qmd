@@ -7,20 +7,21 @@ title: ""
 
 ![](images/Landscape__1.Col_Pos_CBDRH.jpg)
 
-
 :::{.column-screen .bg-shape}
 
 :::{.column-body}
 
-::: {.a}
+::: {.container}
 
-::: {.b}
+::: {.item-1 .items}
 
-::: {.b1}
+::: {.home-box-left}
+
+::: {.home-box-title}
 Health Data Science Student Hub
 :::
 
-::: {.b2}
+::: {.home-box-content}
 \| Master of Science in Health data Science
 
 \| Clinical Artificial Intelligence
@@ -31,8 +32,12 @@ Health Data Science Student Hub
 :::
 
 
-::: {.c}
-<!-- This is the background image -->
+:::
+
+
+::: {.items .home-box-image}
+
+
 :::
 
 :::
