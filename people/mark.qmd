@@ -3,6 +3,7 @@ title: "Mark Hanly"
 description: "Lecturer"
 author-meta: "m.hanly@unsw.edu.au"
 image: ../images/mark.jpeg
+comments: false
 ---
 
 ::: {.aside}

@@ -2,11 +2,18 @@
 title: "Bronwyn Brew Haasdyk"
 description: "Senior Research Fellow"
 image: ../images/bronwyn.jpeg
+comments: false
 ---
 
-[![](../images/bronwyn.jpeg) Bronwyn convenes the dissertation course [HDAT9900/9901/9902](../courses.html#HDAT9901/9902/9903-Dissertation).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.haasdyk@unsw.edu.au">b.haasdyk@unsw.edu.au</a>]{.aside}
+::: {.aside}
 
- 
+::: {.profilepic}
+![](../images/bronwyn.jpeg)
+:::
+
+Bronwyn convenes the dissertation course [HDAT9900/9901/9902](../courses.html#HDAT9901/9902/9903-Dissertation).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.haasdyk@unsw.edu.au">b.haasdyk@unsw.edu.au</a>
+:::
+
 ## What publication are you most proud of?
 
 [Identifying preventable risk factors for hospitalised asthma in young Aboriginal children: a whole-population cohort study](http://dx.doi.org/10.1136/thoraxjnl-2020-216189)[^1]. 

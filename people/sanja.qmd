@@ -2,6 +2,7 @@
 title: "Sanja Lujic"
 description: "Lecturer"
 image: ../images/sanja.jpeg
+comments: false
 ---
 
 [![](../images/sanja.jpeg) <a href="mailto:s.lujic@unsw.edu.au">s.lujic@unsw.edu.au</a>]{.aside}

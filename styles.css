@@ -23,21 +23,21 @@ margin-top: -10px;
 
 /* Blog post author meta info - paragraph */
 .course-meta-title>p {
-font-size:0.8em;
+font-size:0.9em;
 }
 
 /* Course meta info - title */
 .course-meta-title {
     text-transform: uppercase;
     margin-top: -10px;
-    font-size: .8em;
+    font-size: .9em;
     opacity: .8;
     font-weight: 400;
 }
 
 /* Course meta info - content */
 .course-meta-content {
-font-size:0.7em;
+font-size:0.8em;
 margin-top: -20px;
 font-weight: 400;
 opacity: .6;
@@ -107,7 +107,7 @@ opacity: .6;
 }
 
 .home-box-image {
-  background-image: url('images/223_UNSW_CBDRH_credit_AnnaKucera.jpg');
+  background-image: url('images/223_UNSW_CBDRH_credit_AnnaKucera_cropped.jpg');
   background-color: #ffedd9;
   height: 400px;
   width: 400px;
@@ -158,4 +158,34 @@ opacity: .6;
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),inset 0px 3px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3),inset 0px 3px 8px rgba(0,0,0,0.3);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),inset 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* These manage the appearance of the biopic pics on the staff profile pages */
+.grid-container-200 {
+  display: grid;
+  grid-template-columns: 100px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container-200 > div {
+  padding: 0px 0;
+}
+
+.item1-200 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.item2-200 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+
+/* convenot profile pics */
+
+.profilepic {
+  max-width: 200px;
+  min-width: 100px;
 }

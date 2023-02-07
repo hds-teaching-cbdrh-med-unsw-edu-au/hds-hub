@@ -158,7 +158,35 @@
     "href": "people/blanca.html",
     "title": "Blanca Gallego Luxan",
     "section": "",
-    "text": "b.gallego@unsw.edu.au\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis enim lobortis. Libero enim sed faucibus turpis in eu mi bibendum. Odio ut enim blandit volutpat. Posuere ac ut consequat semper viverra nam libero justo laoreet. Scelerisque in dictum non consectetur. Dolor sit amet consectetur adipiscing elit ut. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Odio aenean sed adipiscing diam donec adipiscing. Eu lobortis elementum nibh tellus molestie nunc non blandit.\nVelit egestas dui id ornare. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Mauris pharetra et ultrices neque. Mus mauris vitae ultricies leo integer malesuada nunc. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Donec pretium vulputate sapien nec. At varius vel pharetra vel turpis nunc eget lorem. Pretium quam vulputate dignissim suspendisse. Lacinia at quis risus sed vulputate odio. Fusce id velit ut tortor pretium viverra. Diam ut venenatis tellus in metus vulputate eu. Ultricies mi eget mauris pharetra. Interdum consectetur libero id faucibus nisl tincidunt. Mollis nunc sed id semper risus in hendrerit gravida rutrum."
+    "text": "Blanca convenes the Clinical AI course HDAT9900.  b.gallego@unsw.edu.au"
+  },
+  {
+    "objectID": "people/blanca.html#what-publication-are-you-most-proud-of",
+    "href": "people/blanca.html#what-publication-are-you-most-proud-of",
+    "title": "Blanca Gallego Luxan",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\nThese are three studies I am proud of:\nDuring my PhD, I developed a model that predicted that the ocean surface currents in the North Atlantic and North Pacific are synchronized on decadal time scales (see Journal of Climate1). Twenty years later, climate scientists from Japan, analysed decades of satellite data to prove that my prediction was correct and that this coupling can help to explain climate events such as the abnormally hot Northern Hemisphere summer of 2018 (see Science2).\nAs a postdoc, while doing research in environmental economics, I formulated a way for allocating responsibility for production impacts consistently amongst all agents throughout demand and supply chains, in a way that reflects their contribution to the production process (see Economic Systems Research3). This formulation is now in used in environmental accounting software (see Green is good for business.\nOn the topic of predictive algorithms in Medicine, I led the first non-disease-specific model that dynamically and simultaneously predicted the future daily probability of remaining days of hospitalization, death, and readmission (see Journal of the American Medical Informatics Association)4. This model allowed for the real-time identification of patient trajectories forecasting expected discharge, expected continuing hospitalization, and expected death. It was featured in the 2016 edition of Stories of Australian Science."
+  },
+  {
+    "objectID": "people/blanca.html#whats-the-most-important-take-home-message-from-your-course",
+    "href": "people/blanca.html#whats-the-most-important-take-home-message-from-your-course",
+    "title": "Blanca Gallego Luxan",
+    "section": "What’s the most important take home message from your course?",
+    "text": "What’s the most important take home message from your course?\nMeasures of the predictive performance of an AI algorithm do not incorporate clinical consequences. Further research is required to measure whether a technology can lead to more efficient healthcare systems and better patient outcomes.\nAny clinical AI technology must be feasible (technically, financially, and legally) and desirable (safe, effective, cost-saving and targeting the right problem and the right time)."
+  },
+  {
+    "objectID": "people/blanca.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "people/blanca.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Blanca Gallego Luxan",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?\nIf you are doing course work: Focus on understanding the concepts since the technology keeps on changing. If you are doing research: Understand the boundaries of knowledge and practice, aim high, and enjoy the journey."
+  },
+  {
+    "objectID": "people/blanca.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "people/blanca.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Blanca Gallego Luxan",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\nI am not sure my life would make for a particularly interesting film."
   },
   {
     "objectID": "people/bronwyn.html",

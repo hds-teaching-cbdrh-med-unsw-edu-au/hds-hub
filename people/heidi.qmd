@@ -2,11 +2,18 @@
 title: "Heidi Welberry"
 description: "Research Fellow"
 image: ../images/heidi.jpeg
+comments: false
 ---
 
-[![](../images/heidi.jpeg) Heidi convenes the course [HDAT9600](../courses.html#HDAT9600-Statistical-Modelling-I) Statistical modelling I.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:h.welberry@unsw.edu.au">h.welberry@unsw.edu.au</a>]{.aside}
+::: {.aside}
 
- 
+::: {.profilepic}
+![](../images/heidi.jpeg)
+:::
+
+Heidi convenes the course [HDAT9600](../courses.html#HDAT9600-Statistical-Modelling-I) Statistical modelling I.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:h.welberry@unsw.edu.au">h.welberry@unsw.edu.au</a>
+:::
+
 ## What publication are you most proud of?
 
 I am really proud of my paper on [psychotropic prescribing among patients with dementia entering residential care](https://doi.org/10.5694/mja2.51153)[^1].   

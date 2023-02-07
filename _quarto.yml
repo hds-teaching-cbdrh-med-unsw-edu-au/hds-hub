@@ -59,6 +59,7 @@ format:
     link-external-icon: true
     link-external-newwindow: true
     link-external-filter: '^(?:http:|https:)\/\/hds\-hub\.cbdrh\.med\.unsw\.edu\.au\/**'
+    footnotes-hover: true
 
 margin-header: |
   ![](/images/Landscape__1.Col_Pos_CBDRH.jpg)
