@@ -22,7 +22,7 @@ If you are enrolling in elective courses for MScHDS degree and are getting a mes
 
 ## Who do I contact if I need help?
 
-[Nucleus](https://portal.insight.unsw.edu.au/web-forms/) – Studnt Hub – provides centralised systems to help with enrolment, internal program transfer (IPT), program progression check, recognition of prior learning (RPL), Early Exit/Graduation request, late enrolment, overload studies, requisite waiver, review of results, fee remission, program leave, deferral, discontinuation, confirmation of enrolment, reduce study load.
+[Nucleus](https://portal.insight.unsw.edu.au/web-forms/) – Student Hub – provides centralised systems to help with enrolment, internal program transfer (IPT), program progression check, recognition of prior learning (RPL), Early Exit/Graduation request, late enrolment, overload studies, requisite waiver, review of results, fee remission, program leave, deferral, discontinuation, confirmation of enrolment, reduce study load.
 Other questions about the program, choice of electives and other queries or concerns can be emailed to the Program Director at <a href="mailto:MScHDS@unsw.edu.au">MScHDS@unsw.edu.au</a> or their email address.
 
 :::
@@ -112,7 +112,7 @@ preparation and time spent on all assessable work.
 
 ::: {.callout-note collapse="true" appearance="minimal"}
 
-## Whe can I drop a course without financial penalty?
+## When can I drop a course without financial penalty?
 
 Census date is Sunday of Week 4 each term, and you can drop courses without financial or academic penalty before then. Key dates can be found at [UNSW Key Dates for Students | UNSW Current Students](https://www.student.unsw.edu.au/dates).
 
@@ -132,11 +132,16 @@ Assessment tasks completed within the teaching period of a course, other than a 
 
 ## How do I apply for special consideration (SC)?
 
-You are encouraged to apply for SC when their circumstances are short-term, serious, and unavoidable.  They must be circumstances that: 
+You are encouraged to apply for SC when your circumstances are short-term, serious, and unavoidable.  They must be circumstances that: 
+
 * Were unexpected and beyond your control **and**;
+
 * Caused disturbance to academic work by a substantial degree **and**; 
+
 * Could not have reasonably been anticipated, avoided or guarded against by you **and either**; 
+
     * Occurred during a critical study or assessment period and lasted at least 3 consecutive days or a total of 5 days within the critical study period or; 
+    
     * Prevented the ability to complete, attend or submit an assessment task for a specific date (e.g., final exam, in class test/quiz, in class presentation) 
 
 You can read more about the special consideration process and how to apply on the [UNSW Special Consideration](https://www.student.unsw.edu.au/special-consideration) page. 

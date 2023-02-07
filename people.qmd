@@ -3,7 +3,7 @@ title: Meet the teaching team
 comments: false
 listing:
   type: grid
-  grid-columns: 3
+  grid-columns: 4
   image-height: 250px
   categories: false
   contents:
