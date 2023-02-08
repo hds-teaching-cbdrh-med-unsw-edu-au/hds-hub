@@ -471,7 +471,7 @@ Analysis Software
 </div>
 
 <div class="course-meta-content">
-
+Examples can be run in Python or Excel
 </div>
 
 <div class="course-meta-title">
@@ -479,7 +479,7 @@ Prerequisites
 </div>
 
 <div class="course-meta-content">
-Postgraduate: HDAT9100, HDAT9400, HDAT9500, HDAT9700 and HDAT9800
+Undergraduate: Enrolment in 3831 Science (Medicine) Honours
 </div>
 
 <div class="course-meta-title">
@@ -487,7 +487,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910)
+[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9000](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9000)
 </div>
 
 <div class="course-meta-title">
@@ -495,7 +495,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9900.html](https://timetable.unsw.edu.au/2023/HDAT9900.html)
+[timetable.unsw.edu.au/2023/HDAT9000.html](https://timetable.unsw.edu.au/2023/HDAT9000.html)
 </div>
 
 

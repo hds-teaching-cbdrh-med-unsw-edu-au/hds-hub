@@ -81,7 +81,7 @@
     "href": "courses.html#hdat9000-clinical-artificial-intelligence",
     "title": "Courses",
     "section": "HDAT9000 Clinical Artificial Intelligence",
-    "text": "HDAT9000 Clinical Artificial Intelligence\n\nAnalysis Software\n\n\n\n\n\nPrerequisites\n\n\nPostgraduate: HDAT9100, HDAT9400, HDAT9500, HDAT9700 and HDAT9800\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9900.html\n\nThe course will start by explaining the fundamental concepts of AI systems and what they can and cannot do. This will be followed by an examination of the idiosyncrasies of AI for healthcare practice covering electronic medical records data (including images, clinical notes, pathology and patient reported outcomes), clinical settings and workflows, as well as the ethical, social, and legal issues posed by the use of AI technologies in clinical practice. Students will generate and discuss a survey of major AI solutions in healthcare practice. The course will then provide students with best-practice guidance, methods and tools on when to use AI to improve patient care, how to deploy an AI project pipeline, how to critically assess the performance and impact of the proposed AI solution and what pitfalls to avoid."
+    "text": "HDAT9000 Clinical Artificial Intelligence\n\nAnalysis Software\n\n\nExamples can be run in Python or Excel\n\n\nPrerequisites\n\n\nUndergraduate: Enrolment in 3831 Science (Medicine) Honours\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9000\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9000.html\n\nThe course will start by explaining the fundamental concepts of AI systems and what they can and cannot do. This will be followed by an examination of the idiosyncrasies of AI for healthcare practice covering electronic medical records data (including images, clinical notes, pathology and patient reported outcomes), clinical settings and workflows, as well as the ethical, social, and legal issues posed by the use of AI technologies in clinical practice. Students will generate and discuss a survey of major AI solutions in healthcare practice. The course will then provide students with best-practice guidance, methods and tools on when to use AI to improve patient care, how to deploy an AI project pipeline, how to critically assess the performance and impact of the proposed AI solution and what pitfalls to avoid."
   },
   {
     "objectID": "deleteme.html",
@@ -158,7 +158,7 @@
     "href": "people/blanca.html",
     "title": "Blanca Gallego Luxan",
     "section": "",
-    "text": "Blanca convenes the Clinical AI course HDAT9900.  b.gallego@unsw.edu.au"
+    "text": "Blanca convenes the Clinical AI course HDAT9000.  b.gallego@unsw.edu.au"
   },
   {
     "objectID": "people/blanca.html#what-publication-are-you-most-proud-of",
@@ -172,7 +172,7 @@
     "href": "people/blanca.html#whats-the-most-important-take-home-message-from-your-course",
     "title": "Blanca Gallego Luxan",
     "section": "What’s the most important take home message from your course?",
-    "text": "What’s the most important take home message from your course?\nMeasures of the predictive performance of an AI algorithm do not incorporate clinical consequences. Further research is required to measure whether a technology can lead to more efficient healthcare systems and better patient outcomes.\nAny clinical AI technology must be feasible (technically, financially, and legally) and desirable (safe, effective, cost-saving and targeting the right problem and the right time)."
+    "text": "What’s the most important take home message from your course?\nMeasures of the predictive performance of an AI algorithm do not incorporate clinical consequences. Further research is required to measure whether a technology can lead to more efficient healthcare systems and better patient outcomes.\nAny clinical AI technology must be feasible (technically, financially, and legally) and desirable (safe, effective, cost-saving and targeting the right problem at the right time)."
   },
   {
     "objectID": "people/blanca.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",

@@ -11,7 +11,7 @@ comments: false
 ![](../images/blanca.jpeg) 
 :::
 
-Blanca convenes the Clinical AI course [HDAT9900](../courses.html#hdat9000-clinical-artificial-intelligence).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.gallego@unsw.edu.au">b.gallego@unsw.edu.au</a>
+Blanca convenes the Clinical AI course [HDAT9000](../courses.html#hdat9000-clinical-artificial-intelligence).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.gallego@unsw.edu.au">b.gallego@unsw.edu.au</a>
 
 ::: 
  
@@ -38,7 +38,7 @@ On the topic of predictive algorithms in Medicine, I led the first non-disease-s
 
 Measures of the predictive performance of an AI algorithm do not incorporate clinical consequences. Further research is required to measure whether a technology can lead to more efficient healthcare systems and better patient outcomes.
 
-Any clinical AI technology must be **feasible** (technically, financially, and legally) and **desirable** (safe, effective, cost-saving and targeting the right problem and the right time).
+Any clinical AI technology must be **feasible** (technically, financially, and legally) and **desirable** (safe, effective, cost-saving and targeting the right problem at the right time).
  
 ## If you could go back in time, what bit of advice would you give to yourself as a student?
 
