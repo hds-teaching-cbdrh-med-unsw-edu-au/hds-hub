@@ -9,7 +9,7 @@ website:
   favicon: images/favicon.ico
   twitter-card: true
   open-graph: true
-  image: "/docs/images/223_UNSW_CBDRH_credit_AnnaKucera.jpg"
+  image: "/docs/images/223_UNSW_CBDRH_credit_AnnaKucera_cropped.jpg"
   page-footer:
     right: "This page is built with ☘️ and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2023, UNSW"
