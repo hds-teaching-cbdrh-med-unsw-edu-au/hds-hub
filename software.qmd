@@ -6,27 +6,355 @@ comments: false
 
 ## Overview of software and platforms 
 
-::: {.aside}
-![](images/Landscape__1.Col_Pos_CBDRH.jpg)
-:::
+<table class="software">
+  <colgroup>
+    <col style="width: 40%">
+    <col style="width: 20%">
+    <col style="width: 20%">
+    <col style="width: 20%">
+  </colgroup>
+	<thead>
+	<tr>
+		<th style="text-align: left;">Course</th>
+		<th>Content</th>
+		<th>Discussion</th>
+		<th>Programming</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>[HDAT9100](courses.html#hdat9100) Context for Health Data Science </td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>[HDAT9200](courses.html#hdat9200) Statistical Foundations for Health Data Science</td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td><img class="software-image" src="images/rstudio.png" alt = "R Studio"></img></td>
+	</tr>
+	<tr>
+		<td>[HDAT9300](courses.html#hdat9300) Computing for Health Data Science </td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td><img class="software-image" src="images/python.png" alt = "Python"></img></td>
+	</tr>
+	<tr>
+		<td>[HDAT9400](courses.html#hdat9400) Data Management & Curation </td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/sas.png" alt = "SAS"></img></td>
+	</tr>
+	<tr>
+		<td>[HDAT9500](courses.html#hdat9500) Machine Learning I </td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/python.png" alt = "Python"></img></td>
+	</tr>
+	<tr>
+		<td>[HDAT9510](courses.html#hdat9510) Machine Learning II </td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/python.png" alt = "Python"></img></td>
+	</tr>
+	<tr>
+		<td>[HDAT9600](courses.html#hdat9600) Statistical Modelling I </td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td><img class="software-image" src="images/rstudio.png" alt = "R Studio"></img></td>
+	</tr>
+	<tr>
+		<td>[HDAT9700](courses.html#hdat9700) Statistical Modelling II </td>
+		<td><img class="software-image" src="images/gh-pages.png" alt = "GitHub Pages"></img></td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td><img class="software-image" src="images/rstudio.png" alt = "R Studio"></img></td>
+	</tr>
+	<tr>
+		<td>[HDAT9800](courses.html#hdat9800) Visualisation & Communication </td>
+		<td><img class="software-image" src="images/gh-pages.png" alt = "GitHub Pages"></img></td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td><img class="software-image" src="images/rstudio.png" alt = "R Studio"></img></td>
+	</tr>
+	<tr>
+		<td>[HDAT9901](courses.html#hdat9901) Dissertation </td>
+		<td></td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>[HDAT9910](courses.html#hdat9910) Capstone </td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>[HDAT9000](courses.html#hdat9000) Clinical Artificial Intelligence </td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td></td>
+	</tr>
+	</tbody>
+</table>
 
-::: column-body
-| Course | Content | Discussion | Programming | 
-|------|------|------|------|------|
-| [HDAT9100](courses.html#hdat9100) Context for Health Data Science                   | ![](images/ol.jpeg)     | ![](images/ol.jpeg)           |                            |
-| [HDAT9200](courses.html#hdat9200) Statistical Foundations for Health Data Science   | ![](images/ol.jpeg)     | ![](images/teams.png)         | ![](images/rstudio.png)    |
-| [HDAT9300](courses.html#hdat9300) Computing for Health Data Science                 | ![](images/teams.png)   | ![](images/teams.png)         | ![](images/python.png)     |
-| [HDAT9400](courses.html#hdat9400) Data Management & Curation                        | ![](images/ol.jpeg)     | ![](images/ol.jpeg)           | ![](images/sas.png)        |
-| [HDAT9500](courses.html#hdat9500) HDAT9500 Machine Learning I                       | ![](images/ol.jpeg)     | ![](images/ol.jpeg)           | ![](images/python.png)     |
-| [HDAT9510](courses.html#hdat9510) HDAT9510 Machine Learning II                      | ![](images/ol.jpeg)     | ![](images/ol.jpeg)           | ![](images/python.png)     |
-| [HDAT9600](courses.html#hdat9600) HDAT9600 Statistical Modelling I                  | ![](images/ol.jpeg)     |                               | ![](images/rstudio.png)    |
-| [HDAT9700](courses.html#hdat9700) HDAT9700 Statistical Modelling II                 | ![](images/gh-pages.png)| ![](images/teams.png)         | ![](images/rstudio.png)    |
-| [HDAT9800](courses.html#hdat9800) Visualisation & Communication                     | ![](images/gh-pages.png)| ![](images/teams.png)         | ![](images/rstudio.png)    |
-| [HDAT9901](courses.html#hdat9901) Dissertation                                      |                         | ![](images/teams.png)         |                            |
-| [HDAT9910](courses.html#hdat9910) Capstone                                          | ![](images/ol.jpeg)     | ![](images/teams.png)         |                            |
-| [HDAT9000](courses.html#hdat9000) Clinical AI                                       | ![](images/ol.jpeg)     | ![](images/teams.png)         |                            |
+<!-- Small version -->
 
-:::
+<table class="software-small">
+  <colgroup>
+    <col style="width: 40%;">
+    <col style="width: 60%">
+  </colgroup>
+	<thead>
+	<tr>
+		<th style="text-align: left;">Course</th>
+		<th>Software</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>[HDAT9100](courses.html#hdat9100) Context for Health Data Science </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+  </tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr>  
+		
+
+			<tr>
+		<td>[HDAT9200](courses.html#hdat9200) Statistical Foundations for Health Data Science </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td><img class="software-image" src="images/rstudio.png" alt = "R Studio"></img></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9300](courses.html#hdat9300) Computing for Health Data Science </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td><img class="software-image" src="images/python.png" alt = "Python"></img></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9400](courses.html#hdat9400) Data Management & Curation </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td><img class="software-image" src="images/sas.png" alt = "SAS"></img></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9500](courses.html#hdat9500) Machine Learning I </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td><img class="software-image" src="images/python.png" alt = "Python"></img></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9510](courses.html#hdat9510) Machine Learning II </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td><img class="software-image" src="images/python.png" alt = "Python"></img></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9600](courses.html#hdat9600) Statistical Modelling I </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td><img class="software-image" src="images/rstudio.png" alt = "R Studio"></img></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9700](courses.html#hdat9700) Statistical Modelling II </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/gh-pages.png" alt = "GitHub Pages"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td><img class="software-image" src="images/rstudio.png" alt = "R Studio"></img></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9800](courses.html#hdat9800) Visualisation & Communication </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/gh-pages.png" alt = "GitHub Pages"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td><img class="software-image" src="images/rstudio.png" alt = "R Studio"></img></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9901](courses.html#hdat9901) Dissertation </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+			<tr>
+		<td>[HDAT9910](courses.html#hdat9910) Capstone </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+<tr>
+		<td>[HDAT9900](courses.html#hdat9900) Clinical Artificial Intelligence </td>
+		<td>
+		  <table>
+		    <tr>
+		      <td>Content</td> 
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Discussion</td> 
+		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+      	</tr>
+      	<tr>
+		      <td>Programming</td> 
+		  		<td></td>
+      	</tr>
+		  </table
+		  </td>
+		</tr> 
+		
+	</tbody>
+</table>
+
 
 ## Detailed summary of software and platforms used in each course
 

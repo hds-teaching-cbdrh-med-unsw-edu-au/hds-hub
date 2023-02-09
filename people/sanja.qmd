@@ -5,8 +5,53 @@ image: ../images/sanja.jpeg
 comments: false
 ---
 
-[![](../images/sanja.jpeg) <a href="mailto:s.lujic@unsw.edu.au">s.lujic@unsw.edu.au</a>]{.aside}
+::: {.aside}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis enim lobortis. Libero enim sed faucibus turpis in eu mi bibendum. Odio ut enim blandit volutpat. Posuere ac ut consequat semper viverra nam libero justo laoreet. Scelerisque in dictum non consectetur. Dolor sit amet consectetur adipiscing elit ut. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Odio aenean sed adipiscing diam donec adipiscing. Eu lobortis elementum nibh tellus molestie nunc non blandit.
+::: {.profilepic}
+![](../images/sanja.jpeg)
+:::
 
-Velit egestas dui id ornare. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Mauris pharetra et ultrices neque. Mus mauris vitae ultricies leo integer malesuada nunc. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Donec pretium vulputate sapien nec. At varius vel pharetra vel turpis nunc eget lorem. Pretium quam vulputate dignissim suspendisse. Lacinia at quis risus sed vulputate odio. Fusce id velit ut tortor pretium viverra. Diam ut venenatis tellus in metus vulputate eu. Ultricies mi eget mauris pharetra. Interdum consectetur libero id faucibus nisl tincidunt. Mollis nunc sed id semper risus in hendrerit gravida rutrum.
+Sanja is a lecturer and convenor on the courses [HDAT9100](../courses.html#hdat9100-context-for-health-data-science) Context for Health Data Science and [HDAT9400](../courses.html#hdat9400-data-management-curation) Data Management & Curation.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:s.lujic@unsw.edu.au">s.lujic@unsw.edu.au</a>
+:::
+
+## What publication are you most proud of?
+
+As a biostatistician, I’ve been involved in a variety of interesting research projects, with a variety of topics (much like our future health data scientists). The paper closest to my heart would be my first PhD paper on the [variation of recording of common health conditions in routine hospital data available](http://dx.doi.org/10.1136/bmjopen-2014-005768)[^1]. You’ll hear researchers talk about their ‘babies’, and this one was the first one where I had control of the process from start to finish. And I could combine my love of linked data and advanced statistical methods. It was a starting point of my work in chronic disease and multimorbidity, which are my current research interest.
+
+An example of a slow burning one would be the one from my Masters’ degree days back in 2008! It was titled [Pandemic influenza in Australia: using telephone surveys to measure perceptions of threat and willingness to comply](https://doi.org/10.1186/1471-2334-8-117)[^2]. I devised a survey, pilot tested it and then analysed the data on perceptions of the threat of pandemic influenza and how people will behave in the event of it occurring. Little did I know that come 2020 all that work will be so very topical! We looked at how likely people were to be vaccinated, isolated and wear a face mask. Deja vu much!
+
+[^1]: Lujic S, Watson DE, Randall DA, Simpson JM, Jorm LR. Variation in the recording of common health conditions in routine hospital data: study using linked survey and administrative data in New South Wales, Australia. BMJ open. 2014 Sep 1;4(9):e005768. [http://dx.doi.org/10.1136/bmjopen-2014-005768](http://dx.doi.org/10.1136/bmjopen-2014-005768)
+
+[^2]: Barr M, Raphael B, Taylor M, Stevens G, Jorm L, Giffin M, Lujic S. Pandemic influenza in Australia: using telephone surveys to measure perceptions of threat and willingness to comply. BMC infectious diseases. 2008 Dec;8(1):1-4. [https://doi.org/10.1186/1471-2334-8-117](https://doi.org/10.1186/1471-2334-8-117)
+
+
+## What’s the most important take home message from your course? 
+
+Anyone that’s taken my HDAT9400 Management and Curation will know about this one: keep organised! Yes, I do have that as a motto in the class. With piling workload, it’s more imperative than ever to have that skill, and to keep things on track and under control.
+
+From HDAT9100 Context of Health Data Science---keep a list of useful resources and websites. Aggregate data and government reports have a wealth of information which will be useful to you in getting the background information, as well as checking whether your results make sense. 
+
+For statistical subjects and projects more generally---think about your research question/hypothesis. This is what drives the analysis and interpretation. Always make sure you have your key research questions at the forefront of your mind when you are analysing data. This prevents you from going down too many rabbit holes (and yes, analysts do love analysis!)
+
+For programming tasks---think, plan and do. Think of what dataset/analysis you need to answer your question and work backwards from there. Pen and paper will be your best friends as you try and figure out how those outcomes, confounders and variables will need to be derived. Once that’s clear, start coding. And checking. And double checking!
+
+## If you could go back in time, what bit of advice would you give yourself as a student?
+
+Start your assignments early! And there are no silly questions in the class. Lecturers would rather someone ask a question than having silence in the classroom.
+
+## Who would play you in the biopic of your life?
+
+<div class="grid-container-200">
+
+  <div class="item1-200">
+  <figure>
+  <img src="https://m.media-amazon.com/images/M/MV5BNTJiOWYxMzQtNWZmYS00ZmNmLWE1ODktMGM3ZTkyYmE1YTBkXkEyXkFqcGdeQXVyMTAwOTg0NzU5._V1_FMjpg_UX1000_.jpg" width="100">
+  <figcaption>Tina Fay</figcaption>
+  </figure>
+  </div>
+  
+  <div class="item2-200">
+Oh I’d love to say [Monica Bellucci](https://www.imdb.com/name/nm0000899/), purely because of her Italian charm. Looks wise, I have highest match with [Tina Fay](https://www.imdb.com/name/nm0275486/) (according to the [StarByFace](https://www.starbyface.com/) app)!
+  </div>
+  
+</div>

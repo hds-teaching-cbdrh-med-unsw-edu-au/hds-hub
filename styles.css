@@ -189,3 +189,104 @@ opacity: .6;
   max-width: 200px;
   min-width: 100px;
 }
+
+
+/* Formatting software table */
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+.software {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Small version appears for smaller screens */
+.software-small {
+  display: none;
+}
+
+.software td {
+    padding: 12px 15px;
+    border-top: thin solid #f3f3f3;
+}
+
+.software th {
+    padding: 12px 15px;
+    border-top: medium solid #ddd;
+    text-align: center;
+}
+
+.software tr {
+    border-top: thin solid #dddddd;
+}
+
+.software tbody {
+    border-bottom: medium solid #ddd;
+}
+
+.software-image {
+  width: 100px;
+  float: center;
+  margin: 10px;
+}
+
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+.software {
+  display: none;
+}
+
+.software-small {
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: medium solid #ddd;
+}
+
+.software-small tr {
+  border-bottom: thin solid #f3f3f3;
+}
+
+.software-small tr td {
+  padding: 5px;
+}
+
+table tr td tr {
+  color: grey;
+}
+
+.software-small td table tr {
+    border-bottom: none;
+}
+
+.software-small td:first-child {
+  vertical-align: top;
+}
+
+.software-small th {
+    padding: 12px 15px;
+    border-top: medium solid #ddd;
+    border-bottom: medium solid #ddd;
+    text-align: left;
+}
+
+
+.software-small tbody {
+
+}
+
+.software-image {
+  width: 40px;
+  float: center;
+  margin: auto;
+}
+
+}
+
+
+figcaption {
+}
