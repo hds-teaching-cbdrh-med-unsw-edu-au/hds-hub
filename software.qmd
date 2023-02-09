@@ -7,9 +7,9 @@ comments: false
 ## Overview of software and platforms 
 
 ::: {.callout-note}
-Note that different convenors have preferences for different platforms, and so the information summarised here may change depending on the course convenor in a given term,
+Different convenors have preferences for different platforms, and so the information summarised here may change depending on the course convenor in a given term.
 
-The infromation below was last updated for **Term 1 2023**.
+The information below was last updated for **Term 1 2023**.
 :::
 
 <table class="software">
