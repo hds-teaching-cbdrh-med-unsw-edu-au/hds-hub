@@ -36,8 +36,8 @@ comments: false
 	</tr>
 	<tr>
 		<td>[HDAT9300](courses.html#hdat9300) Computing for Health Data Science </td>
-		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
-		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
+		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
 		<td><img class="software-image" src="images/python.png" alt = "Python"></img></td>
 	</tr>
 	<tr>
@@ -158,11 +158,11 @@ comments: false
 		  <table>
 		    <tr>
 		      <td>Content</td> 
-		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
       	</tr>
       	<tr>
 		      <td>Discussion</td> 
-		  		<td><img class="software-image" src="images/teams.png" alt = "MS Teams"></img></td>
+		  		<td><img class="software-image" src="images/ol.jpeg" alt = "OpenLearning"></img></td>
       	</tr>
       	<tr>
 		      <td>Programming</td> 
