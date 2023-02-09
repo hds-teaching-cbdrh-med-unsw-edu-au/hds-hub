@@ -3,7 +3,7 @@ title: "Courses"
 comments: false
 ---
 
-## HDAT9100 Context for Health Data Science
+## HDAT9100 Context for Health Data Science {#hdat9100}
 
 <div class="course-meta-title">
 Analysis Software
@@ -44,7 +44,7 @@ Activities are structured to foster a scientific, questioning attitude in the st
 
 
 
-## HDAT9200 Statistical Foundations for Health Data Science
+## HDAT9200 Statistical Foundations for Health Data Science {#hdat9200}
 
 <div class="course-meta-title">
 Analysis Software
@@ -85,7 +85,7 @@ The course design is highly innovative and novel. Statistical computing is used 
 The core content will be delivered through a flipped approach utilising audio-visual excerpts on the Moodle TELT platform, supported by presentations from Centre for Big Data Research in Health (CBDRH) experts. Statistical computing will be used as the process that drives the content. Peer instruction via discussion during face-to-face sessions will offer support in the form of collaborative learning. Active participation will be encouraged throughout, along with a reflective outlook.
 
 
-## HDAT9300 Computing for Health Data Science
+## HDAT9300 Computing for Health Data Science {#hdat9300}
 
 <div class="course-meta-title">
 Analysis Software
@@ -126,7 +126,7 @@ In this course, you will learn to program in the Python language through tacklin
 The course is accessed via www.openlearning.com. Core material will be delivered as short lectures and readings supported by interactive coding activities. Practical exercises will utilise Spyder/Jupyter Notebook documents.
 
 
-## HDAT9400 Data Management & Curation
+## HDAT9400 Data Management & Curation {#hdat9400}
 
 <div class="course-meta-title">
 Analysis Software
@@ -164,7 +164,7 @@ This course is designed to equip students with the skills required to collect or
 
 
 
-## HDAT9500 Machine Learning I
+## HDAT9500 Machine Learning I {#hdat9500}
 
 <div class="course-meta-title">
 Analysis Software
@@ -209,7 +209,7 @@ Students will learn about the underlying supporting theory of these techniques, 
 
 
 
-## HDAT9510 Machine Learning II 
+## HDAT9510 Machine Learning II {#hdat9510}
 
 <div class="course-meta-title">
 Analysis Software
@@ -254,7 +254,7 @@ Along with the theory, this course will cover a range of health applications for
 This course is designed to build upon the content of HDAT9500 by further progressing the knowledge in the theory, technologies and solutions currently needed by Health Data Scientists working in the area of applied machine learning.
 
 
-## HDAT9600 Statistical Modelling I 
+## HDAT9600 Statistical Modelling I {#hdat9600}
 
 <div class="course-meta-title">
 Analysis Software
@@ -292,7 +292,7 @@ Timetable
 This course provides a sound grounding in the theory and practice of fitting statistical regression models, with particular focus on the flexibility of generalised linear models (GLMs). Starting with linear regression, a major theme of the course is best practice in model fitting, including thorough exploratory data analysis, model assumption checking, data preparation and transformation, including the use of imputation, and careful attention to model adequacy and diagnostics. Emphasis is given to content-aware, purposive model building and the use of Directed Acyclic Graphs (DAGs) of causal relations to inform model parameter selection. Non-linear, logistic, binomial and Poisson models for count data are also covered. Effect modifications (interactions) and their meaning in a health context are explored. The presentation and visualisation of statistical models is considered, with emphasis on the explanatory insights that can be gained from well-constructed models. The final part of the course covers basic time-series models, survival analysis and other time-to-event models.
 
 
-## HDAT9700 Statistical Modelling II
+## HDAT9700 Statistical Modelling II {#hdat9700}
 
 <div class="course-meta-title">
 Analysis Software
@@ -335,7 +335,7 @@ Content is delivered through a combination of online readings, expert guest lect
 
 
 
-## HDAT9800 Visualisation & Communication
+## HDAT9800 Visualisation & Communication {#hdat9800}
 
 <div class="course-meta-title">
 Analysis Software
@@ -376,7 +376,7 @@ This course takes a toolbox approach to creating appropriate, reproducible and t
 
 A basic understanding of how people process information can ensure communication remains effective to an audience with a disability. 
 
-## HDAT9900/9901/9902 Dissertation
+## HDAT9900/9901/9902 Dissertation {#hdat9900}
 
 <div class="course-meta-title">
 Analysis Software
@@ -422,7 +422,7 @@ Students are required to complete Graduate Diploma to a satisfactory standing to
 Students are required to complete 24uoc in Dissertation courses over a number of terms. This can be completed on a full-time or part-time basis.
 
 
-## HDAT9910 Capstone
+## HDAT9910 Capstone {#hdat9910}
 
 <div class="course-meta-title">
 Analysis Software
@@ -464,7 +464,7 @@ The capstone project involves completing extensive, desk-based, independent rese
 Students are required to complete Graduate Diploma in Health Data Science (5372) to a satisfactory standing to be admitted onto this course.
 
 
-## HDAT9000 Clinical Artificial Intelligence
+## HDAT9000 Clinical Artificial Intelligence {#hdat9000}
 
 <div class="course-meta-title">
 Analysis Software

@@ -10,7 +10,7 @@ comments: false
 ![](../images/andy.jpeg)
 :::
 
-Andrew convenes and lectures on several courses, including [HDAT9200](../courses.html#hdat9200-statistical-modelling-ii) Statistical Foundations, [HDAT9300](../courses.html#hdat9300-statistical-modelling-ii) Computing and [HDAT9910](../courses.html#hdat9910-statistical-modelling-ii) Capstone. <br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:a.blance@unsw.edu.au">a.blance@unsw.edu.au</a>
+Andrew convenes and lectures on several courses, including [HDAT9200](../courses.html#hdat9200) Statistical Foundations, [HDAT9300](../courses.html#hdat9300) Computing and [HDAT9910](../courses.html#hdat9910) Capstone. <br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:a.blance@unsw.edu.au">a.blance@unsw.edu.au</a>
 :::
 
 Andrew Blance is an experienced biostatistician, currently focused on convening a forthcoming Masters program in Health Data Science.  His research interests include analysis of clustered (dependent) data and random-effects.

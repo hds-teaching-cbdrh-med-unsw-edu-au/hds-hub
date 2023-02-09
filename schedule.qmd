@@ -22,7 +22,7 @@ df <- utils::read.csv("www/schedule.csv") %>%
     link = paste0('https://timetable.unsw.edu.au/2023/', code, '.html'),
     link = map(link, ~ htmltools::a(href = .x, "")),
     link = map(link, ~ gt::html(as.character(.x))),
-    ilink = paste0("../courses.html#", gsub(" ", "-", tolower(Course))),
+    ilink = paste0("../courses.html#", gsub(" ", "-", tolower(code))),
     ilink = glue::glue("[{code}]({ilink})"),
     ilink = map(ilink, ~ gt::md(.x)),
     ) %>% 

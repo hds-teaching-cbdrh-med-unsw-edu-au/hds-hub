@@ -12,7 +12,7 @@ comments: false
 ![](../images/mark.jpeg)
 :::
 
-Mark is a lecturer and convenor on the course [HDAT9700](../courses.html#hdat9700-statistical-modelling-ii) statistical modelling II.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:m.hanly@unsw.edu.au">m.hanly@unsw.edu.au</a>
+Mark is a lecturer and convenor on the course [HDAT9700](../courses.html#hdat9700) statistical modelling II.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:m.hanly@unsw.edu.au">m.hanly@unsw.edu.au</a>
 :::
 
 ## What publication are you most proud of?

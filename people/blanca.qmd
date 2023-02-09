@@ -11,7 +11,7 @@ comments: false
 ![](../images/blanca.jpeg) 
 :::
 
-Blanca convenes the Clinical AI course [HDAT9000](../courses.html#hdat9000-clinical-artificial-intelligence).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.gallego@unsw.edu.au">b.gallego@unsw.edu.au</a>
+Blanca convenes the Clinical AI course [HDAT9000](../courses.html#hdat9000).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.gallego@unsw.edu.au">b.gallego@unsw.edu.au</a>
 
 ::: 
  

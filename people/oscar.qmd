@@ -11,7 +11,7 @@ comments: false
 ![](../images/oscar.jpeg) 
 :::
 
-Oscar convenes the machine learning courses [HDAT9500](../courses.html#HDAT9500-Machine-Learning-I) and  [HDAT9510](../courses.html#HDAT9510-Machine-Learning-I).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:o.perezconcha@unsw.edu.au">o.perezconcha@unsw.edu.au</a>
+Oscar convenes the machine learning courses [HDAT9500](../courses.html#hdat9500) and  [HDAT9510](../courses.html#hdat9510).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:o.perezconcha@unsw.edu.au">o.perezconcha@unsw.edu.au</a>
 
 ::: 
 

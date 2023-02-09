@@ -11,7 +11,7 @@ comments: false
 ![](../images/heidi.jpeg)
 :::
 
-Heidi convenes the course [HDAT9600](../courses.html#HDAT9600-Statistical-Modelling-I) Statistical modelling I.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:h.welberry@unsw.edu.au">h.welberry@unsw.edu.au</a>
+Heidi convenes the course [HDAT9600](../courses.html#hdat9600) Statistical modelling I.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:h.welberry@unsw.edu.au">h.welberry@unsw.edu.au</a>
 :::
 
 ## What publication are you most proud of?

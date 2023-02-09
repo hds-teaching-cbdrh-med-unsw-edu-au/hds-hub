@@ -6,6 +6,12 @@ comments: false
 
 ## Overview of software and platforms 
 
+::: {.callout-note}
+Note that different convenors have preferences for different platforms, and so the information summarised here may change depending on the course convenor in a given term,
+
+The infromation below was last updated for **Term 1 2023**.
+:::
+
 <table class="software">
   <colgroup>
     <col style="width: 40%">
@@ -356,26 +362,26 @@ comments: false
 </table>
 
 
-## Detailed summary of software and platforms used in each course
+<!-- ## Detailed summary of software and platforms used in each course -->
 
-::: panel-tabset
-## HDAT9100{#hdat9100}
+<!-- ::: panel-tabset -->
+<!-- ## HDAT9100{#hdat9100} -->
 
-### HDAT9100 Context for Health Data Science
+<!-- ### HDAT9100 Context for Health Data Science -->
 
-## HDAT9200
+<!-- ## HDAT9200 -->
 
-## HDAT9300
+<!-- ## HDAT9300 -->
 
-## HDAT9400
+<!-- ## HDAT9400 -->
 
-## HDAT9500
+<!-- ## HDAT9500 -->
 
-## HDAT9600
+<!-- ## HDAT9600 -->
 
-## HDAT9700
+<!-- ## HDAT9700 -->
 
-## HDAT9800
+<!-- ## HDAT9800 -->
 
-## HDAT9900
-:::
+<!-- ## HDAT9900 -->
+<!-- ::: -->

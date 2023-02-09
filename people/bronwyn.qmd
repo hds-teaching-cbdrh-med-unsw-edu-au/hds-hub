@@ -11,7 +11,7 @@ comments: false
 ![](../images/bronwyn.jpeg)
 :::
 
-Bronwyn convenes the dissertation course [HDAT9900/9901/9902](../courses.html#HDAT9901/9902/9903-Dissertation).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.haasdyk@unsw.edu.au">b.haasdyk@unsw.edu.au</a>
+Bronwyn convenes the dissertation course [HDAT9900/9901/9902](../courses.html#hdat9900).<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:b.haasdyk@unsw.edu.au">b.haasdyk@unsw.edu.au</a>
 :::
 
 ## What publication are you most proud of?
