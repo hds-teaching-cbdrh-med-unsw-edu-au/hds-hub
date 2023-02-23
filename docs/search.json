@@ -151,7 +151,7 @@
     "href": "people/and.html",
     "title": "Andrew Blance",
     "section": "",
-    "text": "Andrew convenes and lectures on several courses, including HDAT9200 Statistical Foundations, HDAT9300 Computing and HDAT9910 Capstone.   a.blance@unsw.edu.au\nAndrew Blance is an experienced biostatistician, currently focused on convening a forthcoming Masters program in Health Data Science. His research interests include analysis of clustered (dependent) data and random-effects."
+    "text": "Andrew convenes and lectures on several courses, including HDAT9200 Statistical Foundations, HDAT9300 Computing and HDAT9910 Capstone.   a.blance@unsw.edu.au"
   },
   {
     "objectID": "people/blanca.html",
@@ -432,5 +432,33 @@
     "title": "Software and platforms",
     "section": "",
     "text": "Note\n\n\n\nDifferent convenors have preferences for different platforms, and so the information summarised here may change depending on the course convenor in a given term.\nThe information below was last updated for Term 1 2023.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCourse\n\n\nContent\n\n\nDiscussion\n\n\nProgramming\n\n\n\n\n\n\nHDAT9100 Context for Health Data Science\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9200 Statistical Foundations for Health Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9300 Computing for Health Data Science\n\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9400 Data Management & Curation\n\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9500 Machine Learning I\n\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9510 Machine Learning II\n\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9600 Statistical Modelling I\n\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9700 Statistical Modelling II\n\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9800 Visualisation & Communication\n\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9901 Dissertation\n\n\n\n\n\n\n\n\n\n\n\nHDAT9910 Capstone\n\n\n\n\n\n\n\n\n\n\n\n\nHDAT9000 Clinical Artificial Intelligence\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCourse\n\n\nSoftware\n\n\n\n\n\n\nHDAT9100 Context for Health Data Science\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\nHDAT9200 Statistical Foundations for Health Data Science\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\n\nHDAT9300 Computing for Health Data Science\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\n\nHDAT9400 Data Management & Curation\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\n\nHDAT9500 Machine Learning I\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\n\nHDAT9510 Machine Learning II\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\n\nHDAT9600 Statistical Modelling I\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\n\nHDAT9700 Statistical Modelling II\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\n\nHDAT9800 Visualisation & Communication\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\n\nHDAT9901 Dissertation\n\n\n\n\n\n\nContent\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\nHDAT9910 Capstone\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming\n\n\n\n\n\n\n\n\n\nHDAT9900 Clinical Artificial Intelligence\n\n\n\n\n\n\nContent\n\n\n\n\n\n\n\nDiscussion\n\n\n\n\n\n\n\nProgramming"
+  },
+  {
+    "objectID": "people/and.html#what-publication-are-you-most-proud-of",
+    "href": "people/and.html#what-publication-are-you-most-proud-of",
+    "title": "Andrew Blance",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\nA multilevel modelling solution to mathematical coupling1 What I particularly like about this paper, is that it demonstrates in simple terms a statistical paradox that often hides in plain sight, illustrated for a real world use case (Guided Tissue Regeneration). The proposed methodological solution is both elegant in its design and fully flexible in allowing expansion to model more complex scenarios. Implicit in the paper, is the need for carefully considered ‘meaning making’ whenever investigating casual links."
+  },
+  {
+    "objectID": "people/and.html#whats-the-most-important-take-home-message-from-your-course",
+    "href": "people/and.html#whats-the-most-important-take-home-message-from-your-course",
+    "title": "Andrew Blance",
+    "section": "What’s the most important take home message from your course?",
+    "text": "What’s the most important take home message from your course?\nStatistical Thinking! The ‘Art’ needs to work in synergy with the ‘Science’. In other words, one needs to go beyond algorithmic application/processing in order for ‘meaning making’ to happen. Oh, and reflection. Reflection is one of the most powerful tools we have in learning."
+  },
+  {
+    "objectID": "people/and.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "people/and.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Andrew Blance",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?\nConsider the pay scales offered by Industry!"
+  },
+  {
+    "objectID": "people/and.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "people/and.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Andrew Blance",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\n\n\n\n\n\nTom Selleck!"
   }
 ]

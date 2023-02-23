@@ -13,4 +13,36 @@ comments: false
 Andrew convenes and lectures on several courses, including [HDAT9200](../courses.html#hdat9200) Statistical Foundations, [HDAT9300](../courses.html#hdat9300) Computing and [HDAT9910](../courses.html#hdat9910) Capstone. <br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:a.blance@unsw.edu.au">a.blance@unsw.edu.au</a>
 :::
 
-Andrew Blance is an experienced biostatistician, currently focused on convening a forthcoming Masters program in Health Data Science.  His research interests include analysis of clustered (dependent) data and random-effects.
+## What publication are you most proud of?
+
+[A multilevel modelling solution to mathematical coupling](http://doi.org/10.1191/0962280205sm418oa)[^1] What I particularly like about this paper, is that it demonstrates in simple terms a statistical paradox that often hides in plain sight, illustrated for a real world use case (Guided Tissue Regeneration). The proposed methodological solution is both elegant in its design and fully flexible in allowing expansion to model more complex scenarios. Implicit in the paper, is the need for carefully considered 'meaning making' whenever investigating casual links.
+
+[^1]: Blance A, Tu YK, Gilthorpe MS. A multilevel modelling solution to mathematical coupling. Statistical Methods in Medical Research. 2005 Dec;14(6):553-65. [http://doi.org/10.1191/0962280205sm418oa](http://doi.org/10.1191/0962280205sm418oa)
+
+
+## What’s the most important take home message from your course?
+
+Statistical Thinking!  The 'Art' needs to work in synergy with the 'Science'. In other words, one needs to go beyond algorithmic application/processing in order for 'meaning making' to happen. Oh, and reflection. Reflection is one of the most powerful tools we have in learning.
+
+## If you could go back in time, what bit of advice would you give to yourself as a student?
+
+Consider the pay scales offered by Industry!
+
+## Who would play you in the biopic of your life?
+
+<div class="grid-container-200">
+
+  <div class="item1-200">
+  <img src="https://m.media-amazon.com/images/M/MV5BMTQyMjQzODMzNF5BMl5BanBnXkFtZTcwMjE0NTM1Mw@@._V1_FMjpg_UX1000_.jpg" width="100">
+  </div>
+  
+  <div class="item2-200">
+  [Tom Selleck](https://www.imdb.com/name/nm0000633/)!
+  </div>
+  
+</div>
+
+
+
+
+
