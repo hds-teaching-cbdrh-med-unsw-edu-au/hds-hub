@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Danielle Ritz Shala">
+<meta name="dcterms.date" content="2022-04-02">
+<meta name="description" content="Danielle discusses her work at the interface of data science and clinical practice.">
+
+<title>Bridging the chasm of expectations and reality with real-world projects</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Bridging the chasm of expectations and reality with real-world projects">
+<meta property="og:description" content="_Danielle discusses her work at the interface of data science and clinical practice._">
+<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/20230402-bridging-the-chasm/danielle-ritz-shala.png">
+<meta property="og:image:height" content="300">
+<meta property="og:image:width" content="300">
+<meta name="twitter:title" content="Bridging the chasm of expectations and reality with real-world projects">
+<meta name="twitter:description" content="_Danielle discusses her work at the interface of data science and clinical practice._">
+<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/20230402-bridging-the-chasm/danielle-ritz-shala.png">
+<meta name="twitter:image-height" content="300">
+<meta name="twitter:image-width" content="300">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Information</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-information">    
+        <li>
+    <a class="dropdown-item" href="../../people.html"><i class="bi bi-people-fill" role="img">
+</i> 
+ <span class="dropdown-text">Your teaching team</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses.html"><i class="bi bi-code" role="img">
+</i> 
+ <span class="dropdown-text">Courses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../schedule.html"><i class="bi bi-calendar3" role="img">
+</i> 
+ <span class="dropdown-text">Schedule</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../software.html"><i class="bi bi-laptop" role="img">
+</i> 
+ <span class="dropdown-text">Software and platforms</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../faq.html"><i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"><i class="bi bi-chat-right-heart-fill" role="img">
+</i> 
+ <span class="menu-text">HDS Student Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/cbdrh1"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/CBDRH"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&amp;tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3"><i class="bi bi-microsoft-teams" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<p><img src="../../images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-did-i-learn-from-working-on-a-real-world-project" id="toc-what-did-i-learn-from-working-on-a-real-world-project" class="nav-link active" data-scroll-target="#what-did-i-learn-from-working-on-a-real-world-project">What did I learn from working on a real-world project?</a>
+  <ul class="collapse">
+  <li><a href="#experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context" id="toc-experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context" class="nav-link" data-scroll-target="#experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context">Experience with real eMR data and manipulating messy datasets for a specific clinical context</a></li>
+  <li><a href="#starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context" id="toc-starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context" class="nav-link" data-scroll-target="#starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context">Starting with simple and practical methods to answer a question and fit a defined context</a></li>
+  <li><a href="#working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals" id="toc-working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals" class="nav-link" data-scroll-target="#working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals">Working with engaged leaders and supervisors and communicating with other teams to progress goals</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bridging the chasm of expectations and reality with real-world projects</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Health Data Science</div>
+    <div class="quarto-category">electronic medical records</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <em>Danielle discusses her work at the interface of data science and clinical practice.</em>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Danielle Ritz Shala <a href="https://orcid.org/0000-0001-7727-6740" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 2, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="author-meta-content">
+<p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i> <a href="danielleritz.shala@health.nsw.gov.au">danielleritz.shala@health.nsw.gov.au</a></p>
+</div>
+<div class="author-meta-content">
+<p><i class="fa-solid fa-user" title="A person" aria-label="user"></i> <a href="https://orcid.org/0000-0001-7727-6740">https://orcid.org/0000-0001-7727-6740</a></p>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="round-border">
+<p><img src="danielle-ritz-shala.png" class="img-fluid"></p>
+</div>
+<p>Danielle is a Clinician and Data Scientist with applied experience in the use of health data in clinical, research, and industry settings. She is focused on strategic, real-world application of data science and digital health to drive meaningful decisions and value in healthcare. She finds parallels in her stints in paediatrics, data, and technology: they’re (mostly) innocent, full of stories, innovative, and fun!</p>
+</div></div><p>What makes working in intensive care different? For me, it’s the criticality of time, patient care, communication, technology, and priorities. Working in this type of environment forces people to prioritise ruthlessly and find efficient ways of doing tasks–partly to save time, but mostly to be ready and focused for the next unpredictable certainty (e.g.&nbsp;a baby who starts off crying like a rockstar and shortly turns blue, a toddler who’s woken up thrashing around and removing the breathing tube while the nurse was on break, a massive drop in blood pressure hours after a heart surgery, etc). As I was working clinically, I observed that copying and pasting is used by some clinicians to complete their electronic documentation quicker. Unfortunately, some would inadvertently enter a progress note on the wrong patient’s record, and others would forget to update a copied note with relevant changes in a patient’s status or therapy settings. As I experienced the reality of these risks on the floor, I noted there was a problem. I could see how the scenarios were generally a result of earnest efforts to use technology smartly and more efficiently, however there was also potential for unintended harm.</p>
+<p>I have always been interested in the use (and perhaps misuse and abuse) of technology in healthcare, particularly its implications in real-world settings. I was attending local and international informatics conferences around 2017/18, and was also having informal chats with doctors and nurses about electronic medical record (eMR) documentation and efficiency in general, as I was curious to find out their experiences and perspectives. Through these discussions I realised that while most people assume redundancies, duplications, and copying and pasting happens “a lot” in clinical documentation, there was no measure, nor existing information around it—at least none that I could find in the local, state, or national level. This was another problem I noted. I believe discussions and decisions around eMR documentation and clinical practice would be more productive if guided by both data AND context—two constructs which I think should never be separated, particularly in healthcare. It was then that I became more interested in quantifying text similarity in clinical progress notes, and establishing a baseline measure for it in a local Australian setting.</p>
+<p>At the time I was working part time as an ICU nurse, and part time as a research intern at the network, and towards the end of the internship, I proposed a research study and applied for grant funding to work on the study. I was also keen to learn new ways to explore and analyse data, and had just started the Health Data Science course at this time, so it was a perfect opportunity to apply university concepts to a project based on real-world experiences. The resulting study, <a href="https://doi.org/10.1111/jocn.16374">Measuring text similarity and its associated factors in electronic nursing progress notes: A retrospective review</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, was published in 2022 in the Journal of Clinical Nursing.</p>
+<section id="what-did-i-learn-from-working-on-a-real-world-project" class="level2">
+<h2 class="anchored" data-anchor-id="what-did-i-learn-from-working-on-a-real-world-project">What did I learn from working on a real-world project?</h2>
+<section id="experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context" class="level3">
+<h3 class="anchored" data-anchor-id="experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context">Experience with real eMR data and manipulating messy datasets for a specific clinical context</h3>
+<p>For this study, I was given two separate datasets: one containing patient details, and another containing progress notes. It was quite messy as it contained notes for an entire patient stay, with varying note structures and lengths. At first it may sound fairly straignforward to identify text that has been copied and pasted, and the data scientist in us would be very excited to code some form of regular expressions (regex) or clustering algorithm to help in detecting the notes required—but consider that this is “a step to a step” which could also take time and would need testing depending on your level of programming experience and exposure to the text. In my case, I was early in my HDS programming journey.</p>
+<p>I dedicated a period to run and test the first option, but noticed that there are notes that either get excluded or included which didn’t fit the study criteria. For example, if I filtered just by the category type (e.g.&nbsp;nursing progress note) and location (e.g.&nbsp;ICU), I ended up including notes from specialist nurses who visit ICU patients. Some of them may have a “Clinical Nurse Specialist” title in the system, others may have a “Registered Nurse” title. While some with the title “Registered Nurse” will do a progress note, not all of them will do a shift summary progress note for a patient. Some followed a specific format for writing shift summary notes, but others didn’t. It was definitely interesting for me to see the scenarios and variations of what happens in practice, and how these were reflected in the data!</p>
+<p>Overall, I had to find ways to match the notes and filter down to only what I needed—this was a great way to apply what I knew as a clinician, what I was learning in Python and practically working with Pandas and numpy! I decided not to skip the manual task of annotating the relevant notes and classifying whether they were done in ICU or not. This meant checking over a thousand notes individually, confirming that they were indeed shift summary notes, done by a nurse, and in ICU. Supervised machine learning could be an alternative to this, but for most machine learning tasks, having correctly labelled data or the “ground truth” would be ideal. While this step took considerable time, it was definitely worthwhile, as it has allowed me to understand our practice deeper and learn more about the nuances of clinical text.</p>
+</section>
+<section id="starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context" class="level3">
+<h3 class="anchored" data-anchor-id="starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context">Starting with simple and practical methods to answer a question and fit a defined context</h3>
+<p>There’s a plethora of methods, studies, and repos that can address a question/problem these days (and there’s chatGPT too!). As more and more sophisticated programs and analytical techniques have sprung up in recent years, it’s easy to get excited and carried away by the next shiny library/tool and lose sight of the core question being solved. For me, the true challenge for a data scientist lies in <strong>finding the right fit for the problem at hand</strong>.</p>
+<p>I read about different ways of calculating similarity—each had its own strengths, limitations, and implications. I tested and compared results across a few methods but found minimal differences in the results. After awhile I took a step back and reflected on the purpose and context of the study: from here, I settled on a method that might give results that are closer to the visual recognition of repetitive text, or mimic the feeling of “I think I’ve read that part!” among clinicians, as this relates more to the broader concerns of cognitive overload, efficiency, and value of text repetition in ICUs.</p>
+<p>As it was an exploratory study, part of my goal was also to set a foundation that others may build on and contribute to the body of knowledge around the topic of electronic clinical documentation, especially for nurses. There’s lots of room for improving the study, but that in itself is part of the journey and the learning! This makes reflection on real-world findings, evidence-based recommendations, and learning different ways to tackle a question/problem possible.</p>
+<p>Knowing the problem/question, the purpose and context of the work, and resisting the urge to reinvent the wheel is also useful. Where there are existing methods and libraries, build on them and get creative. One may gain theoretical/academic brownie points as with increasing the complexity of a program/solution, but that may also mean that it’s less applicable, reproducible, or practical in a real world setting. Breaking down problems and simplifying solutions are superpowers, and one can build on these skills by reflecting on work and progress regularly.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="winning-award.jpeg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Danielle acepting the Best Novice Researcher Award for her work on nursing documentation in electronic medical records, at the NSW Health Sydney Local Health District Nursing and Midwifery Symposium. Credit Sydney LHD.</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals" class="level3">
+<h3 class="anchored" data-anchor-id="working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals">Working with engaged leaders and supervisors and communicating with other teams to progress goals</h3>
+<p>The endless possibilities of programming may be exciting to us data scientists, but that wouldn’t always translate to another person. Communicating technical concepts to non-technical groups or individuals was perhaps one of the most challenging and rewarding parts of the project for me. This is something that I definitely picked up in the real world, and something that I sought out to do, as I wanted to use my clinical background and early HDS skills to bridge gaps across clinical, technical, and leadership teams.</p>
+<p>Learning to engage with key contacts from other departments is also important in the success of a project. For example, as I was preparing our ethics application, I sought advice from the research and ethics department and clarified points that we were unsure about. I learned a great deal about the process, and their team became acquainted with our project early on. It took a number of back and forth discussions with contacts but in the end, we saved considerable time as our application was approved on first submission. This would not have been possible without my supportive and empowering supervisor who was patient in listening to my ideas, and tremendously helpful in framing and consolidating them for applications and presentations. It’s always helpful to seek and receive feedback, particularly from experts who have already been through a similar process.</p>
+<p>Another example demonstrating the importance of communication for the project was liaising with the medical records team. The initial dataset supplied to me was very large and didn’t look “right”. You’ll know this as you perform exploratory data analysis and find values that are either out of range or out of the context of your study. While I was excited that I’ve received the data (finally!), I knew I couldn’t use it for preparation and analysis yet, and had to have discussions with the person who extracted the data. Apart from going back to the data request form and project protocol, it was helpful for us to have meetings where we could walk through these together and quickly clarify questions. The extract took more time due to this, but in the end it worked out as the dataset was also halved and more aligned with the study requirements.</p>
+<p>Overall, working on a project based on a real world healthcare setting was a great way for me to apply my domain knowledge as a clinician while refining my skills as a data scientist. I enjoyed the highs and lows of the project—both on the technical and “soft” aspects as it exposed me to a variety of scenarios and unforeseen challenges, and encouraged me to become more adaptable, creative, and focused in my approaches. I was thrilled when my work was recognised by the Sydney Local Health District named as the winner of the Best Novice Researcher Award. There are plenty of ideas and ideals we would like translated in the real world, but the cold hard truth is it isn’t as easy as “1,2,3” or “if A, then B.” The tools we have now and the bright promise of rapidly evolving techniques in data science will not be maximised if not applied to real world problems and data. I would highly encourage anyone to get involved and get their hands dirty with existing projects—apart from the opportunity to build on technical skills, it teaches a great deal of practical lessons about communication, project and time management, and collaboration which are all highly useful in driving projects forward, growing in your practice, having fun, and hopefully, making a difference!</p>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Shala DR, Sheppard‐Law S. Measuring text similarity and its associated factors in electronic nursing progress notes: A retrospective review. Journal of Clinical Nursing. May 2022. <a href="https://doi.org/10.1111/jocn.16374">https://doi.org/10.1111/jocn.16374</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/hds-hub\.cbdrh\.med\.unsw\.edu\.au/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="hds-teaching-cbdrh-med-unsw-edu-au/hds-blog-discussion" data-repo-id="R_kgDOI6SXjA" data-category="General" data-category-id="DIC_kwDOI6SXjM4CUBiC" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© Copyright 2023, UNSW</div>   
+    <div class="nav-footer-right">This page is built with ☘️ and <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -27,7 +27,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 ![](jason-meyer.jpeg)
 :::
 
-Jason is a HDS Masters graduate from 2022. He has spent the last 10+ working in ICU as a registered nurse in both clinical and research roles. Most recently he has starting working for [DonateLife Queensland](https://www.donatelife.gov.au/find-your-local-donatelife-agency/donatelife-queensland) as the Data and Audit Clinical Nurse Consultant. Jason is passionate about using data to represent the truth and inform clinical decision making.]
+Jason is a HDS Masters graduate from 2022. He has spent the last 10+ working in ICU as a registered nurse in both clinical and research roles. Most recently he has starting working for [DonateLife Queensland](https://www.donatelife.gov.au/find-your-local-donatelife-agency/donatelife-queensland) as the Data and Audit Clinical Nurse Consultant. Jason is passionate about using data to represent the truth and inform clinical decision making.
 
 :::
 
