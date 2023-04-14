@@ -5,7 +5,7 @@ author:
   - name: Manny Adachi
     email: mamiya_adachi@yahoo.co.jp
     url: https://www.linkedin.com/in/mamiyaad/
-date: 2022-01-13
+date: 2023-01-13
 categories: [Health Data Science, SAS, Cortex] # self-defined categories
 image: manny-adachi.jpg
 cap-location: margin

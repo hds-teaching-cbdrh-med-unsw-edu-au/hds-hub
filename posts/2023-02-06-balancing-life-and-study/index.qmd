@@ -6,7 +6,7 @@ author:
     email: jmeyer2482@gmail.com
     orcid: 0000-0002-9344-1280
     url: https://au.linkedin.com/in/jmeyer2482
-date: 2022-02-06
+date: 2023-02-06
 categories: [Health Data Science, work-life balance] # self-defined categories
 image: "Sidney-122.jpg"
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!

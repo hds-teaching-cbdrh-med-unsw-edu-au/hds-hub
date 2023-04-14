@@ -6,7 +6,7 @@ author:
     email: danielleritz.shala@health.nsw.gov.au
     orcid: 0000-0001-7727-6740
     url: https://orcid.org/0000-0001-7727-6740
-date: 2022-04-12
+date: 2023-04-12
 categories: [Health Data Science, electronic medical records, publishing research] # self-defined categories
 image: "danielle-ritz-shala2.jpg"
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!

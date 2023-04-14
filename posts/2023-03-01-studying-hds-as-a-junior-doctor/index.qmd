@@ -5,7 +5,7 @@ author:
   - name: Lucinda Roper
     email: roper.lucinda@gmail.com
     url: https://www.researchgate.net/profile/Lucinda-Roper
-date: 2022-04-04
+date: 2023-04-04
 categories: [Health Data Science, work-life balance, publishing research] # self-defined categories
 image: lucinda-roper.jpg
 cap-location: margin
