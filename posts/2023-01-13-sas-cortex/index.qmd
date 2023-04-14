@@ -28,7 +28,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 ![](manny-adachi.jpg)
 :::
 
-Manny Adachi is an aspiring data scientist from Japan in the Master's program in Health Data Science. His interests are in motorcycle touring, traveling, and of course data science!!]
+Manny Adachi is an aspiring data scientist from Japan in the Master's program in Health Data Science. His interests are in motorcycle touring, traveling, and of course data science!!
 
 :::
 
