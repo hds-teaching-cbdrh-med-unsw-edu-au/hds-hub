@@ -116,7 +116,7 @@
     "href": "people.html",
     "title": "Meet the teaching team",
     "section": "",
-    "text": "Andrew Blance\n\n\nSenior Lecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlanca Gallego Luxan\n\n\nAssociate Professor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBronwyn Brew Haasdyk\n\n\nSenior Research Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeidi Welberry\n\n\nResearch Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMark Hanly\n\n\nLecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOscar Perez Concha\n\n\nSenior Lecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSanja Lujic\n\n\nLecturer\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Andrew Blance\n\n\nSenior Lecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlanca Gallego Luxan\n\n\nAssociate Professor\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBronwyn Brew Haasdyk\n\n\nSenior Research Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHeidi Welberry\n\n\nResearch Fellow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMark Hanly\n\n\nLecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOscar Perez Concha\n\n\nSenior Lecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSanja Lujic\n\n\nLecturer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTim Churches\n\n\nHealth Data Scientist\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "people/and.html",
@@ -362,6 +362,48 @@
     "title": "Sanja Lujic",
     "section": "Who would play you in the biopic of your life?",
     "text": "Who would play you in the biopic of your life?\n\n\n\n\n\nTina Fay\n\n\n\n\nOh I’d love to say Monica Bellucci, purely because of her Italian charm. Looks wise, I have highest match with Tina Fay (according to the StarByFace app)!"
+  },
+  {
+    "objectID": "people/tim.html",
+    "href": "people/tim.html",
+    "title": "Tim Churches",
+    "section": "",
+    "text": "Tim Churches as he used to look, which is how he still imagines himself to look now…\n\n\n\n\n\n\nTim Churches as he actually looks now…\n\n\n\nTim is the convenor and principle lecturer on the course HDAT9800 Health Data Visualisation and Communication.  timothy.churches@unsw.edu.au"
+  },
+  {
+    "objectID": "people/tim.html#background",
+    "href": "people/tim.html#background",
+    "title": "Tim Churches",
+    "section": "Background",
+    "text": "Background\nDr Tim Churches is a medically-trained epidemiologist and health data scientist with experience in public health informatics in both government and academic roles. He is a Senior Research Fellow at UNSW South Western Sydney Clinical School and the Ingham Institute for Applied Medical Research. His current interests include the use of machine learning in causal estimation, reproducible research methods and teaching health data science. He is the author of several open-source R and Python packages."
+  },
+  {
+    "objectID": "people/tim.html#what-publication-are-you-most-proud-of",
+    "href": "people/tim.html#what-publication-are-you-most-proud-of",
+    "title": "Tim Churches",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\nI think a paper I wrote in 2001 about a novel, column-oriented, set-theoretic framework for rapid exploratory analysis of very large datasets in real-time. At that time, memory (RAM) was limited and expensive, and disc storage was mechanical and slow. Real-time exploration of larger datasets that would not fit in memory (RAM) was not really feasible. I developed a method of pre-computing ordered inverted indices for every column in a dataset, memory-mapping stored versions of these on disc, and then using set operations on those to rapidly subset and cross-tabulate (or visualise) the data in a fraction of a second, much faster than traditional database technologies. The software was released as an open-source package. It had very little impact on anything, although it was used inside NSW Ministry of Health to examine communicable disease and emergency department public health surveillance data for some time. Nonetheless, it was a clever approach, it worked well and both the idea and its implementation (in Python and C) was developed entirely by me.\nChurches T. Exploratory data analysis using set operations and ordinal mapping. Comput Methods Programs Biomed. 2003 May;71(1):11-23. doi: 10.1016/s0169-2607(02)00057-3. PMID: 12725961."
+  },
+  {
+    "objectID": "people/tim.html#whats-the-most-important-take-home-message-from-your-course",
+    "href": "people/tim.html#whats-the-most-important-take-home-message-from-your-course",
+    "title": "Tim Churches",
+    "section": "What’s the most important take home message from your course?",
+    "text": "What’s the most important take home message from your course?\nI designed the HDAT9800 Visualisation and Communication of Health Data course with my colleague Dr James Farrow (who is a computer scientist) with goal of equiping students with the skills requird to explore and visualise real-world data, which is often messy, complex and large. More importantly, the course is intended to give students the confidence to explore new methods and software packages (and even write their own), recognising that data science in general is a very fast-moving field, and constant curiosity and exploration of new methods is an essential part of becoming a successful data scientist. Stay curious, and set aside time each week just to play with new methods and packages!"
+  },
+  {
+    "objectID": "people/tim.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "people/tim.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Tim Churches",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?\nFind a key textbook in each domain and read it cover-to-cover, possibly several times. It will stick with you for the rest of your life."
+  },
+  {
+    "objectID": "people/tim.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "people/tim.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Tim Churches",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\n\nI think Bernard Hill, who played the lazy, shambling, reprobate but nonetheless charming coroner, Madgett, in Peter Greenaway’s sublime film Drowning by Numbers, could nicely play lazy, shambling, reprobate but nonetheless charming me."
   },
   {
     "objectID": "posts.html",
