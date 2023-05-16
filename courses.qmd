@@ -335,7 +335,7 @@ Content is delivered through a combination of online readings, expert guest lect
 
 
 
-## HDAT9800 Visualisation & Communication
+## HDAT9800 Health Data Visualisation & Communication
 
 <div class="course-meta-title">
 Analysis Software

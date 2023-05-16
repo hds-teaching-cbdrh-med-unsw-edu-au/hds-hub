@@ -56,11 +56,11 @@
     "text": "HDAT9700 Statistical Modelling II\n\nAnalysis Software\n\n\nR/RStudio\n\n\nPrerequisites\n\n\nPostgraduate: HDAT9200 and HDAT9600\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9700\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9700.html\n\nSophisticated modelling techniques are essential for the analysis of real-world health data. Building on Health Data Analytics: Statistical Modelling I (HDAT9600), this course expands the statistical toolkit and broadens students’ understanding of relevant statistical approaches for the analysis of realistically complex data structures and research questions. The course is aimed at those currently working or planning on working in health or a health-related field, and who are interested in applying advanced statistical methods to analyse complex data.\nTopics covered in this course include multilevel models for hierarchical data; analysis of time series and longitudinal data; quasi-experimental approaches for drawing causal inferences from observational data; multiple imputation for missing values; and simulation approaches for study planning and model evaluation.\nContent is delivered through a combination of online readings, expert guest lectures and practical hands-on tutorials. Statistical concepts are illustrated with a variety of health examples, and students will learn how to implement methods using leading statistical software. Lectures are followed by weekly exercises, which reinforce the learning and programming skills covered in the face-to-face tutorials."
   },
   {
-    "objectID": "courses.html#hdat9800-visualisation-communication",
-    "href": "courses.html#hdat9800-visualisation-communication",
+    "objectID": "courses.html#hdat9800-health-data-visualisation-communication",
+    "href": "courses.html#hdat9800-health-data-visualisation-communication",
     "title": "Courses",
-    "section": "HDAT9800 Visualisation & Communication",
-    "text": "HDAT9800 Visualisation & Communication\n\nAnalysis Software\n\n\nR/RStudio\n\n\nPrerequisites\n\n\nPostgraduate: None\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9800\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9800.html\n\nHealth Data Scientists need to present information to audiences across a range of backgrounds and spanning a spectrum from naïve or non-practitioners of a discipline to highly informed and expert audiences. Effective communication across different media types is essential. Appropriate data visualisation techniques can greatly enhance communication and increase the effectiveness of communication. Increasingly the scientific community has become aware of problems regarding lack of transparency and reproducibility.\nThis course takes a toolbox approach to creating appropriate, reproducible and transparent analyses and visualisations. In the context of R, it presents useful best-practice data science analysis and visualisation techniques with a focus on different types of data visualisations.\nA basic understanding of how people process information can ensure communication remains effective to an audience with a disability."
+    "section": "HDAT9800 Health Data Visualisation & Communication",
+    "text": "HDAT9800 Health Data Visualisation & Communication\n\nAnalysis Software\n\n\nR/RStudio\n\n\nPrerequisites\n\n\nPostgraduate: None\n\n\nHandbook\n\n\nhandbook.unsw.edu.au/postgraduate/courses/2023/HDAT9800\n\n\nTimetable\n\n\ntimetable.unsw.edu.au/2023/HDAT9800.html\n\nHealth Data Scientists need to present information to audiences across a range of backgrounds and spanning a spectrum from naïve or non-practitioners of a discipline to highly informed and expert audiences. Effective communication across different media types is essential. Appropriate data visualisation techniques can greatly enhance communication and increase the effectiveness of communication. Increasingly the scientific community has become aware of problems regarding lack of transparency and reproducibility.\nThis course takes a toolbox approach to creating appropriate, reproducible and transparent analyses and visualisations. In the context of R, it presents useful best-practice data science analysis and visualisation techniques with a focus on different types of data visualisations.\nA basic understanding of how people process information can ensure communication remains effective to an audience with a disability."
   },
   {
     "objectID": "courses.html#hdat990099019902-dissertation",
@@ -312,7 +312,42 @@
     "href": "people/tim.html",
     "title": "Tim Churches",
     "section": "",
-    "text": "Tim.Churches@inghaminstitute.org.au\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi etiam dignissim diam quis enim lobortis. Libero enim sed faucibus turpis in eu mi bibendum. Odio ut enim blandit volutpat. Posuere ac ut consequat semper viverra nam libero justo laoreet. Scelerisque in dictum non consectetur. Dolor sit amet consectetur adipiscing elit ut. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Odio aenean sed adipiscing diam donec adipiscing. Eu lobortis elementum nibh tellus molestie nunc non blandit.\nVelit egestas dui id ornare. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Mauris pharetra et ultrices neque. Mus mauris vitae ultricies leo integer malesuada nunc. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Donec pretium vulputate sapien nec. At varius vel pharetra vel turpis nunc eget lorem. Pretium quam vulputate dignissim suspendisse. Lacinia at quis risus sed vulputate odio. Fusce id velit ut tortor pretium viverra. Diam ut venenatis tellus in metus vulputate eu. Ultricies mi eget mauris pharetra. Interdum consectetur libero id faucibus nisl tincidunt. Mollis nunc sed id semper risus in hendrerit gravida rutrum."
+    "text": "Tim Churches as he used to look, which is how he still imagines himself to look now…\n\n\n\n\n\n\nTim Churches as he actually looks now…\n\n\n\nTim is the convenor and principle lecturer on the course HDAT9800 Health Data Visualisation and Communication.  timothy.churches@unsw.edu.au"
+  },
+  {
+    "objectID": "people/tim.html#background",
+    "href": "people/tim.html#background",
+    "title": "Tim Churches",
+    "section": "Background",
+    "text": "Background\nDr Tim Churches is a medically-trained epidemiologist and health data scientist with experience in public health informatics in both government and academic roles. He is a Senior Research Fellow at UNSW South Western Sydney Clinical School and the Ingham Institute for Applied Medical Research. His current interests include the use of machine learning in causal estimation, reproducible research methods and teaching health data science. He is the author of several open-source R and Python packages."
+  },
+  {
+    "objectID": "people/tim.html#what-publication-are-you-most-proud-of",
+    "href": "people/tim.html#what-publication-are-you-most-proud-of",
+    "title": "Tim Churches",
+    "section": "What publication are you most proud of?",
+    "text": "What publication are you most proud of?\nI think a paper I wrote in 2001 about a novel, column-oriented, set-theoretic framework for rapid exploratory analysis of very large datasets in real-time. At that time, memory (RAM) was limited and expensive, and disc storage was mechanical and slow. Real-time exploration of larger datasets that would not fit in memory (RAM) was not really feasible. I developed a method of pre-computing ordered inverted indices for every column in a dataset, memory-mapping stored versions of these on disc, and then using set operations on those to rapidly subset and cross-tabulate (or visualise) the data in a fraction of a second, much faster than traditional database technologies. The software was released as an open-source package. It had very little impact on anything, although it was used inside NSW Ministry of Health to examine communicable disease and emergency department public health surveillance data for some time. Nonetheless, it was a clever approach, it worked well and both the idea and its implementation (in Python and C) was developed entirely by me.\nChurches T. Exploratory data analysis using set operations and ordinal mapping. Comput Methods Programs Biomed. 2003 May;71(1):11-23. doi: 10.1016/s0169-2607(02)00057-3. PMID: 12725961."
+  },
+  {
+    "objectID": "people/tim.html#whats-the-most-important-take-home-message-from-your-course",
+    "href": "people/tim.html#whats-the-most-important-take-home-message-from-your-course",
+    "title": "Tim Churches",
+    "section": "What’s the most important take home message from your course?",
+    "text": "What’s the most important take home message from your course?\nI designed the HDAT9800 Visualisation and Communication of Health Data course with my colleague Dr James Farrow (who is a computer scientist) with goal of equiping students with the skills requird to explore and visualise real-world data, which is often messy, complex and large. More importantly, the course is intended to give students the confidence to explore new methods and software packages (and even write their own), recognising that data science in general is a very fast-moving field, and constant curiosity and exploration of new methods is an essential part of becoming a successful data scientist. Stay curious, and set aside time each week just to play with new methods and packages!"
+  },
+  {
+    "objectID": "people/tim.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "href": "people/tim.html#if-you-could-go-back-in-time-what-bit-of-advice-would-you-give-to-yourself-as-a-student",
+    "title": "Tim Churches",
+    "section": "If you could go back in time, what bit of advice would you give to yourself as a student?",
+    "text": "If you could go back in time, what bit of advice would you give to yourself as a student?\nFind a key textbook in each domain and read it cover-to-cover, possibly several times. It will stick with you for the rest of your life."
+  },
+  {
+    "objectID": "people/tim.html#who-would-play-you-in-the-biopic-of-your-life",
+    "href": "people/tim.html#who-would-play-you-in-the-biopic-of-your-life",
+    "title": "Tim Churches",
+    "section": "Who would play you in the biopic of your life?",
+    "text": "Who would play you in the biopic of your life?\n\nI think Bernard Hill, who played the lazy, shambling, reprobate but nonetheless charming coroner, Madgett, in Peter Greenaway’s sublime film Drowning by Numbers, could nicely play lazy, shambling, reprobate but nonetheless charming me."
   },
   {
     "objectID": "posts.html",
