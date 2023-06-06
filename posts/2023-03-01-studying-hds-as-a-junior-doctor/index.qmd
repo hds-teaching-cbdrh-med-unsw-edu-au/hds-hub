@@ -12,6 +12,15 @@ cap-location: margin
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
+<div class="author-meta-content">
+{{< fa envelope title="An envelope" >}} <a href="mailto:roper.lucinda@gmail.com">roper.lucinda@gmail.com</a>
+</div>
+
+<div class="author-meta-content">
+{{< fa user title="A person" >}} <a href="https://www.researchgate.net/profile/Lucinda-Roper">researchgate.net/profile/Lucinda-Roper</a>
+</div>
+
+
 ::: author-meta-content
 {{< fa envelope title="An envelope" >}} roper.lucinda@gmail.com
 :::

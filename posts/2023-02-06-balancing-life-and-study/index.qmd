@@ -13,7 +13,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 ---
 
 <div class="author-meta-content">
-{{< fa envelope title="An envelope" >}} <a href="jmeyer2482@gmail.com">jmeyer2482@gmail.com</a>
+{{< fa envelope title="An envelope" >}} <a href="mailto:jmeyer2482@gmail.com">jmeyer2482@gmail.com</a>
 </div>
 
 <div class="author-meta-content">
