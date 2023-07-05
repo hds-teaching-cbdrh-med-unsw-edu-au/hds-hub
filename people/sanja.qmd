@@ -1,6 +1,6 @@
 ---
 title: "Sanja Lujic"
-description: "Lecturer"
+description: "Senior Lecturer"
 image: ../images/sanja.jpeg
 comments: false
 ---
@@ -11,7 +11,7 @@ comments: false
 ![](../images/sanja.jpeg)
 :::
 
-Sanja is a lecturer and convenor on the courses [HDAT9100](../courses.html#hdat9100) Context for Health Data Science and [HDAT9400](../courses.html#hdat9400) Data Management & Curation.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:s.lujic@unsw.edu.au">s.lujic@unsw.edu.au</a>
+Sanja is a Senior Lecturer and convenor on the courses [HDAT9100](../courses.html#hdat9100) Context for Health Data Science and [HDAT9400](../courses.html#hdat9400) Data Management & Curation.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:s.lujic@unsw.edu.au">s.lujic@unsw.edu.au</a>
 :::
 
 ## What publication are you most proud of?
