@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Calum Nicholson">
+<meta name="dcterms.date" content="2023-09-11">
+<meta name="description" content="Calum discusses the power of literate programming to communicate with clincal collaborators">
+
+<title>Applying literate programming techniques in the workplace</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Applying literate programming techniques in the workplace">
+<meta property="og:description" content="Calum discusses the power of literate programming to communicate with clincal collaborators">
+<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/Calum-Nicholson.jpeg">
+<meta name="twitter:title" content="Applying literate programming techniques in the workplace">
+<meta name="twitter:description" content="Calum discusses the power of literate programming to communicate with clincal collaborators">
+<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/Calum-Nicholson.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Information</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-information">    
+        <li>
+    <a class="dropdown-item" href="../../people.html" rel="" target=""><i class="bi bi-people-fill" role="img">
+</i> 
+ <span class="dropdown-text">Your teaching team</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../courses.html" rel="" target=""><i class="bi bi-code" role="img">
+</i> 
+ <span class="dropdown-text">Courses</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../schedule.html" rel="" target=""><i class="bi bi-calendar3" role="img">
+</i> 
+ <span class="dropdown-text">Schedule</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../software.html" rel="" target=""><i class="bi bi-laptop" role="img">
+</i> 
+ <span class="dropdown-text">Software and platforms</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../faq.html" rel="" target=""><i class="bi bi-question-circle" role="img">
+</i> 
+ <span class="dropdown-text">FAQ</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html" rel="" target=""><i class="bi bi-chat-right-heart-fill" role="img">
+</i> 
+ <span class="menu-text">HDS Student Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/cbdrh1" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/CBDRH" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&amp;tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3" rel="" target=""><i class="bi bi-microsoft-teams" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<p><img src="../../images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-need-for-literate-programming" id="toc-the-need-for-literate-programming" class="nav-link active" data-scroll-target="#the-need-for-literate-programming">The need for literate programming</a></li>
+  <li><a href="#data-collection-reports-did-i-receive-that-data-that-i-think-i-did" id="toc-data-collection-reports-did-i-receive-that-data-that-i-think-i-did" class="nav-link" data-scroll-target="#data-collection-reports-did-i-receive-that-data-that-i-think-i-did">Data Collection Reports: did I receive that data that I think I did?</a></li>
+  <li><a href="#data-analysis-collaborating-with-topic-area-specialists." id="toc-data-analysis-collaborating-with-topic-area-specialists." class="nav-link" data-scroll-target="#data-analysis-collaborating-with-topic-area-specialists.">Data Analysis: collaborating with topic area specialists.</a></li>
+  <li><a href="#where-to-start-with-literate-programming" id="toc-where-to-start-with-literate-programming" class="nav-link" data-scroll-target="#where-to-start-with-literate-programming">Where to start with literate programming?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Applying literate programming techniques in the workplace</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Health Data Science</div>
+    <div class="quarto-category">Literate Programming</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <em>Calum discusses the power of literate programming to communicate with clincal collaborators</em>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Calum Nicholson </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 11, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div style="display:grid; grid-template-columns: 1fr 1fr;">
+<div>
+<div class="author-meta-content">
+<p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i> <a href="mailto:Calum.Nicholson@hri.org.au">Calum.Nicholson@hri.org.au</a></p>
+</div>
+<div class="author-meta-content">
+<p><i class="fa-solid fa-user" title="A person" aria-label="user"></i> <a href="https://www.hri.org.au/our-research/clinical-research/mr-calum-nicholson">hri.org.au/our-research/clinical-research/mr-calum-nicholson</a></p>
+</div>
+<div class="author-meta-content">
+<p><i class="fa-solid fa-user" title="A person" aria-label="user"></i> <a href="https://au.linkedin.com/in/calum-nicholson-13b256171">linkedin.com/in/calum-nicholson-13b256171</a></p>
+</div>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="round-border">
+<p><img src="Calum-Nicholson.jpeg" class="img-fluid"></p>
+</div>
+<p>Calum has been working with the Heart Research Institute since 2018 and he is the National Coordinator for an Australia-wide congenital heart disease (CHD) registry.</p>
+<p>Calum completed the MSc Health Data Science in 2021. His dissertation used geographical information and analysis techniques to assist with service delivery planning for adults with Congenital Heart Disease an was published in <a href="https://doi.org/10.1371/journal.pdig.0000253">PLOS Digital Health</a>.</p>
+</div></div><section id="the-need-for-literate-programming" class="level3">
+<h3 class="anchored" data-anchor-id="the-need-for-literate-programming">The need for literate programming</h3>
+<p>Working as data scientists, our analyses are useless if they cannot be communicated with our collaborators and audiences. Especially when working with topic area specialists such as clinicians, public health experts or clinical researchers, presenting the results of our data analysis is essential. Literate programming techniques are tools that allow for the combination of conventional word processing with code for data analysis. These tools have fast become one of the most useful tools that I was taught during my time completing the Master of Health Data Science with the Centre for Big Data Research in Health. Of course, you still need the key skills of a data scientist—data management, statistics, and visualisation—otherwise there would be nothing to include in a report! However, working with people who do not have the access to the analytic software that you might use means that we need to be able to take our analyses out of these systems so that other people can engage with our work.</p>
+<p>Markdown is a common form of implementing a literature programming technique. It is a mark-up language that is used to format text documents. Unlike Microsoft Word, which is a <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> (/ˈwɪziwɪɡ/ WIZ-ee-wig, i.e.&nbsp;what you see is what you get!) editor, where changes are to text formatting are seen immediately, Markdown uses specific syntax to create formatted text. This does require learning some of the markdown language, but you can mostly get by with knowing a few basics such as headings, lists, and bold and italic text. There are many different tools that combine markdown language with code, <a href="https://jupyter.org/try-jupyter/retro/notebooks/?path=notebooks/Intro.ipynb">Jupyter Notebook</a> is a common one that works with many different coding languages. My experience is mostly with <a href="https://rmarkdown.rstudio.com/">R Markdown from R Studio</a>, which is an excellent tool for literate programming.</p>
+<p>I work for the <a href="https://www.hri.org.au/">Heart Research Institute</a>, coordinating a project that is developing a Bi-National Registry for Congenital Heart Disease in Australia and New Zealand. In this role we have moved through data collection, cleaning, and analysis phases. In all these areas, using literate programming tools to generate reports have become a key part of my workflows. I am often collaborating with clinical staff, often cardiologists, nurses, and neuropsychologists, to produce various outputs and these outputs are always a HTML report using R Markdown.</p>
+</section>
+<section id="data-collection-reports-did-i-receive-that-data-that-i-think-i-did" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-reports-did-i-receive-that-data-that-i-think-i-did">Data Collection Reports: did I receive that data that I think I did?</h3>
+<p>Data collection for our registry involves receiving extracts for clinical data sources, often with hundreds of thousands of records. It is important to make sure that the data that we receive is what was intended to be sent. To aid these processes, I have developed data collection reports using R Markdown. These simply overview everything that was received, with some simple exploratory data analysis. These reports often go back to data managers and clinicians and provide a very useful sanity check that can identify simple mistakes early in the process.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Output</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="consort_flow.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><strong>Generating consort diagrams with <code>ggconsort</code></strong> A flow diagram for patient selection into the ACHD registry. Toggle to the code tab to see the underlying code.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>First a “Study Cohort” is generated. <code>dplyr</code> verbs can be used to filter the cohort that will appear in the flowchart. Second, the boxes and arrows are drawn and plotted with <code>ggplot</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>study_cohorts <span class="ot">&lt;-</span> el.sample <span class="sc">%&gt;%</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">cohort_start</span>(<span class="st">"Assessed for eligibility"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                  <span class="co"># Define cohorts using named expressions</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">cohort_define</span>(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># Patient with missing diagnosis or procedure codes</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                    <span class="at">missing =</span> .full <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span>has_dx <span class="sc">&amp;</span> <span class="sc">!</span>has_proc), </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># only patients with diagnosis or procedure considered</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                    <span class="at">considered =</span> .full <span class="sc">%&gt;%</span> <span class="fu">filter</span>(has_dx <span class="sc">|</span> has_proc),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># patients without congential heart disease</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                    <span class="at">ineligibile =</span> .full <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span>el_final <span class="sc">&amp;</span> (has_dx <span class="sc">|</span> has_proc)),</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># patients with congential Heart Disease</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                    <span class="at">eligibile =</span> .full <span class="sc">%&gt;%</span> <span class="fu">filter</span>(el_final)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                  <span class="co"># Provide text table for cohorts</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">cohort_label</span>(</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>                    <span class="at">missing =</span> <span class="st">"No Diagnosis or Procedure"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>                    <span class="at">considered =</span> <span class="st">"Patients considered for eligibility"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                    <span class="at">ineligibile =</span> <span class="st">"Ineligibile Patients"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                    <span class="at">eligibile =</span> <span class="st">"Eligibile Patients"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>study_consort <span class="ot">&lt;-</span> study_cohorts <span class="sc">%&gt;%</span> </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                  <span class="co"># Add the boxes</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_box_add</span>(</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"full"</span>, <span class="dv">0</span>, <span class="dv">50</span>, <span class="fu">cohort_count_adorn</span>(study_cohorts, .full)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_box_add</span>(</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"considered"</span>, <span class="dv">0</span>, <span class="dv">30</span>, <span class="fu">cohort_count_adorn</span>(study_cohorts, considered)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_box_add</span>(</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"eligibile"</span>, <span class="dv">0</span>, <span class="dv">10</span>, <span class="fu">cohort_count_adorn</span>(study_cohorts, eligibile)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_box_add</span>(</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"missing"</span>, <span class="dv">5</span>, <span class="dv">40</span>, <span class="fu">cohort_count_adorn</span>(study_cohorts, missing)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_box_add</span>(</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"ineligibile"</span>, <span class="dv">5</span>, <span class="dv">20</span>, <span class="fu">cohort_count_adorn</span>(study_cohorts, ineligibile)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>                  <span class="co"># Add the arrows</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_arrow_add</span>(</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>                    <span class="at">start =</span> <span class="st">"full"</span>, <span class="at">start_side =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>                    <span class="at">end =</span> <span class="st">"considered"</span>, <span class="at">end_side =</span> <span class="st">"top"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_arrow_add</span>(</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>                    <span class="at">start =</span> <span class="st">"considered"</span>, <span class="at">start_side =</span> <span class="st">"bottom"</span>,</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>                    <span class="at">end =</span> <span class="st">"eligibile"</span>, <span class="at">end_side =</span> <span class="st">"top"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_arrow_add</span>(</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>                    <span class="at">end =</span> <span class="st">"missing"</span>, <span class="at">end_side =</span> <span class="st">"left"</span>, <span class="at">start_x =</span> <span class="dv">0</span>, <span class="at">start_y =</span> <span class="dv">40</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">consort_arrow_add</span>(</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>                    <span class="at">end =</span> <span class="st">"ineligibile"</span>, <span class="at">end_side =</span> <span class="st">"left"</span>, <span class="at">start_x =</span> <span class="dv">0</span>, <span class="at">start_y =</span> <span class="dv">20</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>              <span class="co"># Plot with ggplot</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>              <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>              <span class="fu">geom_consort</span>() <span class="sc">+</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>              <span class="fu">theme_consort</span>(<span class="at">margin_h =</span> <span class="dv">15</span>, <span class="at">margin_v =</span> <span class="dv">1</span>)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>study_consort</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>A flowchart is a very useful tool for communicating the data collection process and how an eligible population was determined. This has always been difficult to implement in R and has usually required some manual development in a Microsoft Office application. However, I have recently discovered the <a href="https://higgi13425.github.io/ggconsort/"><code>ggconsort</code></a> package that is great for making Consort-Style flowchart. This package can create simple consort diagrams that are perfect for demonstrating how a target population was reached. It uses very familiar dplyr and ggplot2 workflows that make it quite easy to pick up for those who are already familiar with the <a href="https://www.tidyverse.org/"><code>tidyverse</code></a>.</p>
+</section>
+<section id="data-analysis-collaborating-with-topic-area-specialists." class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-collaborating-with-topic-area-specialists.">Data Analysis: collaborating with topic area specialists.</h3>
+<p>Recently, I have been working with neuropsychologists to analyse data in preparation for manuscripts. Unsurprisingly, I know very little about neuropsychology and the neuropsychologists have never used R before! Using literate programming as an iterative process to complete data analysis for a manuscript can really help bridge the gap between disciplines. Ideally, I would want to hand over my analyses with enough clarity that my collaborators can assess my methodologies from their expert perspectives and then write up their results and methods sections using only my reports. This requires not only providing the analysis but including some notes and comments about methodology used for cohort selection and statistical analysis. Since literate programming allows you to write prose alongside your code, it provides a great process for clearing writing out your methods right alongside the analysis and results. You can provide exactly what you think should be included in a manuscript to describe your analysis and your collaborators won’t have to try decipher your code to understand what you are doing.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Output</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="summary_table.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><strong>Creating Summary Tables with qrwraps2</strong> Summary statistics for patients who had completed a DASS-21 survey (example from a recent poster). Toggle to the code tab to see the underlying code.</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>The code below uses the <code>summary_table()</code> function from the <code>qwraps</code> package to create a nice summary table. The template is applied to the whole dataset, then stratified by disease complexity (using <code>dyplr::group_by()</code>). We can then add these two tables together with <code>cbind()</code> to create the final table.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">qwraps_markup =</span> <span class="st">"markdown"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create Table Template for DASS-21 Summary</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>dass_level_summary <span class="ot">&lt;-</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="st">"Depression"</span> <span class="ot">=</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>         <span class="fu">list</span>(<span class="st">"Normal"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_dep_level_clean <span class="sc">==</span> <span class="st">"Normal"</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Mild"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_dep_level_clean <span class="sc">==</span> <span class="st">"Mild"</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Moderate"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_dep_level_clean <span class="sc">==</span> <span class="st">"Moderate"</span>),</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Severe"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_dep_level_clean <span class="sc">==</span> <span class="st">"Severe"</span>),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Extemely Severe"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_dep_level_clean <span class="sc">==</span> <span class="st">"Extemely Severe"</span>),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>              ),</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Anxiety"</span> <span class="ot">=</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>         <span class="fu">list</span>(<span class="st">"Normal"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_anx_level_clean <span class="sc">==</span> <span class="st">"Normal"</span>),</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Mild"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_anx_level_clean <span class="sc">==</span> <span class="st">"Mild"</span>),</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Moderate"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_anx_level_clean <span class="sc">==</span> <span class="st">"Moderate"</span>),</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Severe"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_anx_level_clean <span class="sc">==</span> <span class="st">"Severe"</span>),</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Extemely Severe"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_anx_level_clean <span class="sc">==</span> <span class="st">"Extemely Severe"</span>),</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>              ),</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>       <span class="st">"Stress"</span> <span class="ot">=</span> </span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>         <span class="fu">list</span>(<span class="st">"Normal"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_stress_level_clean <span class="sc">==</span> <span class="st">"Normal"</span>),</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Mild"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_stress_level_clean <span class="sc">==</span> <span class="st">"Mild"</span>),</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Moderate"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_stress_level_clean <span class="sc">==</span> <span class="st">"Moderate"</span>),</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Severe"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_stress_level_clean <span class="sc">==</span> <span class="st">"Severe"</span>),</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>              <span class="st">"Extemely Severe"</span> <span class="ot">=</span> <span class="er">~</span> <span class="fu">n_perc0</span>(dass_stress_level_clean <span class="sc">==</span> <span class="st">"Extemely Severe"</span>),</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>              )</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>       )</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Summary Table for whole dataset</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>dass.level.whole <span class="ot">&lt;-</span> <span class="fu">summary_table</span>(poster.population, dass_level_summary)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Summary table stratified by complexity</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>dass.level.complexity <span class="ot">&lt;-</span> <span class="fu">summary_table</span>(dyplr<span class="sc">::</span><span class="fu">group_by</span>(poster.population, chd_complexity), dass_level_summary)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine both tables</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>dass.level <span class="ot">&lt;-</span> <span class="fu">cbind</span>(dass.level.whole, dass.level.complexity)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Print table with title</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(dass.level,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">rtitle =</span> <span class="st">"DASS-21 Level - Summary Statistics"</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cnames</span>( <span class="fu">c</span>(<span class="fu">paste</span>(<span class="st">"All (N -"</span>, poster.population <span class="sc">%&gt;%</span> nrow, <span class="st">")"</span>, <span class="at">sep =</span> <span class="st">""</span>),</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>                <span class="fu">paste</span>(<span class="st">"Mild (N -"</span>, poster.population <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="at">chd_complexity =</span> <span class="st">"Mild"</span>) <span class="sc">%&gt;%</span> nrow, <span class="st">")"</span>, <span class="at">sep =</span> <span class="st">""</span>),</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>                <span class="fu">paste</span>(<span class="st">"Moderate (N -"</span>, poster.population <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="at">chd_complexity =</span> <span class="st">"Moderate"</span>) <span class="sc">%&gt;%</span> nrow, <span class="st">")"</span>, <span class="at">sep =</span> <span class="st">""</span>),</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>                <span class="fu">paste</span>(<span class="st">"Severe (N -"</span>, poster.population <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="at">chd_complexity =</span> <span class="st">"Severe"</span>) <span class="sc">%&gt;%</span> nrow, <span class="st">")"</span>, <span class="at">sep =</span> <span class="st">""</span>)</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>                )</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>              )</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>These reports are also a great help to communicate the results of your analysis since we can include direct output from the analysis, figures, tables, and comments that help to interpret the results. Of these outputs, creating publication-ready tables has always been the most challenging to implement in the flow of an R Markdown report. There are packages like <code>knitr</code> and <code>kableExtra</code> that can format tables nicely, but I have found that creating the tables to go into this format can often be difficult and time consuming. I have recently found a great package called <a href="https://github.com/dewittpe/qwraps2/"><code>qwraps2</code></a> that has a lot of functions for reproducible reporting and <code>summary_table()</code> is probably my new favourite. It allows you to create a template table format that can be applied to your data. This allows for a very flexible and reproducible way to create summary tables of your data. It is especially useful for providing a demographic overview of your study population.</p>
+</section>
+<section id="where-to-start-with-literate-programming" class="level3">
+<h3 class="anchored" data-anchor-id="where-to-start-with-literate-programming">Where to start with literate programming?</h3>
+<p>To get started with literate programming in R check out the <code>RMarkdown</code> website at <a href="https://rmarkdown.rstudio.com/index.html">rmarkdown.rstudio.com</a>. You’ll find step-by-step instructions to get started as well as a <a href="https://rmarkdown.rstudio.com/gallery.html">gallery of examples</a> with heaps of inspiration! The <code>qwraps2</code> package has a detailed <a href="https://cran.r-project.org/web/packages/qwraps2/vignettes/summary-statistics.html">vignette</a> showing how to build a variety of summary tables. Python users can check out <a href="https://jupyter.org/try-jupyter/retro/notebooks/?path=notebooks/Intro.ipynb">Jupyter Notebooks</a> from the Jupyter community.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/hds-hub\.cbdrh\.med\.unsw\.edu\.au");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="hds-teaching-cbdrh-med-unsw-edu-au/hds-blog-discussion" data-repo-id="R_kgDOI6SXjA" data-category="General" data-category-id="DIC_kwDOI6SXjM4CUBiC" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© Copyright 2023, UNSW</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">This page is built with ☘️ and <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
+
+
+
+</body></html>

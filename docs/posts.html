@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -58,7 +58,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -91,12 +92,15 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Health Data Science Student Blog">
+<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/Calum-Nicholson.jpeg">
 <meta name="twitter:title" content="Health Data Science Student Blog">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/Calum-Nicholson.jpeg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -110,71 +114,73 @@ ul.task-list li input[type="checkbox"] {
     <img src="./images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Information</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-information">    
         <li>
-    <a class="dropdown-item" href="./people.html"><i class="bi bi-people-fill" role="img">
+    <a class="dropdown-item" href="./people.html" rel="" target=""><i class="bi bi-people-fill" role="img">
 </i> 
  <span class="dropdown-text">Your teaching team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses.html"><i class="bi bi-code" role="img">
+    <a class="dropdown-item" href="./courses.html" rel="" target=""><i class="bi bi-code" role="img">
 </i> 
  <span class="dropdown-text">Courses</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./schedule.html"><i class="bi bi-calendar3" role="img">
+    <a class="dropdown-item" href="./schedule.html" rel="" target=""><i class="bi bi-calendar3" role="img">
 </i> 
  <span class="dropdown-text">Schedule</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./software.html"><i class="bi bi-laptop" role="img">
+    <a class="dropdown-item" href="./software.html" rel="" target=""><i class="bi bi-laptop" role="img">
 </i> 
  <span class="dropdown-text">Software and platforms</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./faq.html"><i class="bi bi-question-circle" role="img">
+    <a class="dropdown-item" href="./faq.html" rel="" target=""><i class="bi bi-question-circle" role="img">
 </i> 
  <span class="dropdown-text">FAQ</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"><i class="bi bi-chat-right-heart-fill" role="img">
+    <a class="nav-link active" href="./posts.html" rel="" target="" aria-current="page"><i class="bi bi-chat-right-heart-fill" role="img">
 </i> 
  <span class="menu-text">HDS Student Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/cbdrh1"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/cbdrh1" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/CBDRH"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/CBDRH" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&amp;tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3"><i class="bi bi-microsoft-teams" role="img">
+    <a class="nav-link" href="https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&amp;tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3" rel="" target=""><i class="bi bi-microsoft-teams" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -187,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="./images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
 </div></div>
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Clinical AI">Clinical AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cortex">Cortex <span class="quarto-category-count">(1)</span></div><div class="category" data-category="HIV">HIV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Health Data Science">Health Data Science <span class="quarto-category-count">(6)</span></div><div class="category" data-category="SAS">SAS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="datathon">datathon <span class="quarto-category-count">(1)</span></div><div class="category" data-category="electronic medical records">electronic medical records <span class="quarto-category-count">(1)</span></div><div class="category" data-category="publishing research">publishing research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="synthetic data">synthetic data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="work-life balance">work-life balance <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Clinical AI">Clinical AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cortex">Cortex <span class="quarto-category-count">(1)</span></div><div class="category" data-category="HIV">HIV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Health Data Science">Health Data Science <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Literate Programming">Literate Programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SAS">SAS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="datathon">datathon <span class="quarto-category-count">(1)</span></div><div class="category" data-category="electronic medical records">electronic medical records <span class="quarto-category-count">(1)</span></div><div class="category" data-category="publishing research">publishing research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="synthetic data">synthetic data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="work-life balance">work-life balance <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -214,9 +220,47 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Health Data Science,Clinical AI" data-listing-date-sort="1687960800000" data-listing-file-modified-sort="1687998321123" data-listing-reading-time-sort="5.34">
+<div class="quarto-post image-right" data-index="0" data-categories="Health Data Science,Literate Programming" data-listing-date-sort="1694354400000" data-listing-file-modified-sort="1694143637242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html"> <img src="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/liam-elisabeth.jpg" class="thumnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html"> <img src="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/Calum-Nicholson.jpeg" class="thumbnail-image" style="height: 300px;"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html">
+<h3 class="no-anchor listing-title">
+Applying literate programming techniques in the workplace
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
+Health Data Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Literate Programming'); return false;">
+Literate Programming
+</div>
+</div>
+<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html">
+<div class="listing-description">
+<p><em>Calum discusses the power of literate programming to communicate with clincal collaborators</em></p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html">
+<div class="listing-date">
+Sep 11, 2023
+</div>
+<div class="listing-author">
+Calum Nicholson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Health Data Science,Clinical AI" data-listing-date-sort="1687960800000" data-listing-file-modified-sort="1694048155854" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="thumbnail">
+<p><a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html"> <img src="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/liam-elisabeth.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html">
@@ -252,9 +296,9 @@ Liam Dettmann Hughes and Elisabeth Abhayaratna
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Health Data Science,datathon,synthetic data,HIV" data-listing-date-sort="1685973600000" data-listing-file-modified-sort="1686010978319" data-listing-reading-time-sort="3.385">
+<div class="quarto-post image-right" data-index="2" data-categories="Health Data Science,datathon,synthetic data,HIV" data-listing-date-sort="1685973600000" data-listing-file-modified-sort="1686010978319" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-02-hds-datathon/index.html"> <img src="./posts/2023-06-02-hds-datathon/ivy.jpg" class="thumnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-06-02-hds-datathon/index.html"> <img src="./posts/2023-06-02-hds-datathon/ivy.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-06-02-hds-datathon/index.html">
@@ -296,9 +340,9 @@ Ivy Cerelia Valerie
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Health Data Science,electronic medical records,publishing research" data-listing-date-sort="1681221600000" data-listing-file-modified-sort="1686011051367" data-listing-reading-time-sort="10.2">
+<div class="quarto-post image-right" data-index="3" data-categories="Health Data Science,electronic medical records,publishing research" data-listing-date-sort="1681221600000" data-listing-file-modified-sort="1686011051367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
 <div class="thumbnail">
-<p><a href="./posts/2023-04-02-bridging-the-chasm/index.html"> <img src="./posts/2023-04-02-bridging-the-chasm/danielle-ritz-shala2.jpg" class="thumnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-04-02-bridging-the-chasm/index.html"> <img src="./posts/2023-04-02-bridging-the-chasm/danielle-ritz-shala2.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-04-02-bridging-the-chasm/index.html">
@@ -337,9 +381,9 @@ Danielle Ritz Shala
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Health Data Science,work-life balance,publishing research" data-listing-date-sort="1680530400000" data-listing-file-modified-sort="1686011378417" data-listing-reading-time-sort="3.745">
+<div class="quarto-post image-right" data-index="4" data-categories="Health Data Science,work-life balance,publishing research" data-listing-date-sort="1680530400000" data-listing-file-modified-sort="1686011378417" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <div class="thumbnail">
-<p><a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html"> <img src="./posts/2023-03-01-studying-hds-as-a-junior-doctor/lucinda-roper.jpg" class="thumnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html"> <img src="./posts/2023-03-01-studying-hds-as-a-junior-doctor/lucinda-roper.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html">
@@ -378,9 +422,9 @@ Lucinda Roper
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Health Data Science,work-life balance" data-listing-date-sort="1675602000000" data-listing-file-modified-sort="1686011076900" data-listing-reading-time-sort="5.325">
+<div class="quarto-post image-right" data-index="5" data-categories="Health Data Science,work-life balance" data-listing-date-sort="1675602000000" data-listing-file-modified-sort="1686011076900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <div class="thumbnail">
-<p><a href="./posts/2023-02-06-balancing-life-and-study/index.html"> <img src="./posts/2023-02-06-balancing-life-and-study/Sidney-122.jpg" class="thumnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-02-06-balancing-life-and-study/index.html"> <img src="./posts/2023-02-06-balancing-life-and-study/Sidney-122.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-02-06-balancing-life-and-study/index.html">
@@ -416,9 +460,9 @@ Jason Meyer
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Health Data Science,SAS,Cortex" data-listing-date-sort="1673528400000" data-listing-file-modified-sort="1681432649606" data-listing-reading-time-sort="4.805">
+<div class="quarto-post image-right" data-index="6" data-categories="Health Data Science,SAS,Cortex" data-listing-date-sort="1673528400000" data-listing-file-modified-sort="1681432649606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <div class="thumbnail">
-<p><a href="./posts/2023-01-13-sas-cortex/index.html"> <img src="./posts/2023-01-13-sas-cortex/manny-adachi.jpg" class="thumnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-01-13-sas-cortex/index.html"> <img src="./posts/2023-01-13-sas-cortex/manny-adachi.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
 </div>
 <div class="body">
 <a href="./posts/2023-01-13-sas-cortex/index.html">
@@ -489,9 +533,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -556,6 +614,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -594,12 +738,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/hds-hub\.cbdrh\.med\.unsw\.edu\.au/);
+      var filterRegex = new RegExp("https:\/\/hds-hub\.cbdrh\.med\.unsw\.edu\.au");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -615,6 +759,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">© Copyright 2023, UNSW</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">This page is built with ☘️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>

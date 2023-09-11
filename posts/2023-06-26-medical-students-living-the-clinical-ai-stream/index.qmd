@@ -14,7 +14,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 <div>
 
 ::: author-meta-content
-{{< fa envelope title="An envelope" >}} <a href="l.dettmann_hughes@student.unsw.edu.au">l.dettmann_hughes@student.unsw.edu.au</a> 
+{{< fa envelope title="An envelope" >}} <a href="mailto:l.dettmann_hughes@student.unsw.edu.au">l.dettmann_hughes@student.unsw.edu.au</a> 
 :::
 
 ::: author-meta-content
@@ -26,7 +26,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 <div>
 
 ::: author-meta-content
-{{< fa envelope title="An envelope" >}} <a href="elisabethabh@gmail.com">elisabethabh@gmail.com</a> 
+{{< fa envelope title="An envelope" >}} <a href="mailto:elisabethabh@gmail.com">elisabethabh@gmail.com</a> 
 :::
 
 
