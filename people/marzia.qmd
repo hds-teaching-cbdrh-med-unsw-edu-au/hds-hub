@@ -1,5 +1,5 @@
 ---
-title: "Marzia Hoque Tania"
+title: "Marzia Hoque"
 description: "Lecturer"
 author-meta: "m.hoque_tania@unsw.edu.au"
 image: ../images/marzia.jpeg
@@ -17,7 +17,7 @@ Marzia is a Lecturer and convenor on the course [HDAT9300](../courses.html#hdat9
 
 ## What publication are you most proud of?
 
-I firmly believe that the best is yet to come, but if I had to select a publication to highlight, it would be an early result from a case study during my doctoral research titled [An Intelligent Mobile-Enabled Expert System for Tuberculosis Disease Diagnosis in Real-Time](https://doi.org/10.1016/j.eswa.2018.07.014).[^1] This paper focuses on the development of an intelligent, user-friendly, and cost-effective diagnostic tool for tuberculosis. It not only secured a place in a top-tier journal on Expert Systems but also garnered some media attention. What truly made it memorable was when the Stop TB program retweeted it. I can still vividly recall how that tweet made my day.
+I firmly believe that the best is yet to come, but if I had to select a publication to highlight, it would be an early result from a case study during my doctoral research titled [An Intelligent Mobile-Enabled Expert System for Tuberculosis Disease Diagnosis in Real-Time](https://doi.org/10.1016/j.eswa.2018.07.014).[^1] This paper focuses on the development of an intelligent, user-friendly, and cost-effective Tuberculosis antigen-specific antibody detection tool. It not only secured a place in a top-tier journal on Expert Systems but also garnered some media attention. What truly made it memorable was when the Stop TB program retweeted it. I can still vividly recall how that tweet made my day.
 
 [^1]: Shabut, A. M., Tania, M. H., Lwin, K. T., Evans, B. A., Yusof, N. A., Abu-Hassan, K. J., & Hossain, M. A. (2018). An intelligent mobile-enabled expert system for tuberculosis disease diagnosis in real time. Expert Systems with Applications, 114, 65-77. [doi.org/10.1016/j.eswa.2018.07.014](https://doi.org/10.1016/j.eswa.2018.07.014)
 
