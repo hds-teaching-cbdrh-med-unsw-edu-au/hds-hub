@@ -27,9 +27,9 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 </div>
 
 ::: aside
-::: {.round-border}
+
 ![](owen-cho.png)
-:::
+
 Owen Cho is a data scientist with a background in corporate strategy. He now leads the data education startup, DeepSkill. After earning his MBA from the University of Cambridge, Owen further specialised as a senior data scientist in Health Policy Analysis, conducting numerous public health data projects, including health utilisation forecasts. He emphasises the importance of balancing hard skills with soft skills for data-driven problem solving in an age flourishing with ever-evolving tools.
 :::
 
