@@ -1,18 +1,5 @@
 [
   {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html",
-      "/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html",
-      "/posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html",
-      "/posts/2023-06-02-hds-datathon/index.html",
-      "/posts/2023-04-02-bridging-the-chasm/index.html",
-      "/posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html",
-      "/posts/2023-02-06-balancing-life-and-study/index.html",
-      "/posts/2023-01-13-sas-cortex/index.html"
-    ]
-  },
-  {
     "listing": "/people.html",
     "items": [
       "/people/and.html",
@@ -23,6 +10,20 @@
       "/people/oscar.html",
       "/people/sanja.html",
       "/people/tim.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2023-11-30-advent-of-code/index.html",
+      "/posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html",
+      "/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html",
+      "/posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html",
+      "/posts/2023-06-02-hds-datathon/index.html",
+      "/posts/2023-04-02-bridging-the-chasm/index.html",
+      "/posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html",
+      "/posts/2023-02-06-balancing-life-and-study/index.html",
+      "/posts/2023-01-13-sas-cortex/index.html"
     ]
   }
 ]
