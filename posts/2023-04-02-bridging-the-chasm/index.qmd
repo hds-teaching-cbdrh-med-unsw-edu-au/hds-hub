@@ -9,6 +9,7 @@ author:
 date: 2023-04-12
 categories: [Health Data Science, electronic medical records, publishing research] # self-defined categories
 image: "danielle-ritz-shala2.jpg"
+freeze: true
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 

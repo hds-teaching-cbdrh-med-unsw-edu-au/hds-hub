@@ -1,5 +1,16 @@
 [
   {
+    "listing": "/tutorial.html",
+    "items": [
+      "/tutorials/lesson1.html",
+      "/tutorials/lesson2.html",
+      "/tutorials/lesson3.html",
+      "/tutorials/lesson4.html",
+      "/tutorials/lesson5.html",
+      "/tutorials/lesson6.html"
+    ]
+  },
+  {
     "listing": "/people.html",
     "items": [
       "/people/and.html",
@@ -15,6 +26,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/hdat_blog_consort[43].html",
       "/posts/2023-11-30-advent-of-code/index.html",
       "/posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html",
       "/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html",

@@ -1,99 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/software.html</loc>
-    <lastmod>2023-11-30T00:34:18.862Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/schedule.html</loc>
+    <lastmod>2024-01-05T04:02:44.687Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-11-30-advent-of-code/index.html</loc>
-    <lastmod>2023-11-30T00:34:15.589Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/tutorials/lesson2.html</loc>
+    <lastmod>2024-01-05T04:04:14.233Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html</loc>
-    <lastmod>2023-11-30T00:34:13.164Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/tutorials/lesson6.html</loc>
+    <lastmod>2024-01-05T04:06:32.928Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-06-02-hds-datathon/index.html</loc>
-    <lastmod>2023-11-30T00:34:10.516Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html</loc>
-    <lastmod>2023-11-30T00:34:07.631Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-01-13-sas-cortex/index.html</loc>
-    <lastmod>2023-11-30T00:34:04.576Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/tim.html</loc>
-    <lastmod>2023-11-30T00:34:00.764Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/oscar.html</loc>
-    <lastmod>2023-11-30T00:33:58.996Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/mark.html</loc>
-    <lastmod>2023-11-30T00:33:58.191Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/and.html</loc>
-    <lastmod>2023-11-30T00:33:56.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/index.html</loc>
-    <lastmod>2023-11-30T00:33:55.461Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/courses.html</loc>
-    <lastmod>2023-11-30T00:33:54.345Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/faq.html</loc>
-    <lastmod>2023-11-30T00:33:55.072Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people.html</loc>
-    <lastmod>2023-11-30T00:33:56.173Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/blanca.html</loc>
-    <lastmod>2023-11-30T00:33:56.968Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/heidi.html</loc>
-    <lastmod>2023-11-30T00:33:57.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/marzia.html</loc>
-    <lastmod>2023-11-30T00:33:58.590Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/tutorials/lesson5.html</loc>
+    <lastmod>2024-01-05T04:06:09.107Z</lastmod>
   </url>
   <url>
     <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/sanja.html</loc>
-    <lastmod>2023-11-30T00:33:59.399Z</lastmod>
+    <lastmod>2024-01-05T04:02:19.064Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts.html</loc>
-    <lastmod>2023-11-30T00:34:01.727Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/blanca.html</loc>
+    <lastmod>2024-01-05T04:02:18.215Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-02-06-balancing-life-and-study/index.html</loc>
-    <lastmod>2023-11-30T00:34:06.106Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/heidi.html</loc>
+    <lastmod>2024-01-05T04:02:16.017Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-04-02-bridging-the-chasm/index.html</loc>
-    <lastmod>2023-11-30T00:34:09.388Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/oscar.html</loc>
+    <lastmod>2024-01-05T04:02:15.223Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html</loc>
-    <lastmod>2023-11-30T00:34:11.599Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/software.html</loc>
+    <lastmod>2024-01-05T04:02:14.154Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/index.html</loc>
+    <lastmod>2024-01-05T04:02:12.798Z</lastmod>
   </url>
   <url>
     <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html</loc>
-    <lastmod>2023-11-30T00:34:14.390Z</lastmod>
+    <lastmod>2024-01-05T04:02:10.500Z</lastmod>
   </url>
   <url>
-    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/schedule.html</loc>
-    <lastmod>2023-11-30T00:34:18.195Z</lastmod>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/hdat_blog_consort[43].html</loc>
+    <lastmod>2024-01-05T04:02:07.801Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html</loc>
+    <lastmod>2024-01-05T04:02:05.199Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html</loc>
+    <lastmod>2024-01-05T04:02:02.228Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-02-06-balancing-life-and-study/index.html</loc>
+    <lastmod>2024-01-05T04:01:59.746Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/webexercises.html</loc>
+    <lastmod>2024-01-05T04:01:57.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/courses.html</loc>
+    <lastmod>2024-01-05T04:01:55.249Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/tutorial.html</loc>
+    <lastmod>2024-01-05T04:06:33.530Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-11-30-advent-of-code/index.html</loc>
+    <lastmod>2024-01-05T04:02:01.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-04-02-bridging-the-chasm/index.html</loc>
+    <lastmod>2024-01-05T04:02:03.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-06-02-hds-datathon/index.html</loc>
+    <lastmod>2024-01-05T04:02:06.748Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html</loc>
+    <lastmod>2024-01-05T04:02:09.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-01-13-sas-cortex/index.html</loc>
+    <lastmod>2024-01-05T04:02:12.034Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/faq.html</loc>
+    <lastmod>2024-01-05T04:02:13.505Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people.html</loc>
+    <lastmod>2024-01-05T04:02:14.824Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/and.html</loc>
+    <lastmod>2024-01-05T04:02:15.626Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/tim.html</loc>
+    <lastmod>2024-01-05T04:02:17.012Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/marzia.html</loc>
+    <lastmod>2024-01-05T04:02:17.789Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/people/mark.html</loc>
+    <lastmod>2024-01-05T04:02:18.627Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/posts.html</loc>
+    <lastmod>2024-01-05T04:02:19.982Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/tutorials/lesson4.html</loc>
+    <lastmod>2024-01-05T04:04:24.987Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/tutorials/lesson3.html</loc>
+    <lastmod>2024-01-05T04:04:19.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hds-hub.cbdrh.med.unsw.edu.au/tutorials/lesson1.html</loc>
+    <lastmod>2024-01-05T04:04:07.652Z</lastmod>
   </url>
 </urlset>

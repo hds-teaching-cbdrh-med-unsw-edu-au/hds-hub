@@ -342,3 +342,42 @@ table tr td tr {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+
+
+.tute-options {
+  --_spacer: 0.5rem;
+  display: grid;
+  width: 100%;
+  gap: var(--_spacer);
+  padding: 0 var(--_spacer) var)(--_spacer) 0;
+}
+
+@media (min-width: 600px) {
+  .tute-options { grid-template-columns: repeat(2, 1fr); }
+}
+
+.tute-options-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  background: #e2e7f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 10px #cdcece;
+  text-align: center;
+}
+
+
+.callout-pad {
+  padding: 10px;
+}
+
+.test-title {
+  text-align: center;
+}
+
+.test-title > p {
+  color: #666A6D;
+  font-style: italic;
+}
+

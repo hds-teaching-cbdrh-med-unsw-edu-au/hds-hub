@@ -1,0 +1,20 @@
+---
+title: Wondering if a career in Health Data Science is for you? 
+comments: false
+listing:
+  type: grid
+  grid-columns: 3
+  image-height: 250px
+  sort-ui: false
+  categories: false
+  sort: title
+  contents:
+    - "tutorials/*.qmd"
+---
+
+
+### A guided tutorial in Health Data Science
+
+Try working through the guided tutorial below to get a feel for what it is like to undertake a health data analysis. You will work through six important steps to answer real health data science questions. This is an introductory-level tutorial so don't worry if you are new to statistics or coding. 
+
+[***Note** This section is designed as an interactive tutorial, so get ready to be presented with questions and exercises! The reading time to complete the six steps is around **20-30 minutes in total** and this should give you a gentle introduction to the types of content covered in the Masters of Science in Health Data Science. It is possible to complete this tutorial on a smartphone screen, but may be easier to view on a larger screen*]{style="color:grey; font-size: 0.8em;"}  

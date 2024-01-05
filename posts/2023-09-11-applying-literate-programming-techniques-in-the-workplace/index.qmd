@@ -6,6 +6,7 @@ author:
 date: 2023-09-11
 categories: [Health Data Science, Literate Programming] # self-defined categories
 image: "Calum-Nicholson.jpeg"
+freeze: true
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 

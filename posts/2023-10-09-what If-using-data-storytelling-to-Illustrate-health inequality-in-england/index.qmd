@@ -6,6 +6,7 @@ author:
 date: 2023-10-10
 categories: [Health Data Science, Data Visualisation, Scrollytelling, Health Inequality] # self-defined categories
 image: "owen-cho.png"
+freeze: true
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 

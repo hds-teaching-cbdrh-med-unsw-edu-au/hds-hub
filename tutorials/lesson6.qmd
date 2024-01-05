@@ -1,0 +1,63 @@
+---
+title: "Step 6. Conclusions"
+description: _What have we learned?_
+image: ../images/tutorial6.jpg
+comments: false
+---
+
+### Overview
+
+You've almost reached the end of the guided tutorial---congratulations! 
+
+The final step is to review our findings and draw our conclusions. Let's recap our original research questions:
+
+1) What is the relationship between smoking during pregnancy and a child's birthweight?
+
+2) Can maternal factors measured during pregnancy be used to accurately predict infants at risk of low birthweight?
+
+In relation to Question 1), unsurprisingly we found that there was a significant negative association between maternal smoking and birthweight. Children of mothers who smoked during pregnancy were born around 284 grams lighter on average, compared to children of non-smokers. This kind of evidence has been long-used to promote anti-smoking public health campaigns and target supports to expectant mothers. 
+
+In relation to Question 2), we built a decision tree model that could predict children at risk of low birth weight at birth with 71.5% accuracy, based on information available by the end of the first trimester. 
+
+![Created using Stable Diffusion --- human + AI.](../images/tutorial6.jpg)
+
+### Conclusions
+
+We can conclude that (i) maternal smoking is negatively associated with birthweight and (ii) it is possible to predict low birthweight based on characteristics observed during the first trimester.
+
+Interestingly, even though children born to maternal smokers were lighter at birth, maternal smoking was not a good predictor of low birthweight in the decision tree model. One possible reason for this is that, given the other health variables, knowledge of smoking status didn't add much extra. 
+
+### Limitations
+
+In this introductory tutorial, we've crafted simple, yet practical research questions to showcase the incredible utility of applying data science to health-related inquiries. From exploring associations between smoking and birth outcomes to developing predictive models, these beginner-friendly examples serve as stepping stones into the vast possibilities of health data analysis.
+
+While the simplicity of these questions allows for an easy entry point, it's important to note that real-world health data analyses can be much more complex. Rather than look at the association between smoking and birthweight we could delve into the underlying causal processes as well as consider the safety of smoking cessation therapies on birth outcomes. When thinking about prediction, there are many other methods we could explore to optimise the model accuracy.
+
+As you delve deeper into this field, you'll discover the richness of intricate datasets and the nuanced challenges of addressing complex health-related queries. Get ready to unlock the potential of health data science, where even the simplest questions pave the way for uncovering profound insights in the diverse and dynamic landscape of healthcare research!
+
+*** 
+
+:::: {.callout-pad}
+::: {.callout-tip}
+## Studying Health Data Science at UNSW Sydney
+
+Interested in a career in Health Data Science?
+
+Click [here](https://www.unsw.edu.au/medicine-health/study-with-us/study-areas/health-data-science) to find out about our short courses and postgraduate programs including further information on how to apply.
+
+Check out the [student blog](https://hds-hub.cbdrh.med.unsw.edu.au/posts.html) to read about our students' experiences studying health data science. 
+
+:::
+::::
+
+***
+
+### Next Steps
+
+In a real analysis, the next phase would focus on disseminating your research findings though conference presentations, reports and academic publications. Collaborating with healthcare professionals, policymakers, and community stakeholders provides avenues for translating your research into actionable outcomes, fostering positive change in real-world health practices. 
+
+You can read about the research undertaken by the Health Data Science course conveners in our [meet the teaching team](https://hds-hub.cbdrh.med.unsw.edu.au/people.html) section on our student hub. Examples of recent academic articles published by faculty and postgraduate students from the Centre for Big Data Research in Health can be viewed online [here](https://unsw-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,a&pfilter=pfilter,exact,articles&tab=default_tab&search_scope=unsworks_search_scope&vid=UNSWORKS&facet=local21,include,Centre%20for%20Big%20Data%20Research&offset=0). 
+
+For now, the only question you have to answer is, **is health data science for you?** [Apply here](https://www.unsw.edu.au/study/how-to-apply)  
+
+***

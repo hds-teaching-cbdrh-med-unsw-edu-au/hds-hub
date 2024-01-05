@@ -1,54 +1,54 @@
 project:
   type: website
   output-dir: docs
-  render:
-    - "*.qmd"
-
 website:
-  site-url: "https://hds-hub.cbdrh.med.unsw.edu.au"
+  site-url: https://hds-hub.cbdrh.med.unsw.edu.au
   favicon: images/favicon.ico
   twitter-card: true
   open-graph: true
-  image: "/docs/images/223_UNSW_CBDRH_credit_AnnaKucera_cropped.jpg"
+  image: /docs/images/223_UNSW_CBDRH_credit_AnnaKucera_cropped.jpg
   page-footer:
-    right: "This page is built with ☘️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2023, UNSW"
+    right: This page is built with ☘️ and [Quarto](https://quarto.org/).
+    left: '&copy; Copyright 2023, UNSW'
   navbar:
     logo: images/Landscape__3.Mono_Pos_CBDRH.png
     search: true
     title: false
     left:
-      - href: index.qmd
-        text: "Home"
-      - text: "Information"
-        menu:
-          - text: Your teaching team
-            href: people.qmd
-            icon: people-fill
-          - text: Courses
-            href: courses.qmd
-            icon: code
-          - text: Schedule
-            href: schedule.qmd
-            icon: calendar3
-          - text: Software and platforms
-            href: software.qmd
-            icon: laptop
-          - text: FAQ
-            href: faq.qmd
-            icon: question-circle
-      - text: "HDS Student Blog"
-        href: posts.qmd
-        icon: chat-right-heart-fill
-
+    - href: index.qmd
+      text: Home
+    - text: Information
+      menu:
+      - text: Your teaching team
+        href: people.qmd
+        icon: people-fill
+      - text: Courses
+        href: courses.qmd
+        icon: code
+      - text: Schedule
+        href: schedule.qmd
+        icon: calendar3
+      - text: Software and platforms
+        href: software.qmd
+        icon: laptop
+      - text: FAQ
+        href: faq.qmd
+        icon: question-circle
+      - text: " "
+        href: tutorial.qmd
+    - text: HDS Student Blog
+      href: posts.qmd
+      icon: chat-right-heart-fill
+    # - text: Guided tutorial
+    #   href: tutorial.qmd
+    #   icon: code-slash
     right:
-      - icon: twitter
-        href: https://twitter.com/cbdrh1
-      - icon: github
-        href: https://github.com/CBDRH
-      - icon: microsoft-teams
-        href: https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3
-
+    - icon: twitter
+      href: https://twitter.com/cbdrh1
+    - icon: github
+      href: https://github.com/CBDRH
+    - icon: microsoft-teams
+      href: https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3
 format:
   html:
     theme:
@@ -57,16 +57,14 @@ format:
     toc: true
     link-external-icon: true
     link-external-newwindow: true
-    # link-external-filter: '^(?:http:|https:)\/\/hds\-hub\.cbdrh\.med\.unsw\.edu\.au\/**'
     footnotes-hover: true
-    css: styles.css
-
+    css:
+    - styles.css
+    - include/webex.css
+    include-after-body: include/webex.js
 margin-header: |
   ![](/images/Landscape__1.Col_Pos_CBDRH.jpg)
-
-resources:
-  - CNAME
-
+resources: CNAME
 comments:
   giscus:
     repo: hds-teaching-cbdrh-med-unsw-edu-au/hds-blog-discussion
