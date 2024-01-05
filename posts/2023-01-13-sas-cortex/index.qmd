@@ -9,6 +9,7 @@ date: 2023-01-13
 categories: [Health Data Science, SAS, Cortex] # self-defined categories
 image: manny-adachi.jpg
 cap-location: margin
+freeze: true
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 

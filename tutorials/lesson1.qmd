@@ -1,0 +1,126 @@
+---
+title: "Step 1. The research question"
+description: _In any health data science analysis, the first step is to undersand the research question_
+image: ../images/tutorial1.jpg
+comments: false
+---
+
+```{r setup}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(webexercises)
+
+```
+
+### Overview
+
+A health data scientist is someone who answers questions about health using data and analytics. This encompasses questions about patient well-being, diseases, treatments, medications, health systems, and many other areas of clinical and medical interest.
+
+The first step in any health data analysis is *_understanding the research question_*. Once the question is clear, the relevant data and necessary analytic approaches will fall in to place much more quickly. 
+
+In this guided tutorial, you will be addressing two research questions:
+
+1) What is the relationship between smoking during pregnancy and a child's birthweight?
+
+2) Can maternal factors measured during pregnancy be used to accurately predict infants at risk of low birthweight?
+
+Below you can read about why understanding and predicting low birthweight is an important research goal, the types of factors that might influence birth, and how birthweight is recorded and reported in Australia.  
+
+![Created using Stable Diffusion --- human + AI.](../images/tutorial1.jpg)
+
+### Why Study Birthweight?
+
+Birthweight is a crucial indicator of a newborn's health and well-being. It serves as a fundamental metric in assessing a baby's initial growth and development. Moreover, birthweight plays a pivotal role in predicting the infant's short-term and long-term health outcomes. Babies born with low birthweight, typically defined as weighing less than 2,500 grams (5.5 pounds) at birth, face increased risks of complications, developmental issues, and chronic health conditions.
+
+
+### Factors Influencing Low Birthweight
+
+There are many factors that contribute to birthweight and may be useful to help predict infants at risk of low birthweight:
+
+* **Maternal Nutrition**: Adequate maternal nutrition is paramount for the proper growth and development of the fetus. Poor maternal nutrition, whether due to malnutrition or inadequate dietary intake, can result in low birthweight.
+
+* **Maternal Health Conditions**: Certain maternal health conditions, such as hypertension, diabetes, and infections, can impact fetal growth and contribute to low birthweight. Managing and treating these conditions during pregnancy is crucial for the well-being of both the mother and the baby.
+
+* **Lifestyle Factors**: Maternal lifestyle choices, including smoking, alcohol consumption, and illicit drug use, have been linked to low birthweight. These substances can negatively affect fetal development and increase the risk of complications.
+
+* **Socioeconomic Factors**: Socioeconomic status is a significant determinant of maternal and child health. Limited access to healthcare, education, and resources can contribute to low birthweight. Understanding these social determinants allows for targeted interventions to address disparities.
+
+* **Multiple Pregnancies**: Twins, triplets, or other multiple pregnancies are at a higher risk of low birthweight due to the shared resources in the womb.
+
+
+***
+
+:::: {.callout-pad}
+::: {.callout-tip}
+## Studying Health Data Science at UNSW Sydney
+
+You will learn about how different types of data are generated and used in the Australian health system in the course [HDAT9100 Context for Health Data Science](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9100).
+:::
+::::
+
+***
+
+
+### Birthweight in context
+
+In New South Wales, data on birthweight are routinely recorded in the Perinatal Data Collection, a population-based surveillance system covering all births in NSW public and private hospitals, as well as home births. It encompasses all live births, and stillbirths of at least 20 weeks gestation or at least 400 grams birthweight. 
+
+Birthweight statistics are regularly reported on, for example in the [annual Mothers and Babies reports](https://www.health.nsw.gov.au/hsnsw/Pages/mothers-and-babies-reports.aspx), produced by NSW Health. Birthweight is also the subject of numerous academic studies, for example, the recent journal article [Smoking Cessation during the Second Half of Pregnancy Prevents Low Birth Weight among Australian Born Babies in Regional New South Wales](https://doi.org/10.3390/ijerph18073417)[^1] 
+
+
+[^1]: Ghimire, P.R.; Mooney, J.; Fox, L.; Dubois, L. Smoking Cessation during the Second Half of Pregnancy Prevents Low Birth Weight among Australian Born Babies in Regional New South Wales. Int. J. Environ. Res. Public Health 2021, 18, 3417. https://doi.org/10.3390/ijerph18073417
+
+***
+
+:::: {.callout-pad}
+### `r fontawesome::fa('circle-question')` Test your understanding
+
+Test your understanding by answering these questions based on the information above.
+
+
+::: {.webex-check .webex-box}
+**True or False** A boy born weighing 2.2kg would be classified as low birthweight? `r torf(TRUE)`
+
+```{r, results='asis', echo = FALSE}
+opts <- c(
+   "Gestational diabetes",
+   answer = "Father's height",
+   "Maternal smoking",
+   "Low income"
+)
+
+cat("**Choose the correct answer** Which of the following is *not* a risk factor for low birthweight?", longmcq(opts))
+```
+
+:::
+
+::::
+
+***
+
+### Next steps
+
+:::::: {.tute-options}
+
+::: {.tute-options-element}
+
+<a href = '/tutorial.html'><img src="../images/tutorial-options.jpg" width=100%>
+Back to the main menu
+</a>
+
+:::
+
+::: {.tute-options-element}
+
+<a href = '/tutorials/lesson2.html'><img src="../images/tutorial2.jpg" width=100%>
+Step 2. Curating the data
+</a>
+
+:::
+
+::::::
+
+
+
+

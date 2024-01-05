@@ -9,6 +9,7 @@ author:
 date: 2023-02-06
 categories: [Health Data Science, work-life balance] # self-defined categories
 image: "Sidney-122.jpg"
+freeze: true
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 

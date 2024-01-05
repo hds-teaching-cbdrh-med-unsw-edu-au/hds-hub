@@ -1,0 +1,158 @@
+---
+title: "Step 4. Descriptive Modelling"
+description: _Use statistical modelling to gain health insights_
+image: ../images/tutorial4.jpg
+comments: false
+---
+
+```{r setup}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(webexercises)
+library(MASS)
+library(colorspace)
+library(labelled)
+library(dplyr)
+library(ggplot2)
+library(sjPlot)
+
+data("birthwt")
+
+varLabels <- c(
+  low = 'Low birthweight', 
+  age = 'Age', 
+  lwt = 'Weight at last menstrual period (lbs)', 
+  race = 'Race', 
+  smoke = 'Smoking during pregnancy', 
+  ptl = 'Previous premature labours', 
+  ht = 'History of hypertension',
+  ui = 'Uterine irritability', 
+  ftv = 'Physician visits during first trimester',
+  bwt = 'Birthweight (g)'
+)
+
+birthwt_clean <- birthwt |> 
+  mutate(
+    low = factor(low, levels=0:1, labels=c('No', 'Yes')),
+    race = factor(race, levels=1:3, labels=c('White', 'Black', 'Other')),
+    smoke = factor(smoke, levels=0:1, labels=c('Non-smoker', 'Smoker')),
+    ht = factor(ht, levels=0:1, labels=c('No', 'Yes')),
+    ui = factor(ui, levels=0:1, labels=c('No', 'Yes'))
+  ) |> 
+  set_variable_labels(.labels=varLabels)
+
+```
+
+### Overview
+
+Statistical modeling is the cornerstone of evidence-based decision-making in healthcare. By crunching numbers and analysing patterns, we gain insights into disease trends, treatment effectiveness, and the factors influencing health outcomes. It's like having a powerful magnifying glass that allows us to zoom in on the crucial details within a vast dataset.
+
+Our exploratory data analysis has already gone some way to answering our first question **What is the relationship between smoking during pregnancy and a child's birthweight?** It looks like children born to mums who smoked during pregnancy have a lower birthweight compared to children born to non-smokers.
+
+::: {.aside}
+```{r}
+birthwt_clean |> 
+    ggplot(aes(x = smoke, y = bwt, fill=smoke)) +
+      geom_boxplot() +
+        scale_x_discrete("") +
+        scale_y_continuous("Birthweight (grams)", labels = scales::comma) +
+        scale_fill_manual("Smoking status", values = c('#03d77f', '#fb706a')) +
+        labs(title="Birthweight by maternal smoking status") +
+        theme_minimal() +
+        theme(legend.position = 'none')
+```
+It looks like children born to mums who smoked during pregnancy have a lower birthweight compared to children born to non-smokers.
+:::
+
+But can we be sure this is the right interpretation? Is the difference meaningful or could it just be noise in the data or random chance? 
+
+To answer these questions we can use linear regression---the workhorse of statistical modeling. At its core, linear regression helps us explore the linear relationship between a dependent variable and one or more independent variables. Suppose we're examining the impact of factors like maternal age, smoking, and hypertension on birthweight. Linear regression enables us to quantify these relationships, providing us with coefficients that represent the strength and direction of each influence. It's like having a mathematical roadmap to understand how changes in one variable correlate with changes in another. 
+
+
+![Created using Stable Diffusion --- human + AI.](../images/tutorial4.jpg)
+
+Below is the code to fit a linear model in R using the `lm()` function. Note that we specify the outcome variable birthweight (or `bwt`), the explanatory variable `smoke`, and the dataset `birthwt`.
+
+```{r}
+#| echo: true
+model1 <- lm(bwt ~ smoke, data = birthwt)
+```
+
+And here are the model results, presented as a table.
+
+```{r}
+#| echo: false
+tab_model(model1, digits = 0, show.r2 = FALSE, pred.labels = c('Baseline', 'Smokers'), dv.labels = c('Birthweight'))
+```
+
+
+We can interpret this as follows:
+
+-   The baseline coefficient is 3,056. In this case, the baseline refers to children born to non-smokers, and the estimate tells us that these children weighted 3,056 grams on average.
+-   The 95% confidence interval (CI) for this estimate ranges from 2,924 grams to 3,188 grams. This provides a sense of how certain we are about the estimate of 3,056 grams. If we were to repeat the study or experiment many times and calculate the CI each time, we would expect the true value of the coefficient to fall within the range of 2,924--3,188 for about 95% of those repetitions.
+-   The coefficient for smokers is -284. This tells us that, on average, babies born to smoking mums were 284 grams lighter than babies born to non-smokers.
+-   The 95% confidence interval (CI) for this estimate ranges from -495 grams to -73 grams.
+
+
+***
+
+:::: {.callout-pad}
+
+::: callout-tip
+## Studying Health Data Science at UNSW Sydney
+
+Learn the fundamentals of statistical modelling it the course [HDAT9600 Statistical Modelling I](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9600)
+
+Push your skills further to model complex health data structures in [HDAT9700 Statistical Modelling II](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9700).
+:::
+
+::::
+
+These results confirm that there is a statistically significant association between maternal smoking and birthweight. Children of mothers who smoked during pregnancy are born with a lower birthweight compared to children of mothers who did not smoke, on average. The estimated difference is 284 grams lighter on average but---based on the observed data---it could be as much as 495 grams lighter on average or as little as 73 grams lighter on average.
+
+Importantly, this result by itself does not necessarily mean that the observed differences are caused directly by smoking. It could be that mothers who smoked have very different characteristics compared to mothers who did not smoke. For example, perhaps smoking mums disproportionately came from disadvantaged backgrounds with higher barriers to receive antenatal care and it is that difference that explains the differences in birthweight rather than smoking alone. Advanced analytical methods can help us to unpick correlation from causation.  
+
+***
+:::: {.callout-pad}
+::: {.webex-check .webex-box}
+
+::: {.test-title}
+### [`r fontawesome::fa('circle-question')` Test your understanding]{style="text-align:center;"}
+<p>Test your understanding by answering these questions based on the model output above</p>
+:::
+***
+
+**Fill in the blank** Children of mothers who smoked during pregnancy were on average `r fitb(284)`grams lighter compared to children of mothers who did not smoke during pregnancy.
+
+**True or False** The 95% confidence interval for the coefficient for maternal smoking includes 0 `r torf(FALSE)`
+
+**Choose the correct answer** There is a `r mcq(c('positive', answer='negative'))` association between maternal smoking and birthweight.
+
+:::
+::::
+
+***
+
+
+### Next steps
+
+:::::: {.tute-options}
+
+::: {.tute-options-element}
+
+<a href = '/tutorial.html'><img src="../images/tutorial-options.jpg" width=100%>
+Back to the main menu
+</a>
+
+:::
+
+::: {.tute-options-element}
+
+<a href = '/tutorials/lesson5.html'><img src="../images/tutorial5.jpg" width=100%>
+Step 5. Predictive modelling
+</a>
+
+:::
+
+::::::

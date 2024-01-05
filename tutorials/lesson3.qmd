@@ -1,0 +1,215 @@
+---
+title: "Step 3. Exploring the data"
+description: _Exploratory data analysis helps you to understand the data_
+image: ../images/tutorial3.jpg
+comments: false
+---
+
+```{r setup}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(webexercises)
+library(MASS)
+library(colorspace)
+library(labelled)
+library(dplyr)
+
+data("birthwt")
+
+varLabels <- c(
+  low = 'Low birthweight', 
+  age = 'Age', 
+  lwt = 'Weight at last menstrual period (lbs)', 
+  race = 'Race', 
+  smoke = 'Smoking during pregnancy', 
+  ptl = 'Previous premature labours', 
+  ht = 'History of hypertension',
+  ui = 'Uterine irritability', 
+  ftv = 'Physician visits during first trimester',
+  bwt = 'Birthweight (g)'
+)
+
+birthwt_clean <- birthwt |> 
+  mutate(
+    low = factor(low, levels=0:1, labels=c('No', 'Yes')),
+    race = factor(race, levels=1:3, labels=c('White', 'Black', 'Other')),
+    smoke = factor(smoke, levels=0:1, labels=c('Non-smoker', 'Smoker')),
+    ht = factor(ht, levels=0:1, labels=c('No', 'Yes')),
+    ui = factor(ui, levels=0:1, labels=c('No', 'Yes'))
+  ) |> 
+  set_variable_labels(.labels=varLabels)
+
+```
+
+### Overview
+
+Great, now that we have a better understanding of the available dataset, we can start to do some exploratory data analysis.
+
+The purpose of this exploratory phase is to gain insights into the structure, distribution, and characteristics of the data before applying more complex statistical or machine learning techniques. Understanding the data will help to inform our analytic approach to answer our key research questions. As a reminder, they are: 
+
+1) What is the relationship between smoking during pregnancy and a child's birthweight?
+
+2) Can maternal factors measured during pregnancy be used to accurately predict infants at risk of low birthweight?
+
+In this section we will use statistical summaries and data visualisation to get a feel for our birthweight dataset. 
+
+![Created using Stable Diffusion --- human + AI.](../images/tutorial3.jpg)
+
+### Statistical summaries
+
+Let's start by printing a table of the univariate distribution of each variable. 
+
+* For dichotomous variables like **Low Birthweight**, we can see that 59 children (or 39%) were born with low birthweight
+
+* For continuous variables like **Age** we can see that the average maternal age was 23 years and the interquartile range was 19 to 26 years (i.e. 25% of mothers were 19 years or younger and 25% were 26 years and older)
+
+* For categorical variables like **Race** we can see that 96 mothers (or 51% of the total) were White, 26 mothers were Black (14%) and 67 mothers were categorised as "Other" (35%). 
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+library(gtsummary) # load library for making nice tables
+
+# Print the table
+tbl_summary(birthwt_clean, label = varLabels)
+
+```
+
+Because we are interested in comparing children by their birthweight, we can look at a second table that compares children who were and were not born with low birthweight.
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+birthwt_clean |> 
+  tbl_summary(
+    by=low, 
+    label=varLabels) |> 
+  modify_spanning_header(c("stat_1", "stat_2") ~ "**Low birthweight**")
+
+```
+
+Some distinct differences for low birthweight children are starting to emerge. For example:
+
+* Mother's of low birthweight children were more likely to be smokers (51%) compared to non-smokers (34%).
+* Mother's of low birthweight children were more likely to have a history of hypertension (12% among low birthweight children compared to 3.8% among non-low birthweight children)
+
+***
+
+:::: {.callout-pad}
+::: {.callout-tip}
+## Studying Health Data Science at UNSW Sydney
+
+Being able to summarise statistical information is a foundation skill for a health data scientist. The course [HDAT9200 Statistical Foundations for Health Data Science](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9200) provides a solid understanding of the principles of statistics using the R programming language. 
+
+You will learn to write clear, efficient and correct computer code in the course [HDAT9300 Computing for Health Data Science](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9300), which uses the Python programming language. 
+:::
+::::
+
+***
+
+### Data visualisation
+
+Above we confirmed that babies born to mums who smoked during pregnancy had lower average birthweight compared to those that did not smoke. Let's use data visualisation to compare the full distribution of birthweights by maternal smoking status. Remember, you can click the [`r fontawesome::fa("play")` Code]{style="color:#6c757d;font-size:0.9em"} icon to reveal the underlying R code that creates this graph.
+
+```{r}
+#| echo: true
+#| code-fold: true
+library(ggplot2) # Load ggplot2 library for visualising data
+
+birthwt_clean |> 
+    ggplot(aes(x = smoke, y = bwt, fill=smoke)) +
+      geom_boxplot() +
+        scale_x_discrete("") +
+        scale_y_continuous("Birthweight (grams)", labels = scales::comma) +
+        scale_fill_manual("Smoking status", values = c('#03d77f', '#fb706a')) +
+        labs(title="Birthweight by maternal smoking status") +
+        theme_minimal() +
+        theme(legend.position = 'none')
+
+```
+
+This type of chart is called a grouped boxplot. These plots are good for quickly comparing the distribution of a numerical variable across two of more categorical variables. In this case, we can compare the distribution of birthweight for babies of smoking mums and non-smoking mums.
+
+The dark horizontal line at the centre of the box indicates the median birthweight for each group. The upper and lower borders of the boxes indicate the 25th and 75th quartiles and the vertical spikes emerging at either end indicate the full range of the data. 
+
+We can see that babies born to non-smoking mums are heavier on average compared to babies born to smoking mums, although there is a lot of overlap in the distributions. 
+
+***
+
+:::: {.callout-pad}
+
+::: callout-tip
+## Studying Health Data Science at UNSW Sydney
+
+Learn how to tell compelling visual stories with data in [HDAT9800 Visualisation & Communication](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9800).
+:::
+
+::::
+
+***
+
+Below is a visualisation of the same data using a density plot. If you compare the code for this plot to the previous one, you will see that very little has changed. This is the power of the `ggplot` package: one consistent framework can produce many different types of graphs!
+
+```{r}
+#| echo: true
+#| code-fold: true
+library(ggplot2) # Tools for visualising data
+
+birthwt_clean |> 
+    ggplot(
+      aes(x = bwt, fill = smoke, color = smoke)) +
+        geom_density(alpha=0.8) +
+          scale_x_continuous("Birthweight") +
+          scale_y_continuous("Density") +
+          scale_color_manual("Smoking status", values = c('#03d77f', '#fb706a')) +
+          scale_fill_manual("Smoking status", values = lighten(c('#03d77f', '#fb706a'), 0.4)) +
+          labs(title="Birthweight by maternal smoking status") +
+          theme_minimal() +
+          theme(legend.position = 'top')
+
+```
+
+
+Both plots above illustrate the same message, babies born to mums who smoked during pregnancy have a lower birthweight on average, compared to babies of non-smokers, although there is a lot of overlap for both groups. 
+
+
+***
+:::: {.callout-pad}
+### `r fontawesome::fa('circle-question')` Test your understanding
+
+Test your understanding by answering these questions based on the tables and figures above.
+
+::: {.webex-check .webex-box}
+**Fill in the blank** Among the 59 children born with low birthweight, `r fitb(51)`% had mothers who smoked during pregnancy.
+
+**True or False** Children born to mothers who smoked during pregnancy always have lower birthweight than children born to mothers who did not smoke? `r torf(FALSE)`
+:::
+
+::::
+
+***
+
+### Next steps
+
+:::::: {.tute-options}
+
+::: {.tute-options-element}
+
+<a href = '/tutorial.html'><img src="../images/tutorial-options.jpg" width=100%>
+Back to the main menu
+</a>
+
+:::
+
+::: {.tute-options-element}
+
+<a href = '/tutorials/lesson4.html'><img src="../images/tutorial4.jpg" width=100%>
+Step 4. Descriptive modelling
+</a>
+
+:::
+
+::::::
