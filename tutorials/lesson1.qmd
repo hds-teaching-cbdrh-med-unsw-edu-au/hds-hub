@@ -23,7 +23,7 @@ In this guided tutorial, you will be addressing two research questions:
 
 1) What is the relationship between smoking during pregnancy and a child's birthweight?
 
-2) Can maternal factors measured during pregnancy be used to accurately predict infants at risk of low birthweight?
+2) Can maternal factors measured during pregnancy (including smoking) be used to accurately predict infants at risk of low birthweight?
 
 Below you can read about why understanding and predicting low birthweight is an important research goal, the types of factors that might influence birth, and how birthweight is recorded and reported in Australia.  
 
@@ -44,9 +44,9 @@ There are many factors that contribute to birthweight and may be useful to help 
 
 * **Lifestyle Factors**: Maternal lifestyle choices, including smoking, alcohol consumption, and illicit drug use, have been linked to low birthweight. These substances can negatively affect fetal development and increase the risk of complications.
 
-* **Socioeconomic Factors**: Socioeconomic status is a significant determinant of maternal and child health. Limited access to healthcare, education, and resources can contribute to low birthweight. Understanding these social determinants allows for targeted interventions to address disparities.
-
 * **Multiple Pregnancies**: Twins, triplets, or other multiple pregnancies are at a higher risk of low birthweight due to the shared resources in the womb.
+
+* **Other Factors**: Other factors, such as limited access to healthcare, or health education, can contribute to low birthweight. Understanding these social determinants of health allows for targeted interventions to address disparities.
 
 
 ***

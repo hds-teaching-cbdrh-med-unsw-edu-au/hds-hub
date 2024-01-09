@@ -62,9 +62,9 @@ Let's start by printing a table of the univariate distribution of each variable.
 
 * For dichotomous variables like **Low Birthweight**, we can see that 59 children (or 39%) were born with low birthweight
 
-* For continuous variables like **Age** we can see that the average maternal age was 23 years and the interquartile range was 19 to 26 years (i.e. 25% of mothers were 19 years or younger and 25% were 26 years and older)
+* For continuous variables like **Age**, we can see that the average maternal age was 23 years and the interquartile range was 19 to 26 years (i.e. 25% of mothers were 19 years or younger and 25% were 26 years and older)
 
-* For categorical variables like **Race** we can see that 96 mothers (or 51% of the total) were White, 26 mothers were Black (14%) and 67 mothers were categorised as "Other" (35%). 
+* For categorical variables like **Race**, we can see that 96 mothers (or 51% of the total) were White, 26 mothers were Black (14%) and 67 mothers were categorised as "Other" (35%). 
 
 ```{r}
 #| echo: true

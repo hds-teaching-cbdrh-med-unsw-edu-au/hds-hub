@@ -1,5 +1,5 @@
 ---
-title: "Step 4. Descriptive Modelling"
+title: "Step 4. Descriptive modelling"
 description: _Use statistical modelling to gain health insights_
 image: ../images/tutorial4.jpg
 comments: false

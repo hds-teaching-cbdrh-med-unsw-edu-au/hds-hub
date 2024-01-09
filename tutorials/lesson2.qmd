@@ -19,13 +19,13 @@ library(MASS)
 
 In order to explore the relationship between birthweight and other factors we are going to need some data. For this guided tutorial we will use data collected at Baystate Medical Center, Springfield, Massachusetts during 1986. This dataset has ten variables collected on 189 mother-baby pairs. 
 
-Careful data curation is essential to a successful health data science project. Relevant tasks include building a data dictionary and developing a data management plan. A data dictionary documents the meaning, source, and format for the variables in a dataset, and the relationship between different datasets. A data management plan defines how data will be stored and accessed throughout the research cycle, from creation and acquisition to usage, and disposal. A well-defined data management plan also addresses risks associated with data, including security and rulese to address the risk of statistical disclosure control. 
+Careful data curation is essential to a successful health data science project. Relevant tasks include building a data dictionary and developing a data management plan. A data dictionary documents the meaning, source, and format for the variables in a dataset, and the relationship between different datasets. A data management plan defines how data will be stored and accessed throughout the research cycle, from creation and acquisition to usage, and disposal. A well-defined data management plan also addresses risks associated with data, including security and rules to address the risk of statistical disclosure control. 
 
 ![Created using Stable Diffusion --- human + AI.](../images/tutorial2.jpg)
 
 ### Documenting the available variables
 
-Before analysing a dataset its imperative to understand the available data and how it was collected. The list below defines the variables recorded in the birthweight dataset.
+Before analysing a dataset it is imperative to understand the available data and how it was collected. The list below defines the variables recorded in the birthweight dataset.
 
 * **low** indicator of birth weight less than 2.5 kg.
 
@@ -50,7 +50,7 @@ Before analysing a dataset its imperative to understand the available data and h
 
 ### Viewing the raw data
 
-It can often be useful to examine the raw data to get a feel for how it is recorded and any data issues, such as missing data. Below we have printed the first six rows for the birthweight dataset. We can see we have different types of variables available. Some are dichotomous (yes/no responses) like the indicators for smoking and low birthweight. Some are continuous, like maternal age measured in years and birthweight measured in grams.    
+It can often be useful to examine the raw data to get a feel for how it is recorded and any data issues, such as missing data. Below we have printed the first six rows for the birthweight dataset. We can see we have different types of variables available. Some are dichotomous (1=yes/0=no responses) like the indicators for smoking and low birthweight. Some are continuous, like maternal age measured in years and birthweight measured in grams.    
 
 ```{r}
 #| echo: false
