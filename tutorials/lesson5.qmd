@@ -53,15 +53,15 @@ birth_weight_dataset.rename(columns={'Unnamed: 0':'patient_id'}, inplace=True)
 
 ### Decision Trees
 
-To predict low birthweight we will use a model called a [single decision tree](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier). This is a type of algorithm that processes data by asking a series of "yes" or "no" questions about different variables---conventionalluy referred to as features---measured in the dataset. The resulting path of decisions resembles a tree with many branches, hence the name "decision tree". 
+To predict low birthweight we will use a model called a [single decision tree](https://scikit-learn.org/stable/modules/tree.html). This is a type of algorithm that processes data by asking a series of "yes" or "no" questions about different variables---conventionalluy referred to as features---measured in the dataset. The resulting path of decisions resembles a tree with many branches, hence the name "decision tree". 
 
 The first question is at the top of the tree, known as the "root". Based on the answer to the first question, you follow one of the branches to the next question. Each branch represents a decision or a choice. At each step (or "node"), there's a new question. Your answers guide you through the tree, moving from one question to the next. Eventually, you reach the end of a branch, which is like the "leaves" of the tree. The leaves give you the final prediction for a given individual, based on their characteristics. In this case, it will be a prediction of whether or not a baby will be born with low birthweight. 
 
-We will split the dataset in two to create a "training" set and a "test" set. We train our model using the training set. This means the training data is what the model uses to learn how to predict whether a baby will be born with low weight, based on the available features.
+We will split the dataset in two to create a "training" set and a "test" set. We train our model using the training set. This means the training data is what the model uses to learn how to predict whether a baby will be born with low weight, based on the available features. In the test step, the trained model is used to predict whether the baby is going to be born with low or normal weight.
 
 The test set acts as a simulation of unseen data, representing information that the algorithm hasn't encountered or learned from during training. Using a training set to train the model and a test set to test the model is essential so that the model's generalisation performance can be thoroughly assessed, ensuring its ability to make accurate predictions on new, unseen data and confirming its reliability beyond the training dataset.
 
-This analysis is implemented using Python, perhaps the most popular programming language for machine learning. Click the [`r fontawesome::fa("play")` Code]{style="color:#6c757d;font-size:0.9em"} icon below to view the underlying python code to prepare the dataset and run the decision tree analysis.
+This analysis is implemented using Python, perhaps the most popular programming language for machine learning, and the ML library [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier). Click the [`r fontawesome::fa("play")` Code]{style="color:#6c757d;font-size:0.9em"} icon below to view the underlying python code to prepare the dataset and run the decision tree analysis.
 
 
 ```{python}

@@ -29,9 +29,9 @@ Interestingly, even though children born to maternal smokers were lighter at bir
 
 ### Limitations
 
-In this introductory tutorial, we've crafted simple, yet practical research questions to showcase the incredible utility of applying data science to health-related inquiries. From exploring associations between smoking and birth outcomes to developing predictive models, these beginner-friendly examples serve as stepping stones into the vast possibilities of health data analysis.
+In this introductory tutorial, we've crafted simple, yet practical research questions to showcase the utility of applying data science to health-related inquiries. From exploring associations between smoking and birth outcomes to developing predictive models, these beginner-friendly examples serve as stepping stones into the vast possibilities of health data analysis.
 
-While the simplicity of these questions allows for an easy entry point, it's important to note that real-world health data analyses can be much more complex. Rather than look at the association between smoking and birthweight we could delve into the underlying causal processes as well as consider the safety of smoking cessation therapies on birth outcomes. When thinking about prediction, there are many other methods we could explore to optimise the model accuracy.
+While the simplicity of these questions allows for an easy entry point, it's important to note that real-world health data analyses can be much more complex. Rather than look at the association between smoking and birthweight we could delve into the underlying causal processes as well as consider the safety of smoking cessation therapies on birth outcomes. When thinking about prediction, there are many other methods we could explore to optimise the model accuracy; the model developed here wouldn't have sufficient accuracy to be deployed in practice. 
 
 As you delve deeper into this field, you'll discover the richness of intricate datasets and the nuanced challenges of addressing complex health-related queries. Get ready to unlock the potential of health data science, where even the simplest questions pave the way for uncovering profound insights in the diverse and dynamic landscape of healthcare research!
 
