@@ -93,8 +93,8 @@ birthwt_clean |>
 
 Some distinct differences for low birthweight children are starting to emerge. For example:
 
-* Mother's of low birthweight children were more likely to be smokers (51%) compared to non-smokers (34%).
-* Mother's of low birthweight children were more likely to have a history of hypertension (12% among low birthweight children compared to 3.8% among non-low birthweight children)
+* Mothers of low birthweight children were more likely to be smokers (51%) compared to non-smokers (34%).
+* Mothers of low birthweight children were more likely to have a history of hypertension (12% among low birthweight children compared to 3.8% among non-low birthweight children)
 
 ***
 
@@ -112,7 +112,7 @@ You will learn to write clear, efficient and correct computer code in the course
 
 ### Data visualisation
 
-Above we confirmed that babies born to mums who smoked during pregnancy had lower average birthweight compared to those that did not smoke. Let's use data visualisation to compare the full distribution of birthweights by maternal smoking status. Remember, you can click the [`r fontawesome::fa("play")` Code]{style="color:#6c757d;font-size:0.9em"} icon to reveal the underlying R code that creates this graph.
+Above we confirmed that babies born to mums who smoked during pregnancy had lower average birthweight compared to those that did not smoke. Let's use data visualisation to compare the full distribution of birthweights by maternal smoking status. Remember, you can click the [`r fontawesome::fa("play")` Code]{style="color:#6c757d;font-size:0.9em"} icon to reveal the underlying R code that creates this chart.
 
 ```{r}
 #| echo: true

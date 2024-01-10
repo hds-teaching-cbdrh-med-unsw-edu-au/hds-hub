@@ -19,7 +19,13 @@ library(MASS)
 
 In order to explore the relationship between birthweight and other factors we are going to need some data. For this guided tutorial we will use data collected at Baystate Medical Center, Springfield, Massachusetts during 1986. This dataset has ten variables collected on 189 mother-baby pairs. 
 
-Careful data curation is essential to a successful health data science project. Relevant tasks include building a data dictionary and developing a data management plan. A data dictionary documents the meaning, source, and format for the variables in a dataset, and the relationship between different datasets. A data management plan defines how data will be stored and accessed throughout the research cycle, from creation and acquisition to usage, and disposal. A well-defined data management plan also addresses risks associated with data, including security and rulese to address the risk of statistical disclosure control. 
+Careful data curation is essential to a successful health data science project. Relevant tasks include building a data dictionary and developing a data management plan. A data dictionary documents the meaning, source, and format for the variables in a dataset, and the relationship between different datasets. A data management plan defines how data will be stored and accessed throughout the research cycle, from creation and acquisition to usage, and disposal. A well-defined data management plan also addresses risks associated with data, including security and **statistical disclosure control** rules and algorithms to reduce the possibility of inadvertantly revealing sensitive or private data about inndividuals whose data were used in the analysis. 
+
+::: {.column-margin}
+**Statistical disclosure control** is the statistical science of minimising the risk of accidntally revealing personal or sensitive information about individuals, organisations or communities while maximising the utility of the research results derived from their data. This is important because most health data is private and highly sensitive, and preserving privacy is very important, while at the same time, the results of analyses usually need to be be made public or shared with a wider group. 
+
+You will learn about **statistical disclosure control** in the [HDAT9400 Data Management & Curation](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9400) course.
+:::
 
 ![Created using Stable Diffusion --- human + AI.](../images/tutorial2.jpg)
 
@@ -47,7 +53,6 @@ Before analysing a dataset its imperative to understand the available data and h
 
 * **bwt** birth weight in grams.
 
-
 ### Viewing the raw data
 
 It can often be useful to examine the raw data to get a feel for how it is recorded and any data issues, such as missing data. Below we have printed the first six rows for the birthweight dataset. We can see we have different types of variables available. Some are dichotomous (yes/no responses) like the indicators for smoking and low birthweight. Some are continuous, like maternal age measured in years and birthweight measured in grams.    
@@ -66,7 +71,7 @@ datatable(birthwt, rownames=FALSE, options=list(pageLength=6))
 ::: {.callout-tip}
 ## Studying Health Data Science at UNSW Sydney
 
-As a health data science student you will learn data wrangling skills and the day to day practicalities of data curation for sound data management in the course [HDAT9400 Context for Health Data Science](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9400). 
+As a health data science student you will learn data wrangling skills and the day to day practicalities of data curation for sound data management in the courses [HDAT9400 Context for Health Data Science](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9400) and [HDAT9800 Visualisation and Communication of Health Data](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9800). 
 :::
 ::::
 
@@ -75,6 +80,12 @@ As a health data science student you will learn data wrangling skills and the da
 ### Data curation
 
 Notice that the variable `race` is recorded numerically (`1`/`2`/`3`) rather than as a categorical variable. Looking back at the variable definitions above, we can see that `1` denotes the category `White`, `2` denotes the category `Black` and `3` denotes the category `Other`. 
+
+::: {.column-margin}
+Note that these data are from the US. In Australia we usually don't collect a data item about **race** specifically, but rather a number of data items relationing to individuals' country of birth, the languages they speak at home, and whether they identify as Aboriginal and/or Torres Strait Islander peoples (also referred to as _First Nations_ or indigenous peoples).
+
+We also use metric units such as kilograms, not old-fashioned imperial units such as pounds (lbs)!
+:::
 
 If we want to edit a dataset we always do so programatically, i.e. by writing code that will perform the necessary steps. This ensures that any steps we take can always be reproduced. Studying Health Data Science at UNSW you will learn three popular programming languages: `SAS`, `Python` and `R`. There are big advantages to being a programming polyglot---different software packages are particularly good at solving certain kinds of problems. An overview of the software used in different courses is provided [here](/software.html). 
 

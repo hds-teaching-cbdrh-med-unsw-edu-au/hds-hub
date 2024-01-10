@@ -46,9 +46,9 @@ birthwt_clean <- birthwt |>
 
 ### Overview
 
-Statistical modeling is the cornerstone of evidence-based decision-making in healthcare. By crunching numbers and analysing patterns, we gain insights into disease trends, treatment effectiveness, and the factors influencing health outcomes. It's like having a powerful magnifying glass that allows us to zoom in on the crucial details within a vast dataset.
+Statistical modelling is the cornerstone of evidence-based decision-making in healthcare. By crunching numbers and analysing patterns, we gain insights into disease trends, treatment effectiveness, and the factors influencing health outcomes. It's like having a powerful magnifying glass that allows us to zoom in on the crucial details within a vast dataset.
 
-Our exploratory data analysis has already gone some way to answering our first question **What is the relationship between smoking during pregnancy and a child's birthweight?** It looks like children born to mums who smoked during pregnancy have a lower birthweight compared to children born to non-smokers.
+Our exploratory data analysis has already gone some way to answering our first question **What is the relationship between smoking during pregnancy and a child's birthweight?** It looks like children born to mums who smoked during pregnancy have, on average, a lower birthweight compared to children born to non-smokers.
 
 ::: {.aside}
 ```{r}
@@ -62,15 +62,15 @@ birthwt_clean |>
         theme_minimal() +
         theme(legend.position = 'none')
 ```
-It looks like children born to mums who smoked during pregnancy have a lower birthweight compared to children born to non-smokers.
+It looks like children born to mums who smoked during pregnancy have a lower birthweight, on average, compared to children born to non-smokers.
 :::
 
 But can we be sure this is the right interpretation? Is the difference meaningful or could it just be noise in the data or random chance? 
 
 To answer these questions we can use linear regression---the workhorse of statistical modeling. At its core, linear regression helps us explore the linear relationship between a dependent variable and one or more independent variables. Suppose we're examining the impact of factors like maternal age, smoking, and hypertension on birthweight. Linear regression enables us to quantify these relationships, providing us with coefficients that represent the strength and direction of each influence. It's like having a mathematical roadmap to understand how changes in one variable correlate with changes in another. 
 
-
 ![Created using Stable Diffusion --- human + AI.](../images/tutorial4.jpg)
+
 
 Below is the code to fit a linear model in R using the `lm()` function. Note that we specify the outcome variable birthweight (or `bwt`), the explanatory variable `smoke`, and the dataset `birthwt`.
 
@@ -109,9 +109,13 @@ Push your skills further to model complex health data structures in [HDAT9700 St
 
 ::::
 
-These results confirm that there is a statistically significant association between maternal smoking and birthweight. Children of mothers who smoked during pregnancy are born with a lower birthweight compared to children of mothers who did not smoke, on average. The estimated difference is 284 grams lighter on average but---based on the observed data---it could be as much as 495 grams lighter on average or as little as 73 grams lighter on average.
+These results confirm that there is a statistically significant association between maternal smoking and birthweight. Children of mothers who smoked during pregnancy are born with a lower birthweight compared to children of mothers who did not smoke, on average. The estimated difference is 284 grams lighter on average but---based on the observed data---it could be as much as 495 grams lighter on average or as little as 73 grams lighter on average (or even more, or less, but that would be very, very unlikely).
 
-Importantly, this result by itself does not necessarily mean that the observed differences are caused directly by smoking. It could be that mothers who smoked have very different characteristics compared to mothers who did not smoke. For example, perhaps smoking mums disproportionately came from disadvantaged backgrounds with higher barriers to receive antenatal care and it is that difference that explains the differences in birthweight rather than smoking alone. Advanced analytical methods can help us to unpick correlation from causation.  
+Importantly, this result by itself does not necessarily mean that the observed differences are caused directly by smoking. It could be that mothers who smoked have very different characteristics compared to mothers who did not smoke. For example, perhaps smoking mums disproportionately came from disadvantaged backgrounds with higher barriers to receive antenatal care and it is that difference that explains the differences in birthweight rather than smoking alone. Advanced analytical methods can help us to distinguish causation from mere correlation. 
+
+::: {.aside}
+Incorporating knowledge of underlying biological and social processes into statistical analyses is an essential step in teasing apart causation from mere correlation. Often this knowledge is summarised in the form a **Directed Acyclic Graph** (DAG). Some of the MSc HDS course instructors have developed an [R software package](https://academic.oup.com/ije/article/52/5/1659/7084945) and [web application](https://cbdrh.shinyapps.io/daggle/) to help improve your understanding of these concepts. 
+:::
 
 ***
 :::: {.callout-pad}
