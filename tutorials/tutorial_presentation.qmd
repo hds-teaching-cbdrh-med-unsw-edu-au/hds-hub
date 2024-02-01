@@ -1,0 +1,32 @@
+---
+title: "Factors which influence birthweight"
+subtitle: "A tutorial presentation"
+format: 
+  revealjs:
+    transition: slide
+    transition-speed: fast
+---
+
+## In this talk
+
+In this presentation we will briefly present our analysis of the effect of smoking on birthweight using a publicly-available data set. There are six sections:
+
+::: {.incremental}
+
+- The research question
+- Curating the data
+- Exploring the data
+- Descriptive Modelling
+- Predictive modelling
+- Conclusions
+
+:::
+
+## The research question
+
+In this analysis, we addressed two research questions:
+
+- What is the relationship between smoking during pregnancy and a child's birthweight?
+
+- Can maternal factors measured during pregnancy be used to accurately predict infants at risk of low birthweight?
+

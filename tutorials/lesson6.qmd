@@ -5,8 +5,6 @@ image: ../images/tutorial6.jpg
 comments: false
 ---
 
-### Overview
-
 You've almost reached the end of the guided tutorial---congratulations! 
 
 The final step is to review our findings and draw our conclusions. Let's recap our original research questions:

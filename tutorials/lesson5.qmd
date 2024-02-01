@@ -59,7 +59,7 @@ The first question is at the top of the tree, known as the "root" (the "root" is
 
 ::: {.aside}
 ::: rotate-img
-![A more accurate representation of our decision tree!](../images/tutorial5.jpg)
+![A more accurate representation of our decision tree! (image generated using Midjourney AI)](../images/A_tree_with_branches.png)
 :::
 :::
 
