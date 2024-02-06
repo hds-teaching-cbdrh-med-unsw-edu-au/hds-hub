@@ -8,7 +8,7 @@
 
 <meta name="description" content="Can you use machine learning to predict future health outcomes?">
 
-<title>Step 5. Predictive modelling</title>
+<title>Step 5. Predicting outcomes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,10 +101,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../include/webex.css">
-<meta property="og:title" content="Step 5. Predictive modelling">
+<meta property="og:title" content="Step 5. Predicting outcomes">
 <meta property="og:description" content="Can you use machine learning to predict future health outcomes?">
 <meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/images/tutorial5.jpg">
-<meta name="twitter:title" content="Step 5. Predictive modelling">
+<meta name="twitter:title" content="Step 5. Predicting outcomes">
 <meta name="twitter:description" content="Can you use machine learning to predict future health outcomes?">
 <meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/images/tutorial5.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -161,16 +161,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </i> 
  <span class="dropdown-text">FAQ</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../tutorial.html" rel="" target="">
- <span class="dropdown-text"> </span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../posts.html" rel="" target=""><i class="bi bi-chat-right-heart-fill" role="img">
 </i> 
  <span class="menu-text">HDS Student Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../tutorial.html" rel="" target=""><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Guided tutorial</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -223,7 +224,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Step 5. Predictive modelling</h1>
+<h1 class="title">Step 5. Predicting outcomes</h1>
 </div>
 
 <div>
@@ -257,7 +258,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="decision-trees" class="level3">
 <h3 class="anchored" data-anchor-id="decision-trees">Decision Trees</h3>
-<p>To predict low birthweight we will use a model called a <a href="https://scikit-learn.org/stable/modules/tree.html">single decision tree</a>. This is a type of algorithm that processes data by asking a series of “yes” or “no” questions about different variables—conventionalluy referred to as features—measured in the dataset. The resulting path of decisions resembles a tree with many branches, hence the name “decision tree”.</p>
+<p>To predict low birthweight we will use a model called a <a href="https://scikit-learn.org/stable/modules/tree.html">single decision tree</a>. This is a type of algorithm that processes data by asking a series of “yes” or “no” questions about different variables—conventionally referred to as features—measured in the dataset. The resulting path of decisions resembles a tree with many branches, hence the name “decision tree”.</p>
 <p>The first question is at the top of the tree, known as the “root”. Based on the answer to the first question, you follow one of the branches to the next question. Each branch represents a decision or a choice. At each step (or “node”), there’s a new question. Your answers guide you through the tree, moving from one question to the next. Eventually, you reach the end of a branch, which is like the “leaves” of the tree. The leaves give you the final prediction for a given individual, based on their characteristics. In this case, it will be a prediction of whether or not a baby will be born with low birthweight.</p>
 <p>We will split the dataset in two to create a “training” set and a “test” set. We train our model using the training set. This means the training data is what the model uses to learn how to predict whether a baby will be born with low weight, based on the available features. In the test step, the trained model is used to predict whether the baby is going to be born with low or normal weight.</p>
 <p>The test set acts as a simulation of unseen data, representing information that the algorithm hasn’t encountered or learned from during training. Using a training set to train the model and a test set to test the model is essential so that the model’s generalisation performance can be thoroughly assessed, ensuring its ability to make accurate predictions on new, unseen data and confirming its reliability beyond the training dataset.</p>
@@ -1055,7 +1056,15 @@ Tree
 <li>If the answer is no previous premature labours (i.e.&nbsp;<span class="math inline">\(\le 0.5\)</span>) the next question asks whether or not <code>lwt</code> (weight at last menstrual period) was <span class="math inline">\(\le 106\)</span> lbs.</li>
 <li>If the answer is one or more previous premature labours (i.e.&nbsp;<span class="math inline">\(\gt 0.5\)</span>) the the next question asks whether or not maternal age was <span class="math inline">\(\le 31.5\)</span> years.</li>
 </ul>
-<p>As you can see, if you allow the tree to grow without any limitation, the tree continues asking “yes/no” questions, branching out more and more. This unrestricted growth can result in a highly complex model that captures not only the underlying patterns but also the noise in the training data. As is the case here, such a tree may perform exceptionally well on the training dataset but fail to predict accurately on new, unseen data due to its over-specialisation (overfitting).</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/tutorial5-rotated.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">A more accurate representation of our decision tree!</figcaption>
+</figure>
+</div>
+</div></div><p>As you can see, if you allow the tree to grow without any limitation, the tree continues asking “yes/no” questions, branching out more and more. This unrestricted growth can result in a highly complex model that captures not only the underlying patterns but also the noise in the training data. As is the case here, such a tree may perform exceptionally well on the training dataset but fail to predict accurately on new, unseen data due to its over-specialisation (overfitting).</p>
 <hr>
 <div class="callout-pad">
 <div class="callout callout-style-default callout-tip callout-titled">

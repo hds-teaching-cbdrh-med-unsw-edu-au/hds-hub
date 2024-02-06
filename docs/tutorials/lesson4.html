@@ -8,7 +8,7 @@
 
 <meta name="description" content="Use statistical modelling to gain health insights">
 
-<title>Step 4. Descriptive modelling</title>
+<title>Step 4. Modelling relationships</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,10 +99,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../include/webex.css">
-<meta property="og:title" content="Step 4. Descriptive modelling">
+<meta property="og:title" content="Step 4. Modelling relationships">
 <meta property="og:description" content="Use statistical modelling to gain health insights">
 <meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/images/tutorial4.jpg">
-<meta name="twitter:title" content="Step 4. Descriptive modelling">
+<meta name="twitter:title" content="Step 4. Modelling relationships">
 <meta name="twitter:description" content="Use statistical modelling to gain health insights">
 <meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/images/tutorial4.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -159,16 +159,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </i> 
  <span class="dropdown-text">FAQ</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../tutorial.html" rel="" target="">
- <span class="dropdown-text"> </span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../posts.html" rel="" target=""><i class="bi bi-chat-right-heart-fill" role="img">
 </i> 
  <span class="menu-text">HDS Student Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../tutorial.html" rel="" target=""><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Guided tutorial</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -215,7 +216,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Step 4. Descriptive modelling</h1>
+<h1 class="title">Step 4. Modelling relationships</h1>
 </div>
 
 <div>
@@ -237,8 +238,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="overview" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>Statistical modeling is the cornerstone of evidence-based decision-making in healthcare. By crunching numbers and analysing patterns, we gain insights into disease trends, treatment effectiveness, and the factors influencing health outcomes. It’s like having a powerful magnifying glass that allows us to zoom in on the crucial details within a vast dataset.</p>
-<p>Our exploratory data analysis has already gone some way to answering our first question <strong>What is the relationship between smoking during pregnancy and a child’s birthweight?</strong> It looks like children born to mums who smoked during pregnancy have a lower birthweight compared to children born to non-smokers.</p>
+<p>Statistical modelling is the cornerstone of evidence-based decision-making in healthcare. By crunching numbers and analysing patterns, we gain insights into disease trends, treatment effectiveness, and the factors influencing health outcomes. It’s like having a powerful magnifying glass that allows us to zoom in on the crucial details within a vast dataset.</p>
+<p>Our exploratory data analysis has already gone some way to answering our first question <strong>What is the relationship between smoking during pregnancy and a child’s birthweight?</strong> It looks like children born to mums who smoked during pregnancy have, on average, a lower birthweight compared to children born to non-smokers.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="cell">
@@ -246,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="lesson4_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>It looks like children born to mums who smoked during pregnancy have a lower birthweight compared to children born to non-smokers.</p>
+<p>It looks like children born to mums who smoked during pregnancy have, on average, a lower birthweight compared to children born to non-smokers.</p>
 </div></div><p>But can we be sure this is the right interpretation? Is the difference meaningful or could it just be noise in the data or random chance?</p>
 <p>To answer these questions we can use linear regression—the workhorse of statistical modeling. At its core, linear regression helps us explore the linear relationship between a dependent variable and one or more independent variables. Suppose we’re examining the impact of factors like maternal age, smoking, and hypertension on birthweight. Linear regression enables us to quantify these relationships, providing us with coefficients that represent the strength and direction of each influence. It’s like having a mathematical roadmap to understand how changes in one variable correlate with changes in another.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -259,20 +260,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(bwt <span class="sc">~</span> smoke, <span class="at">data =</span> birthwt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>And here are the model results, presented as a table.</p>
+<p>And here are the model results, presented in a table.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table data-quarto-postprocess="true" class="table table-sm table-striped small">
 <tbody>
 <tr class="odd">
-<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">&nbsp;</td>
-<td colspan="3" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Birthweight</td>
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; padding: 0.2cm; border-bottom: 1px solid black;">&nbsp;</td>
+<td colspan="3" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: italic; font-weight: normal; padding: 0.2cm; border-bottom: 1px solid black;">Birthweight</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Predictors</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Estimates</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">CI</td>
-<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">p</td>
+<td style="text-align: left; border-bottom: 1px solid black;">Predictors</td>
+<td style="text-align: left; border-bottom: 1px solid black;">Estimates</td>
+<td style="text-align: left; border-bottom: 1px solid black;">CI</td>
+<td style="text-align: left; border-bottom: 1px solid black;">p</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; padding: 0.2cm; vertical-align: top;">Baseline</td>
@@ -315,13 +316,16 @@ Studying Health Data Science at UNSW Sydney
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Learn the fundamentals of statistical modelling it the course <a href="https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9600">HDAT9600 Statistical Modelling I</a></p>
+<p>Learn the fundamentals of statistical modelling in the course <a href="https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9600">HDAT9600 Statistical Modelling I</a></p>
 <p>Push your skills further to model complex health data structures in <a href="https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9700">HDAT9700 Statistical Modelling II</a>.</p>
 </div>
 </div>
 </div>
-<p>These results confirm that there is a statistically significant association between maternal smoking and birthweight. Children of mothers who smoked during pregnancy are born with a lower birthweight compared to children of mothers who did not smoke, on average. The estimated difference is 284 grams lighter on average but—based on the observed data—it could be as much as 495 grams lighter on average or as little as 73 grams lighter on average.</p>
-<p>Importantly, this result by itself does not necessarily mean that the observed differences are caused directly by smoking. It could be that mothers who smoked have very different characteristics compared to mothers who did not smoke. For example, perhaps smoking mums disproportionately came from disadvantaged backgrounds with higher barriers to receive antenatal care and it is that difference that explains the differences in birthweight rather than smoking alone. Advanced analytical methods can help us to unpick correlation from causation.</p>
+<p>These results confirm that there is a statistically significant association between maternal smoking and birthweight. Children of mothers who smoked during pregnancy are born with a lower birthweight compared to children of mothers who did not smoke, on average. The estimated difference is 284 grams lighter on average but—based on the observed data—it could be as much as 495 grams lighter on average or as little as 73 grams lighter on average (or even more, or less, but that would be very, very unlikely).</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Incorporating knowledge of underlying biological and social processes into statistical analyses is an essential step in teasing apart causation from mere correlation. Often this knowledge is summarised in the form a <strong>Directed Acyclic Graph</strong> (DAG). Some of the MSc HDS course instructors have developed an <a href="https://academic.oup.com/ije/article/52/5/1659/7084945">R software package</a> and <a href="https://cbdrh.shinyapps.io/daggle/">web application</a> to help improve your understanding of these concepts.</p>
+</div></div><p>Importantly, this result by itself does not necessarily mean that the observed differences are caused directly by smoking. It could be that mothers who smoked have very different characteristics compared to mothers who did not smoke. For example, perhaps smoking mums disproportionately came from disadvantaged backgrounds with higher barriers to receive antenatal care and it is that difference that explains the differences in birthweight rather than smoking alone. Advanced analytical methods can help us to distinguish causation from mere correlation.</p>
 <hr>
 </section>
 <div class="callout-pad">
@@ -346,7 +350,7 @@ Test your understanding by answering these questions based on the model output a
 <p><a href="../tutorial.html"><img src="../images/tutorial-options.jpg" width="100%"> Back to the main menu </a></p>
 </div>
 <div class="tute-options-element">
-<p><a href="../tutorials/lesson5.html"><img src="../images/tutorial5.jpg" width="100%"> Step 5. Predictive modelling </a></p>
+<p><a href="../tutorials/lesson5.html"><img src="../images/tutorial5.jpg" width="100%"> Step 5. Predicting outcomes </a></p>
 </div>
 </div>
 

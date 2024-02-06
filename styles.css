@@ -381,3 +381,6 @@ table tr td tr {
   font-style: italic;
 }
 
+.rotate-img img {
+  transform: rotate(90deg);
+}

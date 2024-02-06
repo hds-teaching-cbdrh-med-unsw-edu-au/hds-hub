@@ -15,9 +15,9 @@ The final step is to review our findings and draw our conclusions. Let's recap o
 
 2) Can maternal factors measured during pregnancy be used to accurately predict infants at risk of low birthweight?
 
-In relation to Question 1), unsurprisingly we found that there was a significant negative association between maternal smoking and birthweight. Children of mothers who smoked during pregnancy were born around 284 grams lighter on average, compared to children of non-smokers. This kind of evidence has been long-used to promote anti-smoking public health campaigns and target supports to expectant mothers. 
+In relation to Question 1, unsurprisingly we found that there was a significant negative association between maternal smoking and birthweight. Children of mothers who smoked during pregnancy were born around 284 grams lighter on average, compared to children of non-smokers. This kind of evidence has been long-used to promote anti-smoking public health campaigns and target supports to expectant mothers. 
 
-In relation to Question 2), we built a decision tree model that could predict children at risk of low birth weight at birth with 71.5% accuracy, based on information available by the end of the first trimester. 
+In relation to Question 2, we built a decision tree model that could predict children at risk of low birth weight at birth with 71.5% accuracy, based on information available by the end of the first trimester. 
 
 ![Created using Stable Diffusion --- human + AI.](../images/tutorial6.jpg)
 

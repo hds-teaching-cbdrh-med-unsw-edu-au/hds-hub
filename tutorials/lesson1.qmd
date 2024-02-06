@@ -1,6 +1,6 @@
 ---
 title: "Step 1. The research question"
-description: _In any health data science analysis, the first step is to undersand the research question_
+description: _In any health data science analysis, the first step is to understand the research question_
 image: ../images/tutorial1.jpg
 comments: false
 ---
@@ -55,7 +55,7 @@ There are many factors that contribute to birthweight and may be useful to help 
 ::: {.callout-tip}
 ## Studying Health Data Science at UNSW Sydney
 
-You will learn about how different types of data are generated and used in the Australian health system in the course [HDAT9100 Context for Health Data Science](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9100).
+You will learn about how different types of health data are collected and used in the Australian health system in the course [HDAT9100 Context for Health Data Science](https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9100).
 :::
 ::::
 
@@ -64,7 +64,11 @@ You will learn about how different types of data are generated and used in the A
 
 ### Birthweight in context
 
-In New South Wales, data on birthweight are routinely recorded in the Perinatal Data Collection, a population-based surveillance system covering all births in NSW public and private hospitals, as well as home births. It encompasses all live births, and stillbirths of at least 20 weeks gestation or at least 400 grams birthweight. 
+::: {.column-margin}
+For births occurring in hospitals, the birthweight will almost always be recorded in a clinical information system, and then transferred in electronic form to the centralised perinatal Data Collection operated by NSW Health. For home births and births in some very small hospitals, the data may have been submitted via a paper or web-based form. Understanding the provenance of data is a key part of every health data analysis.
+:::
+
+In New South Wales, data on birthweight are routinely **captured** in the Perinatal Data Collection, a population-based surveillance system covering all births in NSW public and private hospitals, as well as home births. It encompasses all live births, and stillbirths of at least 20 weeks gestation or at least 400 grams birthweight. 
 
 Birthweight statistics are regularly reported on, for example in the [annual Mothers and Babies reports](https://www.health.nsw.gov.au/hsnsw/Pages/mothers-and-babies-reports.aspx), produced by NSW Health. Birthweight is also the subject of numerous academic studies, for example, the recent journal article [Smoking Cessation during the Second Half of Pregnancy Prevents Low Birth Weight among Australian Born Babies in Regional New South Wales](https://doi.org/10.3390/ijerph18073417)[^1] 
 

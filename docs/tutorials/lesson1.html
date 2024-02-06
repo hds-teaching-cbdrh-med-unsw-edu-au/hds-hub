@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="In any health data science analysis, the first step is to undersand the research question">
+<meta name="description" content="In any health data science analysis, the first step is to understand the research question">
 
 <title>Step 1. The research question</title>
 <style>
@@ -66,10 +66,10 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../include/webex.css">
 <meta property="og:title" content="Step 1. The research question">
-<meta property="og:description" content="In any health data science analysis, the first step is to undersand the research question">
+<meta property="og:description" content="In any health data science analysis, the first step is to understand the research question">
 <meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/images/tutorial1.jpg">
 <meta name="twitter:title" content="Step 1. The research question">
-<meta name="twitter:description" content="In any health data science analysis, the first step is to undersand the research question">
+<meta name="twitter:description" content="In any health data science analysis, the first step is to understand the research question">
 <meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/images/tutorial1.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -125,16 +125,17 @@ ul.task-list li input[type="checkbox"] {
 </i> 
  <span class="dropdown-text">FAQ</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../tutorial.html" rel="" target="">
- <span class="dropdown-text"> </span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../posts.html" rel="" target=""><i class="bi bi-chat-right-heart-fill" role="img">
 </i> 
  <span class="menu-text">HDS Student Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../tutorial.html" rel="" target=""><i class="bi bi-code-slash" role="img">
+</i> 
+ <span class="menu-text">Guided tutorial</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -181,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -190,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    <em>In any health data science analysis, the first step is to undersand the research question</em>
+    <em>In any health data science analysis, the first step is to understand the research question</em>
   </div>
 </div>
 
@@ -248,15 +249,18 @@ Studying Health Data Science at UNSW Sydney
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You will learn about how different types of data are generated and used in the Australian health system in the course <a href="https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9100">HDAT9100 Context for Health Data Science</a>.</p>
+<p>You will learn about how different types of health data are collected and used in the Australian health system in the course <a href="https://hds-hub.cbdrh.med.unsw.edu.au/courses.html#hdat9100">HDAT9100 Context for Health Data Science</a>.</p>
 </div>
 </div>
 </div>
 <hr>
 </section>
-<section id="birthweight-in-context" class="level3">
+<section id="birthweight-in-context" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="birthweight-in-context">Birthweight in context</h3>
-<p>In New South Wales, data on birthweight are routinely recorded in the Perinatal Data Collection, a population-based surveillance system covering all births in NSW public and private hospitals, as well as home births. It encompasses all live births, and stillbirths of at least 20 weeks gestation or at least 400 grams birthweight.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>For births occurring in hospitals, the birthweight will almost always be recorded in a clinical information system, and then transferred in electronic form to the centralised perinatal Data Collection operated by NSW Health. For home births and births in some very small hospitals, the data may have been submitted via a paper or web-based form. Understanding the provenance of data is a key part of every health data analysis.</p>
+</div></div><p>In New South Wales, data on birthweight are routinely <strong>captured</strong> in the Perinatal Data Collection, a population-based surveillance system covering all births in NSW public and private hospitals, as well as home births. It encompasses all live births, and stillbirths of at least 20 weeks gestation or at least 400 grams birthweight.</p>
 <p>Birthweight statistics are regularly reported on, for example in the <a href="https://www.health.nsw.gov.au/hsnsw/Pages/mothers-and-babies-reports.aspx">annual Mothers and Babies reports</a>, produced by NSW Health. Birthweight is also the subject of numerous academic studies, for example, the recent journal article <a href="https://doi.org/10.3390/ijerph18073417">Smoking Cessation during the Second Half of Pregnancy Prevents Low Birth Weight among Australian Born Babies in Regional New South Wales</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <hr>
 </section>
@@ -266,8 +270,8 @@ Studying Health Data Science at UNSW Sydney
 <div class="webex-check webex-box">
 <p><strong>True or False</strong> A boy born weighing 2.2kg would be classified as low birthweight? <select class="webex-select"><option value="blank"></option><option value="answer">TRUE</option><option value="">FALSE</option></select></p>
 <strong>Choose the correct answer</strong> Which of the following is <em>not</em> a risk factor for low birthweight?
-<div id="radio_IDVAGRSWSY" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_IDVAGRSWSY" value=""> <span>Gestational diabetes</span></label><label><input type="radio" autocomplete="off" name="radio_IDVAGRSWSY" value="answer"> <span>Father's height</span></label><label><input type="radio" autocomplete="off" name="radio_IDVAGRSWSY" value=""> <span>Maternal smoking</span></label><label><input type="radio" autocomplete="off" name="radio_IDVAGRSWSY" value=""> <span>Low income</span></label>
+<div id="radio_QDPRGCQMGI" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_QDPRGCQMGI" value=""> <span>Gestational diabetes</span></label><label><input type="radio" autocomplete="off" name="radio_QDPRGCQMGI" value="answer"> <span>Father's height</span></label><label><input type="radio" autocomplete="off" name="radio_QDPRGCQMGI" value=""> <span>Maternal smoking</span></label><label><input type="radio" autocomplete="off" name="radio_QDPRGCQMGI" value=""> <span>Low income</span></label>
 </div>
 </div>
 </section>

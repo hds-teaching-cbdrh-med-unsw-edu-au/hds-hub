@@ -34,14 +34,12 @@ website:
       - text: FAQ
         href: faq.qmd
         icon: question-circle
-      - text: " "
-        href: tutorial.qmd
     - text: HDS Student Blog
       href: posts.qmd
       icon: chat-right-heart-fill
-    # - text: Guided tutorial
-    #   href: tutorial.qmd
-    #   icon: code-slash
+    - text: Guided tutorial
+      href: tutorial.qmd
+      icon: code-slash
     right:
     - icon: twitter
       href: https://twitter.com/cbdrh1
