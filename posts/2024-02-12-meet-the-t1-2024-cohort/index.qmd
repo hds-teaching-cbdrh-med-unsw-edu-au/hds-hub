@@ -2,10 +2,10 @@
 title: Meet the new cohort!
 description: "_Meet some of the amazing diverse students in our largest ever Health Data Science cohort!_"
 author:
-  - name: Term 1 2024 cohort stars
+  - name: New cohort starters
 date: 2024-02-12
 categories: [Health Data Science, New cohort] # self-defined categories
-image: ""
+image: "IMG_5885_anonymous.png"
 freeze: true
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
