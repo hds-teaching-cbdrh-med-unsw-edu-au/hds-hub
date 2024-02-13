@@ -384,3 +384,63 @@ table tr td tr {
 .rotate-img img {
   transform: rotate(90deg);
 }
+
+.script {
+  font-family: "Bradley Hand", ui-serif;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.left-align {
+  text-align: left;
+}
+
+
+.interview h4 {
+  color: #CCCDC6;
+  font-weight: 550;
+}
+
+.spotify-background {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .9em;
+  font-weight: 600;
+  color: #A1A1A1;
+  margin: 50px 0px;
+}
+
+
+.interview-options {
+  --_spacer: 0.5rem;
+  display: grid;
+  width: 100%;
+  gap: var(--_spacer);
+  padding: 0 var(--_spacer) var(--_spacer) 0;
+}
+
+@media (min-width: 400px) {
+  .interview-options { grid-template-columns: repeat(2, 1fr); }
+}
+
+.interview-options-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.grey-background {
+    background: #f9f4f5;
+}
+.grey-background h4 {
+  color: #666A6D;
+}
+
+
+
+

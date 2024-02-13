@@ -1,0 +1,361 @@
+---
+title: Meet the new cohort!
+description: "_Meet some of the amazing diverse students in our largest ever Health Data Science cohort!_"
+author:
+  - name: Term 1 2024 cohort stars
+date: 2024-02-12
+categories: [Health Data Science, New cohort] # self-defined categories
+image: ""
+freeze: true
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+
+:::::: {.interview}
+
+
+::: aside
+![](qr-code-invite.png)
+
+Starting in T1 2024? Scan the QR code or follow [this link](https://forms.office.com/r/mjVDxTYAXj) to introduce yourself and we'll add your details to this post! ❤️
+
+:::
+
+
+:::: {.interview-options}
+
+::: {.interview-options-element}
+
+::: {.left-align}
+## Nini
+
+#### What's one thing you love about where you grew up?
+::: {.script}
+Food!
+:::
+:::
+
+:::
+
+::: {.interview-options-element}
+
+::: {.round-border}
+![Nini](IMG_1536_anonymous.JPG)
+:::
+
+:::
+
+::::
+
+:::: {.right-align}
+#### What hobbies do you have?
+::: {.script}
+Tennis, basketball, video games, piano
+:::
+::::
+
+:::: {.interview-options}
+
+::: {.interview-options-element .grey-background}
+
+::: {.spotify-background}
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6IghCx6jRj5VHEmXKQH2pR?utm_source=generator" width="100%" height="80%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+Playlist: Nini's favourite song!
+
+:::
+
+:::
+
+::: {.interview-options-element .grey-background}
+
+#### What attracted you to Health Data Science?
+::: {.script}
+It is such a new and interesting area for me. Also looking forward to having a career change. (Being a physiotherapist for a few years)
+:::
+
+:::
+::::
+
+:::: {.right-align}
+#### What did you study for your undergrad degree?
+
+::: {.script}
+Physiotherapy
+:::
+::::
+
+
+#### Anything else you'd like to add?
+
+::: {.script}
+I'm also a big fan of detective novels 🕵🏻‍♀️
+:::
+
+
+***
+<br>
+
+::::: {.right-align}
+:::: {.interview-options}
+
+::: {.interview-options-element}
+
+::: {.round-border}
+![Monica](4581446F-260B-44A7-823D-9CC762E6E4E5_anonymous.jpeg)
+:::
+
+:::
+
+::: {.interview-options-element}
+
+::: {.right-align}
+## Monica
+
+#### What's one thing you love about where you grew up?
+::: {.script}
+I grew up in Mexico and I definitely LOVE ❤️ the food and the music. Also the people have more time to get together and family is very important. 
+:::
+:::
+
+:::
+
+::::
+:::::
+
+
+#### What hobbies do you have?
+::: {.script}
+Cooking, painting, and travelling 
+:::
+
+
+:::: {.interview-options}
+
+::: {.interview-options-element .grey-background}
+
+::: {.spotify-background}
+
+<iframe style="border-radius:6px" src="https://open.spotify.com/embed/track/0gNXY64y1CKoNsIo96WuLn?utm_source=generator" width="100%" height="80%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+Playlist: Monica's favourite song!
+
+:::
+
+:::
+
+::: {.interview-options-element .grey-background}
+
+#### What attracted you to Health Data Science?
+::: {.script}
+I have always been interested in data. I’ve been a marketer for more than 10 years and data and analytics are part of my job. I’ve also been working with a Physiotherapy practice for more than 10 years and have come across a lot of health conditions so I thought it would be amazing to combine data and health together! 
+:::
+
+:::
+::::
+
+#### What did you study for your undergrad degree?
+
+::: {.script}
+Business/ Translation and Interpreting/ Marketing 
+:::
+
+
+:::: {.right-align}
+#### Anything else you'd like to add?
+
+::: {.script}
+I have an adorable Jack Russel called “Freddy” - he’s going to be 2 in April - LOVE ❤️ 
+:::
+::::
+
+***
+<br>
+
+:::: {.interview-options}
+
+::: {.interview-options-element}
+
+::: {.left-align}
+## Nahee
+
+#### What's your dog's name!?
+::: {.script}
+This is Mandoo 🐾❤️
+:::
+:::
+
+:::
+
+::: {.interview-options-element}
+
+::: {.round-border}
+![Mandoo 🐾](IMG_5885_anonymous.png)
+:::
+
+:::
+
+::::
+
+
+#### What's one thing you love about where you grew up?
+::: {.script}
+I grew up in South Korea, I love the lake park where can feel all seasons.
+:::
+
+:::: {.right-align}
+#### What attracted you to Health Data Science?
+::: {.script}
+Looks professional :)  always wondering and interested in data because I love that I can have a chance to find an error and correct it. 
+:::
+::::
+
+#### What did you study for your undergrad degree?
+
+::: {.script}
+Nursing
+:::
+
+***
+<br>
+
+
+::::: {.right-align}
+:::: {.interview-options}
+
+::: {.interview-options-element}
+
+::: {.round-border}
+![Abby and Aba](Abby&Aba_anonymous.jpeg)
+:::
+
+:::
+
+::: {.interview-options-element}
+
+## Yingyue (Abby)
+
+#### What's one thing you love about where you grew up?
+::: {.script}
+A number of cultural deposits.
+:::
+
+:::
+
+::::
+:::::
+
+
+#### What hobbies do you have?
+::: {.script}
+Scuba Diving, Houseplants, penmanship, LEGO, Puzzle, Pilates, Hiking, Swimming
+:::
+
+
+:::: {.interview-options}
+
+::: {.interview-options-element .grey-background}
+
+::: {.spotify-background}
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/762K1h8yVV5IgAVuEMpqfZ?utm_source=generator" width="100%" height="80%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+Playlist: Abby's favourite song!
+
+:::
+
+:::
+
+::: {.interview-options-element .grey-background}
+
+#### What attracted you to Health Data Science?
+::: {.script}
+I believe it can push my career to next level. 
+:::
+
+:::
+::::
+
+#### What did you study for your undergrad degree?
+
+::: {.script}
+Healthcare Policy and Management
+:::
+
+#### What's your cat's name!?
+
+::: {.script}
+This is Aba ❤️
+:::
+
+***
+<br>
+
+:::: {.interview-options}
+
+::: {.interview-options-element .left-align}
+## Samantha
+
+#### What's one thing you love about where you grew up?
+::: {.script}
+I grew up in Canberra and love all the museums and how walkable the city is! 
+:::
+
+:::
+
+::: {.interview-options-element}
+
+::: {.round-border}
+![Samantha](IMG_8508_Original_anonymous.jpeg)
+:::
+
+:::
+
+::::
+
+:::: {.right-align}
+#### What hobbies do you have?
+::: {.script}
+Going for big walks and watching films
+:::
+::::
+
+:::: {.interview-options}
+
+::: {.interview-options-element .grey-background}
+
+::: {.spotify-background}
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2UWdUez9MB9yzL7Y81Mcip?utm_source=generator" width="100%" height="80%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+Playlist: Samantha's favourite song!
+
+:::
+
+:::
+
+::: {.interview-options-element .grey-background}
+
+#### What attracted you to Health Data Science?
+::: {.script}
+My background is in health promotion so what attracts me to health data science are the endless opportunities to identify health disparities and design tailored interventions for a more equitable and accessible health system. I also love the art of data storytelling and seeing people have a-ha moments about really complex data once it is communicated through a beautiful visualisation. 
+:::
+
+:::
+::::
+
+:::: {.right-align}
+#### What did you study for your undergrad degree?
+
+::: {.script}
+I did my undergrad in public health and also have a masters in sexual health
+:::
+::::
+
+
+***
+<br>
+
+
+::::::

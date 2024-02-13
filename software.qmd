@@ -9,7 +9,7 @@ comments: false
 ::: {.callout-note}
 Different convenors have preferences for different platforms, and so the information summarised here may change depending on the course convenor in a given term.
 
-The information below was last updated for **Term 1 2023**.
+The information below was last updated for **Term 1 2024**.
 :::
 
 <table class="software">
