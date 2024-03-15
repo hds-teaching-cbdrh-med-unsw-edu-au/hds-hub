@@ -86,7 +86,7 @@ You can apply for program leave if you want to take a leave of absence from your
 
 ## When can I access course materials?
 
-Course materials are hosted on Open Learning, class Teams spaces or class websites, depending on the course. See the [software and platforms](software.html) page for more detail. Access to Open Learning will be either via Moodle or Teams. Yours course convenors will provide you with more information. All HDAT courses go ‘live’ by Friday 5pm of O-week (Friday prior to the semester start date). Materials are released on a weekly basis thereafter.
+Course materials are hosted on Open Learning, class Teams spaces or class websites, depending on the course. See the [software and platforms](software.html) page for more detail. Access to Open Learning will be either via Moodle or Teams. Your course convenors will provide you with more information. All HDAT courses go ‘live’ by Friday 5pm of O-week (Friday prior to the semester start date). Materials are released on a weekly basis thereafter.
 
 :::
 
@@ -204,6 +204,6 @@ We currently have around 150 students across various stage of their health data 
 
 ## Who do I contact if I need help?
 
-UNSW has a rage of support services available for students. Visit the [Student Support](https://www.student.unsw.edu.au/advisors) website to find a list of key services and links on how to access them.
+UNSW has a range of support services available for students. Visit the [Student Support](https://www.student.unsw.edu.au/advisors) website to find a list of key services and links on how to access them.
 
 :::

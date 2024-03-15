@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-03-15">
+<meta name="description" content="Emmanuel discusses real-time surveillance of chemical incidents using large language models">
 
-<title>Webexercises</title>
+<title>Developing CHEMIWATCH: A Dissertation Journey</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,60 +22,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -96,18 +66,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="Webexercises">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/webexercises_files/figure-html/unnamed-chunk-6-1.png">
-<meta property="og:image:height" content="960">
-<meta property="og:image:width" content="1344">
-<meta name="twitter:title" content="Webexercises">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/webexercises_files/figure-html/unnamed-chunk-6-1.png">
-<meta name="twitter:image-height" content="960">
-<meta name="twitter:image-width" content="1344">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../include/webex.css">
+<meta property="og:title" content="Developing CHEMIWATCH: A Dissertation Journey">
+<meta property="og:description" content="Emmanuel discusses real-time surveillance of chemical incidents using large language models">
+<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-03-15-developing-chemiwatch/emmanuel_picture.jpg">
+<meta name="twitter:title" content="Developing CHEMIWATCH: A Dissertation Journey">
+<meta name="twitter:description" content="Emmanuel discusses real-time surveillance of chemical incidents using large language models">
+<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-03-15-developing-chemiwatch/emmanuel_picture.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -118,8 +84,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -129,7 +95,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -138,39 +104,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-information">    
         <li>
-    <a class="dropdown-item" href="./people.html" rel="" target=""><i class="bi bi-people-fill" role="img">
+    <a class="dropdown-item" href="../../people.html" rel="" target=""><i class="bi bi-people-fill" role="img">
 </i> 
  <span class="dropdown-text">Your teaching team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses.html" rel="" target=""><i class="bi bi-code" role="img">
+    <a class="dropdown-item" href="../../courses.html" rel="" target=""><i class="bi bi-code" role="img">
 </i> 
  <span class="dropdown-text">Courses</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./schedule.html" rel="" target=""><i class="bi bi-calendar3" role="img">
+    <a class="dropdown-item" href="../../schedule.html" rel="" target=""><i class="bi bi-calendar3" role="img">
 </i> 
  <span class="dropdown-text">Schedule</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./software.html" rel="" target=""><i class="bi bi-laptop" role="img">
+    <a class="dropdown-item" href="../../software.html" rel="" target=""><i class="bi bi-laptop" role="img">
 </i> 
  <span class="dropdown-text">Software and platforms</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./faq.html" rel="" target=""><i class="bi bi-question-circle" role="img">
+    <a class="dropdown-item" href="../../faq.html" rel="" target=""><i class="bi bi-question-circle" role="img">
 </i> 
  <span class="dropdown-text">FAQ</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html" rel="" target=""><i class="bi bi-chat-right-heart-fill" role="img">
+    <a class="nav-link" href="../../posts.html" rel="" target=""><i class="bi bi-chat-right-heart-fill" role="img">
 </i> 
  <span class="menu-text">HDS Student Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorial.html" rel="" target=""><i class="bi bi-code-slash" role="img">
+    <a class="nav-link" href="../../tutorial.html" rel="" target=""><i class="bi bi-code-slash" role="img">
 </i> 
  <span class="menu-text">Guided tutorial</span></a>
   </li>  
@@ -203,37 +169,50 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="./images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
+<p><img src="../../images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
 </div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#example-questions" id="toc-example-questions" class="nav-link active" data-scroll-target="#example-questions">Example Questions</a>
-  <ul class="collapse">
-  <li><a href="#fill-in-the-blanks-fitb" id="toc-fill-in-the-blanks-fitb" class="nav-link" data-scroll-target="#fill-in-the-blanks-fitb">Fill-In-The-Blanks (<code>fitb()</code>)</a></li>
-  <li><a href="#multiple-choice-mcq" id="toc-multiple-choice-mcq" class="nav-link" data-scroll-target="#multiple-choice-mcq">Multiple Choice (<code>mcq()</code>)</a></li>
-  <li><a href="#true-or-false-torf" id="toc-true-or-false-torf" class="nav-link" data-scroll-target="#true-or-false-torf">True or False (<code>torf()</code>)</a></li>
-  <li><a href="#longer-mcqs-longmcq" id="toc-longer-mcqs-longmcq" class="nav-link" data-scroll-target="#longer-mcqs-longmcq">Longer MCQs (<code>longmcq()</code>)</a></li>
-  </ul></li>
-  <li><a href="#checked-sections" id="toc-checked-sections" class="nav-link" data-scroll-target="#checked-sections">Checked sections</a></li>
-  <li><a href="#hidden-solutions-and-hints" id="toc-hidden-solutions-and-hints" class="nav-link" data-scroll-target="#hidden-solutions-and-hints">Hidden solutions and hints</a></li>
+  <li><a href="#why-is-chemical-surveillance-important" id="toc-why-is-chemical-surveillance-important" class="nav-link active" data-scroll-target="#why-is-chemical-surveillance-important">Why is chemical surveillance important?</a></li>
+  <li><a href="#how-can-we-retrieve-and-analyse-these-data" id="toc-how-can-we-retrieve-and-analyse-these-data" class="nav-link" data-scroll-target="#how-can-we-retrieve-and-analyse-these-data">How can we retrieve and analyse these data?</a></li>
+  <li><a href="#why-so-many-llms" id="toc-why-so-many-llms" class="nav-link" data-scroll-target="#why-so-many-llms">Why so many LLMs?</a></li>
+  <li><a href="#so-what-boosts-llm-performance" id="toc-so-what-boosts-llm-performance" class="nav-link" data-scroll-target="#so-what-boosts-llm-performance">So what boosts LLM performance?</a></li>
+  <li><a href="#conclusions-and-future-applications" id="toc-conclusions-and-future-applications" class="nav-link" data-scroll-target="#conclusions-and-future-applications">Conclusions and future applications</a></li>
+  <li><a href="#on-a-personal-note" id="toc-on-a-personal-note" class="nav-link" data-scroll-target="#on-a-personal-note">On a personal note</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Webexercises</h1>
-</div>
+<h1 class="title">Developing CHEMIWATCH: A Dissertation Journey</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Health Data Science</div>
+    <div class="quarto-category">Large Language Models (LLMs)</div>
+    <div class="quarto-category">Prompt Engineering</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    <em>Emmanuel discusses real-time surveillance of chemical incidents using large language models</em>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 15, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -241,100 +220,99 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>This is a Web Exercise template created by the <a href="http://www.psy.gla.ac.uk">psychology teaching team at the University of Glasgow</a>, based on ideas from <a href="https://software-carpentry.org/lessons/">Software Carpentry</a>. This template shows how instructors can easily create interactive web documents that students can use in self-guided learning.</p>
-<p>The <code>{webexercises}</code> package provides a number of functions that you use in <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">inline R code</a> or through code chunk options to create HTML widgets (text boxes, pull down menus, buttons that reveal hidden content). Examples are given below. Render this file to HTML to see how it works.</p>
-<p><strong>NOTE: To use the widgets in the compiled HTML file, you need to have a JavaScript-enabled browser.</strong></p>
-<section id="example-questions" class="level2">
-<h2 class="anchored" data-anchor-id="example-questions">Example Questions</h2>
-<section id="fill-in-the-blanks-fitb" class="level3">
-<h3 class="anchored" data-anchor-id="fill-in-the-blanks-fitb">Fill-In-The-Blanks (<code>fitb()</code>)</h3>
-<p>Create fill-in-the-blank questions using <code>fitb()</code>, providing the answer as the first argument.</p>
-<ul>
-<li>2 + 2 is <input class="webex-solveme nospaces" size="1" data-answer="[&quot;4&quot;]"></li>
-</ul>
-<p>You can also create these questions dynamically, using variables from your R session.</p>
-<ul>
-<li>The square root of 9 is: <input class="webex-solveme nospaces" size="1" data-answer="[&quot;3&quot;]"></li>
-</ul>
-<p>The blanks are case-sensitive; if you don’t care about case, use the argument <code>ignore_case = TRUE</code>.</p>
-<ul>
-<li>What is the letter after D? <input class="webex-solveme nospaces ignorecase" size="1" data-answer="[&quot;E&quot;]"></li>
-</ul>
-<p>If you want to ignore differences in whitespace use, use the argument <code>ignore_ws = TRUE</code> (which is the default) and include spaces in your answer anywhere they could be acceptable.</p>
-<ul>
-<li>How do you load the tidyverse package? <input class="webex-solveme nospaces" size="20" data-answer="[&quot;library( tidyverse )&quot;,&quot;library( \&quot;tidyverse\&quot; )&quot;,&quot;library( 'tidyverse' )&quot;]"></li>
-</ul>
-<p>You can set more than one possible correct answer by setting the answers as a vector.</p>
-<ul>
-<li>Type a vowel: <input class="webex-solveme nospaces ignorecase" size="1" data-answer="[&quot;A&quot;,&quot;E&quot;,&quot;I&quot;,&quot;O&quot;,&quot;U&quot;]"></li>
-</ul>
-<p>You can use regular expressions to test answers against more complex rules.</p>
-<ul>
-<li>Type any 3 letters: <input class="webex-solveme nospaces regex" size="3" data-answer="[&quot;^[a-zA-Z]{3}$&quot;]"></li>
-</ul>
-</section>
-<section id="multiple-choice-mcq" class="level3">
-<h3 class="anchored" data-anchor-id="multiple-choice-mcq">Multiple Choice (<code>mcq()</code>)</h3>
-<ul>
-<li>“Never gonna give you up, never gonna: <select class="webex-select"><option value="blank"></option><option value="">let you go</option><option value="">turn you down</option><option value="">run away</option><option value="answer">let you down</option></select>”</li>
-<li>“I <select class="webex-select"><option value="blank"></option><option value="answer">bless the rains</option><option value="">guess it rains</option><option value="">sense the rain</option></select> down in Africa” -Toto</li>
-</ul>
-</section>
-<section id="true-or-false-torf" class="level3">
-<h3 class="anchored" data-anchor-id="true-or-false-torf">True or False (<code>torf()</code>)</h3>
-<ul>
-<li>True or False? You can permute values in a vector using <code>sample()</code>. <select class="webex-select"><option value="blank"></option><option value="answer">TRUE</option><option value="">FALSE</option></select></li>
-</ul>
-</section>
-<section id="longer-mcqs-longmcq" class="level3">
-<h3 class="anchored" data-anchor-id="longer-mcqs-longmcq">Longer MCQs (<code>longmcq()</code>)</h3>
-<p>When your answers are very long, sometimes a drop-down select box gets formatted oddly. You can use <code>longmcq()</code> to deal with this. Since the answers are long, It’s probably best to set up the options inside an R chunk with <code>echo=FALSE</code>.</p>
-<p><strong>What is a p-value?</strong></p>
-<div id="radio_NGJHRIAXOI" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_NGJHRIAXOI" value=""> <span>the probability that the null hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_NGJHRIAXOI" value="answer"> <span>the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_NGJHRIAXOI" value=""> <span>the probability of making an error in your conclusion</span></label>
+<div style="display:grid; grid-template-columns: 1fr 1fr;">
+<div>
+<div class="author-meta-content">
+<p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i> <a href="mailto:emmanuel.mnatz@outlook.com">emmanuel.mnatz@outlook.com</a></p>
 </div>
-<p><strong>What is true about a 95% confidence interval of the mean?</strong></p>
-<div id="radio_MLZQSIVGHU" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_MLZQSIVGHU" value="answer"> <span>if you repeated the process many times, 95% of intervals calculated in this way contain the true mean</span></label><label><input type="radio" autocomplete="off" name="radio_MLZQSIVGHU" value=""> <span>there is a 95% probability that the true mean lies within this range</span></label><label><input type="radio" autocomplete="off" name="radio_MLZQSIVGHU" value=""> <span>95% of the data fall within this range</span></label>
-</div>
-</section>
-</section>
-<section id="checked-sections" class="level2">
-<h2 class="anchored" data-anchor-id="checked-sections">Checked sections</h2>
-<p>Create sections with the class <code>webex-check</code> to add a button that hides feedback until it is pressed. Add the class <code>webex-box</code> to draw a box around the section (or use your own styles).</p>
-<div class="webex-check webex-box">
-<p>I am going to learn a lot: <select class="webex-select"><option value="blank"></option><option value="answer">TRUE</option><option value="">FALSE</option></select></p>
-What is a p-value?
-<div id="radio_LWDQJHIFXS" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_LWDQJHIFXS" value=""> <span>the probability that the null hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_LWDQJHIFXS" value="answer"> <span>the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_LWDQJHIFXS" value=""> <span>the probability of making an error in your conclusion</span></label>
+<div class="author-meta-content">
+<p><i class="fa-solid fa-user" title="A person" aria-label="user"></i> <a href="https://www.linkedin.com/in/emmanuel-mnatzaganian-b6ab682a5/">linkedin.com/in/emmanuel-mnatzaganian-b6ab682a5</a></p>
 </div>
 </div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="round-border">
+<p><img src="emmanuel_picture.jpg" class="img-fluid"></p>
+</div>
+<p>Emmanuel graduated with his master’s degree in 2023, having focused his dissertation on real-time surveillance of chemical incidents using large language models under the guidance of his supervisors from EPIWATCH (A/Prof Samsung Lim, A/Prof David Heslop, and A/Prof Deepti Gurdasani). He lives in Bendigo, Victoria, enjoys the outdoors, and is always up for a good parma.</p>
+</div></div><section id="why-is-chemical-surveillance-important" class="level2">
+<h2 class="anchored" data-anchor-id="why-is-chemical-surveillance-important">Why is chemical surveillance important?</h2>
+<p>Whilst humanity is reliant on chemicals for all aspects of modern life, the ever-increasing risk of chemical incidents is growing, potentially having profound consequences on human health. Defined by the World Health Organisation (WHO) as “the uncontrolled release of a toxic substance, potentially resulting in harm to public health and the environment”, chemical incidents have affected <a href="https://www.who.int/tools/compendium-on-health-and-environment/chemicals">over 1.85 million people</a> worldwide between 2000 and 2020. Compared to infectious disease outbreaks, <a href="https://www.health.gov.au/sites/default/files/documents/2022/07/australian-clinical-guidelines-for-acute-exposures-to-chemical-agents-of-health-concern.pdf">the impacts associated with chemical incidents</a> can occur very rapidly, requiring quicker response to treat those exposed and prevent ongoing health effects and injuries.</p>
+<p>Although the National Incident Centre in Australia coordinates responses to health emergencies including chemical incidents, there is <a href="https://www.sciencedirect.com/science/article/pii/S132602002300540X?via%3Dihub">currently no national surveillance system</a> that collates and reports chemical incidents in Australia. With increasing volumes of data on the internet, and particularly in news articles, an event-based early warning system using publicly available sources has the potential to provide rapid intelligence for the detection of public health events, benefiting both authorities in enhancing preparedness and the public in receiving timely alerts and information.</p>
 </section>
-<section id="hidden-solutions-and-hints" class="level2">
-<h2 class="anchored" data-anchor-id="hidden-solutions-and-hints">Hidden solutions and hints</h2>
-<p>You can fence off a solution area that will be hidden behind a button using <code>hide()</code> before the solution and <code>unhide()</code> after, each as inline R code. Pass the text you want to appear on the button to the <code>hide()</code> function.</p>
-<p>If the solution is a code chunk, instead of using <code>hide()</code> and <code>unhide()</code>, simply set the <code>webex.hide</code> chunk option to TRUE, or set it to the string you wish to display on the button.</p>
-<p><strong>Recreate the scatterplot below, using the built-in <code>cars</code> dataset.</strong></p>
-<div class="cell">
+<section id="how-can-we-retrieve-and-analyse-these-data" class="level2">
+<h2 class="anchored" data-anchor-id="how-can-we-retrieve-and-analyse-these-data">How can we retrieve and analyse these data?</h2>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1002/hcs2.61">Large language models (LLMs)</a>, which are essentially deep neural networks trained on extensive text datasets using billions of parameters, have emerged as state-of-the-art artificial intelligence (AI) systems designed to handle and generate text with the aim of delivering coherent communication. Nowadays, everyone uses LLMs daily for tasks such as generating text for emails, composing social media posts, drafting essays, conducting research, and seeking answers to questions, all facilitated through platforms like ChatGPT, Bard, and others.</p>
+<p>Using LLMs, one can utilise the pre-trained base models in text classification tasks using only base instructions or also exemplars showcasing the desired output. Such inference tasks are known as <a href="https://arxiv.org/abs/2005.14165">“zero-shot learning” and “few-shot learning”</a> tasks respectively, owing to the zero or few attached prompt examples. However, such general untailored models may underperform in prediction. A solution to that is employing supervised training and <a href="https://arxiv.org/abs/2210.11416">fine-tuning</a> an LLM to a specific task, resulting in better prediction.</p>
+<p>After assembling diverse search queries (n=6,646) combined from several governmental and intergovernmental lists of chemicals (such as <code>chlorine leak</code> and <code>poisonous chemical release</code>), I used these to collect Google News articles, which were later filtered according to their titles to create a dataset with at least 25% relevant articles. Having labelled those articles, I then evaluated the performance of 648 different LLMs in predicting their correct labels (<code>Yes</code>: An article discussing a chemical incident that occurred within the last week, <code>No</code>: An article that does not discuss a chemical incident that occurred within the last week).</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="webexercises_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="data_pipeline.png" class="img-fluid figure-img" width="454"></p>
+<figcaption class="figure-caption">The project’s pipeline starting from retrieving the news articles, followed by their filtering, and lastly their classification using LLMs</figcaption>
+</figure>
 </div>
 </div>
-<div class="webex-solution">
-<button>
-I need a hint
-</button>
-<p>See the documentation for <code>plot()</code> (<code>?plot</code>)</p>
 </div>
-<!-- note: you could also just set webex.hide to TRUE -->
-<div class="cell" data-webex.hide="Click here to see the solution">
-<div class="webex-solution">
-<button>
-Click here to see the solution
-</button>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cars<span class="sc">$</span>speed, cars<span class="sc">$</span>dist)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="why-so-many-llms" class="level2">
+<h2 class="anchored" data-anchor-id="why-so-many-llms">Why so many LLMs?</h2>
+<p>As we all know, we interact with LLMs using natural language. Therefore, these models’ performance depends also on the quality of their provided instructions. Good explanatory instructions (or prompts) can enhance performance, whereas some other prompts can bias the results and sway them one way or another. Finding the best prompt for a given task is termed <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10585440/">prompt engineering</a> and has been a central focus of my project.</p>
+<p>I systematically searched for the best prompt by constructing my prompts, combining four prompt sections in various permutations. Additionally, I tested these with a smaller model (7B LLM) versus a larger model (13B LLM). These four sections include the <code>base instruction</code> given to the LLM, the <code>example</code> included in the prompt (seven diverse and representative examples were carefully picked and numbered by their word length), the <code>explanation</code> provided to the attached example (or lack of thereof), and the <code>article</code> version (full article, title-only article, title-content article, or title-date-content article). Below is an example prompt:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="prompt_example.png" class="img-fluid figure-img" width="1129"></p>
+<figcaption class="figure-caption">A prompt example specifically tailored for the LLaMA-based model OpenOrca-Platypus2-13B</figcaption>
+</figure>
 </div>
 </div>
+</div>
+</section>
+<section id="so-what-boosts-llm-performance" class="level2">
+<h2 class="anchored" data-anchor-id="so-what-boosts-llm-performance">So what boosts LLM performance?</h2>
+<p>After completing 432 LLM analyses (each one with a testing set of 500 articles), I computed the analyses’ F1 scores adjusted for unproccessed prompts, and modeled them in a linear model by the prompt components of each analysis, as presented in the figure below. As expected, larger models with more parameters overall improve performance, whereas elaborate and long instructive prompts decrease performance. Furthermore, attaching explanations to examples’ classifications or more article information also improve the model’s prediction (although only statistically significantly when comparing title-only articles to full articles or title-date-content articles). When it comes to examples, the trend is not uniform – the LLM’s performance depends on the example’s content. All examples either increase or do not significantly change performance, besides <code>example 6</code>. This example describes several chemical explosions, apparently causing the model to pick up articles mainly describing chemical explosions, disregarding other incident types.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="forest_plot.png" class="img-fluid figure-img" width="586"></p>
+<figcaption class="figure-caption">The forest plot of the adjusted F1 scores modelled by the analyses’ different prompt components for both base models. The “Examples” variable here includes 14 levels, indicating what example/s were used in each analysis</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>So far, no supervised training was done, and general base models were used for prediction. By fine-tuning a model to a specific task we can boost its performance, but like any machine learning model, we should be mindful of the risk of overfitting. Therefore, I then carefully fine-tuned several LLMs with different prompt structures and analysed their performance across 216 evaluations, and found that fine-tuned models overall outperformed base 7B and base 13B models. Some analyses achieved F1 improvements of more than 10%, reaching a performance level of 90%.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="f1_overall.png" class="img-fluid figure-img" width="670"></p>
+<figcaption class="figure-caption">Adjusted F1 score violin plots of all analyses for the three model types: base Mistral-7B-OpenOrca models, base OpenOrca-Platypus2-13B models, and fine-tuned OpenOrca-Platypus2-13B models</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusions-and-future-applications" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions-and-future-applications">Conclusions and future applications</h2>
+<p>We learnt that:</p>
+<ul>
+<li>LLMs can be used to effectively classify recent chemical incident articles.</li>
+<li>The prompt’s structure can dramatically affect the model’s performance.</li>
+<li>Bigger models overall perform better than smaller ones.</li>
+</ul>
+<p>My supervisors and I are currently in the process of drafting our paper detailing the findings and scope of my project, and will embed our most efficient CHEMIWATH model for real-time news article classification in <a href="https://www.epiwatch.org/">EPIWATCH’s systems</a>.</p>
+</section>
+<section id="on-a-personal-note" class="level2">
+<h2 class="anchored" data-anchor-id="on-a-personal-note">On a personal note</h2>
+<p>Thanks to my project, I’ve gained substantial knowledge and shifted from working with theoretical datasets to real-world data that has direct implications in people’s daily lives. I applied the tools and techniques I learnt in my courses and acquired new ones independently. In particular, I expanded my knowledge in NLP and LLMs and started coding confidently in Python, whereas before my project, I was mainly proficient in R.</p>
+<p>Therefore, if a dissertation project may seem intimidating at first, don’t be and take the challenge! 🙂 Your supervisors are always there to guide you and also direct you to the right resources. In the long run, it’ll benefit you immensely personally and professionally.</p>
+<p>Lastly, a dissertation will open many doors in the future. Having such experience is invaluable in the professional world and will also broaden your opportunities for pursuing a PhD in the future, should you choose that path.</p>
+<p>Here’s to your ongoing progress and success with your dissertation! 🌟</p>
 
 
 </section>
