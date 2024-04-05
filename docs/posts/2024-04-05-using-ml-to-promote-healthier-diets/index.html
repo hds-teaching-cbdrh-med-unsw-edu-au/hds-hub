@@ -6,11 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Danielle Ritz Shala">
-<meta name="dcterms.date" content="2023-04-12">
-<meta name="description" content="Danielle discusses her work at the interface of data science and clinical practice.">
+<meta name="dcterms.date" content="2024-04-05">
+<meta name="description" content="Tazman discusses his work using a k-nearest neighbors algorithm to predict fiber content from nutrition information labels.">
 
-<title>Bridging the chasm of expectations and reality with real-world projects</title>
+<title>Using machine learning to promote healthier diets in Australia</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,15 +72,44 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../include/webex.css">
-<meta property="og:title" content="Bridging the chasm of expectations and reality with real-world projects">
-<meta property="og:description" content="Danielle discusses her work at the interface of data science and clinical practice.">
-<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-04-02-bridging-the-chasm/danielle-ritz-shala2.jpg">
-<meta name="twitter:title" content="Bridging the chasm of expectations and reality with real-world projects">
-<meta name="twitter:description" content="Danielle discusses her work at the interface of data science and clinical practice.">
-<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2023-04-02-bridging-the-chasm/danielle-ritz-shala2.jpg">
+<meta property="og:title" content="Using machine learning to promote healthier diets in Australia">
+<meta property="og:description" content="Tazman discusses his work using a k-nearest neighbors algorithm to predict fiber content from nutrition information labels.">
+<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-04-05-using-ml-to-promote-healthier-diets/tazman-thumbnail.jpg">
+<meta name="twitter:title" content="Using machine learning to promote healthier diets in Australia">
+<meta name="twitter:description" content="Tazman discusses his work using a k-nearest neighbors algorithm to predict fiber content from nutrition information labels.">
+<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-04-05-using-ml-to-promote-healthier-diets/tazman-thumbnail.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -183,12 +211,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-did-i-learn-from-working-on-a-real-world-project" id="toc-what-did-i-learn-from-working-on-a-real-world-project" class="nav-link active" data-scroll-target="#what-did-i-learn-from-working-on-a-real-world-project">What did I learn from working on a real-world project?</a>
-  <ul class="collapse">
-  <li><a href="#experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context" id="toc-experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context" class="nav-link" data-scroll-target="#experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context">Experience with real eMR data and manipulating messy datasets for a specific clinical context</a></li>
-  <li><a href="#starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context" id="toc-starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context" class="nav-link" data-scroll-target="#starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context">Starting with simple and practical methods to answer a question and fit a defined context</a></li>
-  <li><a href="#working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals" id="toc-working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals" class="nav-link" data-scroll-target="#working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals">Working with engaged leaders and supervisors and communicating with other teams to progress goals</a></li>
-  </ul></li>
+  <li><a href="#do-you-eat-enough-dietary-fibre" id="toc-do-you-eat-enough-dietary-fibre" class="nav-link active" data-scroll-target="#do-you-eat-enough-dietary-fibre">Do you eat enough dietary fibre?</a></li>
+  <li><a href="#predicting-fibre-content" id="toc-predicting-fibre-content" class="nav-link" data-scroll-target="#predicting-fibre-content">Predicting fibre content</a></li>
+  <li><a href="#my-first-ever-international-conference" id="toc-my-first-ever-international-conference" class="nav-link" data-scroll-target="#my-first-ever-international-conference">My first ever international conference</a></li>
   </ul>
 </nav>
     </div>
@@ -197,34 +222,28 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bridging the chasm of expectations and reality with real-world projects</h1>
+<h1 class="title">Using machine learning to promote healthier diets in Australia</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Health Data Science</div>
-    <div class="quarto-category">electronic medical records</div>
-    <div class="quarto-category">publishing research</div>
+    <div class="quarto-category">Prediction</div>
+    <div class="quarto-category">k-nearest neighbours</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <em>Danielle discusses her work at the interface of data science and clinical practice.</em>
+    <em>Tazman discusses his work using a k-nearest neighbors algorithm to predict fiber content from nutrition information labels.</em>
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p><a href="https://orcid.org/0000-0001-7727-6740">Danielle Ritz Shala</a> <a href="mailto:danielleritz.shala@health.nsw.gov.au" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0001-7727-6740" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 12, 2023</p>
+      <p class="date">April 5, 2024</p>
     </div>
   </div>
   
@@ -236,64 +255,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div style="display:grid; grid-template-columns: 1fr 1fr;">
+<div>
 <div class="author-meta-content">
-<p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i> <a href="mailto:danielleritz.shala@health.nsw.gov.au">danielleritz.shala@health.nsw.gov.au</a></p>
+<p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i> <a href="mailto:tdavies@georgeinstitute.org.au">tdavies@georgeinstitute.org.au</a></p>
 </div>
 <div class="author-meta-content">
-<p><i class="fa-solid fa-user" title="A person" aria-label="user"></i> <a href="https://orcid.org/0000-0001-7727-6740">https://orcid.org/0000-0001-7727-6740</a></p>
+<p><i class="fa-brands fa-linkedin" title="LinkedIn logo" aria-label="linkedin"></i> <a href="https://www.linkedin.com/in/tazmandavies">linkedin.com/in/tazmandavies</a></p>
 </div>
 <div class="author-meta-content">
-<p><i class="fa-solid fa-user" title="A person" aria-label="user"></i> <a href="https://au.linkedin.com/in/danielleshala">https://au.linkedin.com/in/danielleshala</a></p>
+<p><i class="fa-brands fa-twitter" title="Twitter logo" aria-label="twitter"></i> <a href="https://twitter.com/TazmanDavies">twitter.com/TazmanDavies</a></p>
+</div>
+</div>
 </div>
 
 <div class="no-row-height column-margin column-container"><div class="margin-aside">
 <div class="oval-border">
-<p><img src="danielle-ritz-shala2.jpg" class="img-fluid"></p>
+<p><img src="tazman-thumbnail.jpg" class="img-fluid"></p>
 </div>
-<p>Danielle is a Clinician and Data Scientist with applied experience in the use of health data in clinical, research, and industry settings. She is focused on strategic, real-world application of data science and digital health to drive meaningful decisions and value in healthcare. She finds parallels in her stints in paediatrics, data, and technology: they’re (mostly) innocent, full of stories, innovative, and fun!</p>
-</div></div><p>What makes working in intensive care different? For me, it’s the criticality of time, patient care, communication, technology, and priorities. Working in this type of environment forces people to prioritise ruthlessly and find efficient ways of doing tasks–partly to save time, but mostly to be ready and focused for the next unpredictable certainty (e.g.&nbsp;a baby who starts off crying like a rockstar and shortly turns blue, a toddler who’s woken up thrashing around and removing the breathing tube while the nurse was on break, a massive drop in blood pressure hours after a heart surgery, etc). As I was working clinically, I observed that copying and pasting is used by some clinicians to complete their electronic documentation quicker. Unfortunately, some would inadvertently enter a progress note on the wrong patient’s record, and others would forget to update a copied note with relevant changes in a patient’s status or therapy settings. As I experienced the reality of these risks on the floor, I noted there was a problem. I could see how the scenarios were generally a result of earnest efforts to use technology smartly and more efficiently, however there was also potential for unintended harm.</p>
-<p>I have always been interested in the use (and perhaps misuse and abuse) of technology in healthcare, particularly its implications in real-world settings. I was attending local and international informatics conferences around 2017/18, and was also having informal chats with doctors and nurses about electronic medical record (eMR) documentation and efficiency in general, as I was curious to find out their experiences and perspectives. Through these discussions I realised that while most people assume redundancies, duplications, and copying and pasting happens “a lot” in clinical documentation, there was no measure, nor existing information around it—at least none that I could find in the local, state, or national level. This was another problem I noted. I believe discussions and decisions around eMR documentation and clinical practice would be more productive if guided by both data AND context—two constructs which I think should never be separated, particularly in healthcare. It was then that I became more interested in quantifying text similarity in clinical progress notes, and establishing a baseline measure for it in a local Australian setting.</p>
-<p>At the time I was working part time as an ICU nurse, and part time as a research intern at the network, and towards the end of the internship, I proposed a research study and applied for grant funding to work on the study. I was also keen to learn new ways to explore and analyse data, and had just started the Health Data Science course at this time, so it was a perfect opportunity to apply university concepts to a project based on real-world experiences. The resulting study, <a href="https://doi.org/10.1111/jocn.16374">Measuring text similarity and its associated factors in electronic nursing progress notes: A retrospective review</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, was published in 2022 in the Journal of Clinical Nursing. The paper is also available in a shorter open access version, titled <a href="https://ebooks.iospress.nl/volumearticle/58617">Need We Say More? Measuring Redundancy in Nursing Progress Notes</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> published by the International Medical Informatics Association (IMIA) and IOS Press.</p>
-<section id="what-did-i-learn-from-working-on-a-real-world-project" class="level2">
-<h2 class="anchored" data-anchor-id="what-did-i-learn-from-working-on-a-real-world-project">What did I learn from working on a real-world project?</h2>
-<section id="experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context" class="level3">
-<h3 class="anchored" data-anchor-id="experience-with-real-emr-data-and-manipulating-messy-datasets-for-a-specific-clinical-context">Experience with real eMR data and manipulating messy datasets for a specific clinical context</h3>
-<p>For this study, I was given two separate datasets: one containing patient details, and another containing progress notes. It was quite messy as it contained notes for an entire patient stay, with varying note structures and lengths. At first it may sound fairly straightforward to identify text that has been copied and pasted, and the data scientist in us would be very excited to code some form of regular expressions (regex) or clustering algorithm to help in detecting the notes required—but consider that this is “a step to a step” which could also take time and would need testing depending on your level of programming experience and exposure to the text. In my case, I was early in my HDS programming journey.</p>
-<p>I dedicated a period to run and test the first option, but noticed that there are notes that either get excluded or included which didn’t fit the study criteria. For example, if I filtered just by the category type (e.g.&nbsp;nursing progress note) and location (e.g.&nbsp;ICU), I ended up including notes from specialist nurses who visit ICU patients. Some of them may have a “Clinical Nurse Specialist” title in the system, others may have a “Registered Nurse” title. While some with the title “Registered Nurse” will do a progress note, not all of them will do a shift summary progress note for a patient. Some followed a specific format for writing shift summary notes, but others didn’t. It was definitely interesting for me to see the scenarios and variations of what happens in practice, and how these were reflected in the data!</p>
-<p>Overall, I had to find ways to match the notes and filter down to only what I needed—this was a great way to apply what I knew as a clinician, what I was learning in Python and practically working with Pandas and numpy! I decided not to skip the manual task of annotating the relevant notes and classifying whether they were done in ICU or not. This meant checking over a thousand notes individually, confirming that they were indeed shift summary notes, done by a nurse, and in ICU. Supervised machine learning could be an alternative to this, but for most machine learning tasks, having correctly labelled data or the “ground truth” would be ideal. While this step took considerable time, it was definitely worthwhile, as it has allowed me to understand our practice deeper and learn more about the nuances of clinical text.</p>
+<p>Tazman undertook the Master of Health Data Science from 2021 – 2022. He is currently undertaking a PhD in Public Health Nutrition at The George Institute for Global Health. He has interests in epidemiology, biostatistics, machine learning, and health economics.</p>
+</div></div><section id="do-you-eat-enough-dietary-fibre" class="level2">
+<h2 class="anchored" data-anchor-id="do-you-eat-enough-dietary-fibre">Do you eat enough dietary fibre?</h2>
+<p>Did you know the World Health Organisation recommends a daily fibre intake of 25-30g per day, but the mean dietary fibre intake is around 12g in Australia? As a result, diets low in fibre are responsible for 1.6% of the burden of disease in Australia, with this mostly attributable to cases of cardiovascular disease and type 2 diabetes. But you’d be forgiven for not knowing much about fibre in Australia. Currently, in Australia, fibre content labelling on packaged foods is often unavailable. This makes it difficult for consumers to make informed food purchase decisions, for researchers to conduct epidemiological studies related to fibre intakes, and for policymakers to monitor trends in fibre levels in the food supply.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="danielle-standing.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Danielle is a Clinician and Data Scientist with applied experience in the use of health data in clinical, research, and industry settings. (author supplied)</figcaption>
+<p><img src="nutrition-information.png" class="img-fluid figure-img"></p>
+<figcaption>Example nutrition information panel in Australia that does not include fibre content</figcaption>
 </figure>
 </div>
 </section>
-<section id="starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context" class="level3">
-<h3 class="anchored" data-anchor-id="starting-with-simple-and-practical-methods-to-answer-a-question-and-fit-a-defined-context">Starting with simple and practical methods to answer a question and fit a defined context</h3>
-<p>There’s a plethora of methods, studies, and repos that can address a question/problem these days (and there’s chatGPT too!). As more and more sophisticated programs and analytical techniques have sprung up in recent years, it’s easy to get excited and carried away by the next shiny library/tool and lose sight of the core question being solved. For me, the true challenge for a data scientist lies in <strong>finding the right fit for the problem at hand</strong>.</p>
-<p>I read about different ways of calculating similarity—each had its own strengths, limitations, and implications. I tested and compared results across a few methods but found minimal differences in the results. After awhile I took a step back and reflected on the purpose and context of the study: from here, I settled on a method that might give results that are closer to the visual recognition of repetitive text, or mimic the feeling of “I think I’ve read that part!” among clinicians, as this relates more to the broader concerns of cognitive overload, efficiency, and value of text repetition in ICUs.</p>
-<p>As it was an exploratory study, part of my goal was also to set a foundation that others may build on and contribute to the body of knowledge around the topic of electronic clinical documentation, especially for nurses. There’s lots of room for improving the study, but that in itself is part of the journey and the learning! This makes reflection on real-world findings, evidence-based recommendations, and learning different ways to tackle a question/problem possible.</p>
-<p>Knowing the problem/question, the purpose and context of the work, and resisting the urge to reinvent the wheel is also useful. Where there are existing methods and libraries, build on them and get creative. One may gain theoretical/academic brownie points as with increasing the complexity of a program/solution, but that may also mean that it’s less applicable, reproducible, or practical in a real world setting. Breaking down problems and simplifying solutions are superpowers, and one can build on these skills by reflecting on work and progress regularly.</p>
+<section id="predicting-fibre-content" class="level2">
+<h2 class="anchored" data-anchor-id="predicting-fibre-content">Predicting fibre content</h2>
+<p>Cue machine learning. Here, in a study I <a href="https://www.mdpi.com/2072-6643/13/9/3195">published in Nutrients</a> with researchers at The George Institute for Global Health, I outline how a simple machine learning algorithm (k-nearest neighbours, KNN) can be used to efficiently predict the fibre content of packaged foods based on six commonly available nutrient values (i.e., carbohydrates, sugar, total fat, saturated fat, protein, and sodium) and the food category. This algorithm, which was trained using 21,000 packaged products in the FoodSwitch database, exhibited an <span class="math inline">\(R^2\)</span> score of 0.84 on a test dataset and outperformed a prior manual fibre content prediction approach. Thus, representing an efficient way to estimate fibre content on a large scale!</p>
+<p><img src="fibre-content.png" class="img-fluid" alt="Visual representation of k-nearest neighbours fibre content prediction algorithm. A query product’s fibre content is predicted by considering the eight neighbouring product’s fibre values in the given category."> Digging a little deeper, we found that performance was high for ‘soup’ products (<span class="math inline">\(R^2\)</span> = 0.89) but low for ‘cakes, muffins, and pastries’ (<span class="math inline">\(R^2\)</span> = 0.00), with underperformance in the latter likely due to the small number of training products in this category. As the FoodSwitch dataset grows and the number of training products increases, we expect the accuracy of the predictive algorithm to improve for this category. Furthermore, we found that a strong predictor of the accuracy of the algorithm was the proximity of the closest neighbour, as products with a close nearest neighbour (i.e., first-neighbour distance in the first quartile of all first-neighbour distances) exhibited an accuracy of 99%. There is potential to apply this algorithm to food composition datasets to inform research and monitoring related to fibre. Additionally, the algorithm could be incorporated into novel barcode scanning phone applications (e.g., MyFitnessPal) so that consumers can scan a product and see the estimated fibre content. The approach can also be adapted to predict other nutrients of public health concern that are often omitted on food labels (e.g., added sugar and folate). However, it’s important to note the algorithm may not generalise well to countries with food supplies very different to Australia.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="presentation.jpg" class="img-fluid figure-img"></p>
+<figcaption>Conference presentation at the International Society of Behavioural Nutrition and Physical Activity (ISBNPA) hosted in Sweden</figcaption>
+</figure>
+</div>
 </section>
-<section id="working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals" class="level3">
-<h3 class="anchored" data-anchor-id="working-with-engaged-leaders-and-supervisors-and-communicating-with-other-teams-to-progress-goals">Working with engaged leaders and supervisors and communicating with other teams to progress goals</h3>
-<p>The endless possibilities of programming may be exciting to us data scientists, but that wouldn’t always translate to another person. Communicating technical concepts to non-technical groups or individuals was perhaps one of the most challenging and rewarding parts of the project for me. This is something that I definitely picked up in the real world, and something that I sought out to do, as I wanted to use my clinical background and early HDS skills to bridge gaps across clinical, technical, and leadership teams.</p>
-<p>Learning to engage with key contacts from other departments is also important in the success of a project. For example, as I was preparing our ethics application, I sought advice from the research and ethics department and clarified points that we were unsure about. I learned a great deal about the process, and their team became acquainted with our project early on. It took a number of back and forth discussions with contacts but in the end, we saved considerable time as our application was approved on first submission. This would not have been possible without my supportive and empowering supervisor who was patient in listening to my ideas, and tremendously helpful in framing and consolidating them for applications and presentations. It’s always helpful to seek and receive feedback, particularly from experts who have already been through a similar process.</p>
-<p>Another example demonstrating the importance of communication for the project was liaising with the medical records team. The initial dataset supplied to me was very large and didn’t look “right”. You’ll know this as you perform exploratory data analysis and find values that are either out of range or out of the context of your study. While I was excited that I’ve received the data (finally!), I knew I couldn’t use it for preparation and analysis yet, and had to have discussions with the person who extracted the data. Apart from going back to the data request form and project protocol, it was helpful for us to have meetings where we could walk through these together and quickly clarify questions. The extract took more time due to this, but in the end it worked out as the dataset was also halved and more aligned with the study requirements.</p>
-<p>Overall, working on a project based on a real world healthcare setting was a great way for me to apply my domain knowledge as a clinician while refining my skills as a data scientist. I enjoyed the highs and lows of the project—both on the technical and “soft” aspects as it exposed me to a variety of scenarios and unforeseen challenges, and encouraged me to become more adaptable, creative, and focused in my approaches. There are plenty of ideas and ideals we would like translated in the real world, but the cold hard truth is it isn’t as easy as “1,2,3” or “if A, then B.” The tools we have now and the bright promise of rapidly evolving techniques in data science will not be maximised if not applied to real world problems and data. I would highly encourage anyone to get involved and get their hands dirty with existing projects—apart from the opportunity to build on technical skills, it teaches a great deal of practical lessons about communication, project and time management, and collaboration which are all highly useful in driving projects forward, growing in your practice, having fun, and hopefully, making a difference!</p>
+<section id="my-first-ever-international-conference" class="level2">
+<h2 class="anchored" data-anchor-id="my-first-ever-international-conference">My first ever international conference</h2>
+<p>It was a lot of work getting this piece published. But after publication, something exciting happened. A nutrition researcher from the University of Toronto contacted me saying that she liked the work and that she would like me to present it at an AI symposium at a large nutrition conference hosted in Sweden in June 2023 (International Society of Behavioural Nutrition and Physical Activity). I was pleasantly surprised and humbled to receive this invitation and knew it was an opportunity I could not miss!</p>
+<p>Leading up to the conference, I was quite nervous. It was my first time presenting to an international audience and I needed to present alongside senior researchers in my area. To prepare, I focussed on delivering a clear presentation that would be understandable to a general science audience. I also practiced my presentation with my colleagues and role-played the Q&amp;A segment. Additionally, I familiarised myself with the other panel members’ work so that I could talk about my work in context.</p>
+<p>On the day, I delivered the presentation and I think it went well. I received several questions pertaining to the methodology and policy implications of the work, as well two tweets saying they liked the work. Overall, it was very rewarding to share this work with researchers from around the world who were working on similar problems, and this conference was one of my highlights from 2023.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="qanda.jpg" class="img-fluid figure-img"></p>
+<figcaption>A session with other members on the AI symposium panel.</figcaption>
+</figure>
+</div>
+<p>My message to current students is that hard work pays off. I know the feeling of debugging code for hours just to realise you missed a bracket. I know what it’s like to try and wrap your head around the internal structure of neural networks. And I know how challenging it can then be to try to simplify these topics when you talk to less technical audiences. Persistence is key and its super exciting when you finish a data science project and start to see its impact. And I’d like to give a special shout out to all those who helped me with this work, including Oscar Perez Concha and Sebastiano Barbieri at the Centre for Big Data Research in Health.</p>
 
 
 </section>
-</section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Shala DR, Sheppard‐Law S. Measuring text similarity and its associated factors in electronic nursing progress notes: A retrospective review. Journal of Clinical Nursing. May 2022. <a href="https://doi.org/10.1111/jocn.16374">https://doi.org/10.1111/jocn.16374</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Shala DR, Sheppard-Law S. Need We Say More? Measuring Redundancy in Nursing Progress Notes. In <em>Nurses and Midwives in the Digital Age</em> 2021 (pp.&nbsp;65-67). IOS Press. <a href="https://ebooks.iospress.nl/volumearticle/58617">https://ebooks.iospress.nl/volumearticle/58617</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script>
 
 /* update total correct if #webex-total_correct exists */

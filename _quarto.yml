@@ -9,7 +9,7 @@ website:
   image: /docs/images/223_UNSW_CBDRH_credit_AnnaKucera_cropped.jpg
   page-footer:
     right: This page is built with ☘️ and [Quarto](https://quarto.org/).
-    left: '&copy; Copyright 2023, UNSW'
+    left: '&copy; Copyright 2024, UNSW'
   navbar:
     logo: images/Landscape__3.Mono_Pos_CBDRH.png
     search: true

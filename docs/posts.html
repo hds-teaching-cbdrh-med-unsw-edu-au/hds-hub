@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.552">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -95,12 +102,39 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="include/webex.css">
 <meta property="og:title" content="Health Data Science Student Blog">
-<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-03-15-developing-chemiwatch/emmanuel_picture.jpg">
+<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-04-05-using-ml-to-promote-healthier-diets/tazman-thumbnail.jpg">
 <meta name="twitter:title" content="Health Data Science Student Blog">
-<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-03-15-developing-chemiwatch/emmanuel_picture.jpg">
+<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-04-05-using-ml-to-promote-healthier-diets/tazman-thumbnail.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -108,9 +142,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
     </a>
@@ -122,72 +156,72 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Information</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-information">    
         <li>
-    <a class="dropdown-item" href="./people.html" rel="" target=""><i class="bi bi-people-fill" role="img">
+    <a class="dropdown-item" href="./people.html"><i class="bi bi-people-fill" role="img">
 </i> 
  <span class="dropdown-text">Your teaching team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses.html" rel="" target=""><i class="bi bi-code" role="img">
+    <a class="dropdown-item" href="./courses.html"><i class="bi bi-code" role="img">
 </i> 
  <span class="dropdown-text">Courses</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./schedule.html" rel="" target=""><i class="bi bi-calendar3" role="img">
+    <a class="dropdown-item" href="./schedule.html"><i class="bi bi-calendar3" role="img">
 </i> 
  <span class="dropdown-text">Schedule</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./software.html" rel="" target=""><i class="bi bi-laptop" role="img">
+    <a class="dropdown-item" href="./software.html"><i class="bi bi-laptop" role="img">
 </i> 
  <span class="dropdown-text">Software and platforms</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./faq.html" rel="" target=""><i class="bi bi-question-circle" role="img">
+    <a class="dropdown-item" href="./faq.html"><i class="bi bi-question-circle" role="img">
 </i> 
  <span class="dropdown-text">FAQ</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" rel="" target="" aria-current="page"><i class="bi bi-chat-right-heart-fill" role="img">
+    <a class="nav-link active" href="./posts.html" aria-current="page"> <i class="bi bi-chat-right-heart-fill" role="img">
 </i> 
- <span class="menu-text">HDS Student Blog</span></a>
+<span class="menu-text">HDS Student Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorial.html" rel="" target=""><i class="bi bi-code-slash" role="img">
+    <a class="nav-link" href="./tutorial.html"> <i class="bi bi-code-slash" role="img">
 </i> 
- <span class="menu-text">Guided tutorial</span></a>
+<span class="menu-text">Guided tutorial</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/cbdrh1" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/cbdrh1"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/CBDRH" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/CBDRH"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&amp;tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3" rel="" target=""><i class="bi bi-microsoft-teams" role="img">
+    <a class="nav-link" href="https://teams.microsoft.com/l/channel/19%3a981e79f53aaf452b8074e81f01ffa377%40thread.tacv2/General?groupId=ba4cbc38-2c03-406a-938b-e9fbe921f53e&amp;tenantId=3ff6cfa4-e715-48db-b8e1-0867b9f9fba3"> <i class="bi bi-microsoft-teams" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -199,7 +233,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="./images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
 </div></div>
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Advent of Code">Advent of Code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Clinical AI">Clinical AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cortex">Cortex <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Visualisation">Data Visualisation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="HIV">HIV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Health Data Science">Health Data Science <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Health Inequality">Health Inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Large Language Models (LLMs)">Large Language Models (LLMs) <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Literate Programming">Literate Programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="New cohort">New cohort <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Prompt Engineering">Prompt Engineering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SAS">SAS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Scrollytelling">Scrollytelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="datathon">datathon <span class="quarto-category-count">(1)</span></div><div class="category" data-category="electronic medical records">electronic medical records <span class="quarto-category-count">(1)</span></div><div class="category" data-category="publishing research">publishing research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="synthetic data">synthetic data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="work-life balance">work-life balance <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Advent of Code">Advent of Code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Clinical AI">Clinical AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cortex">Cortex <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Visualisation">Data Visualisation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="HIV">HIV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Health Data Science">Health Data Science <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Health Inequality">Health Inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Large Language Models (LLMs)">Large Language Models (LLMs) <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Literate Programming">Literate Programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="New cohort">New cohort <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Prediction">Prediction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Prompt Engineering">Prompt Engineering <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SAS">SAS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Scrollytelling">Scrollytelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="datathon">datathon <span class="quarto-category-count">(1)</span></div><div class="category" data-category="electronic medical records">electronic medical records <span class="quarto-category-count">(1)</span></div><div class="category" data-category="k-nearest neighbours">k-nearest neighbours <span class="quarto-category-count">(1)</span></div><div class="category" data-category="publishing research">publishing research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="synthetic data">synthetic data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="work-life balance">work-life balance <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -218,7 +252,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 
 
@@ -226,19 +262,58 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Health Data Science,Large Language Models (LLMs),Prompt Engineering" data-listing-date-sort="1710421200000" data-listing-file-modified-sort="1710467052167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="0" data-categories="Health Data Science,Prediction,k-nearest neighbours" data-listing-date-sort="1712235600000" data-listing-file-modified-sort="1711503044038" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="922">
 <div class="thumbnail">
-<p><a href="./posts/2024-03-15-developing-chemiwatch/index.html"> <img src="./posts/2024-03-15-developing-chemiwatch/emmanuel_picture.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2024-04-05-using-ml-to-promote-healthier-diets/index.html" class="no-external"></a></p><a href="./posts/2024-04-05-using-ml-to-promote-healthier-diets/index.html" class="no-external">
+<p><img src="./posts/2024-04-05-using-ml-to-promote-healthier-diets/tazman-thumbnail.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2024-04-05-using-ml-to-promote-healthier-diets/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2024-03-15-developing-chemiwatch/index.html">
 <h3 class="no-anchor listing-title">
-Developing CHEMIWATCH: A Dissertation Journey
+<a href="./posts/2024-04-05-using-ml-to-promote-healthier-diets/index.html" class="no-external">Using machine learning to promote healthier diets in Australia</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2024-04-05-using-ml-to-promote-healthier-diets/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
+Health Data Science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Prediction'); return false;">
+Prediction
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('k-nearest neighbours'); return false;">
+k-nearest neighbours
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-04-05-using-ml-to-promote-healthier-diets/index.html" class="no-external"><em>Tazman discusses his work using a k-nearest neighbors algorithm to predict fiber content from nutrition information labels.</em></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04-05-using-ml-to-promote-healthier-diets/index.html" class="no-external">
+<div class="listing-date">
+Apr 5, 2024
+</div>
+<div class="listing-author">
+Tazman Davies
 </div>
 </a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Health Data Science,Large Language Models (LLMs),Prompt Engineering" data-listing-date-sort="1710421200000" data-listing-file-modified-sort="1710467052167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1232">
+<div class="thumbnail">
+<p><a href="./posts/2024-03-15-developing-chemiwatch/index.html" class="no-external"></a></p><a href="./posts/2024-03-15-developing-chemiwatch/index.html" class="no-external">
+<p><img src="./posts/2024-03-15-developing-chemiwatch/emmanuel_picture.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2024-03-15-developing-chemiwatch/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-03-15-developing-chemiwatch/index.html" class="no-external">Developing CHEMIWATCH: A Dissertation Journey</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-03-15-developing-chemiwatch/index.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -250,14 +325,12 @@ Large Language Models (LLMs)
 Prompt Engineering
 </div>
 </div>
-<a href="./posts/2024-03-15-developing-chemiwatch/index.html">
 <div class="listing-description">
-<p><em>Emmanuel discusses real-time surveillance of chemical incidents using large language models</em></p>
+<a href="./posts/2024-03-15-developing-chemiwatch/index.html" class="no-external"><em>Emmanuel discusses real-time surveillance of chemical incidents using large language models</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2024-03-15-developing-chemiwatch/index.html">
+<a href="./posts/2024-03-15-developing-chemiwatch/index.html" class="no-external">
 <div class="listing-date">
 Mar 15, 2024
 </div>
@@ -267,19 +340,19 @@ Emmanuel Mnatzaganian
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Health Data Science,New cohort" data-listing-date-sort="1707656400000" data-listing-file-modified-sort="1707790217026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="2" data-categories="Health Data Science,New cohort" data-listing-date-sort="1707656400000" data-listing-file-modified-sort="1707790217026" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="659">
 <div class="thumbnail">
-<p><a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html"> <img src="./posts/2024-02-12-meet-the-t1-2024-cohort/IMG_5885_anonymous.png" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html" class="no-external"></a></p><a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html" class="no-external">
+<p><img src="./posts/2024-02-12-meet-the-t1-2024-cohort/IMG_5885_anonymous.png" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html">
 <h3 class="no-anchor listing-title">
-Meet the new cohort!
+<a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html" class="no-external">Meet the new cohort!</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -288,14 +361,12 @@ Health Data Science
 New cohort
 </div>
 </div>
-<a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html">
 <div class="listing-description">
-<p><em>Meet some of the amazing diverse students in our largest ever Health Data Science cohort!</em></p>
+<a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html" class="no-external"><em>Meet some of the amazing diverse students in our largest ever Health Data Science cohort!</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html">
+<a href="./posts/2024-02-12-meet-the-t1-2024-cohort/index.html" class="no-external">
 <div class="listing-date">
 Feb 12, 2024
 </div>
@@ -305,19 +376,19 @@ New cohort starters
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Health Data Science,Advent of Code" data-listing-date-sort="1701262800000" data-listing-file-modified-sort="1704926868206" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<div class="quarto-post image-right" data-index="3" data-categories="Health Data Science,Advent of Code" data-listing-date-sort="1701262800000" data-listing-file-modified-sort="1704926868206" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1240">
 <div class="thumbnail">
-<p><a href="./posts/2023-11-30-advent-of-code/index.html"> <img src="./posts/2023-11-30-advent-of-code/photosdb-cr.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-11-30-advent-of-code/index.html" class="no-external"></a></p><a href="./posts/2023-11-30-advent-of-code/index.html" class="no-external">
+<p><img src="./posts/2023-11-30-advent-of-code/photosdb-cr.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-11-30-advent-of-code/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-11-30-advent-of-code/index.html">
 <h3 class="no-anchor listing-title">
-Advent of Code
+<a href="./posts/2023-11-30-advent-of-code/index.html" class="no-external">Advent of Code</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-11-30-advent-of-code/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -326,14 +397,12 @@ Health Data Science
 Advent of Code
 </div>
 </div>
-<a href="./posts/2023-11-30-advent-of-code/index.html">
 <div class="listing-description">
-<p><em>Sean discusses the popular and festive-themed annual coding challenge Advent of Code</em></p>
+<a href="./posts/2023-11-30-advent-of-code/index.html" class="no-external"><em>Sean discusses the popular and festive-themed annual coding challenge Advent of Code</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-11-30-advent-of-code/index.html">
+<a href="./posts/2023-11-30-advent-of-code/index.html" class="no-external">
 <div class="listing-date">
 Nov 30, 2023
 </div>
@@ -343,19 +412,19 @@ Sean de Boo
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Health Data Science,Data Visualisation,Scrollytelling,Health Inequality" data-listing-date-sort="1696856400000" data-listing-file-modified-sort="1704926868172" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="4" data-categories="Health Data Science,Data Visualisation,Scrollytelling,Health Inequality" data-listing-date-sort="1696856400000" data-listing-file-modified-sort="1704926868172" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="796">
 <div class="thumbnail">
-<p><a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html"> <img src="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/owen-cho.png" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html" class="no-external"></a></p><a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html" class="no-external">
+<p><img src="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/owen-cho.png" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html">
 <h3 class="no-anchor listing-title">
-What If: Using Data Storytelling to Illustrate Health Inequality in England
+<a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html" class="no-external">What If: Using Data Storytelling to Illustrate Health Inequality in England</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -370,14 +439,12 @@ Scrollytelling
 Health Inequality
 </div>
 </div>
-<a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html">
 <div class="listing-description">
-<p><em>Owen discusses how he combined story-telling and interactive data visualisation to reveal the cascading effects of socio-economic factors on health outcomes</em></p>
+<a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html" class="no-external"><em>Owen discusses how he combined story-telling and interactive data visualisation to reveal the cascading effects of socio-economic factors on health outcomes</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html">
+<a href="./posts/2023-10-09-what If-using-data-storytelling-to-Illustrate-health inequality-in-england/index.html" class="no-external">
 <div class="listing-date">
 Oct 10, 2023
 </div>
@@ -387,19 +454,19 @@ Owen Cho
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Health Data Science,Literate Programming" data-listing-date-sort="1694354400000" data-listing-file-modified-sort="1704926868139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14">
+<div class="quarto-post image-right" data-index="5" data-categories="Health Data Science,Literate Programming" data-listing-date-sort="1694354400000" data-listing-file-modified-sort="1704926868139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2715">
 <div class="thumbnail">
-<p><a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html"> <img src="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/Calum-Nicholson.jpeg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html" class="no-external"></a></p><a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html" class="no-external">
+<p><img src="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/Calum-Nicholson.jpeg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html">
 <h3 class="no-anchor listing-title">
-Applying literate programming techniques in the workplace
+<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html" class="no-external">Applying literate programming techniques in the workplace</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -408,14 +475,12 @@ Health Data Science
 Literate Programming
 </div>
 </div>
-<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html">
 <div class="listing-description">
-<p><em>Calum discusses the power of literate programming to communicate with clincal collaborators</em></p>
+<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html" class="no-external"><em>Calum discusses the power of literate programming to communicate with clincal collaborators</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html">
+<a href="./posts/2023-09-11-applying-literate-programming-techniques-in-the-workplace/index.html" class="no-external">
 <div class="listing-date">
 Sep 11, 2023
 </div>
@@ -425,19 +490,19 @@ Calum Nicholson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Health Data Science,Clinical AI" data-listing-date-sort="1687960800000" data-listing-file-modified-sort="1704926868123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="6" data-categories="Health Data Science,Clinical AI" data-listing-date-sort="1687960800000" data-listing-file-modified-sort="1704926868123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1068">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html"> <img src="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/liam-elisabeth.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html" class="no-external"></a></p><a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html" class="no-external">
+<p><img src="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/liam-elisabeth.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html">
 <h3 class="no-anchor listing-title">
-Medical students living the Clinical AI dream
+<a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html" class="no-external">Medical students living the Clinical AI dream</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -446,14 +511,12 @@ Health Data Science
 Clinical AI
 </div>
 </div>
-<a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html">
 <div class="listing-description">
-<p><em>Liam and Elisabeth discuss their experience studying on the Clinical AI stream</em></p>
+<a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html" class="no-external"><em>Liam and Elisabeth discuss their experience studying on the Clinical AI stream</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html">
+<a href="./posts/2023-06-26-medical-students-living-the-clinical-ai-stream/index.html" class="no-external">
 <div class="listing-date">
 Jun 29, 2023
 </div>
@@ -463,19 +526,19 @@ Liam Dettmann Hughes and Elisabeth Abhayaratna
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Health Data Science,datathon,synthetic data,HIV" data-listing-date-sort="1685973600000" data-listing-file-modified-sort="1704926868120" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="7" data-categories="Health Data Science,datathon,synthetic data,HIV" data-listing-date-sort="1685973600000" data-listing-file-modified-sort="1704926868120" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="677">
 <div class="thumbnail">
-<p><a href="./posts/2023-06-02-hds-datathon/index.html"> <img src="./posts/2023-06-02-hds-datathon/ivy.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-06-02-hds-datathon/index.html" class="no-external"></a></p><a href="./posts/2023-06-02-hds-datathon/index.html" class="no-external">
+<p><img src="./posts/2023-06-02-hds-datathon/ivy.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-06-02-hds-datathon/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-06-02-hds-datathon/index.html">
 <h3 class="no-anchor listing-title">
-CBDRH Datathon: a taste of a (real) synthetic dataset
+<a href="./posts/2023-06-02-hds-datathon/index.html" class="no-external">CBDRH Datathon: a taste of a (real) synthetic dataset</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-06-02-hds-datathon/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -490,14 +553,12 @@ synthetic data
 HIV
 </div>
 </div>
-<a href="./posts/2023-06-02-hds-datathon/index.html">
 <div class="listing-description">
-<p><em>Ivy discusses her experience at the first CBDRH Health Data Science datathon</em></p>
+<a href="./posts/2023-06-02-hds-datathon/index.html" class="no-external"><em>Ivy discusses her experience at the first CBDRH Health Data Science datathon</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-06-02-hds-datathon/index.html">
+<a href="./posts/2023-06-02-hds-datathon/index.html" class="no-external">
 <div class="listing-date">
 Jun 6, 2023
 </div>
@@ -507,19 +568,19 @@ Ivy Cerelia Valerie
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Health Data Science,electronic medical records,publishing research" data-listing-date-sort="1681221600000" data-listing-file-modified-sort="1704926868114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
+<div class="quarto-post image-right" data-index="8" data-categories="Health Data Science,electronic medical records,publishing research" data-listing-date-sort="1681221600000" data-listing-file-modified-sort="1704926868114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2040">
 <div class="thumbnail">
-<p><a href="./posts/2023-04-02-bridging-the-chasm/index.html"> <img src="./posts/2023-04-02-bridging-the-chasm/danielle-ritz-shala2.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-04-02-bridging-the-chasm/index.html" class="no-external"></a></p><a href="./posts/2023-04-02-bridging-the-chasm/index.html" class="no-external">
+<p><img src="./posts/2023-04-02-bridging-the-chasm/danielle-ritz-shala2.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-04-02-bridging-the-chasm/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-04-02-bridging-the-chasm/index.html">
 <h3 class="no-anchor listing-title">
-Bridging the chasm of expectations and reality with real-world projects
+<a href="./posts/2023-04-02-bridging-the-chasm/index.html" class="no-external">Bridging the chasm of expectations and reality with real-world projects</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-04-02-bridging-the-chasm/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -531,14 +592,12 @@ electronic medical records
 publishing research
 </div>
 </div>
-<a href="./posts/2023-04-02-bridging-the-chasm/index.html">
 <div class="listing-description">
-<p><em>Danielle discusses her work at the interface of data science and clinical practice.</em></p>
+<a href="./posts/2023-04-02-bridging-the-chasm/index.html" class="no-external"><em>Danielle discusses her work at the interface of data science and clinical practice.</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-04-02-bridging-the-chasm/index.html">
+<a href="./posts/2023-04-02-bridging-the-chasm/index.html" class="no-external">
 <div class="listing-date">
 Apr 12, 2023
 </div>
@@ -548,19 +607,19 @@ Danielle Ritz Shala
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Health Data Science,work-life balance,publishing research" data-listing-date-sort="1680530400000" data-listing-file-modified-sort="1704926868095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+<div class="quarto-post image-right" data-index="9" data-categories="Health Data Science,work-life balance,publishing research" data-listing-date-sort="1680530400000" data-listing-file-modified-sort="1704926868095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="749">
 <div class="thumbnail">
-<p><a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html"> <img src="./posts/2023-03-01-studying-hds-as-a-junior-doctor/lucinda-roper.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html" class="no-external"></a></p><a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html" class="no-external">
+<p><img src="./posts/2023-03-01-studying-hds-as-a-junior-doctor/lucinda-roper.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html">
 <h3 class="no-anchor listing-title">
-Studying Health Data Science as a junior doctor
+<a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html" class="no-external">Studying Health Data Science as a junior doctor</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -572,14 +631,12 @@ work-life balance
 publishing research
 </div>
 </div>
-<a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html">
 <div class="listing-description">
-<p><em>Lucinda discusses her experience completing the HDS Masters Program while working as a junior doctor</em></p>
+<a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html" class="no-external"><em>Lucinda discusses her experience completing the HDS Masters Program while working as a junior doctor</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html">
+<a href="./posts/2023-03-01-studying-hds-as-a-junior-doctor/index.html" class="no-external">
 <div class="listing-date">
 Apr 4, 2023
 </div>
@@ -589,19 +646,19 @@ Lucinda Roper
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Health Data Science,work-life balance" data-listing-date-sort="1675602000000" data-listing-file-modified-sort="1704926868095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<div class="quarto-post image-right" data-index="10" data-categories="Health Data Science,work-life balance" data-listing-date-sort="1675602000000" data-listing-file-modified-sort="1704926868095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1065">
 <div class="thumbnail">
-<p><a href="./posts/2023-02-06-balancing-life-and-study/index.html"> <img src="./posts/2023-02-06-balancing-life-and-study/Sidney-122.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-02-06-balancing-life-and-study/index.html" class="no-external"></a></p><a href="./posts/2023-02-06-balancing-life-and-study/index.html" class="no-external">
+<p><img src="./posts/2023-02-06-balancing-life-and-study/Sidney-122.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-02-06-balancing-life-and-study/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-02-06-balancing-life-and-study/index.html">
 <h3 class="no-anchor listing-title">
-Balancing life and study
+<a href="./posts/2023-02-06-balancing-life-and-study/index.html" class="no-external">Balancing life and study</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-02-06-balancing-life-and-study/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -610,14 +667,12 @@ Health Data Science
 work-life balance
 </div>
 </div>
-<a href="./posts/2023-02-06-balancing-life-and-study/index.html">
 <div class="listing-description">
-<p><em>Jason discusses successfully navigating the Health Data Science Masters while balancing work, family and other life committments</em></p>
+<a href="./posts/2023-02-06-balancing-life-and-study/index.html" class="no-external"><em>Jason discusses successfully navigating the Health Data Science Masters while balancing work, family and other life committments</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-02-06-balancing-life-and-study/index.html">
+<a href="./posts/2023-02-06-balancing-life-and-study/index.html" class="no-external">
 <div class="listing-date">
 Feb 6, 2023
 </div>
@@ -627,19 +682,19 @@ Jason Meyer
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="Health Data Science,SAS,Cortex" data-listing-date-sort="1673528400000" data-listing-file-modified-sort="1704926868093" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="11" data-categories="Health Data Science,SAS,Cortex" data-listing-date-sort="1673528400000" data-listing-file-modified-sort="1704926868093" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="961">
 <div class="thumbnail">
-<p><a href="./posts/2023-01-13-sas-cortex/index.html"> <img src="./posts/2023-01-13-sas-cortex/manny-adachi.jpg" class="thumbnail-image" style="height: 300px;"> </a></p>
+<p><a href="./posts/2023-01-13-sas-cortex/index.html" class="no-external"></a></p><a href="./posts/2023-01-13-sas-cortex/index.html" class="no-external">
+<p><img src="./posts/2023-01-13-sas-cortex/manny-adachi.jpg" class="thumbnail-image" style="height: 300px;"></p>
+</a><p><a href="./posts/2023-01-13-sas-cortex/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-01-13-sas-cortex/index.html">
 <h3 class="no-anchor listing-title">
-Winning the SAS Cortex Analytics Simulation Challenge
+<a href="./posts/2023-01-13-sas-cortex/index.html" class="no-external">Winning the SAS Cortex Analytics Simulation Challenge</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-01-13-sas-cortex/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Health Data Science'); return false;">
 Health Data Science
@@ -651,14 +706,12 @@ SAS
 Cortex
 </div>
 </div>
-<a href="./posts/2023-01-13-sas-cortex/index.html">
 <div class="listing-description">
-<p><em>Manny discusses winning the SAS Cortex Analytics Simulation 5 Day Challenge</em></p>
+<a href="./posts/2023-01-13-sas-cortex/index.html" class="no-external"><em>Manny discusses winning the SAS Cortex Analytics Simulation 5 Day Challenge</em></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-01-13-sas-cortex/index.html">
+<a href="./posts/2023-01-13-sas-cortex/index.html" class="no-external">
 <div class="listing-date">
 Jan 13, 2023
 </div>
@@ -958,10 +1011,34 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/hds-hub\.cbdrh\.med\.unsw\.edu\.au");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -971,8 +1048,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -984,7 +1070,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1028,6 +1237,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1053,6 +1263,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1110,34 +1346,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/hds-hub\.cbdrh\.med\.unsw\.edu\.au");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          // default icon
-          link.classList.add("external");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© Copyright 2023, UNSW</div>   
+    <div class="nav-footer-left">
+<p>© Copyright 2024, UNSW</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">This page is built with ☘️ and <a href="https://quarto.org/">Quarto</a>.</div>
+    <div class="nav-footer-right">
+<p>This page is built with ☘️ and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
   </div>
 </footer>
+
 
 
 
