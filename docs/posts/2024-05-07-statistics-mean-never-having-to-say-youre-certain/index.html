@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Sandy Sa">
+<meta name="dcterms.date" content="2024-05-10">
+<meta name="description" content="Sandy reflects on her journey in statistics and the descriptive, predictive, and causal aims of data science">
 
-<title>Webexercises</title>
+<title>Statistics means never having to say you’re certain</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,60 +23,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -103,14 +74,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="include/webex.css">
-<meta property="og:title" content="Webexercises">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/docs/images/223_UNSW_CBDRH_credit_AnnaKucera_cropped.jpg">
-<meta name="twitter:title" content="Webexercises">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/docs/images/223_UNSW_CBDRH_credit_AnnaKucera_cropped.jpg">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../include/webex.css">
+<meta property="og:title" content="Statistics means never having to say you’re certain">
+<meta property="og:description" content="Sandy reflects on her journey in statistics and the descriptive, predictive, and causal aims of data science">
+<meta property="og:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-05-07-statistics-mean-never-having-to-say-youre-certain/sandy-sa-cropped.jpeg">
+<meta name="twitter:title" content="Statistics means never having to say you’re certain">
+<meta name="twitter:description" content="Sandy reflects on her journey in statistics and the descriptive, predictive, and causal aims of data science">
+<meta name="twitter:image" content="https://hds-hub.cbdrh.med.unsw.edu.au/posts/2024-05-07-statistics-mean-never-having-to-say-youre-certain/sandy-sa-cropped.jpeg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -121,8 +92,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/Landscape__3.Mono_Pos_CBDRH.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -132,7 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -141,39 +112,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-information">    
         <li>
-    <a class="dropdown-item" href="./people.html"><i class="bi bi-people-fill" role="img">
+    <a class="dropdown-item" href="../../people.html"><i class="bi bi-people-fill" role="img">
 </i> 
  <span class="dropdown-text">Your teaching team</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./courses.html"><i class="bi bi-code" role="img">
+    <a class="dropdown-item" href="../../courses.html"><i class="bi bi-code" role="img">
 </i> 
  <span class="dropdown-text">Courses</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./schedule.html"><i class="bi bi-calendar3" role="img">
+    <a class="dropdown-item" href="../../schedule.html"><i class="bi bi-calendar3" role="img">
 </i> 
  <span class="dropdown-text">Schedule</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./software.html"><i class="bi bi-laptop" role="img">
+    <a class="dropdown-item" href="../../software.html"><i class="bi bi-laptop" role="img">
 </i> 
  <span class="dropdown-text">Software and platforms</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./faq.html"><i class="bi bi-question-circle" role="img">
+    <a class="dropdown-item" href="../../faq.html"><i class="bi bi-question-circle" role="img">
 </i> 
  <span class="dropdown-text">FAQ</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> <i class="bi bi-chat-right-heart-fill" role="img">
+    <a class="nav-link" href="../../posts.html"> <i class="bi bi-chat-right-heart-fill" role="img">
 </i> 
 <span class="menu-text">HDS Student Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tutorial.html"> <i class="bi bi-code-slash" role="img">
+    <a class="nav-link" href="../../tutorial.html"> <i class="bi bi-code-slash" role="img">
 </i> 
 <span class="menu-text">Guided tutorial</span></a>
   </li>  
@@ -206,37 +177,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="./images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
+<p><img src="../../images/Landscape__1.Col_Pos_CBDRH.jpg" class="img-fluid"></p>
 </div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#example-questions" id="toc-example-questions" class="nav-link active" data-scroll-target="#example-questions">Example Questions</a>
+  <li><a href="#descriptionthe-good-the-bad-and-the-ugly" id="toc-descriptionthe-good-the-bad-and-the-ugly" class="nav-link active" data-scroll-target="#descriptionthe-good-the-bad-and-the-ugly">Description—the good, the bad, and the ugly</a>
   <ul class="collapse">
-  <li><a href="#fill-in-the-blanks-fitb" id="toc-fill-in-the-blanks-fitb" class="nav-link" data-scroll-target="#fill-in-the-blanks-fitb">Fill-In-The-Blanks (<code>fitb()</code>)</a></li>
-  <li><a href="#multiple-choice-mcq" id="toc-multiple-choice-mcq" class="nav-link" data-scroll-target="#multiple-choice-mcq">Multiple Choice (<code>mcq()</code>)</a></li>
-  <li><a href="#true-or-false-torf" id="toc-true-or-false-torf" class="nav-link" data-scroll-target="#true-or-false-torf">True or False (<code>torf()</code>)</a></li>
-  <li><a href="#longer-mcqs-longmcq" id="toc-longer-mcqs-longmcq" class="nav-link" data-scroll-target="#longer-mcqs-longmcq">Longer MCQs (<code>longmcq()</code>)</a></li>
+  <li><a href="#data-are-beautiful-they-provide-insights-in-a-world-that-is-complicated-and-nuanced." id="toc-data-are-beautiful-they-provide-insights-in-a-world-that-is-complicated-and-nuanced." class="nav-link" data-scroll-target="#data-are-beautiful-they-provide-insights-in-a-world-that-is-complicated-and-nuanced.">Data are beautiful, they provide insights in a world that is complicated and nuanced.</a></li>
+  <li><a href="#without-an-analytical-and-critical-approach-it-is-easy-to-mislead-by-data." id="toc-without-an-analytical-and-critical-approach-it-is-easy-to-mislead-by-data." class="nav-link" data-scroll-target="#without-an-analytical-and-critical-approach-it-is-easy-to-mislead-by-data.">Without an analytical and critical approach, it is easy to mislead by data.</a></li>
+  <li><a href="#lies-damned-lies-and-statistics" id="toc-lies-damned-lies-and-statistics" class="nav-link" data-scroll-target="#lies-damned-lies-and-statistics">Lies, damned lies, and statistics</a></li>
   </ul></li>
-  <li><a href="#checked-sections" id="toc-checked-sections" class="nav-link" data-scroll-target="#checked-sections">Checked sections</a></li>
-  <li><a href="#hidden-solutions-and-hints" id="toc-hidden-solutions-and-hints" class="nav-link" data-scroll-target="#hidden-solutions-and-hints">Hidden solutions and hints</a></li>
+  <li><a href="#predictiona-tightrope-between-statistical-and-machine-learning-model" id="toc-predictiona-tightrope-between-statistical-and-machine-learning-model" class="nav-link" data-scroll-target="#predictiona-tightrope-between-statistical-and-machine-learning-model">Prediction—a tightrope between statistical and machine learning model</a></li>
+  <li><a href="#causal-inferencethe-holy-grail-and-the-pitfall" id="toc-causal-inferencethe-holy-grail-and-the-pitfall" class="nav-link" data-scroll-target="#causal-inferencethe-holy-grail-and-the-pitfall">Causal inference—the holy grail and the pitfall</a></li>
+  <li><a href="#learning-the-uncertainty" id="toc-learning-the-uncertainty" class="nav-link" data-scroll-target="#learning-the-uncertainty">Learning the uncertainty</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Webexercises</h1>
-</div>
+<h1 class="title">Statistics means never having to say you’re certain</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Health Data Science</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    <em>Sandy reflects on her journey in statistics and the descriptive, predictive, and causal aims of data science</em>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Sandy Sa </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 10, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -246,109 +237,111 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is a Web Exercise template created by the <a href="http://www.psy.gla.ac.uk">psychology teaching team at the University of Glasgow</a>, based on ideas from <a href="https://software-carpentry.org/lessons/">Software Carpentry</a>. This template shows how instructors can easily create interactive web documents that students can use in self-guided learning.</p>
-<p>The <code>{webexercises}</code> package provides a number of functions that you use in <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">inline R code</a> or through code chunk options to create HTML widgets (text boxes, pull down menus, buttons that reveal hidden content). Examples are given below. Render this file to HTML to see how it works.</p>
-<p><strong>NOTE: To use the widgets in the compiled HTML file, you need to have a JavaScript-enabled browser.</strong></p>
-<section id="example-questions" class="level2">
-<h2 class="anchored" data-anchor-id="example-questions">Example Questions</h2>
-<section id="fill-in-the-blanks-fitb" class="level3">
-<h3 class="anchored" data-anchor-id="fill-in-the-blanks-fitb">Fill-In-The-Blanks (<code>fitb()</code>)</h3>
-<p>Create fill-in-the-blank questions using <code>fitb()</code>, providing the answer as the first argument.</p>
-<ul>
-<li>2 + 2 is <input class="webex-solveme nospaces" size="1" data-answer="[&quot;4&quot;]"></li>
-</ul>
-<p>You can also create these questions dynamically, using variables from your R session.</p>
-<ul>
-<li>The square root of 36 is: <input class="webex-solveme nospaces" size="1" data-answer="[&quot;6&quot;]"></li>
-</ul>
-<p>The blanks are case-sensitive; if you don’t care about case, use the argument <code>ignore_case = TRUE</code>.</p>
-<ul>
-<li>What is the letter after D? <input class="webex-solveme nospaces ignorecase" size="1" data-answer="[&quot;E&quot;]"></li>
-</ul>
-<p>If you want to ignore differences in whitespace use, use the argument <code>ignore_ws = TRUE</code> (which is the default) and include spaces in your answer anywhere they could be acceptable.</p>
-<ul>
-<li>How do you load the tidyverse package? <input class="webex-solveme nospaces" size="20" data-answer="[&quot;library( tidyverse )&quot;,&quot;library( \&quot;tidyverse\&quot; )&quot;,&quot;library( 'tidyverse' )&quot;]"></li>
-</ul>
-<p>You can set more than one possible correct answer by setting the answers as a vector.</p>
-<ul>
-<li>Type a vowel: <input class="webex-solveme nospaces ignorecase" size="1" data-answer="[&quot;A&quot;,&quot;E&quot;,&quot;I&quot;,&quot;O&quot;,&quot;U&quot;]"></li>
-</ul>
-<p>You can use regular expressions to test answers against more complex rules.</p>
-<ul>
-<li>Type any 3 letters: <input class="webex-solveme nospaces regex" size="3" data-answer="[&quot;^[a-zA-Z]{3}$&quot;]"></li>
-</ul>
-</section>
-<section id="multiple-choice-mcq" class="level3">
-<h3 class="anchored" data-anchor-id="multiple-choice-mcq">Multiple Choice (<code>mcq()</code>)</h3>
-<ul>
-<li>“Never gonna give you up, never gonna: <select class="webex-select"><option value="blank"></option><option value="">let you go</option><option value="">turn you down</option><option value="">run away</option><option value="answer">let you down</option></select>”</li>
-<li>“I <select class="webex-select"><option value="blank"></option><option value="answer">bless the rains</option><option value="">guess it rains</option><option value="">sense the rain</option></select> down in Africa” -Toto</li>
-</ul>
-</section>
-<section id="true-or-false-torf" class="level3">
-<h3 class="anchored" data-anchor-id="true-or-false-torf">True or False (<code>torf()</code>)</h3>
-<ul>
-<li>True or False? You can permute values in a vector using <code>sample()</code>. <select class="webex-select"><option value="blank"></option><option value="answer">TRUE</option><option value="">FALSE</option></select></li>
-</ul>
-</section>
-<section id="longer-mcqs-longmcq" class="level3">
-<h3 class="anchored" data-anchor-id="longer-mcqs-longmcq">Longer MCQs (<code>longmcq()</code>)</h3>
-<p>When your answers are very long, sometimes a drop-down select box gets formatted oddly. You can use <code>longmcq()</code> to deal with this. Since the answers are long, It’s probably best to set up the options inside an R chunk with <code>echo=FALSE</code>.</p>
-<p><strong>What is a p-value?</strong></p>
-<div id="radio_FXIUKXESYG" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_FXIUKXESYG" value=""> <span>the probability that the null hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_FXIUKXESYG" value="answer"> <span>the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_FXIUKXESYG" value=""> <span>the probability of making an error in your conclusion</span></label>
-</div>
-<p><strong>What is true about a 95% confidence interval of the mean?</strong></p>
-<div id="radio_GMAVOZXLQZ" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_GMAVOZXLQZ" value="answer"> <span>if you repeated the process many times, 95% of intervals calculated in this way contain the true mean</span></label><label><input type="radio" autocomplete="off" name="radio_GMAVOZXLQZ" value=""> <span>there is a 95% probability that the true mean lies within this range</span></label><label><input type="radio" autocomplete="off" name="radio_GMAVOZXLQZ" value=""> <span>95% of the data fall within this range</span></label>
-</div>
-</section>
-</section>
-<section id="checked-sections" class="level2">
-<h2 class="anchored" data-anchor-id="checked-sections">Checked sections</h2>
-<p>Create sections with the class <code>webex-check</code> to add a button that hides feedback until it is pressed. Add the class <code>webex-box</code> to draw a box around the section (or use your own styles).</p>
-<div class="webex-check webex-box">
-<p>I am going to learn a lot: <select class="webex-select"><option value="blank"></option><option value="answer">TRUE</option><option value="">FALSE</option></select></p>
-What is a p-value?
-<div id="radio_LOHUBPISZU" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_LOHUBPISZU" value=""> <span>the probability that the null hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_LOHUBPISZU" value="answer"> <span>the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true</span></label><label><input type="radio" autocomplete="off" name="radio_LOHUBPISZU" value=""> <span>the probability of making an error in your conclusion</span></label>
-</div>
-</div>
-</section>
-<section id="hidden-solutions-and-hints" class="level2">
-<h2 class="anchored" data-anchor-id="hidden-solutions-and-hints">Hidden solutions and hints</h2>
-<p>You can fence off a solution area that will be hidden behind a button using <code>hide()</code> before the solution and <code>unhide()</code> after, each as inline R code. Pass the text you want to appear on the button to the <code>hide()</code> function.</p>
-<p>If the solution is a code chunk, instead of using <code>hide()</code> and <code>unhide()</code>, simply set the <code>webex.hide</code> chunk option to TRUE, or set it to the string you wish to display on the button.</p>
-<p><strong>Recreate the scatterplot below, using the built-in <code>cars</code> dataset.</strong></p>
-<div class="cell">
-<div class="cell-output-display">
+<div style="display:grid; grid-template-columns: 1fr 1fr;">
 <div>
+<div class="author-meta-content">
+<p><i class="fa-solid fa-envelope" title="An envelope" aria-label="envelope"></i> <a href="mailto:Zhisheng.Sa@health.nsw.gov.au">Zhisheng.Sa@health.nsw.gov.au</a></p>
+</div>
+<div class="author-meta-content">
+<p><i class="fa-brands fa-linkedin" title="LinkedIn logo" aria-label="linkedin"></i> <a href="https://au.linkedin.com/in/sandy-sa-460a5b27">au.linkedin.com/in/sandy-sa-460a5b27</a></p>
+</div>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<div class="oval-border">
+<p><img src="sandy-sa-cropped.jpeg" class="img-fluid"></p>
+</div>
+<p>Sandy completed the Master of Health Data Science in 2021 and is currently completing a Master of Biostatistics at University of Sydney through the NSW Ministry of Health Biostatistics Training Program. She is planning to start her PhD in medical information retrieval using natural language processing at the Center for Big Data Research in Health later this year.</p>
+</div></div><p>As a data science student in 2020, I watched the pandemic unfolding with intense interest and fascination. I thought if we have perfect capture of data, it would be easy to make sense of everything. Naively, I thought modelling the spread of the disease seemed a ‘simple’ solution to plan and prepare for the progression of the pandemic. Fast forward one year, I was in the NSW Ministry of Health working as a trainee biostatistician with a team of analysts and epidemiologists that processed millions of COVID-19 surveillance records each day to find insights. Very quickly, I came to the realisation that the complexity and the nuances of data means something as simple as counting how many COVID-19 notifications we had in a day was not as straightforward as it seemed. As someone who often learns their lessons the hard way, this is a little reflection that I hope provides some discussion points in relation to the three tasks of data science, description, prediction and causal inference.</p>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="webexercises_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://imgs.xkcd.com/comics/data_trap.png" class="img-fluid figure-img"></p>
+<figcaption>From <a href="https://xkcd.com/">xkcd.com</a></figcaption>
 </figure>
 </div>
+<section id="descriptionthe-good-the-bad-and-the-ugly" class="level2">
+<h2 class="anchored" data-anchor-id="descriptionthe-good-the-bad-and-the-ugly">Description—the good, the bad, and the ugly</h2>
+<section id="data-are-beautiful-they-provide-insights-in-a-world-that-is-complicated-and-nuanced." class="level3">
+<h3 class="anchored" data-anchor-id="data-are-beautiful-they-provide-insights-in-a-world-that-is-complicated-and-nuanced.">Data are beautiful, they provide insights in a world that is complicated and nuanced.</h3>
+<p>From a young age, I found solace in science and numbers. While people may not always be reliable and environments constantly change, numbers provide a constant. Measuring something makes it tangible and real—it’s like holding proof of its existence. Even though mathematics wasn’t my strongest subject in school, my admiration for its elegance and logic never waned. The brilliance of a well-crafted proof always sparked joy and pride in me. Pursuing an interest in biology, for about a decade my focus drifted to fiddling with small amounts of experimental data. However, my path eventually led me back to the field of statistics when I embarked on a Master of Health Data Science degree. This rekindled my passion for big data and its profound impact on understanding the world.</p>
+<p>This time around the power of big data has become ever more apparent. Working with vast arrays of health data taught me how essential data-driven decision-making is in improving outcomes and anticipating future needs. Personally, I found joy in going through often messy and confusing data to refine my understanding of topics through coding logic. I appreciate how data sometimes challenges my perspectives, offering alternative viewpoints on the world around me. Most of all, I value the tangible impact my work has on enhancing public health.</p>
+</section>
+<section id="without-an-analytical-and-critical-approach-it-is-easy-to-mislead-by-data." class="level3">
+<h3 class="anchored" data-anchor-id="without-an-analytical-and-critical-approach-it-is-easy-to-mislead-by-data.">Without an analytical and critical approach, it is easy to mislead by data.</h3>
+<p>One of the surprises I got from working as a biostatistician is that descriptive statistics can be really hard. Miguel Hernán defines <em>Description</em> as ‘using data to provide a quantitative summary of certain features of the world’.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This sounds very simple and something almost anyone with a dataset and basic statistical knowledge could do—calculating the mean, median, interquartile range, or various proportions and rates. However, the existence of datasaurus<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> is a reminder that one needs to know the dataset well, or one may end up with a useless descriptive measure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.research.autodesk.com/app/uploads/2023/03/DinoSequential-1.gif" class="img-fluid figure-img"></p>
+<figcaption>Datasuarus: summary statistics can mask surprising relationships!</figcaption>
+</figure>
 </div>
+<p>Over the past three years, there were countless times I thought I have made a good summary statistic only to realise that I didn’t understand the question/data/context. Learning from my own mistakes, I started to ask some questions during any analysis:</p>
+<ul>
+<li>What is the primary purpose of the data and how were they collected?</li>
+<li>What am I trying to measure and how different is it to the primary purpose?</li>
+<li>Who has been included and who has been excluded in the data?</li>
+<li>Who has been included and who has been excluded in the measure?</li>
+<li>What contextual information might be relevant?</li>
+<li>What statistical measure/method is appropriate?</li>
+<li>What assumptions are we making when we measure like this?</li>
+<li>What are the limitation of the measure?</li>
+</ul>
+<p>Drafting summary descriptions is generally a quick process, but as an analyst, I spend a not small amount of time using some of these numbers to construct a narrative. When I presented a table of averages (and standard deviations as a good statistician would do) to policymakers, they often struggle with interpreting this data. However, simply highlighting the proportion of the extreme responses in each category, suddenly it clarifies which areas might benefit most from policy interventions, making it evident where to target efforts more effectively. Unfortunately, the narrative isn’t always obvious at the beginning, or the connections might not immediately be clear. I like to think of the process of story building as playing with LEGO: I start with all the pieces and many ways to assemble them, but it’s only through building that I discover the optimal arrangement for each piece.</p>
+</section>
+<section id="lies-damned-lies-and-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="lies-damned-lies-and-statistics">Lies, damned lies, and statistics</h3>
+<p>Data and statistics possess the dual potential to either construct deceptive and damaging messages or deliver insights from a rigorous study. Throughout the pandemic, we have seen many uses of data to support contradictory opinions. Even without any mal-intent, various statistical errors can infiltrate at every stage of a research project—from planning and data collection to analysis and interpretation. A sample might be biased, methodologies could be applied incorrectly, measurement errors introduced, and results selectively reported to highlight favorable outcomes. To guard against these pitfalls, I frequently refer to Spiegelhalter’s ‘Ten Questions to Ask When Confronted by a Claim Based on Statistical Evidence.’<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> This resource serves as a critical tool for scrutinising not just the claims of others but also rigorously examining the integrity and robustness of my own research. It helps ensure that the conclusions drawn are both reliable and ethically sound, providing a safeguard against the inadvertent introduction of biases and errors that can skew the findings.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgs.xkcd.com/comics/goodharts_law.png" class="img-fluid figure-img"></p>
+<figcaption>From <a href="https://xkcd.com/">xkcd.com</a></figcaption>
+</figure>
 </div>
-<div class="webex-solution">
-<button>
-I need a hint
-</button>
-<p>See the documentation for <code>plot()</code> (<code>?plot</code>)</p>
+<p>Even the most rigorously devised measures paired with a persuasive narrative don’t always lead to an effective description. Many are aware of Goodhart’s Law, which states that when a measure becomes a target, it ceases to be a good measure. This principle is difficult to keep in mind when you are directly involved in the measurement process. In the UK’s National Health Service (NHS), we have seen healthcare performance metrics such as elective surgery wait time targets leading to inaccurate reporting.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+</section>
+</section>
+<section id="predictiona-tightrope-between-statistical-and-machine-learning-model" class="level2">
+<h2 class="anchored" data-anchor-id="predictiona-tightrope-between-statistical-and-machine-learning-model">Prediction—a tightrope between statistical and machine learning model</h2>
+<p>Time and time again, when people discover that I have backgrounds in both health data science and biostatistics, they often ask about my views on machine learning versus traditional statistical modeling. As a true statistician might respond, my answer is always, “it depends”. The appropriateness of either approach hinges on several factors: the purpose of the model, the volume of data available, the characteristics and interrelationships of the features within that data, and the intended end users of the model. A statistical model may perform just as effectively—or ineffectively—as a machine learning model. But the choice between the two might not rest on model performance. People put more trust in models that are understandable and backed by literature.</p>
+<p>The phrase Probably Approximately Correct (PAC), which I came across in the context of computational learning, resonates with me as a good description for all predictive models. We turn to models because we lack the comprehensive data to describe phenomena in the detailed manners we desire. In an ideal world, with infinite data and flawless understanding of complex relationships, mathematical models would perfectly reflect reality. However, reality is far from this ideal. During the COVID-19 pandemic, various models predicted the spread of the virus based on initial data and assumptions about human behaviour and virus transmission. These models were essential for planning but had to be regularly updated as new information emerged. The PAC nature of modeling underscores that often there is no definitive answer to a problem, emphasizing the iterative and subjective dimensions of our work.</p>
+</section>
+<section id="causal-inferencethe-holy-grail-and-the-pitfall" class="level2">
+<h2 class="anchored" data-anchor-id="causal-inferencethe-holy-grail-and-the-pitfall">Causal inference—the holy grail and the pitfall</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgs.xkcd.com/comics/correlation.png" class="img-fluid figure-img"></p>
+<figcaption>From <a href="https://xkcd.com/">xkcd.com</a></figcaption>
+</figure>
 </div>
-<!-- note: you could also just set webex.hide to TRUE -->
-<div class="cell" data-webex.hide="Click here to see the solution">
-<div class="webex-solution">
-<button>
-Click here to see the solution
-</button>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cars<span class="sc">$</span>speed, cars<span class="sc">$</span>dist)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Causal inference has long been considered the holy grail of statistics because it moves beyond simple associations to establishing cause-and-effect relationships. This is crucial in many fields, particularly in policy-making, healthcare, and economics, where the goal is to intervene and change outcomes. Over the past decades, causal inference has evolved from relying solely on randomized controlled trials (RCTs), the gold standard for establishing causality, to incorporating observational data. This shift acknowledges the limitations of RCTs, including ethical concerns and practical constraints, which can prevent their use.</p>
+<p>The inherent complexity of health data adds a layer of challenges to causal interpretation. For example, you can be misled by tables of adjusted associations between exposures and outcomes, that control for potential confounders using multivariable regression models. This phenomenon is known as the “Table 2 Fallacy” where these associations are misinterpreted as causal relationships.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>Personally, due to the limitations of health administrative data, causal inference seems to be a very distant, nearly unreachable goal. However, I’ve learned from framing questions and examininge them through the causal lens. Understanding the limitations inherent in data and methods can paradoxically strengthen the analytical approach. It becomes less about leveraging perfect data, and more about rigorously assessing what the available data can tell us about the relationships, despite their imperfections.</p>
+</section>
+<section id="learning-the-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="learning-the-uncertainty">Learning the uncertainty</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgs.xkcd.com/comics/actual_progress.png" class="img-fluid figure-img"></p>
+<figcaption>From <a href="https://xkcd.com/">xkcd.com</a></figcaption>
+</figure>
 </div>
-</div>
+<p>I started learning statistics hoping that I would be able to use it to make more sense of the world around me. After five years of studying and working, I am more uncertain than ever. I learned more about what I don’t know or haven’t learnt yet than what I know. I came to the realisation that in real life data is often messy and complex, but intricate, fascinating and beautiful.</p>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Hernán, M. A., Hsu, J., &amp; Healy, B. (2019). A Second Chance to Get Causal Inference Right: A Classification of Data Science Tasks. CHANCE, 32(1), 42–49. <a href="https://doi.org/10.1080/09332480.2019.1579578">https://doi.org/10.1080/09332480.2019.1579578</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Matejka, J., &amp; Fitzmaurice, G.W. (2017). Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems. <a href="https://doi.org/10.1145/3025453.3025912">https://doi.org/10.1145/3025453.3025912</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Spiegelhalter, D. (2019). The Art of Statistics: How to Learn from Data. Basic Books. <a href="https://doi.org/10.5038/1936-4660.13.1.7">https://doi.org/10.5038/1936-4660.13.1.7</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Public Accounts Committee. NHS waiting times for elective care in England. 2014. <a href="https://www.publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/1002/100202.htm">https://www.publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/1002/100202.htm</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Westreich, D., &amp; Greenland, S. (2013). The Table 2 fallacy: presenting and interpreting confounder and modifier coefficients. American Journal of Epidemiology, 177(4), 292–298. <a href="https://doi.org/10.1093/aje/kws412">https://doi.org/10.1093/aje/kws412</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script>
 
 /* update total correct if #webex-total_correct exists */
