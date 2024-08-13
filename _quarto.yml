@@ -34,6 +34,9 @@ website:
       - text: FAQ
         href: faq.qmd
         icon: question-circle
+      - text: Keep in touch
+        href: keepintouch.qmd
+        icon: envelope
     - text: HDS Student Blog
       href: posts.qmd
       icon: chat-right-heart-fill
