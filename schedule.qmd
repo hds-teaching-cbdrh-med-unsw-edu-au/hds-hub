@@ -3,7 +3,7 @@ title: "Course schedule"
 comments: false
 ---
 
-## 2024 course schedule
+## 2025 course schedule
 
 ```{r .column-screen}
 #| echo: false
@@ -16,10 +16,13 @@ library(dplyr)
 library(gt)
 library(purrr)
 
+# Current year
+year <- 2025
+
 df <- utils::read.csv("www/schedule.csv") %>% 
   mutate(
     Course = paste(code, name),
-    link = paste0('https://timetable.unsw.edu.au/2024/', code, '.html'),
+    link = paste0('https://timetable.unsw.edu.au/2025/', code, '.html'),
     link = map(link, ~ htmltools::a(href = .x, "")),
     link = map(link, ~ gt::html(as.character(.x))),
     ilink = paste0("../courses.html#", gsub(" ", "-", tolower(code))),
@@ -39,6 +42,7 @@ gt(df) %>%
     locations = cells_body(columns = c(t1, t2, t3)),
     fn = function(x){
       dplyr::case_when(
+        x==3 ~ icon_fun(icon = "code", fill='green'),    
         x==2 ~ icon_fun(icon = "laptop", fill='green'),     
         x==1 ~ icon_fun(icon = "person-chalkboard", fill='green'),
         x==0 ~ icon_fun(icon = "minus", fill='lightgrey')
@@ -54,7 +58,7 @@ gt(df) %>%
     link = ""
   ) %>% 
   tab_spanner(
-    label = "2024",
+    label = year,
     columns = 3:5
   ) %>%
   cols_align(
@@ -77,7 +81,10 @@ shiny::tagList(
   shiny::span(shiny::icon('person-chalkboard'), shiny::helpText('Face-to-Face/Hybrid')),
   shiny::br(),
   shiny::span(shiny::icon('laptop'), shiny::helpText('Online')),
+  shiny::br(),
+  shiny::span(shiny::icon('code'), shiny::helpText('Research')),
   shiny::br(),shiny::br()
+  
   )
 ```
 
@@ -88,7 +95,6 @@ More information can be found by searching for the relevant course online at [ti
 
 ## Key dates
 
-
 ```{r}
 #| echo: false
 #| message: false
@@ -98,42 +104,39 @@ More information can be found by searching for the relevant course online at [ti
 library(calendR)
 library(lubridate)
 
-# Current year
-year <- 2024
-
 # Number of days in current year
 ndays <- ifelse(lubridate::leap_year(year), 366, 365)
 
 # Store term start and end dates
-t1_start <- yday(dmy(paste0("12-02-", year))) # Term 1
-t1_end <- yday(dmy(paste0("19-04-", year)))
+t1_start <- yday(dmy(paste0("17-02-", year))) # Term 1
+t1_end <- yday(dmy(paste0("24-04-", year)))
 
-t2_start <- yday(dmy(paste0("27-05-", year))) # Term 2
-t2_end <- yday(dmy(paste0("2-08-", year)))
+t2_start <- yday(dmy(paste0("2-06-", year))) # Term 2
+t2_end <- yday(dmy(paste0("8-08-", year)))
 
-t3_start <- yday(dmy(paste0("9-09-", year))) # Term 3
-t3_end <- yday(dmy(paste0("15-11-", year)))
+t3_start <- yday(dmy(paste0("15-09-", year))) # Term 3
+t3_end <- yday(dmy(paste0("21-11-", year)))
 
 # Census dates
-t1_cen <- yday(dmy(paste0("10-03-", year))) # Term 1
-t2_cen <- yday(dmy(paste0("23-06-", year))) # Term 2
-t3_cen <- yday(dmy(paste0("06-10-", year))) # Term 3
+t1_cen <- yday(dmy(paste0("13-03-", year))) # Term 1
+t2_cen <- yday(dmy(paste0("26-06-", year))) # Term 2
+t3_cen <- yday(dmy(paste0("09-10-", year))) # Term 3
 
 # Results dates
-t1_res <- yday(dmy(paste0("16-05-", year))) # Term 1
-t2_res <- yday(dmy(paste0("29-08-", year))) # Term 2
-t3_res <- yday(dmy(paste0("12-12-", year))) # Term 3
+t1_res <- yday(dmy(paste0("22-05-", year))) # Term 1
+t2_res <- yday(dmy(paste0("4-09-", year))) # Term 2
+t3_res <- yday(dmy(paste0("18-12-", year))) # Term 3
 
 # Public holidays
 pub1 <- yday(dmy(paste0("01-01-", year)))
-pub2 <- yday(dmy(paste0("26-01-", year)))
-pub3 <- yday(dmy(paste0("29-03-", year)))
-pub4 <- yday(dmy(paste0("30-03-", year)))
-pub5 <- yday(dmy(paste0("31-03-", year)))
-pub6 <- yday(dmy(paste0("1-04-", year)))
+pub2 <- yday(dmy(paste0("27-01-", year)))
+pub3 <- yday(dmy(paste0("18-04-", year)))
+pub4 <- yday(dmy(paste0("19-04-", year)))
+pub5 <- yday(dmy(paste0("20-04-", year)))
+pub6 <- yday(dmy(paste0("21-04-", year)))
 pub7 <- yday(dmy(paste0("25-04-", year)))
-pub8 <- yday(dmy(paste0("10-06-", year)))
-pub9 <- yday(dmy(paste0("07-10-", year)))
+pub8 <- yday(dmy(paste0("9-06-", year)))
+pub9 <- yday(dmy(paste0("06-10-", year)))
 pub10 <- yday(dmy(paste0("25-12-", year)))
 pub11 <- yday(dmy(paste0("26-12-", year)))
 
@@ -141,18 +144,18 @@ pub11 <- yday(dmy(paste0("26-12-", year)))
 events <- rep(NA, ndays)
 
 # Set the corresponding events
-events[t1_start:t1_end] <- "Term 1: 12 Feb - 19 Apr"
-events[t2_start:t2_end] <- "Term 2: 27 May - 2 Aug"
-events[t3_start:t3_end] <- "Term 3: 9 Sep - 15 Nov"
+events[t1_start:t1_end] <- "Term 1: 17 Feb - 24 Apr"
+events[t2_start:t2_end] <- "Term 2: 2 Jun - 8 Aug"
+events[t3_start:t3_end] <- "Term 3: 15 Sep - 21 Nov"
 events[c(t1_cen, t2_cen, t3_cen)] <- "Census dates"
 events[c(t1_res, t2_res, t3_res)] <- "Results released"
 events[c(pub1, pub2, pub3, pub4, pub5, pub6, pub7, pub8, pub9, pub10, pub11)] <- "Public holidays"
 
 
 # Desired order and colors
-desired_order <- factor(c("Term 1: 12 Feb - 19 Apr",
-                   "Term 2: 27 May - 2 Aug",
-                   "Term 3: 9 Sep - 15 Nov",
+desired_order <- factor(c("Term 1: 17 Feb - 24 Apr",
+                   "Term 2: 2 Jun - 8 Aug",
+                   "Term 3: 15 Sep - 21 Nov",
                    "Census dates",
                    "Results released",
                    "Public holidays"))
@@ -163,19 +166,19 @@ ordered_colors <- c("#82BB65", "#9AD27E", "#BDF6A3",
                               "#f283b6")[order(desired_order)]
 
 # Creating the calendar with a legend
-calendR(year = 2024,
+calendR(year = 2025,
         start = "M",
         weeknames = c('M', 'T', 'W', 'T', 'F', 'S', 'S'),
         orientation = "landscape",
         special.days = events,
         special.col = ordered_colors,
         legend.pos = "bottom",
-        title = "Academic calendar 2024")
+        title = "Academic calendar 2025")
 
 ```
 
 ::: {.aside}
 
-More information on the academic calendar can be found online at [student.unsw.edu.au/calendar](https://www.student.unsw.edu.au/calendar)    
+Information correct at the time of posting. More information on the academic calendar can be found online at [student.unsw.edu.au/calendar](https://www.student.unsw.edu.au/calendar)    
 
 :::

@@ -3,7 +3,7 @@ title: ""
 comments: false
 ---
 
-
+  
 ![](images/Landscape__1.Col_Pos_CBDRH.jpg)
 
 :::{.column-screen .bg-shape}
