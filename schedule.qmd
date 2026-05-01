@@ -3,7 +3,7 @@ title: "Course schedule"
 comments: false
 ---
 
-## 2025 course schedule
+## 2026-2027 course schedule
 
 ```{r .column-screen}
 #| echo: false
@@ -16,28 +16,40 @@ library(dplyr)
 library(gt)
 library(purrr)
 
-# Current year
-year <- 2025
+```
 
-df <- utils::read.csv("www/schedule.csv") %>% 
+::: {.panel-tabset}
+
+### 2026
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Current year
+year <- 2026
+
+df <- utils::read.csv("www/schedule.csv") |> 
+  filter(year == 2026) |> 
   mutate(
     Course = paste(code, name),
-    link = paste0('https://timetable.unsw.edu.au/2025/', code, '.html'),
+    link = paste0('https://timetable.unsw.edu.au/2026/', code, '.html'),
     link = map(link, ~ htmltools::a(href = .x, "")),
     link = map(link, ~ gt::html(as.character(.x))),
     ilink = paste0("../courses.html#", gsub(" ", "-", tolower(code))),
     ilink = glue::glue("[{code}]({ilink})"),
     ilink = map(ilink, ~ gt::md(.x)),
-    ) %>% 
+    ) |> 
   select(ilink, name, t1, t2, t3, link)
 
 
 icon_fun <- function(icon, fill){
-  fontawesome::fa(icon, fill=fill) %>% 
+  fontawesome::fa(icon, fill=fill) |> 
     gt::html()
 }
 
-gt(df) %>% 
+gt(df) |> 
   text_transform(
     locations = cells_body(columns = c(t1, t2, t3)),
     fn = function(x){
@@ -48,7 +60,7 @@ gt(df) %>%
         x==0 ~ icon_fun(icon = "minus", fill='lightgrey')
         )
       }
-      ) %>% 
+      ) |> 
   cols_label(
     ilink = "Course",
     name = "",
@@ -56,24 +68,96 @@ gt(df) %>%
     t2 = "Term 2",
     t3 = "Term 3",
     link = ""
-  ) %>% 
+  ) |> 
   tab_spanner(
     label = year,
     columns = 3:5
-  ) %>%
+  ) |>
   cols_align(
     align = "right",
     columns = link
-  ) %>%
+  ) |>
   cols_align(
     align = "center",
     columns = c(t1, t2, t3)
-  ) %>% 
+  ) |> 
   cols_width(
     link ~ "50px"
   )
 
 ```
+
+### 2027
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+### 2026
+
+# Current year
+year <- 2027
+
+df <- utils::read.csv("www/schedule.csv") |> 
+  filter(year == 2027) |> 
+  mutate(
+    Course = paste(code, name),
+    link = 'https://timetable.unsw.edu.au/2026/HDATKENS.html',
+    link = map(link, ~ htmltools::a(href = .x, "")),
+    link = map(link, ~ gt::html(as.character(.x))),
+    ilink = paste0("../courses.html#", gsub(" ", "-", tolower(code))),
+    ilink = glue::glue("[{code}]({ilink})"),
+    ilink = map(ilink, ~ gt::md(.x)),
+    ) |> 
+  select(ilink, name, t1, t2, t3, link)
+
+
+icon_fun <- function(icon, fill){
+  fontawesome::fa(icon, fill=fill) |> 
+    gt::html()
+}
+
+gt(df) |> 
+  text_transform(
+    locations = cells_body(columns = c(t1, t2, t3)),
+    fn = function(x){
+      dplyr::case_when(
+        x==3 ~ icon_fun(icon = "code", fill='green'),    
+        x==2 ~ icon_fun(icon = "laptop", fill='green'),     
+        x==1 ~ icon_fun(icon = "person-chalkboard", fill='green'),
+        x==0 ~ icon_fun(icon = "minus", fill='lightgrey')
+        )
+      }
+      ) |> 
+  cols_label(
+    ilink = "Course",
+    name = "",
+    t1 = "Term 1",
+    t2 = "Term 2",
+    t3 = "Term 3",
+    link = ""
+  ) |> 
+  tab_spanner(
+    label = year,
+    columns = 3:5
+  ) |>
+  cols_align(
+    align = "right",
+    columns = link
+  ) |>
+  cols_align(
+    align = "center",
+    columns = c(t1, t2, t3)
+  ) |> 
+  cols_width(
+    link ~ "50px"
+  )
+
+```
+
+:::
+
 
 ::: {.aside}
 ```{r, echo=FALSE}
