@@ -177,92 +177,92 @@ More information can be found by searching for the relevant course online at [ti
 :::
 
 
-## Key dates
+<!-- ## Key dates -->
 
-```{r}
-#| echo: false
-#| message: false
-#| warning: false
-#| fig-height: 8
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| message: false -->
+<!-- #| warning: false -->
+<!-- #| fig-height: 8 -->
 
-library(calendR)
-library(lubridate)
+<!-- library(calendR) -->
+<!-- library(lubridate) -->
 
-# Number of days in current year
-ndays <- ifelse(lubridate::leap_year(year), 366, 365)
+<!-- # Number of days in current year -->
+<!-- ndays <- ifelse(lubridate::leap_year(year), 366, 365) -->
 
-# Store term start and end dates
-t1_start <- yday(dmy(paste0("17-02-", year))) # Term 1
-t1_end <- yday(dmy(paste0("24-04-", year)))
+<!-- # Store term start and end dates -->
+<!-- t1_start <- yday(dmy(paste0("17-02-", year))) # Term 1 -->
+<!-- t1_end <- yday(dmy(paste0("24-04-", year))) -->
 
-t2_start <- yday(dmy(paste0("2-06-", year))) # Term 2
-t2_end <- yday(dmy(paste0("8-08-", year)))
+<!-- t2_start <- yday(dmy(paste0("2-06-", year))) # Term 2 -->
+<!-- t2_end <- yday(dmy(paste0("8-08-", year))) -->
 
-t3_start <- yday(dmy(paste0("15-09-", year))) # Term 3
-t3_end <- yday(dmy(paste0("21-11-", year)))
+<!-- t3_start <- yday(dmy(paste0("15-09-", year))) # Term 3 -->
+<!-- t3_end <- yday(dmy(paste0("21-11-", year))) -->
 
-# Census dates
-t1_cen <- yday(dmy(paste0("13-03-", year))) # Term 1
-t2_cen <- yday(dmy(paste0("26-06-", year))) # Term 2
-t3_cen <- yday(dmy(paste0("09-10-", year))) # Term 3
+<!-- # Census dates -->
+<!-- t1_cen <- yday(dmy(paste0("13-03-", year))) # Term 1 -->
+<!-- t2_cen <- yday(dmy(paste0("26-06-", year))) # Term 2 -->
+<!-- t3_cen <- yday(dmy(paste0("09-10-", year))) # Term 3 -->
 
-# Results dates
-t1_res <- yday(dmy(paste0("22-05-", year))) # Term 1
-t2_res <- yday(dmy(paste0("4-09-", year))) # Term 2
-t3_res <- yday(dmy(paste0("18-12-", year))) # Term 3
+<!-- # Results dates -->
+<!-- t1_res <- yday(dmy(paste0("22-05-", year))) # Term 1 -->
+<!-- t2_res <- yday(dmy(paste0("4-09-", year))) # Term 2 -->
+<!-- t3_res <- yday(dmy(paste0("18-12-", year))) # Term 3 -->
 
-# Public holidays
-pub1 <- yday(dmy(paste0("01-01-", year)))
-pub2 <- yday(dmy(paste0("27-01-", year)))
-pub3 <- yday(dmy(paste0("18-04-", year)))
-pub4 <- yday(dmy(paste0("19-04-", year)))
-pub5 <- yday(dmy(paste0("20-04-", year)))
-pub6 <- yday(dmy(paste0("21-04-", year)))
-pub7 <- yday(dmy(paste0("25-04-", year)))
-pub8 <- yday(dmy(paste0("9-06-", year)))
-pub9 <- yday(dmy(paste0("06-10-", year)))
-pub10 <- yday(dmy(paste0("25-12-", year)))
-pub11 <- yday(dmy(paste0("26-12-", year)))
+<!-- # Public holidays -->
+<!-- pub1 <- yday(dmy(paste0("01-01-", year))) -->
+<!-- pub2 <- yday(dmy(paste0("27-01-", year))) -->
+<!-- pub3 <- yday(dmy(paste0("18-04-", year))) -->
+<!-- pub4 <- yday(dmy(paste0("19-04-", year))) -->
+<!-- pub5 <- yday(dmy(paste0("20-04-", year))) -->
+<!-- pub6 <- yday(dmy(paste0("21-04-", year))) -->
+<!-- pub7 <- yday(dmy(paste0("25-04-", year))) -->
+<!-- pub8 <- yday(dmy(paste0("9-06-", year))) -->
+<!-- pub9 <- yday(dmy(paste0("06-10-", year))) -->
+<!-- pub10 <- yday(dmy(paste0("25-12-", year))) -->
+<!-- pub11 <- yday(dmy(paste0("26-12-", year))) -->
 
-# Vector of length `ndays`
-events <- rep(NA, ndays)
+<!-- # Vector of length `ndays` -->
+<!-- events <- rep(NA, ndays) -->
 
-# Set the corresponding events
-events[t1_start:t1_end] <- "Term 1: 17 Feb - 24 Apr"
-events[t2_start:t2_end] <- "Term 2: 2 Jun - 8 Aug"
-events[t3_start:t3_end] <- "Term 3: 15 Sep - 21 Nov"
-events[c(t1_cen, t2_cen, t3_cen)] <- "Census dates"
-events[c(t1_res, t2_res, t3_res)] <- "Results released"
-events[c(pub1, pub2, pub3, pub4, pub5, pub6, pub7, pub8, pub9, pub10, pub11)] <- "Public holidays"
+<!-- # Set the corresponding events -->
+<!-- events[t1_start:t1_end] <- "Term 1: 17 Feb - 24 Apr" -->
+<!-- events[t2_start:t2_end] <- "Term 2: 2 Jun - 8 Aug" -->
+<!-- events[t3_start:t3_end] <- "Term 3: 15 Sep - 21 Nov" -->
+<!-- events[c(t1_cen, t2_cen, t3_cen)] <- "Census dates" -->
+<!-- events[c(t1_res, t2_res, t3_res)] <- "Results released" -->
+<!-- events[c(pub1, pub2, pub3, pub4, pub5, pub6, pub7, pub8, pub9, pub10, pub11)] <- "Public holidays" -->
 
 
-# Desired order and colors
-desired_order <- factor(c("Term 1: 17 Feb - 24 Apr",
-                   "Term 2: 2 Jun - 8 Aug",
-                   "Term 3: 15 Sep - 21 Nov",
-                   "Census dates",
-                   "Results released",
-                   "Public holidays"))
+<!-- # Desired order and colors -->
+<!-- desired_order <- factor(c("Term 1: 17 Feb - 24 Apr", -->
+<!--                    "Term 2: 2 Jun - 8 Aug", -->
+<!--                    "Term 3: 15 Sep - 21 Nov", -->
+<!--                    "Census dates", -->
+<!--                    "Results released", -->
+<!--                    "Public holidays")) -->
 
-# Order the colors based on the desired order
-ordered_colors <- c("#82BB65", "#9AD27E", "#BDF6A3",
-                              "#4d9de0", "#ffc857",
-                              "#f283b6")[order(desired_order)]
+<!-- # Order the colors based on the desired order -->
+<!-- ordered_colors <- c("#82BB65", "#9AD27E", "#BDF6A3", -->
+<!--                               "#4d9de0", "#ffc857", -->
+<!--                               "#f283b6")[order(desired_order)] -->
 
-# Creating the calendar with a legend
-calendR(year = 2025,
-        start = "M",
-        weeknames = c('M', 'T', 'W', 'T', 'F', 'S', 'S'),
-        orientation = "landscape",
-        special.days = events,
-        special.col = ordered_colors,
-        legend.pos = "bottom",
-        title = "Academic calendar 2025")
+<!-- # Creating the calendar with a legend -->
+<!-- calendR(year = 2025, -->
+<!--         start = "M", -->
+<!--         weeknames = c('M', 'T', 'W', 'T', 'F', 'S', 'S'), -->
+<!--         orientation = "landscape", -->
+<!--         special.days = events, -->
+<!--         special.col = ordered_colors, -->
+<!--         legend.pos = "bottom", -->
+<!--         title = "Academic calendar 2025") -->
 
-```
+<!-- ``` -->
 
-::: {.aside}
+<!-- ::: {.aside} -->
 
-Information correct at the time of posting. More information on the academic calendar can be found online at [student.unsw.edu.au/calendar](https://www.student.unsw.edu.au/calendar)    
+<!-- Information correct at the time of posting. More information on the academic calendar can be found online at [student.unsw.edu.au/calendar](https://www.student.unsw.edu.au/calendar)     -->
 
-:::
+<!-- ::: -->
