@@ -26,7 +26,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9100](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9100)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9100](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9100)
 </div>
 
 <div class="course-meta-title">
@@ -34,7 +34,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9100.html](https://timetable.unsw.edu.au/2023/HDAT9100.html)
+[timetable.unsw.edu.au/2026/HDAT9100.html](https://timetable.unsw.edu.au/2026/HDAT9100.html)
 </div>
 
 The Context of Health Data Science provides an introduction to how data are generated and used in a contemporary health system. We look at how health outcomes can be measured and reported in various forms of health data, and how these health data can reveal inequalities in health. The course describes the major sources of health data, including those relating to primary care, hospital stays and prescription medicines, and how this (and other) information can be used by the health data scientist to create evidence for policy and research.
@@ -67,7 +67,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9200](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9200)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9200](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9200)
 </div>
 
 <div class="course-meta-title">
@@ -75,7 +75,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9200.html](https://timetable.unsw.edu.au/2023/HDAT9200.html)
+[timetable.unsw.edu.au/2026/HDAT9200.html](https://timetable.unsw.edu.au/2026/HDAT9200.html)
 </div>
 
 Health data is often complex and noisy. Obtaining actionable insights (or revealing the hidden signals) from such data requires the utilisation of probabilistic concepts. Thus a solid understanding of the principles of statistics is intrinsic to Health Data Science. The aim of this first course in probability theory is to introduce the foundations required to understand such phenomena.
@@ -108,7 +108,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9300](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9300)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9300](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9300)
 </div>
 
 <div class="course-meta-title">
@@ -116,7 +116,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9300.html](https://timetable.unsw.edu.au/2023/HDAT9300.html)
+[timetable.unsw.edu.au/2026/HDAT9300.html](https://timetable.unsw.edu.au/2026/HDAT9300.html)
 </div>
 
 Computing now pervades nearly every aspect of modern life, including health care delivery and health services management. The objective of this course is to develop 'computational thinking' in health data science students, by providing you with a thorough and principled introduction to computer programming, algorithms, data structures and software engineering best practices. The ability to write clear, efficient and correct computer code is at the core of most data science practice and is a foundation skill set.
@@ -149,7 +149,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9400](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9400)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9400](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9400)
 </div>
 
 <div class="course-meta-title">
@@ -157,7 +157,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9400.html](https://timetable.unsw.edu.au/2023/HDAT9400.html)
+[timetable.unsw.edu.au/2026/HDAT9400.html](https://timetable.unsw.edu.au/2026/HDAT9400.html)
 </div>
 
 This course is designed to equip students with the skills required to collect or obtain data, design data management strategies aligned with best practice, and appreciate the day to day practicalities of data curation for sound data management. Students will develop data wrangling skills required to assemble data suitable for analysis and research purposes, including data from linkage projects. Data wrangling skills will focus on the key areas of data security, data exploration, documentation of data (for example data dictionaries) and data management, with the ultimate aim of creating analysis-ready datasets and ensuring reproducible results.
@@ -187,7 +187,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9500](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9500)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9500](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9500)
 </div>
 
 <div class="course-meta-title">
@@ -195,7 +195,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9500.html](https://timetable.unsw.edu.au/2023/HDAT9500.html)
+[timetable.unsw.edu.au/2026/HDAT9500.html](https://timetable.unsw.edu.au/2026/HDAT9500.html)
 </div>
 
 Healthcare organisations have a vast amount of data: electronic medical records, claims, registries, medical images, and other types of digital health data. Machine learning techniques learn from previous experience in order to discover patterns and relationships in data, and have been found to perform extremely well in large datasets.
@@ -232,7 +232,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9510](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9510)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9510](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9510)
 </div>
 
 <div class="course-meta-title">
@@ -240,7 +240,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9510.html](https://timetable.unsw.edu.au/2023/HDAT9510.html)
+[timetable.unsw.edu.au/2026/HDAT9510.html](https://timetable.unsw.edu.au/2026/HDAT9510.html)
 </div>
 
 
@@ -277,7 +277,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9600](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9600)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9600](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9600)
 </div>
 
 <div class="course-meta-title">
@@ -285,7 +285,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9600.html](https://timetable.unsw.edu.au/2023/HDAT9600.html)
+[timetable.unsw.edu.au/2026/HDAT9600.html](https://timetable.unsw.edu.au/2026/HDAT9600.html)
 </div>
 
 
@@ -315,7 +315,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9700](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9700)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9700](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9700)
 </div>
 
 <div class="course-meta-title">
@@ -323,7 +323,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9700.html](https://timetable.unsw.edu.au/2023/HDAT9700.html)
+[timetable.unsw.edu.au/2026/HDAT9700.html](https://timetable.unsw.edu.au/2026/HDAT9700.html)
 </div>
 
 
@@ -358,7 +358,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9800](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9800)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9800](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9800)
 </div>
 
 <div class="course-meta-title">
@@ -366,7 +366,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9800.html](https://timetable.unsw.edu.au/2023/HDAT9800.html)
+[timetable.unsw.edu.au/2026/HDAT9800.html](https://timetable.unsw.edu.au/2026/HDAT9800.html)
 </div>
 
 
@@ -399,7 +399,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9900](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9900)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9900](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9900)
 </div>
 
 <div class="course-meta-title">
@@ -407,7 +407,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9900.html](https://timetable.unsw.edu.au/2023/HDAT9900.html)
+[timetable.unsw.edu.au/2026/HDAT9900.html](https://timetable.unsw.edu.au/2026/HDAT9900.html)
 </div>
 
 
@@ -445,7 +445,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9910)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9910](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9910)
 </div>
 
 <div class="course-meta-title">
@@ -453,7 +453,7 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9910.html](https://timetable.unsw.edu.au/2023/HDAT9910.html)
+[timetable.unsw.edu.au/2026/HDAT9910.html](https://timetable.unsw.edu.au/2026/HDAT9910.html)
 </div>
 
 
@@ -487,7 +487,7 @@ Handbook
 </div>
 
 <div class="course-meta-content">
-[handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9000](https://www.handbook.unsw.edu.au/postgraduate/courses/2023/HDAT9000)
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9000](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9000)
 </div>
 
 <div class="course-meta-title">
@@ -495,8 +495,46 @@ Timetable
 </div>
 
 <div class="course-meta-content">
-[timetable.unsw.edu.au/2023/HDAT9000.html](https://timetable.unsw.edu.au/2023/HDAT9000.html)
+[timetable.unsw.edu.au/2026/HDAT9000.html](https://timetable.unsw.edu.au/2026/HDAT9000.html)
 </div>
 
 
 The course will start by explaining the fundamental concepts of AI systems and what they can and cannot do. This will be followed by an examination of the idiosyncrasies of AI for healthcare practice covering electronic medical records data (including images, clinical notes, pathology and patient reported outcomes), clinical settings and workflows, as well as the ethical, social, and legal issues posed by the use of AI technologies in clinical practice. Students will generate and discuss a survey of major AI solutions in healthcare practice. The course will then provide students with best-practice guidance, methods and tools on when to use AI to improve patient care, how to deploy an AI project pipeline, how to critically assess the performance and impact of the proposed AI solution and what pitfalls to avoid.
+
+
+## HDAT9010 Digital Health and Health Data Science {#hdat9010}
+
+<div class="course-meta-title">
+Analysis Software
+</div>
+
+<div class="course-meta-content">
+Examples can be run in Python or Excel
+</div>
+
+<div class="course-meta-title">
+Prerequisites
+</div>
+
+<div class="course-meta-content">
+HDAT9300 Computing for Health Data Science
+</div>
+
+<div class="course-meta-title">
+Handbook
+</div>
+
+<div class="course-meta-content">
+[handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9010](https://www.handbook.unsw.edu.au/postgraduate/courses/2026/HDAT9010)
+</div>
+
+<div class="course-meta-title">
+Timetable
+</div>
+
+<div class="course-meta-content">
+[timetable.unsw.edu.au/2026/HDAT9010.html](https://timetable.unsw.edu.au/2026/HDAT9010.html)
+</div>
+
+In this course, you will explore the intersection of digital health and health data science, learning how digital technology can help collect, interpret and act on health data in everyday environments - such as homes, workplaces, and communities - beyond traditional clinical settings like hospitals and clinics. You will learn how to build health datasets that more accurately reflect the lives of service users and gain insights into what data from wearables, audio and video can reveal about health. You will develop competencies in sourcing, managing, and analysing diverse digital health data, with an emphasis on ethical, technical, and social considerations. By the end of the course, you will be prepared to apply these skills in public health, research, and digital health innovation settings.
+

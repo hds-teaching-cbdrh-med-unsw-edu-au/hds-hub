@@ -1,6 +1,6 @@
 ---
 title: "Heidi Welberry"
-description: "Research Fellow"
+description: "Senior Lecturer"
 image: ../images/heidi.jpeg
 comments: false
 ---

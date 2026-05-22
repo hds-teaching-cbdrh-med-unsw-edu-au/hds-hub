@@ -1,0 +1,33 @@
+---
+title: "Md Shajedur Rahman Shawon"
+description: "Research Fellow/Lecturer"
+image: ../images/shawon.jpeg
+comments: false
+---
+
+::: {.aside}
+
+::: {.profilepic}
+![](../images/shawon.jpeg) 
+:::
+
+Shawon convenes multiple courses including [HDAT9200](../courses.html#hdat2000) Statistical Foundations for Health Data Science.<br><br> {{< fa envelope title="An envelope" >}} <a href="mailto:s.shawon@unsw.edu.au">s.shawon@unsw.edu.au</a>
+
+::: 
+ 
+## What publication are you most proud of?
+
+A series of studies on care fragmentation following cardiac hospitalisations in Australia. These papers examined what happens when patients are readmitted to a different hospital after a heart procedure, and why it matters for outcomes. It was the first project I tackled after moving from the UK to Australia, which meant simultaneously learning a new health system, new linked data infrastructure, and Australian cardiology all at once. [One paper](https://doi.org/10.1016/j.lanwpc.2024.101189)[^1] from the series, published in Lancet Regional Health Western Pacific, was initially rejected by the editors. We disagreed with the decision, wrote a detailed rebuttal, and it eventually got published. That one felt properly earned.
+
+
+[^1]: Shawon MS, Lujic S, Joshi Y, Jorm L. Readmission destination following cardiac surgery and its association with mortality outcomes: a population-based retrospective study. The Lancet Regional Health–Western Pacific. 2024 [doi.org/10.1016/j.lanwpc.2024.101189](https://doi.org/10.1016/j.lanwpc.2024.101189) 
+
+
+## What’s the most important take home message from your course?
+
+Ask for help sooner. The smartest people in the room are not the ones with all the answers. They are the ones who figured out early who to call.
+
+
+## Who would play you in the biopic of your life?
+
+I am still working on the third act. Casting is pending.

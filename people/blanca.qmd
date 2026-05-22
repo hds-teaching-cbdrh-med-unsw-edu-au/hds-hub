@@ -1,6 +1,6 @@
 ---
 title: "Blanca Gallego Luxan"
-description: "Associate Professor"
+description: "Professor"
 image: ../images/blanca.jpeg
 comments: false
 ---
