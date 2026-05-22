@@ -13,3 +13,19 @@ listing:
 ::: {.aside}
 ![](images/Landscape__1.Col_Pos_CBDRH.jpg)
 :::
+
+
+
+<style>
+
+.quarto-grid-item {
+  transition: transform 0.2s ease; /* smooth animation */
+}
+
+
+.quarto-grid-item:hover {
+transform: scale(1.05); /* increase size by 5% */
+}
+
+
+</style>
